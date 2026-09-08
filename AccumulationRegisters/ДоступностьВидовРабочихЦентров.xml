@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AccumulationRegister uuid="460ec73e-35f1-4f94-90c7-24524293f01d">
+		<InternalInfo>
+			<xr:GeneratedType name="AccumulationRegisterRecord.ДоступностьВидовРабочихЦентров" category="Record">
+				<xr:TypeId>a5041615-f905-44d9-ad26-94d2bb9d48d9</xr:TypeId>
+				<xr:ValueId>100ffc81-7b9f-4fe3-b5f3-7100c8bb14b1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterManager.ДоступностьВидовРабочихЦентров" category="Manager">
+				<xr:TypeId>98494a10-6b88-4f7c-87a6-aa45bc9378f2</xr:TypeId>
+				<xr:ValueId>7f77bc8f-38d3-4608-8e09-4139abd9700e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterSelection.ДоступностьВидовРабочихЦентров" category="Selection">
+				<xr:TypeId>ab955690-c617-4618-b367-c4ec875acd48</xr:TypeId>
+				<xr:ValueId>e6b01e1c-2632-4ece-83ef-578bb4479e52</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterList.ДоступностьВидовРабочихЦентров" category="List">
+				<xr:TypeId>3c5003a7-d810-419d-8530-246e5306e656</xr:TypeId>
+				<xr:ValueId>29750ece-aa7f-4c84-9268-7425096ecb0e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordSet.ДоступностьВидовРабочихЦентров" category="RecordSet">
+				<xr:TypeId>8aafac66-cb4c-4e12-bac7-ae4ed1672b19</xr:TypeId>
+				<xr:ValueId>1ce6fee5-a9be-4aa1-904c-016daf368a92</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordKey.ДоступностьВидовРабочихЦентров" category="RecordKey">
+				<xr:TypeId>39bf7f35-4a1d-4b46-a371-617de49f2c59</xr:TypeId>
+				<xr:ValueId>257c9fc2-6bec-4258-a50a-e72cab00d281</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>RecordSetModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ДоступностьВидовРабочихЦентров</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>77879a52-3f9f-46d9-8a7c-5310a3d50a14</ExtendedConfigurationObject>
+			<RegisterType>Turnovers</RegisterType>
+		</Properties>
+		<ChildObjects/>
+	</AccumulationRegister>
+</MetaDataObject>
