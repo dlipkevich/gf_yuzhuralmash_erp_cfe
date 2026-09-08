@@ -63,6 +63,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<CommonModule>ГрафикПроизводстваСтруктурыЗаказа</CommonModule>
+			<CommonModule>юум_ОбщийМодуль_УдалиМеня</CommonModule>
 			<Report>МониторингЗаказа</Report>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>
 		</ChildObjects>
