@@ -62,10 +62,15 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>Администрирование</Subsystem>
+			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
+			<Role>юум_ЧтениеГлобальныеЗначения</Role>
+			<Role>юум_ПросмотрРазделаНастройки</Role>
 			<CommonModule>ГрафикПроизводстваСтруктурыЗаказа</CommonModule>
 			<CommonModule>юум_ОбщийМодуль_УдалиМеня</CommonModule>
 			<Report>МониторингЗаказа</Report>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>
+			<ChartOfCharacteristicTypes>юум_ГлобальныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<ChartOfCharacteristicTypes uuid="4c286714-ef75-4e4e-86b8-1f0e245328e7">
+		<InternalInfo>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesObject.юум_ГлобальныеЗначения" category="Object">
+				<xr:TypeId>fd2618a2-65f5-464c-a9d8-ad382310f7c9</xr:TypeId>
+				<xr:ValueId>c126ad0f-d846-4a57-b872-b0b0deb171e4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesRef.юум_ГлобальныеЗначения" category="Ref">
+				<xr:TypeId>54284440-f7d4-45ce-bb0d-e01ac9dfd75f</xr:TypeId>
+				<xr:ValueId>b33ba65c-9fb7-4bf2-a966-680c2a50ad72</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesSelection.юум_ГлобальныеЗначения" category="Selection">
+				<xr:TypeId>757eabd9-61c4-4a9e-aa2a-89df2a129b3f</xr:TypeId>
+				<xr:ValueId>5cfda26e-ea2a-4323-8b8f-9d7bb40ba693</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesList.юум_ГлобальныеЗначения" category="List">
+				<xr:TypeId>dd0321a6-11fe-404e-90eb-a98e98206c14</xr:TypeId>
+				<xr:ValueId>63168208-9be7-4fac-8837-9476bb0925d9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="Characteristic.юум_ГлобальныеЗначения" category="Characteristic">
+				<xr:TypeId>336dddde-f65d-4892-9dab-5b1a9459ef99</xr:TypeId>
+				<xr:ValueId>83de56bc-34ad-4ecb-a7bd-effa447bf488</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ChartOfCharacteristicTypesManager.юум_ГлобальныеЗначения" category="Manager">
+				<xr:TypeId>b58f9344-3de8-4a28-866b-2f1664645fe8</xr:TypeId>
+				<xr:ValueId>9d365c7a-26e7-4f08-abb4-bd0d501cb487</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_ГлобальныеЗначения</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>d1a338be-e61b-44bb-988a-7afaf30458c1</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</ChartOfCharacteristicTypes>
+</MetaDataObject>
