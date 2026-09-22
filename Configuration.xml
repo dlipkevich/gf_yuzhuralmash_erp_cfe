@@ -68,7 +68,6 @@
 			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
 			<Role>юум_СозданиеСверхлимитныхЗаявок</Role>
 			<CommonModule>ГрафикПроизводстваСтруктурыЗаказа</CommonModule>
-			<CommonModule>юум_ОбщийМодуль_УдалиМеня</CommonModule>
 			<CommonModule>юум_РаботаСФормой</CommonModule>
 			<CommonModule>юум_РаботаСФормойКлиентСервер</CommonModule>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
