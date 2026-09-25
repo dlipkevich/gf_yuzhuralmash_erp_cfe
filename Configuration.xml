@@ -70,6 +70,7 @@
 			<CommonModule>ГрафикПроизводстваСтруктурыЗаказа</CommonModule>
 			<CommonModule>юум_РаботаСФормой</CommonModule>
 			<CommonModule>юум_РаботаСФормойКлиентСервер</CommonModule>
+			<CommonModule>юум_СхемыЗапросов</CommonModule>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
 			<Report>МониторингЗаказа</Report>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>

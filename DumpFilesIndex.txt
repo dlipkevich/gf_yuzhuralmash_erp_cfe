@@ -4,6 +4,7 @@
 7ed95ae1-0656-4c5f-9a61-1c0b6a5f0f14:77F419E77BF171229FCAA1C176D8F927:2:CommonModules\ГрафикПроизводстваСтруктурыЗаказа.xml
 a490b9f8-a972-4659-9f52-342dbbd3ed62:D05D7BD90D38488C7ECFA342E89342E1:2:CommonModules\юум_РаботаСФормой.xml
 131da25c-77df-4b48-bc09-3dc6b748a747:97B56FB805FFF6133545EB5DFAAC1260:2:CommonModules\юум_РаботаСФормойКлиентСервер.xml
+d689e441-a664-4424-8b9c-336a230ec941:D6CD0EDA56DADE23EA98DDD996D1BCD3:2:CommonModules\юум_СхемыЗапросов.xml
 0d688d5d-3fa2-43d7-a797-9b2ab2f308c2:562AC074CBA9F9909B82B7EE6F6FEF52:2:Documents\ЗаявкаНаРасходованиеДенежныхСредств.xml
 26501615-5b97-4df0-ae14-64153de94538:EFF946AA8AEEC303E5F7E565EA09C643:2:Languages\Русский.xml
 1eecd203-3f57-4b5d-848d-0d7e8d3ee34a:A06A1A67348837DFC2308A1755BC22AF:2:Reports\МониторингЗаказа.xml
@@ -17,6 +18,7 @@ AccumulationRegisters\ДоступностьВидовРабочихЦентро
 CommonModules\ГрафикПроизводстваСтруктурыЗаказа\Ext\Module.bsl:591F38B5D5D353BEBA544318A3D56C1C:4:CommonModules\ГрафикПроизводстваСтруктурыЗаказа\Ext\Module.bsl
 CommonModules\юум_РаботаСФормой\Ext\Module.bsl:DDF348A38498305715E945EAE74CB42A:4:CommonModules\юум_РаботаСФормой\Ext\Module.bsl
 CommonModules\юум_РаботаСФормойКлиентСервер\Ext\Module.bsl:67DBD6178D495DDFB4B6EA85CCD030BD:4:CommonModules\юум_РаботаСФормойКлиентСервер\Ext\Module.bsl
+CommonModules\юум_СхемыЗапросов\Ext\Module.bsl:7C59CAF798B683C8B3AF4F75CECF07A1:4:CommonModules\юум_СхемыЗапросов\Ext\Module.bsl
 ac3e589f-509d-4fcf-950d-90a53cd1aa8d:061787C53B0ED8A7FA293DC2E60CF7A8:4:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента.xml
 Reports\МониторингЗаказа\Ext\ManagerModule.bsl:C10272F6964322688D7E8DADB3F9D08E:4:Reports\МониторингЗаказа\Ext\ManagerModule.bsl
 Roles\юум_ДобавлениеИзменениеГлобальныеЗначения\Ext\Rights.xml:E241952D24A750F48CF856BDA51E5484:4:Roles\юум_ДобавлениеИзменениеГлобальныеЗначения\Ext\Rights.xml
