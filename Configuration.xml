@@ -77,6 +77,9 @@
 			<Role>юум_ПросмотрРазделаНастройки</Role>
 			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
 			<Role>юум_СозданиеСверхлимитныхЗаявок</Role>
+			<Role>юум_НачальникЦеха</Role>
+			<Role>юум_НачальникСмены</Role>
+			<Role>юум_Мастер</Role>
 			<CommonModule>ГрафикПроизводстваСтруктурыЗаказа</CommonModule>
 			<CommonModule>юум_РаботаСФормой</CommonModule>
 			<CommonModule>юум_РаботаСФормойКлиентСервер</CommonModule>
@@ -84,6 +87,7 @@
 			<CommonModule>СтруктураЗаказаВызовСервера</CommonModule>
 			<CommonModule>РаспределениеЗапасов</CommonModule>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
+			<Document>ЭтапПроизводства2_2</Document>
 			<Enum>СпособыФормированияСегментов</Enum>
 			<Enum>ТипыОбеспечения</Enum>
 			<Report>МониторингЗаказа</Report>
