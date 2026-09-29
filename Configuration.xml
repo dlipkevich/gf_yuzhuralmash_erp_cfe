@@ -63,6 +63,16 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>Администрирование</Subsystem>
+			<StyleItem>ТекстИнформационнойНадписи</StyleItem>
+			<StyleItem>ПоясняющийТекст</StyleItem>
+			<StyleItem>ЦветФонаУдачнойОтправки</StyleItem>
+			<CommonPicture>СрочноКЗаказу</CommonPicture>
+			<CommonPicture>КоричневыйШар</CommonPicture>
+			<CommonPicture>Приоритеты</CommonPicture>
+			<CommonPicture>ВосклицательныйЗнакКрасный</CommonPicture>
+			<CommonPicture>Развернуть</CommonPicture>
+			<CommonPicture>Свернуть</CommonPicture>
+			<CommonPicture>СостоянияДокумента</CommonPicture>
 			<Role>юум_ЧтениеГлобальныеЗначения</Role>
 			<Role>юум_ПросмотрРазделаНастройки</Role>
 			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
@@ -71,8 +81,13 @@
 			<CommonModule>юум_РаботаСФормой</CommonModule>
 			<CommonModule>юум_РаботаСФормойКлиентСервер</CommonModule>
 			<CommonModule>юум_СхемыЗапросов</CommonModule>
+			<CommonModule>СтруктураЗаказаВызовСервера</CommonModule>
+			<CommonModule>РаспределениеЗапасов</CommonModule>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
+			<Enum>СпособыФормированияСегментов</Enum>
+			<Enum>ТипыОбеспечения</Enum>
 			<Report>МониторингЗаказа</Report>
+			<DataProcessor>ОбеспечениеПотребностей</DataProcessor>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>
 			<ChartOfCharacteristicTypes>юум_ГлобальныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
