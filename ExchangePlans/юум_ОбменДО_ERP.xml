@@ -29,7 +29,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Ообмен ERP - ДО</v8:content>
+					<v8:content>Обмен ERP - ДО</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>#юум ЧТЗ 6.1/1 Сефербеков 16.10.2026</Comment>
@@ -64,10 +64,30 @@
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation/>
-			<ExtendedObjectPresentation/>
-			<ListPresentation/>
-			<ExtendedListPresentation/>
+			<ObjectPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен ERP - ДО</v8:content>
+				</v8:item>
+			</ObjectPresentation>
+			<ExtendedObjectPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен ERP - ДО</v8:content>
+				</v8:item>
+			</ExtendedObjectPresentation>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен ERP - ДО</v8:content>
+				</v8:item>
+			</ListPresentation>
+			<ExtendedListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен ERP - ДО</v8:content>
+				</v8:item>
+			</ExtendedListPresentation>
 			<Explanation/>
 			<DataHistory>DontUse</DataHistory>
 			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
