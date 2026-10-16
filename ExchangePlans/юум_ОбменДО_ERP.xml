@@ -48,7 +48,7 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
+			<DefaultObjectForm>ExchangePlan.юум_ОбменДО_ERP.Form.ФормаУзла</DefaultObjectForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -74,6 +74,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
+			<Form>ФормаУзла</Form>
 			<Template>ПодробнаяИнформация</Template>
 			<Template>ПравилаОбмена</Template>
 			<Template>ПравилаОбменаКорреспондента</Template>

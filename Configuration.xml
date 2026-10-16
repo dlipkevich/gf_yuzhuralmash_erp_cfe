@@ -73,6 +73,8 @@
 			<CommonPicture>Развернуть</CommonPicture>
 			<CommonPicture>Свернуть</CommonPicture>
 			<CommonPicture>СостоянияДокумента</CommonPicture>
+			<CommonPicture>СинхронизацияДанныхВыполнение</CommonPicture>
+			<CommonPicture>СинхронизацияДанных</CommonPicture>
 			<Role>юум_ЧтениеГлобальныеЗначения</Role>
 			<Role>юум_ПросмотрРазделаНастройки</Role>
 			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
@@ -88,6 +90,17 @@
 			<CommonModule>РаспределениеЗапасов</CommonModule>
 			<CommonModule>ОбменДаннымиПереопределяемый</CommonModule>
 			<ExchangePlan>юум_ОбменДО_ERP</ExchangePlan>
+			<CommonCommand>юум_ЗагрузитьКомплектПравил</CommonCommand>
+			<CommonCommand>юум_ЗагрузитьПравилаКонвертацииОбъектов</CommonCommand>
+			<CommonCommand>юум_ЗагрузитьПравилаРегистрацииОбъектов</CommonCommand>
+			<CommonCommand>юум_Синхронизировать</CommonCommand>
+			<CommonCommand>юум_НастройкиПодключения</CommonCommand>
+			<CommonCommand>юум_СобытияОтправки</CommonCommand>
+			<CommonCommand>юум_СобытияПолучения</CommonCommand>
+			<CommonCommand>юум_СоставОтправляемыхДанных</CommonCommand>
+			<CommonCommand>юум_СценарииСинхронизации</CommonCommand>
+			<CommandGroup>СинхронизацияДанных</CommandGroup>
+			<CommandGroup>ПараметрыСинхронизацииДанных</CommandGroup>
 			<Catalog>БанковскиеСчетаКонтрагентов</Catalog>
 			<Catalog>БанковскиеСчетаОрганизаций</Catalog>
 			<Catalog>ДоговорыКонтрагентов</Catalog>
