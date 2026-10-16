@@ -86,12 +86,22 @@
 			<CommonModule>юум_СхемыЗапросов</CommonModule>
 			<CommonModule>СтруктураЗаказаВызовСервера</CommonModule>
 			<CommonModule>РаспределениеЗапасов</CommonModule>
+			<CommonModule>ОбменДаннымиПереопределяемый</CommonModule>
+			<ExchangePlan>юум_ОбменДО_ERP</ExchangePlan>
+			<Catalog>БанковскиеСчетаКонтрагентов</Catalog>
+			<Catalog>БанковскиеСчетаОрганизаций</Catalog>
+			<Catalog>ДоговорыКонтрагентов</Catalog>
+			<Catalog>ДоговорыАренды</Catalog>
+			<Catalog>ДоговорыКредитовИДепозитов</Catalog>
+			<Catalog>Контрагенты</Catalog>
+			<Catalog>Партнеры</Catalog>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
 			<Document>ЭтапПроизводства2_2</Document>
 			<Enum>СпособыФормированияСегментов</Enum>
 			<Enum>ТипыОбеспечения</Enum>
 			<Report>МониторингЗаказа</Report>
 			<DataProcessor>ОбеспечениеПотребностей</DataProcessor>
+			<InformationRegister>СоответствияОбъектовИнформационныхБаз</InformationRegister>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>
 			<ChartOfCharacteristicTypes>юум_ГлобальныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>
