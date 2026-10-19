@@ -89,6 +89,7 @@
 			<CommonModule>СтруктураЗаказаВызовСервера</CommonModule>
 			<CommonModule>РаспределениеЗапасов</CommonModule>
 			<CommonModule>ОбменДаннымиПереопределяемый</CommonModule>
+			<CommonModule>ОбменДаннымиКлиент</CommonModule>
 			<ExchangePlan>юум_ОбменДО_ERP</ExchangePlan>
 			<DefinedType>ПланыОбменаБСД</DefinedType>
 			<CommonCommand>юум_ЗагрузитьКомплектПравил</CommonCommand>
@@ -116,6 +117,7 @@
 			<Report>МониторингЗаказа</Report>
 			<DataProcessor>ОбеспечениеПотребностей</DataProcessor>
 			<InformationRegister>СоответствияОбъектовИнформационныхБаз</InformationRegister>
+			<InformationRegister>ПравилаДляОбменаДанными</InformationRegister>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>
 			<ChartOfCharacteristicTypes>юум_ГлобальныеЗначения</ChartOfCharacteristicTypes>
 		</ChildObjects>

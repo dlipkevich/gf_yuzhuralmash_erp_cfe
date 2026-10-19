@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="d54c97ff-24fa-4b47-9eec-aa9ff2ee8bd2">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ПравилаДляОбменаДанными" category="Record">
+				<xr:TypeId>95a2b424-3b25-46fd-bc1c-b10c9ead765b</xr:TypeId>
+				<xr:ValueId>c3c08b3b-25e6-4b0f-b5bf-424e49e1fce7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ПравилаДляОбменаДанными" category="Manager">
+				<xr:TypeId>93ce9f43-8d36-4725-aa74-ad8e1a28df12</xr:TypeId>
+				<xr:ValueId>3b996655-2886-4161-8eb5-59d340d476ca</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ПравилаДляОбменаДанными" category="Selection">
+				<xr:TypeId>7a356fbb-9ff6-44bd-8791-18e572430943</xr:TypeId>
+				<xr:ValueId>50d39957-97c0-432f-a11f-ce1fdd84273c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ПравилаДляОбменаДанными" category="List">
+				<xr:TypeId>e5307814-7804-4731-b68f-b85d1dbde1a5</xr:TypeId>
+				<xr:ValueId>995ab39f-2c5a-4c8f-9615-23a20a253f9c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ПравилаДляОбменаДанными" category="RecordSet">
+				<xr:TypeId>01a4fb6a-4cb1-4786-8a32-a2a4fa26dfdc</xr:TypeId>
+				<xr:ValueId>9a67fb7f-85fe-4032-8fad-354b6d48c1b0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ПравилаДляОбменаДанными" category="RecordKey">
+				<xr:TypeId>4f58d372-9856-401e-95e7-307ec2c8219f</xr:TypeId>
+				<xr:ValueId>f7c7601e-502c-4531-9b99-d336816aa42b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ПравилаДляОбменаДанными" category="RecordManager">
+				<xr:TypeId>695d0958-c610-4e61-ae6a-6397d48713ec</xr:TypeId>
+				<xr:ValueId>a576b22a-37d6-4ab9-8240-44810c57b1be</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПравилаДляОбменаДанными</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>af071a52-212b-4131-98e6-81f6048a70e6</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Form>юум_ЗагрузитьПравилаСинхронизацииДанныхОЛД</Form>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

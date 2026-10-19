@@ -1,104 +1,37 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<ExchangePlan uuid="cd9dbaf4-0eba-42af-bbe9-916d9af48171">
+	<ExchangePlan uuid="86df8fdc-c157-4305-9941-44e48ad9e321">
 		<InternalInfo>
-			<xr:ThisNode>77c95603-69be-4f00-b132-9069abc2deaf</xr:ThisNode>
+			<xr:ThisNode>71ebed11-ee7a-49f1-a0be-be9abc1e35d4</xr:ThisNode>
 			<xr:GeneratedType name="ExchangePlanObject.юум_ОбменДО_ERP" category="Object">
-				<xr:TypeId>48bd1ea6-f362-4584-b301-77f48dbe9620</xr:TypeId>
-				<xr:ValueId>dab1d3f7-b2d8-4fb1-8e13-d8cb60c5de59</xr:ValueId>
+				<xr:TypeId>4798a1bf-3d39-4e19-bf25-735fe4eeeaef</xr:TypeId>
+				<xr:ValueId>ca3088a9-f656-47a0-b44a-7b0637c3ca59</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="ExchangePlanRef.юум_ОбменДО_ERP" category="Ref">
-				<xr:TypeId>79f33e14-28b4-4d2f-be1d-db1c6d6329ce</xr:TypeId>
-				<xr:ValueId>abad7886-7b86-47fc-b8a1-a585cae1b252</xr:ValueId>
+				<xr:TypeId>e9466325-aba7-48b0-ba47-fcd34ead9666</xr:TypeId>
+				<xr:ValueId>c794814d-2ffd-4992-8c79-08d73d50e919</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="ExchangePlanSelection.юум_ОбменДО_ERP" category="Selection">
-				<xr:TypeId>b082099d-0b73-4ca8-9e3d-68e8b5cc4239</xr:TypeId>
-				<xr:ValueId>867c4046-f941-4f36-a4e2-05e94f777413</xr:ValueId>
+				<xr:TypeId>9bec5b70-e244-4cd2-b520-b3d6a474196c</xr:TypeId>
+				<xr:ValueId>bd5cba49-5ac5-41db-9b58-dc352996f5ee</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="ExchangePlanList.юум_ОбменДО_ERP" category="List">
-				<xr:TypeId>fab8a276-3a05-4667-a948-05cb5e9e7212</xr:TypeId>
-				<xr:ValueId>feb0d9f7-6624-45c8-9533-53b8b5be8b45</xr:ValueId>
+				<xr:TypeId>430a72d9-c6a9-49e7-ad47-e123bcc589e4</xr:TypeId>
+				<xr:ValueId>c90e620f-7e02-41d4-8a5c-58252f6d4add</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="ExchangePlanManager.юум_ОбменДО_ERP" category="Manager">
-				<xr:TypeId>32c22687-c3cb-4bf2-823f-be1767b0fbd4</xr:TypeId>
-				<xr:ValueId>7d390002-10ad-41c8-a554-12cca560a5b3</xr:ValueId>
+				<xr:TypeId>8a3b50ff-64b4-4c8f-831f-6c964976f8a7</xr:TypeId>
+				<xr:ValueId>6cd9314f-91a2-495f-a965-cf653be890e1</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
 			<Name>юум_ОбменДО_ERP</Name>
-			<Synonym>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обмен ERP - ДО</v8:content>
-				</v8:item>
-			</Synonym>
-			<Comment>#юум ЧТЗ 6.1/1 Сефербеков 16.10.2026</Comment>
-			<UseStandardCommands>true</UseStandardCommands>
-			<CodeLength>9</CodeLength>
-			<CodeAllowedLength>Variable</CodeAllowedLength>
-			<DescriptionLength>25</DescriptionLength>
-			<DefaultPresentation>AsDescription</DefaultPresentation>
-			<EditType>InDialog</EditType>
-			<QuickChoice>false</QuickChoice>
-			<ChoiceMode>BothWays</ChoiceMode>
-			<InputByString>
-				<xr:Field>ExchangePlan.юум_ОбменДО_ERP.StandardAttribute.Description</xr:Field>
-				<xr:Field>ExchangePlan.юум_ОбменДО_ERP.StandardAttribute.Code</xr:Field>
-			</InputByString>
-			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
-			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
-			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>ExchangePlan.юум_ОбменДО_ERP.Form.ФормаУзла</DefaultObjectForm>
-			<DefaultListForm/>
-			<DefaultChoiceForm/>
-			<AuxiliaryObjectForm/>
-			<AuxiliaryListForm/>
-			<AuxiliaryChoiceForm/>
-			<Characteristics/>
-			<BasedOn/>
-			<DistributedInfoBase>false</DistributedInfoBase>
-			<IncludeConfigurationExtensions>false</IncludeConfigurationExtensions>
-			<CreateOnInput>DontUse</CreateOnInput>
-			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
-			<DataLockFields/>
-			<DataLockControlMode>Managed</DataLockControlMode>
-			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обмен ERP - ДО</v8:content>
-				</v8:item>
-			</ObjectPresentation>
-			<ExtendedObjectPresentation>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обмен ERP - ДО</v8:content>
-				</v8:item>
-			</ExtendedObjectPresentation>
-			<ListPresentation>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обмен ERP - ДО</v8:content>
-				</v8:item>
-			</ListPresentation>
-			<ExtendedListPresentation>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Обмен ERP - ДО</v8:content>
-				</v8:item>
-			</ExtendedListPresentation>
-			<Explanation/>
-			<DataHistory>DontUse</DataHistory>
-			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
-			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
+			<Comment/>
+			<ExtendedConfigurationObject>b39fdcf7-4c48-4f79-8646-022e356f411b</ExtendedConfigurationObject>
 		</Properties>
 		<ChildObjects>
 			<Form>ФормаУзла</Form>
-			<Template>ПодробнаяИнформация</Template>
-			<Template>ПравилаОбмена</Template>
-			<Template>ПравилаОбменаКорреспондента</Template>
-			<Template>ПравилаРегистрации</Template>
 		</ChildObjects>
 	</ExchangePlan>
 </MetaDataObject>
