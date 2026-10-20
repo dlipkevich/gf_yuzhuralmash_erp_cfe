@@ -114,6 +114,7 @@
 			<Catalog>Партнеры</Catalog>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
 			<Document>ЭтапПроизводства2_2</Document>
+			<Document>АвансовыйОтчет</Document>
 			<Enum>СпособыФормированияСегментов</Enum>
 			<Enum>ТипыОбеспечения</Enum>
 			<Report>МониторингЗаказа</Report>
