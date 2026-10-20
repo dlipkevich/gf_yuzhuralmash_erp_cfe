@@ -75,9 +75,9 @@
 			<CommonPicture>СостоянияДокумента</CommonPicture>
 			<CommonPicture>СинхронизацияДанныхВыполнение</CommonPicture>
 			<CommonPicture>СинхронизацияДанных</CommonPicture>
+			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
 			<Role>юум_ЧтениеГлобальныеЗначения</Role>
 			<Role>юум_ПросмотрРазделаНастройки</Role>
-			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
 			<Role>юум_СозданиеСверхлимитныхЗаявок</Role>
 			<Role>юум_НачальникЦеха</Role>
 			<Role>юум_НачальникСмены</Role>
@@ -90,6 +90,8 @@
 			<CommonModule>РаспределениеЗапасов</CommonModule>
 			<CommonModule>ОбменДаннымиПереопределяемый</CommonModule>
 			<CommonModule>ОбменДаннымиКлиент</CommonModule>
+			<CommonModule>ПрочееОприходованиеТоваровЛокализация</CommonModule>
+			<CommonModule>АвансовыйОтчетЛокализация</CommonModule>
 			<ExchangePlan>юум_ОбменДО_ERP</ExchangePlan>
 			<DefinedType>ПланыОбменаБСД</DefinedType>
 			<CommonCommand>юум_ЗагрузитьКомплектПравил</CommonCommand>
@@ -115,7 +117,10 @@
 			<Enum>СпособыФормированияСегментов</Enum>
 			<Enum>ТипыОбеспечения</Enum>
 			<Report>МониторингЗаказа</Report>
+			<Report>ВедомостьПоОС2_4</Report>
 			<DataProcessor>ОбеспечениеПотребностей</DataProcessor>
+			<DataProcessor>ПечатьМ11</DataProcessor>
+			<DataProcessor>ПечатьОбщихФорм</DataProcessor>
 			<InformationRegister>СоответствияОбъектовИнформационныхБаз</InformationRegister>
 			<InformationRegister>ПравилаДляОбменаДанными</InformationRegister>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>

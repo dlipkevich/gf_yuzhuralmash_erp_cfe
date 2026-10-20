@@ -19,9 +19,11 @@ a20b2f16-c2f5-4905-b56a-da03dc6ea145:BB2B4C7F5B9EA0267C659348B688CDF8:2:CommonCo
 f563a3d4-13dc-478d-b421-3076bfb820f4:32019DAD549A3F0D86900B79D5576E9A:2:CommonCommands\юум_СобытияПолучения.xml
 91f37221-55e6-4bc2-9ccd-234926c40052:DCF2E95611A2CE73C68384748BD1CD3D:2:CommonCommands\юум_СоставОтправляемыхДанных.xml
 da859529-874a-4603-8067-1ff088d03661:A2E6F5F7A4B7CB3FC223ED94998CC722:2:CommonCommands\юум_СценарииСинхронизации.xml
+1c130610-0537-459d-9573-255a6bff639c:C63E9BEF4B983AE101140065D63A5C2D:2:CommonModules\АвансовыйОтчетЛокализация.xml
 7ed95ae1-0656-4c5f-9a61-1c0b6a5f0f14:77F419E77BF171229FCAA1C176D8F927:2:CommonModules\ГрафикПроизводстваСтруктурыЗаказа.xml
 bb3f88e9-d4a1-4d65-8dcd-e3fd78ad4e35:E1E28484453521DE5C1451BBA30AA3A4:2:CommonModules\ОбменДаннымиКлиент.xml
 451add7e-7672-4a69-b6c5-2644295a028a:4278C238137B469B97D8FDD544B7DDBA:2:CommonModules\ОбменДаннымиПереопределяемый.xml
+47cf9e58-a2ab-4fc0-9817-2a7afdd21d77:75D3FA5FE764C61E97BB98917C281CE9:2:CommonModules\ПрочееОприходованиеТоваровЛокализация.xml
 c74da3bf-c4a0-4719-8d0e-7d0f43c85d34:07F0EDE83DD36CAC1E9A01177D9467D1:2:CommonModules\РаспределениеЗапасов.xml
 400a9a47-03ac-4a62-bfeb-7269f65442ee:B26D9B4AEBB831C64B0B1498334CF570:2:CommonModules\СтруктураЗаказаВызовСервера.xml
 a490b9f8-a972-4659-9f52-342dbbd3ed62:D05D7BD90D38488C7ECFA342E89342E1:2:CommonModules\юум_РаботаСФормой.xml
@@ -37,6 +39,8 @@ f57936fa-2e7a-4e6a-b4ef-9b5cbddde3f6:9B9C75D964B7CC0ECF2294487B443714:2:CommonPi
 ed6ab026-34c5-4435-b7b6-7c244f568dc6:74BE65A6891C007A7B8BC48D1F7479C0:2:CommonPictures\СостоянияДокумента.xml
 6da56890-1614-4746-8187-f80a4f8bbd60:393DF134089E5E3869EF1A26A81CE713:2:CommonPictures\СрочноКЗаказу.xml
 1090a886-ed5e-4ab7-8a61-5668121255d6:74F0783621136750ED98EEE0711F6DD2:2:DataProcessors\ОбеспечениеПотребностей.xml
+6ccce4c7-161b-4586-ae5d-ac5c05e4228c:447D276F2DACF89A8A84AE5D041CD551:2:DataProcessors\ПечатьМ11.xml
+030bc2d5-b534-46ef-aff3-887ca3817a11:AA10EAF022AE5287C4C154DD6F5510FA:2:DataProcessors\ПечатьОбщихФорм.xml
 ba90da34-2231-4d2b-9d68-bc603e7470f0:C499E203E62A8DAA7FE6A588FC4701AE:2:DefinedTypes\ПланыОбменаБСД.xml
 0d688d5d-3fa2-43d7-a797-9b2ab2f308c2:562AC074CBA9F9909B82B7EE6F6FEF52:2:Documents\ЗаявкаНаРасходованиеДенежныхСредств.xml
 68d9b2db-5eb6-4bc1-af34-675607b8e2b3:C9322DC4DCEC64D70F78E02663314615:2:Documents\ЭтапПроизводства2_2.xml
@@ -46,6 +50,7 @@ fdc5d41c-bfb0-47f3-abb2-33993588f24f:38EBB8B38B9255388591318220042E13:2:Enums\Т
 d54c97ff-24fa-4b47-9eec-aa9ff2ee8bd2:F29AB247EB9AC1869B4B746C377EE4DC:2:InformationRegisters\ПравилаДляОбменаДанными.xml
 47d3cd58-64fc-46f0-8377-41048e1dc68b:66FC7C6473DA24BD65E9EAB3047015D3:2:InformationRegisters\СоответствияОбъектовИнформационныхБаз.xml
 26501615-5b97-4df0-ae14-64153de94538:EFF946AA8AEEC303E5F7E565EA09C643:2:Languages\Русский.xml
+b94e9c3e-19d4-4c32-8ed5-83716c35f48e:8BBBE90E7E6E8AE3CCD33119B7EBC54A:2:Reports\ВедомостьПоОС2_4.xml
 1eecd203-3f57-4b5d-848d-0d7e8d3ee34a:A06A1A67348837DFC2308A1755BC22AF:2:Reports\МониторингЗаказа.xml
 d9cdfa3a-5507-444f-96f6-146495ac5efd:EB568D0AB9EFE2E6B0705F63943CC246:2:Roles\юум_ДобавлениеИзменениеГлобальныеЗначения.xml
 04448c01-9524-44f3-9454-230b86e11cc6:4170D0694C9FED58B6C804F985925E35:2:Roles\юум_Мастер.xml
@@ -69,9 +74,11 @@ CommonCommands\юум_СобытияОтправки\Ext\CommandModule.bsl:BFA60
 CommonCommands\юум_СобытияПолучения\Ext\CommandModule.bsl:6603766C11E625D76704BD681D2D8693:4:CommonCommands\юум_СобытияПолучения\Ext\CommandModule.bsl
 CommonCommands\юум_СоставОтправляемыхДанных\Ext\CommandModule.bsl:45B106B1B0D911829958539BDD829EFF:4:CommonCommands\юум_СоставОтправляемыхДанных\Ext\CommandModule.bsl
 CommonCommands\юум_СценарииСинхронизации\Ext\CommandModule.bsl:42173C1B9720FE6ACA5B397F94B51102:4:CommonCommands\юум_СценарииСинхронизации\Ext\CommandModule.bsl
+CommonModules\АвансовыйОтчетЛокализация\Ext\Module.bsl:0F39C78FD5FF44C03BA34BD4831E9475:4:CommonModules\АвансовыйОтчетЛокализация\Ext\Module.bsl
 CommonModules\ГрафикПроизводстваСтруктурыЗаказа\Ext\Module.bsl:591F38B5D5D353BEBA544318A3D56C1C:4:CommonModules\ГрафикПроизводстваСтруктурыЗаказа\Ext\Module.bsl
 CommonModules\ОбменДаннымиКлиент\Ext\Module.bsl:FCA6992729D1CA2BAD623FC35AD002B7:4:CommonModules\ОбменДаннымиКлиент\Ext\Module.bsl
 CommonModules\ОбменДаннымиПереопределяемый\Ext\Module.bsl:C630698C4881A9A5C8E81C8665F4B921:4:CommonModules\ОбменДаннымиПереопределяемый\Ext\Module.bsl
+CommonModules\ПрочееОприходованиеТоваровЛокализация\Ext\Module.bsl:3DD1C72FE366FED00502393F4A624A60:4:CommonModules\ПрочееОприходованиеТоваровЛокализация\Ext\Module.bsl
 CommonModules\РаспределениеЗапасов\Ext\Module.bsl:AF5746E2DB2577225C59B348B6EEAF49:4:CommonModules\РаспределениеЗапасов\Ext\Module.bsl
 CommonModules\СтруктураЗаказаВызовСервера\Ext\Module.bsl:A84B238624C4E6C5ECB29D63BDE4FAAC:4:CommonModules\СтруктураЗаказаВызовСервера\Ext\Module.bsl
 CommonModules\юум_РаботаСФормой\Ext\Module.bsl:DDF348A38498305715E945EAE74CB42A:4:CommonModules\юум_РаботаСФормой\Ext\Module.bsl
@@ -79,10 +86,15 @@ CommonModules\юум_РаботаСФормойКлиентСервер\Ext\Modu
 CommonModules\юум_СхемыЗапросов\Ext\Module.bsl:7C59CAF798B683C8B3AF4F75CECF07A1:4:CommonModules\юум_СхемыЗапросов\Ext\Module.bsl
 DataProcessors\ОбеспечениеПотребностей\Ext\ManagerModule.bsl:BC45155569081E03166ADAFCF1F9BE84:4:DataProcessors\ОбеспечениеПотребностей\Ext\ManagerModule.bsl
 ea32db4a-777d-4b96-a85b-ef780b8554fe:C7B3733F6DF03317C189E2C6058D3DC3:4:DataProcessors\ОбеспечениеПотребностей\Forms\Форма.xml
+DataProcessors\ПечатьМ11\Ext\ManagerModule.bsl:9A6F5728A9401C822C6D81A481CE2D5F:4:DataProcessors\ПечатьМ11\Ext\ManagerModule.bsl
+23fe9823-6943-4392-838a-76d46f4a425b:0764EC122F44DFE1879688A10792D5D4:4:DataProcessors\ПечатьМ11\Templates\юум_ПФ_MXL_М11.xml
+DataProcessors\ПечатьОбщихФорм\Ext\ManagerModule.bsl:7C07C2992EE7E75C8E1FD41E7D2C1B8B:4:DataProcessors\ПечатьОбщихФорм\Ext\ManagerModule.bsl
+eb55a6d5-2209-4be3-a155-e2e00ad239c2:A426729E73ADF2C6B0B337E3B46FB387:4:DataProcessors\ПечатьОбщихФорм\Templates\юум_ПФ_MXL_М4_ru_Дополнение.xml
 ac3e589f-509d-4fcf-950d-90a53cd1aa8d:061787C53B0ED8A7FA293DC2E60CF7A8:4:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента.xml
 5656032d-ea68-45e6-910c-76b48117d9c7:24A8CCF5B4CA02CA910856787A0AD215:4:Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента.xml
 21e0acac-0cc1-4db9-9eb4-45b6a71a9f4d:D7DD38B397D9BCE3DA62135E9EF43D49:4:ExchangePlans\юум_ОбменДО_ERP\Forms\ФормаУзла.xml
 2435de20-325a-4905-9f79-c4379fa3d502:7FFB00B9AD83E8B19E5214C4199C8F73:4:InformationRegisters\ПравилаДляОбменаДанными\Forms\юум_ЗагрузитьПравилаСинхронизацииДанныхОЛД.xml
+Reports\ВедомостьПоОС2_4\Ext\ObjectModule.bsl:ED0E7AC2ED1D7B8515A8A73719E7ECA5:4:Reports\ВедомостьПоОС2_4\Ext\ObjectModule.bsl
 Reports\МониторингЗаказа\Ext\ManagerModule.bsl:C10272F6964322688D7E8DADB3F9D08E:4:Reports\МониторингЗаказа\Ext\ManagerModule.bsl
 Roles\юум_ДобавлениеИзменениеГлобальныеЗначения\Ext\Rights.xml:E241952D24A750F48CF856BDA51E5484:4:Roles\юум_ДобавлениеИзменениеГлобальныеЗначения\Ext\Rights.xml
 Roles\юум_Мастер\Ext\Rights.xml:09B3C017F6B4693FC97F679A6B96785F:4:Roles\юум_Мастер\Ext\Rights.xml
@@ -93,6 +105,8 @@ Roles\юум_СозданиеСверхлимитныхЗаявок\Ext\Rights.x
 Roles\юум_ЧтениеГлобальныеЗначения\Ext\Rights.xml:DEAC0F1E7FB257C601D96ECF308076EA:4:Roles\юум_ЧтениеГлобальныеЗначения\Ext\Rights.xml
 3aa00a4f-2c62-492c-a38b-731637aca9e1:9DC5EE1945AF45AA838B0CA94CFB4477:4:Subsystems\Администрирование\Subsystems\НастройкаРазделов.xml
 DataProcessors\ОбеспечениеПотребностей\Forms\Форма\Ext\Form.xml:F1A190BAB98AD2572603FC65640AE283:6:DataProcessors\ОбеспечениеПотребностей\Forms\Форма\Ext\Form.xml
+DataProcessors\ПечатьМ11\Templates\юум_ПФ_MXL_М11\Ext\Template.xml:2F6F0F9404A8109CE7C2433D4991425A:6:DataProcessors\ПечатьМ11\Templates\юум_ПФ_MXL_М11\Ext\Template.xml
+DataProcessors\ПечатьОбщихФорм\Templates\юум_ПФ_MXL_М4_ru_Дополнение\Ext\Template.xml:DC8C4AB94145EEFA30C82A89381D5E42:6:DataProcessors\ПечатьОбщихФорм\Templates\юум_ПФ_MXL_М4_ru_Дополнение\Ext\Template.xml
 Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form.xml:5F3F19F3FA71108D72605BDCC4287E23:6:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента\Ext\Form.xml:7565E787E7C3FB118F64AE4C21E754FA:6:Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента\Ext\Form.xml
 ExchangePlans\юум_ОбменДО_ERP\Forms\ФормаУзла\Ext\Form.xml:3BD056C46CE53CDBB718499B1CE062BD:6:ExchangePlans\юум_ОбменДО_ERP\Forms\ФормаУзла\Ext\Form.xml
