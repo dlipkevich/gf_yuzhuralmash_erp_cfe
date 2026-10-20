@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Мониторинг заказа</title><style>
+*{box-sizing:border-box}html,body{height:100%;margin:0;font:13px Arial,sans-serif;color:#263b53;background:#fff}
+body{display:flex;flex-direction:column}button{font:inherit;color:inherit;background:#fff;border:1px solid #aebac5;border-radius:3px;padding:5px 15px;cursor:pointer}
+button:hover{background:#edf5fd}button.active{background:#e6f4e8;border-color:#58b958}
+.toolbar{padding:7px 12px;display:flex;gap:8px;align-items:center;border-bottom:1px solid #ccd5df;flex-shrink:0}
+.viewport{overflow:auto;flex:1;min-height:0;position:relative}table{border-collapse:separate;border-spacing:0;table-layout:fixed}
+col.name{width:360px}col.qty{width:84px}col.hours{width:140px}col.ready{width:110px}col.day{width:20px}
+th,td{height:32px;padding:5px 9px;border-right:1px solid #d5dee7;border-bottom:1px solid #e3e8ed;white-space:nowrap}
+thead th{background:#f0f3f7;font-weight:600;text-align:center;position:sticky;top:0;z-index:6;height:28px}
+thead tr:nth-child(2) th{top:28px;padding:3px 0;font-size:11px;font-weight:normal;height:25px}
+td{text-align:right;background:#fff}td.name{text-align:left}tbody tr:hover td{background-color:#f4f9ff}
+.fixed{position:sticky;z-index:3}.f0{left:0}.f1{left:360px}.f2{left:444px}.f3{left:528px}.f4{left:668px}.f5{left:808px}
+thead th.fixed{z-index:8}.namecontent{display:flex;align-items:center;gap:6px;overflow:hidden}
+.toggle{width:18px;padding:0;border:0;background:transparent;flex-shrink:0;font-size:16px;line-height:20px}
+.leaf{display:inline-block;width:18px;flex-shrink:0}.label{overflow:hidden;text-overflow:ellipsis;color:inherit;text-decoration:none}
+.label:hover{text-decoration:underline}.readybar{display:inline-block;width:40px;height:8px;background:#e5e9ed;vertical-align:middle;margin-left:7px;border-radius:2px}
+.readybar span{display:block;height:100%;background:#58b958;border-radius:2px}.timeline{padding:0!important;position:relative;
+background-image:repeating-linear-gradient(to right,transparent 0,transparent 19px,#e6ecf2 19px,#e6ecf2 20px)}
+.bar{position:absolute;height:15px;top:8px;border-radius:3px}.gray{background:#c9cdd2}.blue{background:#238bfa}.green{background:#58b958}
+.today{position:absolute;top:0;bottom:0;border-left:1px dashed #328ef3;pointer-events:none}
+.weekend{color:#8796a5}.empty{padding:24px;color:#52677d}#monitoringState{display:none}
+</style></head><body>
+<div class="toolbar"><span>Раскрыть до уровня:</span><button data-level="1" onclick="setLevel(1)">1</button>
+<button data-level="2" onclick="setLevel(2)">2</button><button data-level="3" onclick="setLevel(3)">3</button>
+<button data-level="4" onclick="setLevel(4)">4</button><button data-level="64" onclick="setLevel(64)">Все</button>
+<span style="margin-left:12px">Масштаб:</span><button onclick="setZoom(dayWidth-4)" aria-label="Уменьшить масштаб">−</button>
+<button id="zoomValue" onclick="setZoom(20)" title="Вернуть исходный масштаб">100%</button>
+<button onclick="setZoom(dayWidth+4)" aria-label="Увеличить масштаб">+</button>
+<span id="counter" style="margin-left:auto"></span></div>
+<div id="monitoringState"></div><div class="viewport" id="viewport" tabindex="0"><table id="gantt">
+<colgroup id="columns"><col class="name"><col class="qty"><col class="qty"><col class="hours"><col class="hours"><col class="ready"></colgroup>
+<thead><tr id="months"><th class="fixed f0" rowspan="2">Номенклатура, этап</th>
+<th class="fixed f1" rowspan="2">План, шт</th><th class="fixed f2" rowspan="2">Факт, шт</th>
+<th class="fixed f3" rowspan="2" title="Плановые трудозатраты в часах">План, ч</th>
+<th class="fixed f4" rowspan="2" title="Фактические трудозатраты в часах">Факт, ч</th>
+<th class="fixed f5" rowspan="2">Готовность, %</th></tr><tr id="days"></tr></thead><tbody id="rows"></tbody></table></div>
+<script>
+var model=__DATA__;
+var data=model.rows,calendar=model.calendar,children={},collapsed={},level=model.level;
+var viewport=document.getElementById('viewport'),state=document.getElementById('monitoringState');
+var tbody=document.getElementById('rows'),dayWidth=model.dayWidth||20,expanded={};
+for(var i=0;i<model.expanded.length;i++)expanded[model.expanded[i]]=true;
+for(var i=0;i<data.length;i++){if(data[i].parent>=0)children[data[i].parent]=true;collapsed[i]=!expanded[data[i].key];}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function detail(node,stage){return 'monitoring:detail/'+node+'/'+stage;}
+var cols=[],months=[],days=[],month='',span=0;
+for(var d=0;d<calendar.length;d++){var c=calendar[d];cols.push('<col class="day">');
+if(c.month!==month){if(span)months.push('<th colspan="'+span+'">'+esc(month)+'</th>');month=c.month;span=0;}span++;
+days.push('<th title="'+esc(c.date)+'"'+(c.weekend?' class="weekend"':'')+'>'+esc(c.day)+'</th>');}
+if(span)months.push('<th colspan="'+span+'">'+esc(month)+'</th>');
+document.getElementById('columns').insertAdjacentHTML('beforeend',cols.join(''));
+document.getElementById('months').insertAdjacentHTML('beforeend',months.join(''));
+document.getElementById('days').innerHTML=days.join('');document.getElementById('gantt').style.width=(918+calendar.length*dayWidth)+'px';
+function saveScroll(){state.setAttribute('data-top',String(viewport.scrollTop));state.setAttribute('data-left',String(viewport.scrollLeft));state.setAttribute('data-day-width',String(dayWidth));}
+function applyZoom(){var daysCols=document.querySelectorAll('col.day');for(var z=0;z<daysCols.length;z++)daysCols[z].style.width=dayWidth+'px';
+document.getElementById('gantt').style.width=(918+calendar.length*dayWidth)+'px';
+document.getElementById('zoomValue').textContent=Math.round(dayWidth/20*100)+'%';
+var grid=document.querySelectorAll('td.timeline');for(var z=0;z<grid.length;z++)grid[z].style.backgroundImage='repeating-linear-gradient(to right,transparent 0,transparent '+(dayWidth-1)+'px,#e6ecf2 '+(dayWidth-1)+'px,#e6ecf2 '+dayWidth+'px)';}
+function setZoom(value){var logicalLeft=viewport.scrollLeft/dayWidth;dayWidth=Math.max(8,Math.min(40,value));render();viewport.scrollLeft=logicalLeft*dayWidth;saveScroll();}
+function saveTree(){var keys=[];for(var i=0;i<data.length;i++)if(children[i]&&!collapsed[i])keys.push(data[i].key);
+state.setAttribute('data-expanded',JSON.stringify(keys));state.setAttribute('data-level',String(level));
+var buttons=document.querySelectorAll('button[data-level]');for(var b=0;b<buttons.length;b++)buttons[b].className=Number(buttons[b].getAttribute('data-level'))===level?'active':'';}
+function render(){var out=[],shown=[],count=0;
+for(var n=0;n<data.length;n++){var r=data[n];shown[n]=r.parent<0||(shown[r.parent]&&!collapsed[r.parent]);if(!shown[n])continue;count++;
+var name='<div class="namecontent" style="padding-left:'+((r.level-1)*14)+'px">';
+name+=children[n]?'<button class="toggle" onclick="toggleNode('+n+')" aria-label="Развернуть или свернуть">'+(collapsed[n]?'+':'−')+'</button>':'<span class="leaf"></span>';
+name+='<a class="label" href="'+detail(r.node,r.stage)+'" title="'+esc(r.name)+'">'+esc(r.name)+'</a></div>';
+var ready=esc(r.readyText),bar='';if(r.readyText!=='-'){ready+='%';bar='<span class="readybar"><span style="width:'+Math.max(0,Math.min(100,r.ready))+'%;'+(r.ready>100?'background:#efa537':'')+'"></span></span>';}
+var intervals=[];for(var j=0;j<r.intervals.length;j++){var x=r.intervals[j];intervals.push('<a class="bar '+x.color+'" href="'+detail(x.node,x.stage)+'" title="'+esc(x.title)+'" style="left:'+(x.start*dayWidth)+'px;width:'+Math.max(1,(x.finish-x.start)*dayWidth)+'px"></a>');}
+if(model.today>=0&&model.today<calendar.length)intervals.push('<span class="today" style="left:'+(model.today*dayWidth)+'px"></span>');
+var hint=esc(r.laborHint||'');out.push('<tr data-id="'+n+'" data-key="'+esc(r.key)+'"><td class="name fixed f0">'+name+'</td><td class="fixed f1">'+esc(r.planQty)+'</td><td class="fixed f2">'+esc(r.actualQty)+'</td>'+
+'<td class="fixed f3" title="'+hint+'">'+esc(r.planHours)+'</td><td class="fixed f4" title="'+hint+'">'+esc(r.actualHours)+'</td><td class="fixed f5" title="'+hint+'">'+ready+bar+'</td><td class="timeline" colspan="'+calendar.length+'">'+intervals.join('')+'</td></tr>');}
+tbody.innerHTML=out.join('');applyZoom();document.getElementById('counter').textContent='Видимых строк: '+count+' из '+data.length;saveTree();saveScroll();}
+function setLevel(value){level=value;for(var n=0;n<data.length;n++)collapsed[n]=data[n].level>=value;viewport.scrollTop=0;render();}
+function toggleNode(id){collapsed[id]=!collapsed[id];level=0;render();}
+viewport.addEventListener('scroll',saveScroll);render();viewport.scrollTop=model.top;viewport.scrollLeft=model.left;saveScroll();
+</script></body></html>
