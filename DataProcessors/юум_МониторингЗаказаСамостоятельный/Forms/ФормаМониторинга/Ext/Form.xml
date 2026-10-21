@@ -3,7 +3,7 @@
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
-			<v8:content>Мониторинг заказа [21.10.2026.19]</v8:content>
+			<v8:content>Мониторинг заказа [21.10.2026.21]</v8:content>
 		</v8:item>
 	</Title>
 	<Width>160</Width>
@@ -95,15 +95,15 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<HTMLDocumentField name="ДиаграммаHTML" id="14">
-			<DataPath>ДокументHTML</DataPath>
+		<HTMLDocumentField name="ПолеПредставления" id="14">
+			<DataPath>ТекстПредставления</DataPath>
 			<TitleLocation>None</TitleLocation>
 			<Width>160</Width>
 			<Height>28</Height>
-			<ContextMenu name="ДиаграммаHTMLКонтекстноеМеню" id="15"/>
-			<ExtendedTooltip name="ДиаграммаHTMLПодсказка" id="16"/>
+			<ContextMenu name="ПолеПредставленияКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="ПолеПредставленияПодсказка" id="16"/>
 			<Events>
-				<Event name="OnClick">HTMLПриНажатии</Event>
+				<Event name="OnClick">ПредставлениеПриНажатии</Event>
 			</Events>
 		</HTMLDocumentField>
 		<LabelDecoration name="Легенда" id="17">
@@ -162,7 +162,7 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ДокументHTML" id="6">
+		<Attribute name="ТекстПредставления" id="6">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -180,7 +180,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="КлючиНачальногоРаскрытияJSON" id="8">
+		<Attribute name="НачальныеКлючиРаскрытия" id="8">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
