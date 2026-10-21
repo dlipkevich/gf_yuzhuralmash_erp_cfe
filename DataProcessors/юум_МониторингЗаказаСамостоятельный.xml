@@ -30,6 +30,7 @@
 		<ChildObjects>
 			<Form>ФормаМониторинга</Form>
 			<Template>ПредставлениеHTML</Template>
+			<Template>ЗапросСтатическойСтруктуры</Template>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>
