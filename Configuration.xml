@@ -66,6 +66,8 @@
 			<StyleItem>ТекстИнформационнойНадписи</StyleItem>
 			<StyleItem>ПоясняющийТекст</StyleItem>
 			<StyleItem>ЦветФонаУдачнойОтправки</StyleItem>
+			<StyleItem>ИтогиФон</StyleItem>
+			<StyleItem>ФонУправляющегоПоля</StyleItem>
 			<CommonPicture>СрочноКЗаказу</CommonPicture>
 			<CommonPicture>КоричневыйШар</CommonPicture>
 			<CommonPicture>Приоритеты</CommonPicture>
@@ -75,6 +77,8 @@
 			<CommonPicture>СостоянияДокумента</CommonPicture>
 			<CommonPicture>СинхронизацияДанныхВыполнение</CommonPicture>
 			<CommonPicture>СинхронизацияДанных</CommonPicture>
+			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
+			<CommonPicture>Отчеты</CommonPicture>
 			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
 			<Role>юум_ЧтениеГлобальныеЗначения</Role>
 			<Role>юум_ПросмотрРазделаНастройки</Role>
@@ -105,6 +109,7 @@
 			<CommonCommand>юум_СценарииСинхронизации</CommonCommand>
 			<CommandGroup>СинхронизацияДанных</CommandGroup>
 			<CommandGroup>ПараметрыСинхронизацииДанных</CommandGroup>
+			<CommonForm>НастройкаСчетовУчетаОперации</CommonForm>
 			<Catalog>БанковскиеСчетаКонтрагентов</Catalog>
 			<Catalog>БанковскиеСчетаОрганизаций</Catalog>
 			<Catalog>ДоговорыКонтрагентов</Catalog>
@@ -112,7 +117,12 @@
 			<Catalog>ДоговорыКредитовИДепозитов</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>Партнеры</Catalog>
+			<Catalog>НаправленияДеятельности</Catalog>
+			<Catalog>Номенклатура</Catalog>
+			<Catalog>Склады</Catalog>
+			<Catalog>СтруктураПредприятия</Catalog>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
+			<Document>ПрочиеДоходыРасходы</Document>
 			<Document>ЭтапПроизводства2_2</Document>
 			<Document>АвансовыйОтчет</Document>
 			<Enum>СпособыФормированияСегментов</Enum>
@@ -127,6 +137,10 @@
 			<InformationRegister>ПравилаДляОбменаДанными</InformationRegister>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>
 			<ChartOfCharacteristicTypes>юум_ГлобальныеЗначения</ChartOfCharacteristicTypes>
+			<ChartOfCharacteristicTypes>СтатьиДоходов</ChartOfCharacteristicTypes>
+			<ChartOfCharacteristicTypes>СтатьиРасходов</ChartOfCharacteristicTypes>
+			<ChartOfCharacteristicTypes>СтатьиАктивовПассивов</ChartOfCharacteristicTypes>
+			<ChartOfAccounts>Хозрасчетный</ChartOfAccounts>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

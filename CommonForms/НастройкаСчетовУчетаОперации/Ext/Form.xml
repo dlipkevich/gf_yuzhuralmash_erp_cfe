@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="КнопкаОК" id="82">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>0</CommandName>
+				<RepresentationInContextMenu>None</RepresentationInContextMenu>
+				<ExtendedTooltip name="КнопкаОКРасширеннаяПодсказка" id="83"/>
+			</Button>
+			<Button name="КнопкаОтмена" id="84">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<RepresentationInContextMenu>None</RepresentationInContextMenu>
+				<ExtendedTooltip name="КнопкаОтменаРасширеннаяПодсказка" id="85"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer" callType="After">юум_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаСтатьяАналитикаАктивовПассивов" id="208">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статья аналитика активов пассивов</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Item asset/liability dimension</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСтатьяАналитикаАктивовПассивовРасширеннаяПодсказка" id="209"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаСтатьяЗагрузитьНастройки" id="198">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статья загрузить настройки</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Item import settings</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСтатьяЗагрузитьНастройкиРасширеннаяПодсказка" id="199"/>
+					<ChildItems>
+						<InputField name="СтатьяАктивовПассивов" id="200">
+							<ContextMenu name="СтатьяАктивовПассивовКонтекстноеМеню" id="201"/>
+							<ExtendedTooltip name="СтатьяАктивовПассивовРасширеннаяПодсказка" id="202"/>
+						</InputField>
+						<Button name="ЗагрузитьНастройкиСтатьи" id="203">
+							<Type>UsualButton</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="ЗагрузитьНастройкиСтатьиРасширеннаяПодсказка" id="204"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="АналитикаАктивовПассивов" id="205">
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">18</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ContextMenu name="АналитикаАктивовПассивовКонтекстноеМеню" id="206"/>
+					<ExtendedTooltip name="АналитикаАктивовПассивовРасширеннаяПодсказка" id="207"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="108">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages group</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="109"/>
+			<ChildItems>
+				<Page name="СтраницаРеглУчет" id="110">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламентированный учет</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Local accounting</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="СтраницаРеглУчетРасширеннаяПодсказка" id="111"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗаголовки" id="103">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Заголовки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Titles</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗаголовкиРасширеннаяПодсказка" id="104"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияСчетУчета" id="105">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>60</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Счет учета:</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Ledger account:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияСчетУчетаКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="ДекорацияСчетУчетаРасширеннаяПодсказка" id="107"/>
+								</LabelDecoration>
+								<LabelField name="ЗаголовокСубконто1" id="88">
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>60</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ЗаголовокСубконто1КонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="ЗаголовокСубконто1РасширеннаяПодсказка" id="90"/>
+								</LabelField>
+								<LabelField name="ЗаголовокСубконто2" id="93">
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>60</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ЗаголовокСубконто2КонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="ЗаголовокСубконто2РасширеннаяПодсказка" id="95"/>
+								</LabelField>
+								<LabelField name="ЗаголовокСубконто3" id="98">
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>60</MaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="ЗаголовокСубконто3КонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="ЗаголовокСубконто3РасширеннаяПодсказка" id="100"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСчетСубконто" id="46">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Счет субконто</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Extra dimension account</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<United>false</United>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСчетСубконтоРасширеннаяПодсказка" id="75"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаСчетУчетаНаименование" id="101">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Счет учета наименование</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Ledger account description</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСчетУчетаНаименованиеРасширеннаяПодсказка" id="102"/>
+									<ChildItems>
+										<InputField name="СчетУчета" id="7">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Счет учета</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Ledger account</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<Width>9</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ChoiceParameters>
+												<app:item name="Отбор.ЗапретитьИспользоватьВПроводках">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+												<app:item name="Отбор.Забалансовый">
+													<app:value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation/>
+														<Value xsi:type="xs:boolean">false</Value>
+													</app:value>
+												</app:item>
+											</ChoiceParameters>
+											<ContextMenu name="СчетУчетаКонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="СчетУчетаРасширеннаяПодсказка" id="77"/>
+										</InputField>
+										<LabelField name="СчетУчетаНаименование" id="63">
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="СчетУчетаНаименованиеКонтекстноеМеню" id="64"/>
+											<ExtendedTooltip name="СчетУчетаНаименованиеРасширеннаяПодсказка" id="78"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="Субконто1" id="32">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Субконто 1</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Extra dimension 1</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<MaxWidth>70</MaxWidth>
+									<ContextMenu name="Субконто1КонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="Субконто1РасширеннаяПодсказка" id="79"/>
+								</InputField>
+								<InputField name="Субконто2" id="34">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Субконто 2</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Extra dimension 2</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<MaxWidth>70</MaxWidth>
+									<ContextMenu name="Субконто2КонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="Субконто2РасширеннаяПодсказка" id="80"/>
+								</InputField>
+								<InputField name="Субконто3" id="36">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Субконто 3</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Extra dimension 3</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<MaxWidth>70</MaxWidth>
+									<ContextMenu name="Субконто3КонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="Субконто3РасширеннаяПодсказка" id="81"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.20">
+		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+		<AutoTitle>false</AutoTitle>
+		<CommandBarLocation>Bottom</CommandBarLocation>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<HorizontalAlign>Right</HorizontalAlign>
+			<Autofill>false</Autofill>
+			<ChildItems>
+				<Button name="КнопкаОК" id="82">
+					<Type>CommandBarButton</Type>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>0</CommandName>
+					<RepresentationInContextMenu>None</RepresentationInContextMenu>
+					<ExtendedTooltip name="КнопкаОКРасширеннаяПодсказка" id="83"/>
+				</Button>
+				<Button name="КнопкаОтмена" id="84">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<RepresentationInContextMenu>None</RepresentationInContextMenu>
+					<ExtendedTooltip name="КнопкаОтменаРасширеннаяПодсказка" id="85"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаСтатьяАналитикаАктивовПассивов" id="208">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Статья аналитика активов пассивов</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Item asset/liability dimension</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Vertical</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаСтатьяАналитикаАктивовПассивовРасширеннаяПодсказка" id="209"/>
+				<ChildItems>
+					<UsualGroup name="ГруппаСтатьяЗагрузитьНастройки" id="198">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Статья загрузить настройки</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Item import settings</v8:content>
+							</v8:item>
+						</Title>
+						<Group>AlwaysHorizontal</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<ExtendedTooltip name="ГруппаСтатьяЗагрузитьНастройкиРасширеннаяПодсказка" id="199"/>
+						<ChildItems>
+							<InputField name="СтатьяАктивовПассивов" id="200">
+								<ContextMenu name="СтатьяАктивовПассивовКонтекстноеМеню" id="201"/>
+								<ExtendedTooltip name="СтатьяАктивовПассивовРасширеннаяПодсказка" id="202"/>
+							</InputField>
+							<Button name="ЗагрузитьНастройкиСтатьи" id="203">
+								<Type>UsualButton</Type>
+								<CommandName>0</CommandName>
+								<ExtendedTooltip name="ЗагрузитьНастройкиСтатьиРасширеннаяПодсказка" id="204"/>
+							</Button>
+						</ChildItems>
+					</UsualGroup>
+					<InputField name="АналитикаАктивовПассивов" id="205">
+						<ChoiceParameterLinks>
+							<xr:Link>
+								<xr:Name>Отбор.Владелец</xr:Name>
+								<xr:DataPath xsi:type="xs:string">18</xr:DataPath>
+								<xr:ValueChange>Clear</xr:ValueChange>
+							</xr:Link>
+						</ChoiceParameterLinks>
+						<ContextMenu name="АналитикаАктивовПассивовКонтекстноеМеню" id="206"/>
+						<ExtendedTooltip name="АналитикаАктивовПассивовРасширеннаяПодсказка" id="207"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<Pages name="ГруппаСтраницы" id="108">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа страницы</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Pages group</v8:content>
+					</v8:item>
+				</Title>
+				<PagesRepresentation>TabsOnTop</PagesRepresentation>
+				<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="109"/>
+				<ChildItems>
+					<Page name="СтраницаРеглУчет" id="110">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Регламентированный учет</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Local accounting</v8:content>
+							</v8:item>
+						</Title>
+						<Group>AlwaysHorizontal</Group>
+						<ExtendedTooltip name="СтраницаРеглУчетРасширеннаяПодсказка" id="111"/>
+						<ChildItems>
+							<UsualGroup name="ГруппаЗаголовки" id="103">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Заголовки</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Titles</v8:content>
+									</v8:item>
+								</Title>
+								<HorizontalStretch>true</HorizontalStretch>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<United>false</United>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаЗаголовкиРасширеннаяПодсказка" id="104"/>
+								<ChildItems>
+									<LabelDecoration name="ДекорацияСчетУчета" id="105">
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<MaxWidth>60</MaxWidth>
+										<HorizontalStretch>true</HorizontalStretch>
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Счет учета:</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Ledger account:</v8:content>
+											</v8:item>
+										</Title>
+										<ContextMenu name="ДекорацияСчетУчетаКонтекстноеМеню" id="106"/>
+										<ExtendedTooltip name="ДекорацияСчетУчетаРасширеннаяПодсказка" id="107"/>
+									</LabelDecoration>
+									<LabelField name="ЗаголовокСубконто1" id="88">
+										<TitleLocation>None</TitleLocation>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<MaxWidth>60</MaxWidth>
+										<HorizontalStretch>true</HorizontalStretch>
+										<ContextMenu name="ЗаголовокСубконто1КонтекстноеМеню" id="89"/>
+										<ExtendedTooltip name="ЗаголовокСубконто1РасширеннаяПодсказка" id="90"/>
+									</LabelField>
+									<LabelField name="ЗаголовокСубконто2" id="93">
+										<TitleLocation>None</TitleLocation>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<MaxWidth>60</MaxWidth>
+										<HorizontalStretch>true</HorizontalStretch>
+										<ContextMenu name="ЗаголовокСубконто2КонтекстноеМеню" id="94"/>
+										<ExtendedTooltip name="ЗаголовокСубконто2РасширеннаяПодсказка" id="95"/>
+									</LabelField>
+									<LabelField name="ЗаголовокСубконто3" id="98">
+										<TitleLocation>None</TitleLocation>
+										<AutoMaxWidth>false</AutoMaxWidth>
+										<MaxWidth>60</MaxWidth>
+										<HorizontalStretch>true</HorizontalStretch>
+										<ContextMenu name="ЗаголовокСубконто3КонтекстноеМеню" id="99"/>
+										<ExtendedTooltip name="ЗаголовокСубконто3РасширеннаяПодсказка" id="100"/>
+									</LabelField>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаСчетСубконто" id="46">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Счет субконто</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Extra dimension account</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<United>false</United>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаСчетСубконтоРасширеннаяПодсказка" id="75"/>
+								<ChildItems>
+									<UsualGroup name="ГруппаСчетУчетаНаименование" id="101">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Счет учета наименование</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Ledger account description</v8:content>
+											</v8:item>
+										</Title>
+										<Group>Horizontal</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаСчетУчетаНаименованиеРасширеннаяПодсказка" id="102"/>
+										<ChildItems>
+											<InputField name="СчетУчета" id="7">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Счет учета</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Ledger account</v8:content>
+													</v8:item>
+												</Title>
+												<TitleLocation>None</TitleLocation>
+												<Width>9</Width>
+												<HorizontalStretch>false</HorizontalStretch>
+												<ChoiceParameters>
+													<app:item name="Отбор.ЗапретитьИспользоватьВПроводках">
+														<app:value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation/>
+															<Value xsi:type="xs:boolean">false</Value>
+														</app:value>
+													</app:item>
+													<app:item name="Отбор.Забалансовый">
+														<app:value xsi:type="FormChoiceListDesTimeValue">
+															<Presentation/>
+															<Value xsi:type="xs:boolean">false</Value>
+														</app:value>
+													</app:item>
+												</ChoiceParameters>
+												<ContextMenu name="СчетУчетаКонтекстноеМеню" id="8"/>
+												<ExtendedTooltip name="СчетУчетаРасширеннаяПодсказка" id="77"/>
+											</InputField>
+											<LabelField name="СчетУчетаНаименование" id="63">
+												<TitleLocation>None</TitleLocation>
+												<ContextMenu name="СчетУчетаНаименованиеКонтекстноеМеню" id="64"/>
+												<ExtendedTooltip name="СчетУчетаНаименованиеРасширеннаяПодсказка" id="78"/>
+											</LabelField>
+										</ChildItems>
+									</UsualGroup>
+									<InputField name="Субконто1" id="32">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Субконто 1</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Extra dimension 1</v8:content>
+											</v8:item>
+										</Title>
+										<TitleLocation>None</TitleLocation>
+										<MaxWidth>70</MaxWidth>
+										<ContextMenu name="Субконто1КонтекстноеМеню" id="33"/>
+										<ExtendedTooltip name="Субконто1РасширеннаяПодсказка" id="79"/>
+									</InputField>
+									<InputField name="Субконто2" id="34">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Субконто 2</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Extra dimension 2</v8:content>
+											</v8:item>
+										</Title>
+										<TitleLocation>None</TitleLocation>
+										<MaxWidth>70</MaxWidth>
+										<ContextMenu name="Субконто2КонтекстноеМеню" id="35"/>
+										<ExtendedTooltip name="Субконто2РасширеннаяПодсказка" id="80"/>
+									</InputField>
+									<InputField name="Субконто3" id="36">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Субконто 3</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Extra dimension 3</v8:content>
+											</v8:item>
+										</Title>
+										<TitleLocation>None</TitleLocation>
+										<MaxWidth>70</MaxWidth>
+										<ContextMenu name="Субконто3КонтекстноеМеню" id="37"/>
+										<ExtendedTooltip name="Субконто3РасширеннаяПодсказка" id="81"/>
+									</InputField>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</Page>
+				</ChildItems>
+			</Pages>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>
