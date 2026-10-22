@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="b528ddd7-042c-41d5-a0a4-f4e4d7d652a2">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ГруппыФинансовогоУчетаНоменклатуры" category="Object">
+				<xr:TypeId>5f797ae2-4b64-4049-91dc-f147e629fd41</xr:TypeId>
+				<xr:ValueId>1224e424-0a1a-4dbf-9c3b-d1706568e623</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ГруппыФинансовогоУчетаНоменклатуры" category="Ref">
+				<xr:TypeId>8b28fcac-0b08-4046-bcdf-1161ba4d2f51</xr:TypeId>
+				<xr:ValueId>96136c72-a12f-4ceb-8f3e-56f253ea8120</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ГруппыФинансовогоУчетаНоменклатуры" category="Selection">
+				<xr:TypeId>20d11595-934e-49ea-8762-45c9b8a3ea45</xr:TypeId>
+				<xr:ValueId>97d166eb-28ba-4c2f-b464-29f134e95775</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ГруппыФинансовогоУчетаНоменклатуры" category="List">
+				<xr:TypeId>83a76988-2292-45fa-b4f8-6ebe1854700a</xr:TypeId>
+				<xr:ValueId>f3bf1d28-6127-4fd2-88b6-0799b5ddd78c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ГруппыФинансовогоУчетаНоменклатуры" category="Manager">
+				<xr:TypeId>ece76500-3f7f-4e19-a1c2-2f17e9838e23</xr:TypeId>
+				<xr:ValueId>3a2d5d0c-937b-4a5b-90cd-e236837be803</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ГруппыФинансовогоУчетаНоменклатуры</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>efb31464-78f7-4b2c-935a-eed8c7740ac0</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

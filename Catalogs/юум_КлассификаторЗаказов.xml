@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="d86077ef-27fa-492a-9e5a-dfb9a4c2ac52">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.юум_КлассификаторЗаказов" category="Object">
+				<xr:TypeId>437663db-7f4f-4a7b-92f1-0ecb663a74c2</xr:TypeId>
+				<xr:ValueId>9b2ee844-6544-4f29-9c58-62791e01d2c6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.юум_КлассификаторЗаказов" category="Ref">
+				<xr:TypeId>05244ec0-57db-4143-9d6a-a6ea81cc8695</xr:TypeId>
+				<xr:ValueId>7af6d29a-0aa4-414c-9248-beb7b014fce0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.юум_КлассификаторЗаказов" category="Selection">
+				<xr:TypeId>a06edc9c-a645-4da6-846a-2962ce83a2dd</xr:TypeId>
+				<xr:ValueId>6e013f03-d83b-48ba-8bcb-e99ae177c65a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.юум_КлассификаторЗаказов" category="List">
+				<xr:TypeId>16f0f94c-0c57-472a-812f-c05ede92cc30</xr:TypeId>
+				<xr:ValueId>79bd116e-9683-4dee-ad50-7796bd089cfc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.юум_КлассификаторЗаказов" category="Manager">
+				<xr:TypeId>59773d10-dece-4bf3-8608-379d293da882</xr:TypeId>
+				<xr:ValueId>3d68be31-5566-4b63-9955-32892197330b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_КлассификаторЗаказов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>f26276c6-577c-4b00-90e3-b9689d8dba12</ExtendedConfigurationObject>
+			<DefaultObjectForm>Catalog.юум_КлассификаторЗаказов.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultListForm>Catalog.юум_КлассификаторЗаказов.Form.ФормаСписка</DefaultListForm>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="be4f67dd-9ded-4019-9c95-ef33b63eddb0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Счет</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0db5996f-cfe8-40fb-a3c5-f86558fd815e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:ChartOfAccountsRef.Хозрасчетный</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="eefce946-21f4-4f8b-bb46-d751bd231f5b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НаправлениеДеятельности</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3d4b68a6-ff3e-4eb5-9d95-3aeb646379b4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.НаправленияДеятельности</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="97340fd7-33d6-4efd-a6d8-ce34361c42bb">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РемонтныйЗаказ</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>5bcf21e5-365e-4ef4-acc3-dd846cef0a35</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="1f37421d-f556-41af-98d2-ad5255b8ccc8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НомерЗаказаОт</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4a01f526-85a5-4e3b-b12e-95bff4af0a8b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>6</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="a3ed6cc2-e709-46c1-9761-73b596e06a16">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НомерЗаказаДо</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>87ff0abe-5fe9-4318-94a8-52445e6adb21</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>6</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

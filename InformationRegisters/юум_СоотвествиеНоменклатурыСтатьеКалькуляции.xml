@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="2a1fda33-0794-4eb4-8578-deb45aceceff">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.юум_СоотвествиеНоменклатурыСтатьеКалькуляции" category="Record">
+				<xr:TypeId>894b2fe1-8bd1-400c-81dc-261f084fd8d9</xr:TypeId>
+				<xr:ValueId>98159fb2-2ca1-4bd6-9ca2-287d6ac8d1f1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.юум_СоотвествиеНоменклатурыСтатьеКалькуляции" category="Manager">
+				<xr:TypeId>f0143daf-7f07-49e2-8216-e24e30074f37</xr:TypeId>
+				<xr:ValueId>fa25dc5b-ff4c-4909-8ea1-7d1b411a560f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.юум_СоотвествиеНоменклатурыСтатьеКалькуляции" category="Selection">
+				<xr:TypeId>e80c9688-1e74-47dc-b0dc-cac8f2024e12</xr:TypeId>
+				<xr:ValueId>e81730fb-0199-4b8a-b3fa-3fa2aaadf459</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.юум_СоотвествиеНоменклатурыСтатьеКалькуляции" category="List">
+				<xr:TypeId>44344bd9-e838-438d-b356-60fd6775db42</xr:TypeId>
+				<xr:ValueId>1b811b8d-653d-43e7-ae5e-d789392e643f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.юум_СоотвествиеНоменклатурыСтатьеКалькуляции" category="RecordSet">
+				<xr:TypeId>64c41bb9-d0f8-4eb0-8297-565b27c34ae4</xr:TypeId>
+				<xr:ValueId>dbbd8b33-b4a7-4c81-b927-a87244a1068a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.юум_СоотвествиеНоменклатурыСтатьеКалькуляции" category="RecordKey">
+				<xr:TypeId>db49fb5b-af34-47f3-941e-f64f59f11891</xr:TypeId>
+				<xr:ValueId>2da1409b-5c68-4f9d-b85b-6182f1594d55</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.юум_СоотвествиеНоменклатурыСтатьеКалькуляции" category="RecordManager">
+				<xr:TypeId>47806f9f-30ef-49f1-b971-d8b46551236a</xr:TypeId>
+				<xr:ValueId>a261371e-388d-4f2e-8c9e-3a8480aa03a1</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_СоотвествиеНоменклатурыСтатьеКалькуляции</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>9e535393-14db-4ca1-a137-dda9bd5822a0</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="8a208c0f-938f-4950-865a-614b9362389a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СтатьяКалькуляции</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6ca6632b-cc23-4b72-a127-565242b01eab</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтатьиКалькуляции</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="c8a2c29d-7780-48c3-a926-8df300c63617">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Номенклатура</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>dcac10e9-f960-4b1d-958b-120c3f1b76b0</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

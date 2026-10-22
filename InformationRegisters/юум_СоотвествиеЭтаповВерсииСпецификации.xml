@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="515901fb-f260-49d1-9d5c-e8717877d158">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.юум_СоотвествиеЭтаповВерсииСпецификации" category="Record">
+				<xr:TypeId>7016b4fa-4004-45cd-9233-5838ac2105d4</xr:TypeId>
+				<xr:ValueId>72133783-9858-4d2c-a3a6-d184a9ba4213</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.юум_СоотвествиеЭтаповВерсииСпецификации" category="Manager">
+				<xr:TypeId>2b888f47-8740-41ca-9501-fdf3557e3f88</xr:TypeId>
+				<xr:ValueId>82f4dddd-e39e-4d21-b2fe-42ef54ff0b9c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.юум_СоотвествиеЭтаповВерсииСпецификации" category="Selection">
+				<xr:TypeId>af8dcd14-5bef-4e4d-9080-f7fa172189b6</xr:TypeId>
+				<xr:ValueId>aa9e51b3-e306-41a5-812f-53259b361c9f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.юум_СоотвествиеЭтаповВерсииСпецификации" category="List">
+				<xr:TypeId>31f30cd7-578e-4734-9261-56ccda1a0421</xr:TypeId>
+				<xr:ValueId>74cdfd4f-f4a4-40d1-a6a5-9f3daf5fb195</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.юум_СоотвествиеЭтаповВерсииСпецификации" category="RecordSet">
+				<xr:TypeId>0a9fbc14-10e3-4fa5-a2d8-a238a8ebc51c</xr:TypeId>
+				<xr:ValueId>488e5a48-a6a6-46bd-9e3c-cecb784cf4ce</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.юум_СоотвествиеЭтаповВерсииСпецификации" category="RecordKey">
+				<xr:TypeId>fa637d8b-25f6-4461-aa89-2635a67bf6f6</xr:TypeId>
+				<xr:ValueId>c2ce683b-fb5b-4967-a4f3-de67d60d5dc0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.юум_СоотвествиеЭтаповВерсииСпецификации" category="RecordManager">
+				<xr:TypeId>cdd2a0e1-84a4-44bf-8333-fc41b56531ce</xr:TypeId>
+				<xr:ValueId>80df24c0-65bc-4832-a0cf-345797ce16b4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_СоотвествиеЭтаповВерсииСпецификации</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>432338cb-1dbe-4dfe-8b2c-1f030e897229</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Second</InformationRegisterPeriodicity>
+			<WriteMode>RecorderSubordinate</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="bf7b0bf7-53f8-4129-aff8-97d7d213ff38">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВерсияСпецификации</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>96b498e4-7c79-4c55-a989-1812e17f4122</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="94726ba8-567f-4c43-beb1-2b4179c462a7">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Дата</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>61a1bc14-3f02-4453-9a9c-3ce5a64d2af6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="05436508-e99b-46c0-8d4a-c86c6e6e5f17">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЭтапыПроизводства</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>8948848b-0c34-4775-ad89-2c28ba0ab0e4</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

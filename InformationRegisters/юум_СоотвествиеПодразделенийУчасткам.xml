@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="d4ed0011-bdb7-43a7-958a-17fae8b8c12f">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.юум_СоотвествиеПодразделенийУчасткам" category="Record">
+				<xr:TypeId>2e24972d-0b4c-4979-82cc-d62257feb1f5</xr:TypeId>
+				<xr:ValueId>eb350ed7-f3f0-4529-9d67-df8054bd7182</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.юум_СоотвествиеПодразделенийУчасткам" category="Manager">
+				<xr:TypeId>3c525e6c-7a99-42da-aa10-99de409458b0</xr:TypeId>
+				<xr:ValueId>d9b8c8c1-3f4e-4d86-be8d-a3b658fe7272</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.юум_СоотвествиеПодразделенийУчасткам" category="Selection">
+				<xr:TypeId>76fda052-9ee5-4aae-97ea-0c5dcb269189</xr:TypeId>
+				<xr:ValueId>9a59783e-f42c-41b1-ba5d-6404ed856660</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.юум_СоотвествиеПодразделенийУчасткам" category="List">
+				<xr:TypeId>bccd802b-26ca-4a3d-b195-f5e5bb6c05e8</xr:TypeId>
+				<xr:ValueId>91d57c4d-b8bb-433d-9a8e-726523218a55</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.юум_СоотвествиеПодразделенийУчасткам" category="RecordSet">
+				<xr:TypeId>14c54790-1d33-41c4-8590-db896587e02c</xr:TypeId>
+				<xr:ValueId>ab51265e-dbfb-4da9-a2a0-31d4f57fe918</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.юум_СоотвествиеПодразделенийУчасткам" category="RecordKey">
+				<xr:TypeId>4ea83856-8e34-4351-9a2b-b842d4cb5ccd</xr:TypeId>
+				<xr:ValueId>f9e8f39e-5c20-42c2-ada3-405354e2e1bf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.юум_СоотвествиеПодразделенийУчасткам" category="RecordManager">
+				<xr:TypeId>28cd7084-2e91-4da0-a505-3835fb459937</xr:TypeId>
+				<xr:ValueId>34bd89f5-9359-4370-94aa-eebb37877159</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_СоотвествиеПодразделенийУчасткам</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>f3a98a0f-d254-402a-8b17-203fd4a59bf5</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="9f819629-9e55-4c57-83a3-316401fda9f2">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПроизводственныйУчасток</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1d270688-f3e3-4c42-8177-3b2e65a8ab64</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПроизводственныеУчастки</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="53333a97-ce73-4198-b8f5-81a0c023d5a0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Подразделение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>659d2ebc-5cce-4244-b537-1ea77fce4018</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

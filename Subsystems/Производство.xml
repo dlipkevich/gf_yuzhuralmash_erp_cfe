@@ -17,6 +17,7 @@
 		<ChildObjects>
 			<Subsystem>юум_ПроизводствоСлужебные</Subsystem>
 			<Subsystem>ВнутрицеховоеУправление2_2</Subsystem>
+			<Subsystem>НСИ</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

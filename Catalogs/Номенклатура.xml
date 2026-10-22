@@ -29,6 +29,20 @@
 			<Comment/>
 			<ExtendedConfigurationObject>fc59acc3-f1f7-4e3f-96da-e580f2c5a88f</ExtendedConfigurationObject>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Attribute uuid="4f7e0e23-26f5-4abd-b569-f87e783eef85">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>юум_ГруппаОтходов</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d39bd8b3-de4a-4381-8d72-b77325b1c404</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

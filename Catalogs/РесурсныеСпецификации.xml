@@ -29,6 +29,25 @@
 			<Comment/>
 			<ExtendedConfigurationObject>ee5a63d2-90be-4f36-8a88-5415230abebc</ExtendedConfigurationObject>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Attribute uuid="f0218156-ac1e-4307-9818-91f059ea39c9">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>юум_ЧерныйВес</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d9e06fe9-cb9a-416c-bfad-dbee6372a616</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

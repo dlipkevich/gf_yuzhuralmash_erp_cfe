@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Пользователь" id="22">
+			<DataPath>Запись.Пользователь</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПользовательКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="ВидОбъекта" id="1">
+			<DataPath>Запись.ВидОбъекта</DataPath>
+			<ClearButton>true</ClearButton>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">Справочник</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:string">Документ</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="ВидОбъектаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ВидОбъектаРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">ВидОбъектаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ИмяОбъекта" id="4">
+			<DataPath>Запись.ИмяОбъекта</DataPath>
+			<ClearButton>true</ClearButton>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИмяОбъектаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИмяОбъектаРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">ИмяОбъектаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ВидНоменклатуры" id="10">
+			<DataPath>Запись.ВидНоменклатуры</DataPath>
+			<ClearButton>true</ClearButton>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВидНоменклатурыКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ВидНоменклатурыРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Префикс" id="7">
+			<DataPath>Запись.Префикс</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПрефиксКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПрефиксРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<CheckBoxField name="ЗапрещеноДобавлениеНовых" id="13">
+			<DataPath>Запись.ЗапрещеноДобавлениеНовых</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапрещеноДобавлениеНовыхКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ЗапрещеноДобавлениеНовыхРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЗапрещеноИзменениеСуществующих" id="16">
+			<DataPath>Запись.ЗапрещеноИзменениеСуществующих</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапрещеноИзменениеСуществующихКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ЗапрещеноИзменениеСуществующихРасширеннаяПодсказка" id="18"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.юум_ЗапрещенныеДляРучногоИзмененияОбъекты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
