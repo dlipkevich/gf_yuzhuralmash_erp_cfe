@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="19">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если заказы не выбраны, то обработка будет выполнена по всем заказам на производство, для которых рассчитана структура заказа</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="21"/>
+		</LabelDecoration>
+		<CheckBoxField name="ПоПравиламОтчета" id="22">
+			<DataPath>ПоПравиламОтчета</DataPath>
+			<Visible>false</Visible>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПоПравиламОтчетаКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПоПравиламОтчетаРасширеннаяПодсказка" id="24"/>
+		</CheckBoxField>
+		<Table name="СписокЗаказов" id="1">
+			<Representation>List</Representation>
+			<Header>false</Header>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>СписокЗаказов</DataPath>
+			<RowPictureDataPath>СписокЗаказов.Picture</RowPictureDataPath>
+			<ContextMenu name="СписокЗаказовКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="СписокЗаказовКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="СписокЗаказовСохранитьДеревоЗаказа" id="17">
+						<Type>CommandBarButton</Type>
+						<DefaultButton>true</DefaultButton>
+						<CommandName>Form.Command.СохранитьДеревоЗаказа</CommandName>
+						<ExtendedTooltip name="СписокЗаказовСохранитьДеревоЗаказаРасширеннаяПодсказка" id="18"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокЗаказовРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="СписокЗаказовСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>СписокЗаказов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЗаказовСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="СписокЗаказовСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокЗаказовСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>СписокЗаказов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЗаказовСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="СписокЗаказовСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокЗаказовУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>СписокЗаказов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокЗаказовУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="СписокЗаказовУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="СписокЗаказовЗначение" id="14">
+					<DataPath>СписокЗаказов.Value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СписокЗаказовЗначениеКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="СписокЗаказовЗначениеРасширеннаяПодсказка" id="16"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.юум_СохранениеДереваЗаказа</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СписокЗаказов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список заказов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Save>
+				<Field>СписокЗаказов</Field>
+			</Save>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ПоПравиламОтчета" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По правилам отчета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьДеревоЗаказа" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить дерево заказа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить дерево заказа</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьДеревоЗаказа</Action>
+		</Command>
+	</Commands>
+</Form>

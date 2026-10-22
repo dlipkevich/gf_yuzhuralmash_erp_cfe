@@ -63,6 +63,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>Администрирование</Subsystem>
+			<Subsystem>Производство</Subsystem>
 			<StyleItem>ТекстИнформационнойНадписи</StyleItem>
 			<StyleItem>ПоясняющийТекст</StyleItem>
 			<StyleItem>ЦветФонаУдачнойОтправки</StyleItem>
@@ -70,6 +71,11 @@
 			<StyleItem>ФонУправляющегоПоля</StyleItem>
 			<CommonPicture>СрочноКЗаказу</CommonPicture>
 			<CommonPicture>КоричневыйШар</CommonPicture>
+			<CommonPicture>ТребуетсяОформитьВыработкуСотрудников</CommonPicture>
+			<CommonPicture>ТребуетсяОбеспечение</CommonPicture>
+			<CommonPicture>ТребуетсяПланированиеГрафика</CommonPicture>
+			<CommonPicture>ПроизводственнаяОперация</CommonPicture>
+			<CommonPicture>КоллекцияПиктограммСостоянияОперацийЭтапаПроизводства</CommonPicture>
 			<CommonPicture>Приоритеты</CommonPicture>
 			<CommonPicture>ВосклицательныйЗнакКрасный</CommonPicture>
 			<CommonPicture>Развернуть</CommonPicture>
@@ -83,6 +89,7 @@
 			<Role>юум_ЧтениеГлобальныеЗначения</Role>
 			<Role>юум_ПросмотрРазделаНастройки</Role>
 			<Role>юум_СозданиеСверхлимитныхЗаявок</Role>
+			<Role>юум_ПодсистемаПроизводство</Role>
 			<Role>юум_НачальникЦеха</Role>
 			<Role>юум_НачальникСмены</Role>
 			<Role>юум_Мастер</Role>
@@ -92,12 +99,15 @@
 			<CommonModule>юум_СхемыЗапросов</CommonModule>
 			<CommonModule>СтруктураЗаказаВызовСервера</CommonModule>
 			<CommonModule>РаспределениеЗапасов</CommonModule>
+			<CommonModule>юум_ДеревоЗаказа</CommonModule>
 			<CommonModule>ОбменДаннымиПереопределяемый</CommonModule>
 			<CommonModule>ОбменДаннымиКлиент</CommonModule>
 			<CommonModule>ПрочееОприходованиеТоваровЛокализация</CommonModule>
 			<CommonModule>АвансовыйОтчетЛокализация</CommonModule>
 			<ExchangePlan>юум_ОбменДО_ERP</ExchangePlan>
 			<DefinedType>ПланыОбменаБСД</DefinedType>
+			<CommonCommand>юум_ОткрытьРегистрСтруктураЗаказа</CommonCommand>
+			<CommonCommand>юум_ВыполнениеЭтаповПроизводства</CommonCommand>
 			<CommonCommand>юум_ЗагрузитьКомплектПравил</CommonCommand>
 			<CommonCommand>юум_ЗагрузитьПравилаКонвертацииОбъектов</CommonCommand>
 			<CommonCommand>юум_ЗагрузитьПравилаРегистрацииОбъектов</CommonCommand>
@@ -114,6 +124,11 @@
 			<Catalog>БанковскиеСчетаОрганизаций</Catalog>
 			<Catalog>ДоговорыКонтрагентов</Catalog>
 			<Catalog>ДоговорыАренды</Catalog>
+			<Catalog>юум_ДеревоЗаказаСлужебный</Catalog>
+			<Catalog>ХарактеристикиНоменклатуры</Catalog>
+			<Catalog>Назначения</Catalog>
+			<Catalog>РесурсныеСпецификации</Catalog>
+			<Catalog>ВидыРабочихЦентров</Catalog>
 			<Catalog>ДоговорыКредитовИДепозитов</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>Партнеры</Catalog>
@@ -123,16 +138,25 @@
 			<Catalog>СтруктураПредприятия</Catalog>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
 			<Document>ПрочиеДоходыРасходы</Document>
+			<Document>ЗаказНаПроизводство2_2</Document>
 			<Document>ЭтапПроизводства2_2</Document>
 			<Document>АвансовыйОтчет</Document>
+			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
+			<Enum>ТипыПроизводственныхПроцессов</Enum>
+			<Enum>СостоянияЭтаповНаВнутрицеховомУровне</Enum>
+			<Enum>Периодичность</Enum>
 			<Enum>СпособыФормированияСегментов</Enum>
 			<Enum>ТипыОбеспечения</Enum>
 			<Report>МониторингЗаказа</Report>
 			<Report>ВедомостьПоОС2_4</Report>
+			<Report>СтруктураЗаказаНаПроизводствоДинамическая</Report>
 			<DataProcessor>ОбеспечениеПотребностей</DataProcessor>
 			<DataProcessor>ПечатьМ11</DataProcessor>
+			<DataProcessor>юум_СохранениеДереваЗаказа</DataProcessor>
+			<DataProcessor>ВыполнениеЭтаповПроизводства</DataProcessor>
 			<DataProcessor>ПечатьОбщихФорм</DataProcessor>
 			<DataProcessor>юум_МониторингЗаказаСамостоятельный</DataProcessor>
+			<InformationRegister>СтруктураЗаказа</InformationRegister>
 			<InformationRegister>СоответствияОбъектовИнформационныхБаз</InformationRegister>
 			<InformationRegister>ПравилаДляОбменаДанными</InformationRegister>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>

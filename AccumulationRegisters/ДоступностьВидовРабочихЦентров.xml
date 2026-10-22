@@ -40,8 +40,12 @@
 			<Name>ДоступностьВидовРабочихЦентров</Name>
 			<Comment/>
 			<ExtendedConfigurationObject>77879a52-3f9f-46d9-8a7c-5310a3d50a14</ExtendedConfigurationObject>
+			<DefaultListForm>AccumulationRegister.ДоступностьВидовРабочихЦентров.Form.ФормаСписка</DefaultListForm>
 			<RegisterType>Turnovers</RegisterType>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+			<Form>юум_ФормаСписка</Form>
+		</ChildObjects>
 	</AccumulationRegister>
 </MetaDataObject>

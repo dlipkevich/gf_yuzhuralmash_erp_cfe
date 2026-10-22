@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="6b225312-b47f-4c8d-8585-064cd57a767d">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СостоянияОбеспеченияЭтапаПроизводства" category="Ref">
+				<xr:TypeId>b3feea50-82ce-4394-be3c-f1b674a64053</xr:TypeId>
+				<xr:ValueId>91a37ddf-892a-446e-955e-ddea65a9a13f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СостоянияОбеспеченияЭтапаПроизводства" category="Manager">
+				<xr:TypeId>1b874d79-6785-4181-982f-3b35bad8203d</xr:TypeId>
+				<xr:ValueId>842d9727-15ef-4b00-b4a0-8e6e494be326</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СостоянияОбеспеченияЭтапаПроизводства" category="List">
+				<xr:TypeId>577aa44d-7d09-4003-a6ce-dbddb16f1b5e</xr:TypeId>
+				<xr:ValueId>cb3fcca8-7b1c-4456-9723-e0c69aca25c0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СостоянияОбеспеченияЭтапаПроизводства</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>2579a408-7967-4ff4-afc8-55157da30d50</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="e0f93749-d396-41d2-8425-6ee705866644">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОбеспеченПолностью</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>be7200ee-a992-4240-b4dd-1cdb0df5404b</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9c134433-3ef1-4eff-a089-a7c48f230203">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОжидаетсяОбеспечение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b6cba36b-d611-4697-86dc-e07c5a58a90d</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

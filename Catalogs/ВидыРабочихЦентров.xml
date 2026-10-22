@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="995a02a5-642e-43db-bd6d-8536428434fa">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ВидыРабочихЦентров" category="Object">
+				<xr:TypeId>6379ffc9-9f87-42b5-aae2-46832025b41f</xr:TypeId>
+				<xr:ValueId>cdb8108b-edd4-4ec9-90d1-d9893b92ca61</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ВидыРабочихЦентров" category="Ref">
+				<xr:TypeId>20ebe017-0449-47fd-bd6f-859ed98d9053</xr:TypeId>
+				<xr:ValueId>33acab64-426c-4a21-a969-b3cc3a94bec8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ВидыРабочихЦентров" category="Selection">
+				<xr:TypeId>40434a8e-6bfe-467f-a958-353a4b75d952</xr:TypeId>
+				<xr:ValueId>2b9b55ca-3e60-4b37-a54e-806c16ad7a04</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ВидыРабочихЦентров" category="List">
+				<xr:TypeId>cad46dc5-54c1-4bf0-9aa4-1836705b1cb4</xr:TypeId>
+				<xr:ValueId>5e5bf172-efb9-4c57-9810-4c94785f967a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ВидыРабочихЦентров" category="Manager">
+				<xr:TypeId>8700ecc3-29ec-43d3-8085-99c895f18d70</xr:TypeId>
+				<xr:ValueId>2724d0dd-f35c-40a9-9373-63d427b7c66d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВидыРабочихЦентров</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>d9c3d2cf-72d8-4ae4-9c66-7adbc31c98a7</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

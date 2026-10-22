@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<ButtonGroup name="ФормаГруппаСлужебныеКоманды" id="133">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа служебные команды</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Form group internal commands</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаГруппаСлужебныеКомандыРасширеннаяПодсказка" id="134"/>
+				<ChildItems>
+					<Button name="ФормаСвернутьДвижения" id="129">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаСвернутьДвиженияРасширеннаяПодсказка" id="130"/>
+					</Button>
+					<Button name="ФормаУдалитьЗаписиПоУстановленномуОтбору" id="209">
+						<Type>CommandBarButton</Type>
+						<CommandName>0</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаУдалитьЗаписиПоУстановленномуОтборуРасширеннаяПодсказка" id="210"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer" callType="Before">юум_ПриСозданииНаСервереПеред</Event>
+		<Event name="OnCreateAtServer" callType="After">юум_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОтбор" id="195">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отбор</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Filter</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="196"/>
+			<ChildItems>
+				<InputField name="ЗаказНаПроизводствоОтбор" id="197">
+					<TitleLocation>None</TitleLocation>
+					<Width>31</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ на производство</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Production order</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ЗаказНаПроизводствоОтборКонтекстноеМеню" id="198"/>
+					<ExtendedTooltip name="ЗаказНаПроизводствоОтборРасширеннаяПодсказка" id="199"/>
+				</InputField>
+				<InputField name="СпецификацияОтбор" id="206">
+					<TitleLocation>None</TitleLocation>
+					<HorizontalStretch>false</HorizontalStretch>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спецификация</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Bill of materials</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="СпецификацияОтборКонтекстноеМеню" id="207"/>
+					<ExtendedTooltip name="СпецификацияОтборРасширеннаяПодсказка" id="208"/>
+				</InputField>
+				<InputField name="НоменклатураОтбор" id="200">
+					<TitleLocation>None</TitleLocation>
+					<HorizontalStretch>false</HorizontalStretch>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ClearButton>true</ClearButton>
+					<OpenButton>false</OpenButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Item</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="НоменклатураОтборКонтекстноеМеню" id="201"/>
+					<ExtendedTooltip name="НоменклатураОтборРасширеннаяПодсказка" id="202"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>User settings group</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>User settings group</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<VerticalLines>false</VerticalLines>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>false</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<HorizontalLocation>Left</HorizontalLocation>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Номенклатура" id="16">
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="НоменклатураКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<LabelField name="Характеристика" id="19">
+					<ContextMenu name="ХарактеристикаКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ХарактеристикаРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<LabelField name="Склад" id="22">
+					<ContextMenu name="СкладКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="24"/>
+				</LabelField>
+				<LabelField name="Назначение" id="25">
+					<ContextMenu name="НазначениеКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="НазначениеРасширеннаяПодсказка" id="27"/>
+				</LabelField>
+				<LabelField name="ЗаказНаПроизводство" id="28">
+					<ContextMenu name="ЗаказНаПроизводствоКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ЗаказНаПроизводствоРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="КлючНоменклатура" id="31">
+					<ContextMenu name="КлючНоменклатураКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="КлючНоменклатураРасширеннаяПодсказка" id="33"/>
+				</LabelField>
+				<LabelField name="КлючПартия" id="34">
+					<ContextMenu name="КлючПартияКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="КлючПартияРасширеннаяПодсказка" id="36"/>
+				</LabelField>
+				<LabelField name="КлючНабор" id="109">
+					<ContextMenu name="КлючНаборКонтекстноеМеню" id="110"/>
+					<ExtendedTooltip name="КлючНаборРасширеннаяПодсказка" id="111"/>
+				</LabelField>
+				<LabelField name="ВидСтроки" id="55">
+					<ContextMenu name="ВидСтрокиКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ВидСтрокиРасширеннаяПодсказка" id="57"/>
+				</LabelField>
+				<InputField name="КОбеспечению" id="85">
+					<ContextMenu name="КОбеспечениюКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="КОбеспечениюРасширеннаяПодсказка" id="87"/>
+				</InputField>
+				<InputField name="Заказано" id="183">
+					<ContextMenu name="ЗаказаноКонтекстноеМеню" id="184"/>
+					<ExtendedTooltip name="ЗаказаноРасширеннаяПодсказка" id="185"/>
+				</InputField>
+				<InputField name="Запланировано" id="112">
+					<ContextMenu name="ЗапланированоКонтекстноеМеню" id="113"/>
+					<ExtendedTooltip name="ЗапланированоРасширеннаяПодсказка" id="114"/>
+				</InputField>
+				<InputField name="РаспределеноИзЗапасов" id="165">
+					<ContextMenu name="РаспределеноИзЗапасовКонтекстноеМеню" id="166"/>
+					<ExtendedTooltip name="РаспределеноИзЗапасовРасширеннаяПодсказка" id="167"/>
+				</InputField>
+				<InputField name="РаспределеноИзЗапасовОбособленно" id="168">
+					<ContextMenu name="РаспределеноИзЗапасовОбособленноКонтекстноеМеню" id="169"/>
+					<ExtendedTooltip name="РаспределеноИзЗапасовОбособленноРасширеннаяПодсказка" id="170"/>
+				</InputField>
+				<InputField name="РаспределеноИзПартий" id="171">
+					<ContextMenu name="РаспределеноИзПартийКонтекстноеМеню" id="172"/>
+					<ExtendedTooltip name="РаспределеноИзПартийРасширеннаяПодсказка" id="173"/>
+				</InputField>
+				<InputField name="РаспределеноИзПартийОбособленно" id="174">
+					<ContextMenu name="РаспределеноИзПартийОбособленноКонтекстноеМеню" id="175"/>
+					<ExtendedTooltip name="РаспределеноИзПартийОбособленноРасширеннаяПодсказка" id="176"/>
+				</InputField>
+				<InputField name="РазборкаЗапланировано" id="186">
+					<ContextMenu name="РазборкаЗапланированоКонтекстноеМеню" id="187"/>
+					<ExtendedTooltip name="РазборкаЗапланированоРасширеннаяПодсказка" id="188"/>
+				</InputField>
+				<InputField name="РазборкаЗапущена" id="192">
+					<ContextMenu name="РазборкаЗапущенаКонтекстноеМеню" id="193"/>
+					<ExtendedTooltip name="РазборкаЗапущенаРасширеннаяПодсказка" id="194"/>
+				</InputField>
+				<InputField name="Запущено" id="88">
+					<ContextMenu name="ЗапущеноКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="ЗапущеноРасширеннаяПодсказка" id="90"/>
+				</InputField>
+				<InputField name="Готово" id="147">
+					<ContextMenu name="ГотовоКонтекстноеМеню" id="148"/>
+					<ExtendedTooltip name="ГотовоРасширеннаяПодсказка" id="149"/>
+				</InputField>
+				<InputField name="НеОбеспечивать" id="177">
+					<ContextMenu name="НеОбеспечиватьКонтекстноеМеню" id="178"/>
+					<ExtendedTooltip name="НеОбеспечиватьРасширеннаяПодсказка" id="179"/>
+				</InputField>
+				<LabelField name="Заменено" id="214">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЗамененоКонтекстноеМеню" id="215"/>
+					<ExtendedTooltip name="ЗамененоРасширеннаяПодсказка" id="216"/>
+				</LabelField>
+				<InputField name="ЗаказНаПоступление" id="100">
+					<ContextMenu name="ЗаказНаПоступлениеКонтекстноеМеню" id="101"/>
+					<ExtendedTooltip name="ЗаказНаПоступлениеРасширеннаяПодсказка" id="102"/>
+				</InputField>
+				<InputField name="ДатаПоступления" id="103">
+					<ContextMenu name="ДатаПоступленияКонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="ДатаПоступленияРасширеннаяПодсказка" id="105"/>
+				</InputField>
+				<LabelField name="Разделитель" id="37">
+					<ContextMenu name="РазделительКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="РазделительРасширеннаяПодсказка" id="39"/>
+				</LabelField>
+				<LabelField name="Уровень" id="52">
+					<ContextMenu name="УровеньКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="УровеньРасширеннаяПодсказка" id="54"/>
+				</LabelField>
+				<LabelField name="ДополнительнаяЗапись" id="58">
+					<ContextMenu name="ДополнительнаяЗаписьКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ДополнительнаяЗаписьРасширеннаяПодсказка" id="60"/>
+				</LabelField>
+				<LabelField name="Подразделение" id="61">
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="63"/>
+				</LabelField>
+				<LabelField name="Этап" id="64">
+					<ContextMenu name="ЭтапКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ЭтапРасширеннаяПодсказка" id="66"/>
+				</LabelField>
+				<LabelField name="Спецификация" id="67">
+					<ContextMenu name="СпецификацияКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="СпецификацияРасширеннаяПодсказка" id="69"/>
+				</LabelField>
+				<LabelField name="ИдентификаторВерсииДанных" id="70">
+					<ContextMenu name="ИдентификаторВерсииДанныхКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ИдентификаторВерсииДанныхРасширеннаяПодсказка" id="72"/>
+				</LabelField>
+				<LabelField name="КлючСвязиСтрокаСпецификации" id="73">
+					<ContextMenu name="КлючСвязиСтрокаСпецификацииКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="КлючСвязиСтрокаСпецификацииРасширеннаяПодсказка" id="75"/>
+				</LabelField>
+				<LabelField name="КлючСвязиПеремещение" id="220">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КлючСвязиПеремещениеКонтекстноеМеню" id="221"/>
+					<ExtendedTooltip name="КлючСвязиПеремещениеРасширеннаяПодсказка" id="222"/>
+				</LabelField>
+				<LabelField name="КоличествоНаЕдиницуПартииЗапуска" id="76">
+					<ContextMenu name="КоличествоНаЕдиницуПартииЗапускаКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="КоличествоНаЕдиницуПартииЗапускаРасширеннаяПодсказка" id="78"/>
+				</LabelField>
+				<InputField name="СпецификацияПолуфабриката" id="123">
+					<ContextMenu name="СпецификацияПолуфабрикатаКонтекстноеМеню" id="124"/>
+					<ExtendedTooltip name="СпецификацияПолуфабрикатаРасширеннаяПодсказка" id="125"/>
+				</InputField>
+				<LabelField name="ДлительностьДоВыпуска" id="79">
+					<ContextMenu name="ДлительностьДоВыпускаКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="ДлительностьДоВыпускаРасширеннаяПодсказка" id="81"/>
+				</LabelField>
+				<LabelField name="ИдентификаторВГруппеИзделий" id="211">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИдентификаторВГруппеИзделийКонтекстноеМеню" id="212"/>
+					<ExtendedTooltip name="ИдентификаторВГруппеИзделийРасширеннаяПодсказка" id="213"/>
+				</LabelField>
+				<InputField name="НазначениеСтруктуры" id="162">
+					<ContextMenu name="НазначениеСтруктурыКонтекстноеМеню" id="163"/>
+					<ExtendedTooltip name="НазначениеСтруктурыРасширеннаяПодсказка" id="164"/>
+				</InputField>
+				<LabelField name="РазрешениеНаЗамену" id="217">
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РазрешениеНаЗаменуКонтекстноеМеню" id="218"/>
+					<ExtendedTooltip name="РазрешениеНаЗаменуРасширеннаяПодсказка" id="219"/>
+				</LabelField>
+				<InputField name="СтатьяКалькуляции" id="180">
+					<ContextMenu name="СтатьяКалькуляцииКонтекстноеМеню" id="181"/>
+					<ExtendedTooltip name="СтатьяКалькуляцииРасширеннаяПодсказка" id="182"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes/>
+	<BaseForm version="2.20">
+		<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<ChildItems>
+				<ButtonGroup name="ФормаГруппаСлужебныеКоманды" id="133">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Форма группа служебные команды</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Form group internal commands</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ФормаГруппаСлужебныеКомандыРасширеннаяПодсказка" id="134"/>
+					<ChildItems>
+						<Button name="ФормаСвернутьДвижения" id="129">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="ФормаСвернутьДвиженияРасширеннаяПодсказка" id="130"/>
+						</Button>
+						<Button name="ФормаУдалитьЗаписиПоУстановленномуОтбору" id="209">
+							<Type>CommandBarButton</Type>
+							<CommandName>0</CommandName>
+							<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+							<ExtendedTooltip name="ФормаУдалитьЗаписиПоУстановленномуОтборуРасширеннаяПодсказка" id="210"/>
+						</Button>
+					</ChildItems>
+				</ButtonGroup>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаОтбор" id="195">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отбор</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Filter</v8:content>
+					</v8:item>
+				</Title>
+				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="196"/>
+				<ChildItems>
+					<InputField name="ЗаказНаПроизводствоОтбор" id="197">
+						<TitleLocation>None</TitleLocation>
+						<Width>31</Width>
+						<HorizontalStretch>false</HorizontalStretch>
+						<DropListButton>false</DropListButton>
+						<ChoiceButton>true</ChoiceButton>
+						<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+						<ClearButton>true</ClearButton>
+						<OpenButton>false</OpenButton>
+						<InputHint>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Заказ на производство</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Production order</v8:content>
+							</v8:item>
+						</InputHint>
+						<ContextMenu name="ЗаказНаПроизводствоОтборКонтекстноеМеню" id="198"/>
+						<ExtendedTooltip name="ЗаказНаПроизводствоОтборРасширеннаяПодсказка" id="199"/>
+					</InputField>
+					<InputField name="СпецификацияОтбор" id="206">
+						<TitleLocation>None</TitleLocation>
+						<HorizontalStretch>false</HorizontalStretch>
+						<DropListButton>false</DropListButton>
+						<ChoiceButton>true</ChoiceButton>
+						<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+						<ClearButton>true</ClearButton>
+						<OpenButton>false</OpenButton>
+						<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+						<InputHint>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Спецификация</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Bill of materials</v8:content>
+							</v8:item>
+						</InputHint>
+						<ContextMenu name="СпецификацияОтборКонтекстноеМеню" id="207"/>
+						<ExtendedTooltip name="СпецификацияОтборРасширеннаяПодсказка" id="208"/>
+					</InputField>
+					<InputField name="НоменклатураОтбор" id="200">
+						<TitleLocation>None</TitleLocation>
+						<HorizontalStretch>false</HorizontalStretch>
+						<DropListButton>false</DropListButton>
+						<ChoiceButton>true</ChoiceButton>
+						<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+						<ClearButton>true</ClearButton>
+						<OpenButton>false</OpenButton>
+						<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+						<InputHint>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Номенклатура</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Item</v8:content>
+							</v8:item>
+						</InputHint>
+						<ContextMenu name="НоменклатураОтборКонтекстноеМеню" id="201"/>
+						<ExtendedTooltip name="НоменклатураОтборРасширеннаяПодсказка" id="202"/>
+					</InputField>
+				</ChildItems>
+			</UsualGroup>
+			<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>User settings group</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>User settings group</v8:content>
+					</v8:item>
+				</Title>
+				<VerticalStretch>false</VerticalStretch>
+				<Group>Vertical</Group>
+				<Behavior>Usual</Behavior>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+			</UsualGroup>
+			<Table name="Список" id="3">
+				<CommandBarLocation>None</CommandBarLocation>
+				<DefaultItem>true</DefaultItem>
+				<VerticalLines>false</VerticalLines>
+				<UseAlternationRowColor>true</UseAlternationRowColor>
+				<EnableStartDrag>true</EnableStartDrag>
+				<EnableDrag>true</EnableDrag>
+				<AutoRefresh>false</AutoRefresh>
+				<AutoRefreshPeriod>60</AutoRefreshPeriod>
+				<Period>
+					<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+					<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+					<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+				</Period>
+				<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+				<RestoreCurrentRow>false</RestoreCurrentRow>
+				<TopLevelParent xsi:nil="true"/>
+				<ShowRoot>true</ShowRoot>
+				<AllowRootChoice>false</AllowRootChoice>
+				<UpdateOnDataChange>Auto</UpdateOnDataChange>
+				<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+				<AllowGettingCurrentRowURL>false</AllowGettingCurrentRowURL>
+				<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+				<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+					<Autofill>false</Autofill>
+				</AutoCommandBar>
+				<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+				<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+					<AdditionSource>
+						<Item>Список</Item>
+						<Type>SearchStringRepresentation</Type>
+					</AdditionSource>
+					<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+				</SearchStringAddition>
+				<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+					<AdditionSource>
+						<Item>Список</Item>
+						<Type>ViewStatusRepresentation</Type>
+					</AdditionSource>
+					<HorizontalLocation>Left</HorizontalLocation>
+					<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+				</ViewStatusAddition>
+				<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+					<AdditionSource>
+						<Item>Список</Item>
+						<Type>SearchControl</Type>
+					</AdditionSource>
+					<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+				</SearchControlAddition>
+				<ChildItems>
+					<LabelField name="Номенклатура" id="16">
+						<DefaultItem>true</DefaultItem>
+						<ContextMenu name="НоменклатураКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="18"/>
+					</LabelField>
+					<LabelField name="Характеристика" id="19">
+						<ContextMenu name="ХарактеристикаКонтекстноеМеню" id="20"/>
+						<ExtendedTooltip name="ХарактеристикаРасширеннаяПодсказка" id="21"/>
+					</LabelField>
+					<LabelField name="Склад" id="22">
+						<ContextMenu name="СкладКонтекстноеМеню" id="23"/>
+						<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="24"/>
+					</LabelField>
+					<LabelField name="Назначение" id="25">
+						<ContextMenu name="НазначениеКонтекстноеМеню" id="26"/>
+						<ExtendedTooltip name="НазначениеРасширеннаяПодсказка" id="27"/>
+					</LabelField>
+					<LabelField name="ЗаказНаПроизводство" id="28">
+						<ContextMenu name="ЗаказНаПроизводствоКонтекстноеМеню" id="29"/>
+						<ExtendedTooltip name="ЗаказНаПроизводствоРасширеннаяПодсказка" id="30"/>
+					</LabelField>
+					<LabelField name="КлючНоменклатура" id="31">
+						<ContextMenu name="КлючНоменклатураКонтекстноеМеню" id="32"/>
+						<ExtendedTooltip name="КлючНоменклатураРасширеннаяПодсказка" id="33"/>
+					</LabelField>
+					<LabelField name="КлючПартия" id="34">
+						<ContextMenu name="КлючПартияКонтекстноеМеню" id="35"/>
+						<ExtendedTooltip name="КлючПартияРасширеннаяПодсказка" id="36"/>
+					</LabelField>
+					<LabelField name="КлючНабор" id="109">
+						<ContextMenu name="КлючНаборКонтекстноеМеню" id="110"/>
+						<ExtendedTooltip name="КлючНаборРасширеннаяПодсказка" id="111"/>
+					</LabelField>
+					<LabelField name="ВидСтроки" id="55">
+						<ContextMenu name="ВидСтрокиКонтекстноеМеню" id="56"/>
+						<ExtendedTooltip name="ВидСтрокиРасширеннаяПодсказка" id="57"/>
+					</LabelField>
+					<InputField name="КОбеспечению" id="85">
+						<ContextMenu name="КОбеспечениюКонтекстноеМеню" id="86"/>
+						<ExtendedTooltip name="КОбеспечениюРасширеннаяПодсказка" id="87"/>
+					</InputField>
+					<InputField name="Заказано" id="183">
+						<ContextMenu name="ЗаказаноКонтекстноеМеню" id="184"/>
+						<ExtendedTooltip name="ЗаказаноРасширеннаяПодсказка" id="185"/>
+					</InputField>
+					<InputField name="Запланировано" id="112">
+						<ContextMenu name="ЗапланированоКонтекстноеМеню" id="113"/>
+						<ExtendedTooltip name="ЗапланированоРасширеннаяПодсказка" id="114"/>
+					</InputField>
+					<InputField name="РаспределеноИзЗапасов" id="165">
+						<ContextMenu name="РаспределеноИзЗапасовКонтекстноеМеню" id="166"/>
+						<ExtendedTooltip name="РаспределеноИзЗапасовРасширеннаяПодсказка" id="167"/>
+					</InputField>
+					<InputField name="РаспределеноИзЗапасовОбособленно" id="168">
+						<ContextMenu name="РаспределеноИзЗапасовОбособленноКонтекстноеМеню" id="169"/>
+						<ExtendedTooltip name="РаспределеноИзЗапасовОбособленноРасширеннаяПодсказка" id="170"/>
+					</InputField>
+					<InputField name="РаспределеноИзПартий" id="171">
+						<ContextMenu name="РаспределеноИзПартийКонтекстноеМеню" id="172"/>
+						<ExtendedTooltip name="РаспределеноИзПартийРасширеннаяПодсказка" id="173"/>
+					</InputField>
+					<InputField name="РаспределеноИзПартийОбособленно" id="174">
+						<ContextMenu name="РаспределеноИзПартийОбособленноКонтекстноеМеню" id="175"/>
+						<ExtendedTooltip name="РаспределеноИзПартийОбособленноРасширеннаяПодсказка" id="176"/>
+					</InputField>
+					<InputField name="РазборкаЗапланировано" id="186">
+						<ContextMenu name="РазборкаЗапланированоКонтекстноеМеню" id="187"/>
+						<ExtendedTooltip name="РазборкаЗапланированоРасширеннаяПодсказка" id="188"/>
+					</InputField>
+					<InputField name="РазборкаЗапущена" id="192">
+						<ContextMenu name="РазборкаЗапущенаКонтекстноеМеню" id="193"/>
+						<ExtendedTooltip name="РазборкаЗапущенаРасширеннаяПодсказка" id="194"/>
+					</InputField>
+					<InputField name="Запущено" id="88">
+						<ContextMenu name="ЗапущеноКонтекстноеМеню" id="89"/>
+						<ExtendedTooltip name="ЗапущеноРасширеннаяПодсказка" id="90"/>
+					</InputField>
+					<InputField name="Готово" id="147">
+						<ContextMenu name="ГотовоКонтекстноеМеню" id="148"/>
+						<ExtendedTooltip name="ГотовоРасширеннаяПодсказка" id="149"/>
+					</InputField>
+					<InputField name="НеОбеспечивать" id="177">
+						<ContextMenu name="НеОбеспечиватьКонтекстноеМеню" id="178"/>
+						<ExtendedTooltip name="НеОбеспечиватьРасширеннаяПодсказка" id="179"/>
+					</InputField>
+					<LabelField name="Заменено" id="214">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ЗамененоКонтекстноеМеню" id="215"/>
+						<ExtendedTooltip name="ЗамененоРасширеннаяПодсказка" id="216"/>
+					</LabelField>
+					<InputField name="ЗаказНаПоступление" id="100">
+						<ContextMenu name="ЗаказНаПоступлениеКонтекстноеМеню" id="101"/>
+						<ExtendedTooltip name="ЗаказНаПоступлениеРасширеннаяПодсказка" id="102"/>
+					</InputField>
+					<InputField name="ДатаПоступления" id="103">
+						<ContextMenu name="ДатаПоступленияКонтекстноеМеню" id="104"/>
+						<ExtendedTooltip name="ДатаПоступленияРасширеннаяПодсказка" id="105"/>
+					</InputField>
+					<LabelField name="Разделитель" id="37">
+						<ContextMenu name="РазделительКонтекстноеМеню" id="38"/>
+						<ExtendedTooltip name="РазделительРасширеннаяПодсказка" id="39"/>
+					</LabelField>
+					<LabelField name="Уровень" id="52">
+						<ContextMenu name="УровеньКонтекстноеМеню" id="53"/>
+						<ExtendedTooltip name="УровеньРасширеннаяПодсказка" id="54"/>
+					</LabelField>
+					<LabelField name="ДополнительнаяЗапись" id="58">
+						<ContextMenu name="ДополнительнаяЗаписьКонтекстноеМеню" id="59"/>
+						<ExtendedTooltip name="ДополнительнаяЗаписьРасширеннаяПодсказка" id="60"/>
+					</LabelField>
+					<LabelField name="Подразделение" id="61">
+						<ContextMenu name="ПодразделениеКонтекстноеМеню" id="62"/>
+						<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="63"/>
+					</LabelField>
+					<LabelField name="Этап" id="64">
+						<ContextMenu name="ЭтапКонтекстноеМеню" id="65"/>
+						<ExtendedTooltip name="ЭтапРасширеннаяПодсказка" id="66"/>
+					</LabelField>
+					<LabelField name="Спецификация" id="67">
+						<ContextMenu name="СпецификацияКонтекстноеМеню" id="68"/>
+						<ExtendedTooltip name="СпецификацияРасширеннаяПодсказка" id="69"/>
+					</LabelField>
+					<LabelField name="ИдентификаторВерсииДанных" id="70">
+						<ContextMenu name="ИдентификаторВерсииДанныхКонтекстноеМеню" id="71"/>
+						<ExtendedTooltip name="ИдентификаторВерсииДанныхРасширеннаяПодсказка" id="72"/>
+					</LabelField>
+					<LabelField name="КлючСвязиСтрокаСпецификации" id="73">
+						<ContextMenu name="КлючСвязиСтрокаСпецификацииКонтекстноеМеню" id="74"/>
+						<ExtendedTooltip name="КлючСвязиСтрокаСпецификацииРасширеннаяПодсказка" id="75"/>
+					</LabelField>
+					<LabelField name="КлючСвязиПеремещение" id="220">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="КлючСвязиПеремещениеКонтекстноеМеню" id="221"/>
+						<ExtendedTooltip name="КлючСвязиПеремещениеРасширеннаяПодсказка" id="222"/>
+					</LabelField>
+					<LabelField name="КоличествоНаЕдиницуПартииЗапуска" id="76">
+						<ContextMenu name="КоличествоНаЕдиницуПартииЗапускаКонтекстноеМеню" id="77"/>
+						<ExtendedTooltip name="КоличествоНаЕдиницуПартииЗапускаРасширеннаяПодсказка" id="78"/>
+					</LabelField>
+					<InputField name="СпецификацияПолуфабриката" id="123">
+						<ContextMenu name="СпецификацияПолуфабрикатаКонтекстноеМеню" id="124"/>
+						<ExtendedTooltip name="СпецификацияПолуфабрикатаРасширеннаяПодсказка" id="125"/>
+					</InputField>
+					<LabelField name="ДлительностьДоВыпуска" id="79">
+						<ContextMenu name="ДлительностьДоВыпускаКонтекстноеМеню" id="80"/>
+						<ExtendedTooltip name="ДлительностьДоВыпускаРасширеннаяПодсказка" id="81"/>
+					</LabelField>
+					<LabelField name="ИдентификаторВГруппеИзделий" id="211">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="ИдентификаторВГруппеИзделийКонтекстноеМеню" id="212"/>
+						<ExtendedTooltip name="ИдентификаторВГруппеИзделийРасширеннаяПодсказка" id="213"/>
+					</LabelField>
+					<InputField name="НазначениеСтруктуры" id="162">
+						<ContextMenu name="НазначениеСтруктурыКонтекстноеМеню" id="163"/>
+						<ExtendedTooltip name="НазначениеСтруктурыРасширеннаяПодсказка" id="164"/>
+					</InputField>
+					<LabelField name="РазрешениеНаЗамену" id="217">
+						<EditMode>EnterOnInput</EditMode>
+						<ContextMenu name="РазрешениеНаЗаменуКонтекстноеМеню" id="218"/>
+						<ExtendedTooltip name="РазрешениеНаЗаменуРасширеннаяПодсказка" id="219"/>
+					</LabelField>
+					<InputField name="СтатьяКалькуляции" id="180">
+						<ContextMenu name="СтатьяКалькуляцииКонтекстноеМеню" id="181"/>
+						<ExtendedTooltip name="СтатьяКалькуляцииРасширеннаяПодсказка" id="182"/>
+					</InputField>
+				</ChildItems>
+			</Table>
+		</ChildItems>
+		<Attributes/>
+	</BaseForm>
+</Form>

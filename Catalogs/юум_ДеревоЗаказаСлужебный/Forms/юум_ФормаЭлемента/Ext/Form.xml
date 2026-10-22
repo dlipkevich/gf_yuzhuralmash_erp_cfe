@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ЗаказНаПроизводство" id="7">
+			<DataPath>Объект.ЗаказНаПроизводство</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЗаказНаПроизводствоКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ЗаказНаПроизводствоРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Номенклатура" id="10">
+			<DataPath>Объект.Номенклатура</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НоменклатураКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Требуется" id="43">
+			<DataPath>Объект.Требуется</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТребуетсяКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ТребуетсяРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<InputField name="Уровень" id="31">
+			<DataPath>Объект.Уровень</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="УровеньКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="УровеньРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="Доля" id="37">
+			<DataPath>Объект.Доля</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДоляКонтекстноеМеню" id="38"/>
+			<ExtendedTooltip name="ДоляРасширеннаяПодсказка" id="39"/>
+		</InputField>
+		<InputField name="Характеристика" id="13">
+			<DataPath>Объект.Характеристика</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ХарактеристикаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ХарактеристикаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Назначение" id="16">
+			<DataPath>Объект.Назначение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НазначениеКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="НазначениеРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<LabelField name="КлючНоменклатура" id="19">
+			<DataPath>Объект.КлючНоменклатура</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КлючНоменклатураКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="КлючНоменклатураРасширеннаяПодсказка" id="21"/>
+		</LabelField>
+		<LabelField name="КлючПартия" id="22">
+			<DataPath>Объект.КлючПартия</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КлючПартияКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="КлючПартияРасширеннаяПодсказка" id="24"/>
+		</LabelField>
+		<LabelField name="КлючНабор" id="25">
+			<DataPath>Объект.КлючНабор</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КлючНаборКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="КлючНаборРасширеннаяПодсказка" id="27"/>
+		</LabelField>
+		<LabelField name="Разделитель" id="28">
+			<DataPath>Объект.Разделитель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РазделительКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="РазделительРасширеннаяПодсказка" id="30"/>
+		</LabelField>
+		<InputField name="Спецификация" id="34">
+			<DataPath>Объект.Спецификация</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СпецификацияКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="СпецификацияРасширеннаяПодсказка" id="36"/>
+		</InputField>
+		<LabelField name="ИдСтроки" id="40">
+			<DataPath>Объект.ИдСтроки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ИдСтрокиКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ИдСтрокиРасширеннаяПодсказка" id="42"/>
+		</LabelField>
+		<InputField name="СчетчикСтрок" id="46">
+			<DataPath>Объект.СчетчикСтрок</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СчетчикСтрокКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="СчетчикСтрокРасширеннаяПодсказка" id="48"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.юум_ДеревоЗаказаСлужебный</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

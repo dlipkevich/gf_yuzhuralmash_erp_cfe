@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="ba8a0d8b-8bb5-46c1-95e0-8e1bd28c3421">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.юум_ДеревоЗаказаСлужебный" category="Object">
+				<xr:TypeId>2e32ff65-92d0-4de4-b9a5-18c561707321</xr:TypeId>
+				<xr:ValueId>092cb855-b577-4f28-85f9-b0ae1b397669</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.юум_ДеревоЗаказаСлужебный" category="Ref">
+				<xr:TypeId>7381dc6f-b2e6-4665-9ad9-b231a59cd8b6</xr:TypeId>
+				<xr:ValueId>d7033696-9f18-4781-9b91-56d348d7d6ba</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.юум_ДеревоЗаказаСлужебный" category="Selection">
+				<xr:TypeId>693967e1-42be-48e3-9e72-14a3beb92e09</xr:TypeId>
+				<xr:ValueId>ea3b0e8a-004d-4174-85a1-0cb78ce87316</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.юум_ДеревоЗаказаСлужебный" category="List">
+				<xr:TypeId>ed543ff4-f9c2-482b-86c9-a8bfbf3ad72f</xr:TypeId>
+				<xr:ValueId>85094a02-1e26-4f0a-80dd-fb26b983babd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.юум_ДеревоЗаказаСлужебный" category="Manager">
+				<xr:TypeId>a3314120-108e-4af3-8278-79bad6e69359</xr:TypeId>
+				<xr:ValueId>b2dec544-e27c-4dc0-8c17-81be99e6a5a9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_ДеревоЗаказаСлужебный</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>83ee3f7c-7d4e-443e-a329-df344e9fc584</ExtendedConfigurationObject>
+			<CodeLength>9</CodeLength>
+			<DescriptionLength>150</DescriptionLength>
+			<CodeType>String</CodeType>
+			<CodeAllowedLength>Variable</CodeAllowedLength>
+			<DefaultObjectForm>Catalog.юум_ДеревоЗаказаСлужебный.Form.юум_ФормаЭлемента</DefaultObjectForm>
+			<DefaultListForm>Catalog.юум_ДеревоЗаказаСлужебный.Form.юум_ФормаСписка</DefaultListForm>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="6eb1b593-bba9-483c-acc3-06ac9996eeed">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЗаказНаПроизводство</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3b1ef409-a2ed-41f6-a7e5-cc919e48b21f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство2_2</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="59297e79-fe9c-4eb5-b45d-9bcaeaca6bd4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Номенклатура</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>8d09ec16-66bd-4c2a-b5d6-3dfda43c9c4b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="5915dd5b-8306-419a-8549-af7621b934cb">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Характеристика</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>71b673bd-81fb-474f-915f-a3aeb84645f4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e5b23452-cea5-4b8a-9bd9-fbcb624b6779">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Назначение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c85e117a-2154-48af-8417-c3854250d50c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Назначения</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ad9e18de-e3f1-495b-ac0a-6f055a235762">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КлючНоменклатура</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7a731fc1-4333-455a-b210-e233f576ac10</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="c5998e9b-21ad-4487-a021-312aad38a1fa">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КлючПартия</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c1c946e4-244e-4fb6-902a-3149e71e913c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4a700837-69f3-4b9f-aded-f6b51bdc1c19">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КлючНабор</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f2291e6f-5cd7-4015-874f-24e0d2e72ca2</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4cf58236-60e6-4a08-b1fd-e76357696046">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Разделитель</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>5a2d7b81-fa0f-40f2-b38e-b88a3d198999</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="33425adc-9a2f-43ed-9155-677372964855">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Уровень</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e2d659f5-beb9-403f-9f26-4c82be2e2f7a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="cd30824a-b822-417a-a3e2-54cc96bc07a6">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Спецификация</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d806dbcc-cb3d-4be6-80c2-d4cb34767aad</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РесурсныеСпецификации</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="dd0b3b20-7faa-4f19-ad1d-d55d0535e589">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Доля</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>dafe8ff1-0c38-451a-a0d0-e78a0158d48e</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>6</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="18496865-c875-4511-8ab1-029c85a1e6a1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИдСтроки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2a5c24a3-552c-4365-a2a6-990f0f6704f4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="3e399f04-69d6-41e9-a644-d513f904c3a9">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Требуется</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c4988a34-8a6b-4d20-847f-0bbc5afaca06</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="0cbcb657-1434-4ad2-982a-630460699576">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СчетчикСтрок</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>946a45f0-f073-4c13-8034-204477218574</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="df040d76-fb66-4f5e-aaf8-6c2c67f0cdd7">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ТребуетсяВсего</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bab1b1d1-77ba-4edd-b46e-78984976b7d6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>юум_ФормаСписка</Form>
+			<Form>юум_ФормаЭлемента</Form>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

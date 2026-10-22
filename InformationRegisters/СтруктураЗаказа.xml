@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="b04de351-09a0-44b1-9076-1400b5ea9a0f">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.СтруктураЗаказа" category="Record">
+				<xr:TypeId>cee1c81e-34c9-4dce-802b-7d8771003691</xr:TypeId>
+				<xr:ValueId>bf762e8a-a4af-433f-9150-a3b0a6f7f24d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.СтруктураЗаказа" category="Manager">
+				<xr:TypeId>9353805d-cb98-4764-a41f-ff4fd46adb5e</xr:TypeId>
+				<xr:ValueId>dbef20c4-87dc-4535-9249-afba53160fc8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.СтруктураЗаказа" category="Selection">
+				<xr:TypeId>92318b80-e849-469a-91dd-9cb3fd5394ef</xr:TypeId>
+				<xr:ValueId>29bc0cb4-2f44-48c8-9711-02985b379826</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.СтруктураЗаказа" category="List">
+				<xr:TypeId>d5b5529d-3021-4093-8a60-6bb2ad4641f6</xr:TypeId>
+				<xr:ValueId>837d1477-ca60-4a6c-b706-234b12c5237b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.СтруктураЗаказа" category="RecordSet">
+				<xr:TypeId>4f28872d-a900-45de-9d58-c50c2660982e</xr:TypeId>
+				<xr:ValueId>05e3a378-54da-4c6b-9a03-5174ef673cb7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.СтруктураЗаказа" category="RecordKey">
+				<xr:TypeId>088ecacc-3e48-4fa8-a79d-95df2c42f10d</xr:TypeId>
+				<xr:ValueId>61a9b50e-e9f8-4e7e-b1b4-bf957a4304a9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.СтруктураЗаказа" category="RecordManager">
+				<xr:TypeId>efb71932-83d3-439c-8c2d-7216234ac936</xr:TypeId>
+				<xr:ValueId>522cb2d0-cedf-4eb4-856c-2776ae25f047</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтруктураЗаказа</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>c89d5780-4c44-4341-9ebf-d293a96aab62</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>
