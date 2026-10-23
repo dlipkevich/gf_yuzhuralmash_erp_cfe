@@ -74,6 +74,7 @@
 			<StyleItem>ГиперссылкаЦвет</StyleItem>
 			<StyleItem>ЦветТекстаНевыбраннойКартинки</StyleItem>
 			<StyleItem>ГруппаВариантовОтчетовЦвет</StyleItem>
+			<StyleItem>ПолужирныйНаклонныйШрифтРаботаСНоменклатурой</StyleItem>
 			<CommonPicture>СрочноКЗаказу</CommonPicture>
 			<CommonPicture>КоричневыйШар</CommonPicture>
 			<CommonPicture>ТребуетсяОформитьВыработкуСотрудников</CommonPicture>
@@ -94,6 +95,12 @@
 			<CommonPicture>ЗаполнитьФорму</CommonPicture>
 			<CommonPicture>ПиктограммыЭлементов</CommonPicture>
 			<CommonPicture>Пустая</CommonPicture>
+			<CommonPicture>КоллекцияПиктограммФайлов</CommonPicture>
+			<CommonPicture>ПодписанЗашифрованЗаголовок</CommonPicture>
+			<CommonPicture>ПодписанЗашифрованСостояния</CommonPicture>
+			<CommonPicture>ФайловыйАрхив</CommonPicture>
+			<CommonPicture>ЗеленаяГалкаСредняя</CommonPicture>
+			<CommonPicture>ОбновитьФайлИзФайлаНаДиске</CommonPicture>
 			<Role>юум_ЧтениеГлобальныеЗначения</Role>
 			<Role>юум_ПросмотрРазделаНастройки</Role>
 			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
@@ -105,15 +112,11 @@
 			<Role>юум_РедактированиеРСюум_КодыНеНайденнойНоменклатуры</Role>
 			<Role>юум_ПросмотрРСюум_СоотвествиеВидаНоменклатурыГФУН</Role>
 			<Role>юум_РедактированиеРСюум_СоотвествиеВидаНоменклатурыГФУН</Role>
-			<Role>юум_ПросмотрРСюум_СоотвествиеВидаНоменклатурыЦеновойГруппе</Role>
-			<Role>юум_РедактированиеРСюум_СоотвествиеВидаНоменклатурыЦеновойГруппе</Role>
 			<Role>юум_ИзменениеГруппыОтходов</Role>
 			<Role>ДобавлениеИзменениеНоменклатуры</Role>
 			<Role>юум_НачальникЦеха</Role>
 			<Role>юум_НачальникСмены</Role>
 			<Role>юум_Мастер</Role>
-			<Role>юум_ПросмотрРСуюм_СоотвествиеНоменклатурыСтатьеКалькуляции</Role>
-			<Role>юум_РедактированиеРСуюм_СоотвествиеНоменклатурыСтатьеКалькуляции</Role>
 			<Role>юум_ПросмотрРСуюм_СоотвествиеПодразделенийУчасткам</Role>
 			<Role>юум_РедактированиеРСуюм_СоотвествиеПодразделенийУчасткам</Role>
 			<Role>юум_ПросмотрРСуюм_СоотвествиеНоменклатурыПоТребованию</Role>
@@ -121,6 +124,8 @@
 			<Role>юум_ПросмотрРСуюм_СотвествиеЭтаповВерсииСпецификации</Role>
 			<Role>юум_РедактированиеРСуюм_СотвествиеЭтаповВерсииСпецификации</Role>
 			<Role>БазовыеПраваБСП</Role>
+			<Role>юум_ПросмотрРСюум_СоответствиеКодовНоменклатурыЦГ_Статье</Role>
+			<Role>юум_РедактированиеРСюум_СоответствиеКодовНоменклатурыЦГ_Статье</Role>
 			<CommonModule>ГрафикПроизводстваСтруктурыЗаказа</CommonModule>
 			<CommonModule>юум_РаботаСФормой</CommonModule>
 			<CommonModule>юум_РаботаСФормойКлиентСервер</CommonModule>
@@ -140,6 +145,7 @@
 			<EventSubscription>юум_ПроверитьЗапретНаИзменениеПередЗаписьюДокумента</EventSubscription>
 			<EventSubscription>юум_ПроверитьЗапретНаИзменениеПередЗаписьюСправочника</EventSubscription>
 			<ScheduledJob>юум_ЗагрузкаАОН</ScheduledJob>
+			<ScheduledJob>юум_ЗагрузкаНоменклатуры</ScheduledJob>
 			<DefinedType>ПланыОбменаБСД</DefinedType>
 			<CommonCommand>юум_ОткрытьРегистрСтруктураЗаказа</CommonCommand>
 			<CommonCommand>юум_ВыполнениеЭтаповПроизводства</CommonCommand>
@@ -178,6 +184,7 @@
 			<Catalog>ЦеновыеГруппы</Catalog>
 			<Catalog>СтатьиКалькуляции</Catalog>
 			<Catalog>ПроизводственныеУчастки</Catalog>
+			<Catalog>юум_ГруппыОтходов</Catalog>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
 			<Document>ПрочиеДоходыРасходы</Document>
 			<Document>ЗаказНаПроизводство2_2</Document>
@@ -203,6 +210,7 @@
 			<DataProcessor>ПечатьОбщихФорм</DataProcessor>
 			<DataProcessor>юум_МониторингЗаказаСамостоятельный</DataProcessor>
 			<DataProcessor>ЗагрузкаАОН</DataProcessor>
+			<DataProcessor>ЗагрузкаНоменклатуры</DataProcessor>
 			<InformationRegister>СтруктураЗаказа</InformationRegister>
 			<InformationRegister>СоответствияОбъектовИнформационныхБаз</InformationRegister>
 			<InformationRegister>ПравилаДляОбменаДанными</InformationRegister>
@@ -211,11 +219,11 @@
 			<InformationRegister>юум_РазрешенныеРеквизитыЗапрещенныхОбъектов</InformationRegister>
 			<InformationRegister>юум_КодыНеНайденнойНоменклатуры</InformationRegister>
 			<InformationRegister>юум_СоотвествиеВидаНоменклатурыГФУН</InformationRegister>
-			<InformationRegister>юум_СоотвествиеВидаНоменклатурыЦеновойГруппе</InformationRegister>
-			<InformationRegister>юум_СоотвествиеНоменклатурыСтатьеКалькуляции</InformationRegister>
 			<InformationRegister>юум_СоотвествиеПодразделенийУчасткам</InformationRegister>
 			<InformationRegister>юум_СоотвествиеНоменклатурыПоТребованию</InformationRegister>
 			<InformationRegister>юум_СоотвествиеЭтаповВерсииСпецификации</InformationRegister>
+			<InformationRegister>юум_СоответствиеГруппыОтходовНоменклатуреОтходов</InformationRegister>
+			<InformationRegister>юум_СоответствиеКодовНоменклатурыЦГ_Статье</InformationRegister>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>
 			<ChartOfCharacteristicTypes>юум_ГлобальныеЗначения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>СтатьиДоходов</ChartOfCharacteristicTypes>

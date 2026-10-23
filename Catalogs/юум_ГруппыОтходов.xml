@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="4a33836f-a9c7-45b8-86dd-b2ad765b5308">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.юум_ГруппыОтходов" category="Object">
+				<xr:TypeId>2368d1ca-33a3-447c-b1ff-f55d181a2a87</xr:TypeId>
+				<xr:ValueId>e1f6953a-57d1-474d-ae6f-0f12c78782e8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.юум_ГруппыОтходов" category="Ref">
+				<xr:TypeId>7cac863e-8faf-412f-8a91-2be7b525ee96</xr:TypeId>
+				<xr:ValueId>a64e41a5-f455-46d4-9b9d-e34c0b685b42</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.юум_ГруппыОтходов" category="Selection">
+				<xr:TypeId>740091bf-cce4-4b40-b002-9fecf3140ca3</xr:TypeId>
+				<xr:ValueId>3daf626c-6d3e-4d5e-9b5f-83a8dcb5771b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.юум_ГруппыОтходов" category="List">
+				<xr:TypeId>32b2e8ec-70f0-4d21-a584-e860e76ae620</xr:TypeId>
+				<xr:ValueId>51b0abed-813b-4829-8aae-d72e8d145e5b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.юум_ГруппыОтходов" category="Manager">
+				<xr:TypeId>df25c6c1-28a2-47a5-991f-debe2a704085</xr:TypeId>
+				<xr:ValueId>f3316e4d-351e-48ef-927e-6f17f2f887ed</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_ГруппыОтходов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>8aca4a26-1933-4160-95f2-3f985abb4801</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

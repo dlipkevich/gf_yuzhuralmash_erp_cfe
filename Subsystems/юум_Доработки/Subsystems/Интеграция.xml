@@ -18,9 +18,9 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_КодыНеНайденнойНоменклатуры</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоотвествиеВидаНоменклатурыГФУН</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоотвествиеВидаНоменклатурыЦеновойГруппе</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">8c2267a4-4f1e-4f9e-82df-04f8eb274ff7</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоответствиеЕдиницИзмеренияВнешнейСистемы</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоотвествиеНоменклатурыСтатьеКалькуляции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">2a1fda33-0794-4eb4-8578-deb45aceceff</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоотвествиеПодразделенийУчасткам</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоотвествиеНоменклатурыПоТребованию</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоотвествиеЭтаповВерсииСпецификации</xr:Item>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="d57d250b-b873-4d87-bd80-214fb07aba58">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.юум_СоответствиеГруппыОтходовНоменклатуреОтходов" category="Record">
+				<xr:TypeId>8c283752-227a-405f-9f79-7ffab601584a</xr:TypeId>
+				<xr:ValueId>24ac7924-5962-4908-9333-fe8c0adb90ed</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.юум_СоответствиеГруппыОтходовНоменклатуреОтходов" category="Manager">
+				<xr:TypeId>187b4ccd-50a4-44a6-b6f4-03b1dc5769de</xr:TypeId>
+				<xr:ValueId>06ff1674-a6d2-40bf-8eef-5210d31edaca</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.юум_СоответствиеГруппыОтходовНоменклатуреОтходов" category="Selection">
+				<xr:TypeId>a65c4b28-63ad-455b-ad32-3582942089ce</xr:TypeId>
+				<xr:ValueId>05430ef6-257a-4115-ba76-f85102630670</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.юум_СоответствиеГруппыОтходовНоменклатуреОтходов" category="List">
+				<xr:TypeId>8b367428-2a44-4b15-98e4-ec3a38449205</xr:TypeId>
+				<xr:ValueId>bf45bda7-d942-46ea-850c-3d7d342821f2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.юум_СоответствиеГруппыОтходовНоменклатуреОтходов" category="RecordSet">
+				<xr:TypeId>67c38ae0-23b7-4ff0-97f9-be9ca2bd09f8</xr:TypeId>
+				<xr:ValueId>9c3a691a-01b8-4279-84f4-2e62dd00c9b9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.юум_СоответствиеГруппыОтходовНоменклатуреОтходов" category="RecordKey">
+				<xr:TypeId>e8b88d36-0874-4a96-99a0-4bae0205d691</xr:TypeId>
+				<xr:ValueId>67b9e566-64ca-4f56-b68f-f83aaf7f4745</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.юум_СоответствиеГруппыОтходовНоменклатуреОтходов" category="RecordManager">
+				<xr:TypeId>0567812f-882a-4a8c-93b3-f62ab45a595f</xr:TypeId>
+				<xr:ValueId>4eae52ce-9f15-4e85-9092-643999858cf9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_СоответствиеГруппыОтходовНоменклатуреОтходов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>adcb1643-4eb2-4c90-a7e6-2ab1b01d9384</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="7e286ddb-05d6-4c52-8caf-44b81052b936">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ГруппаОтходов</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>39bc2fb3-e106-4dc5-a90f-9f9e1cfe7684</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.юум_ГруппыОтходов</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="85d6aabe-3238-4107-846e-7ffa2ffbfd14">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Номенклатура</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ccf5ebd4-5b65-4a19-8e59-9119ec9b627a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="4097efce-caee-4989-a3f8-e2a14b37ff52">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Подразделение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3b66cfd8-6903-40eb-8420-3ac5f92d9ff9</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

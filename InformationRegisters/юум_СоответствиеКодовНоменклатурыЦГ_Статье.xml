@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="ebbb24b5-07f3-496f-bb95-dc313ee27e56">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.юум_СоответствиеКодовНоменклатурыЦГ_Статье" category="Record">
+				<xr:TypeId>302da7d8-ddd8-4773-8d0d-b31fa52c8314</xr:TypeId>
+				<xr:ValueId>a1c95ca3-3057-4772-ba15-1d6bc5571db4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.юум_СоответствиеКодовНоменклатурыЦГ_Статье" category="Manager">
+				<xr:TypeId>e3d160fd-9e9f-4d9a-b7cb-92b5422c06de</xr:TypeId>
+				<xr:ValueId>c86821ed-f824-4909-81a7-625221f7ad63</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.юум_СоответствиеКодовНоменклатурыЦГ_Статье" category="Selection">
+				<xr:TypeId>571e13df-dcf0-43be-95ba-902f5c618932</xr:TypeId>
+				<xr:ValueId>b2247cea-7222-45c3-82b3-8009ae8c1d3a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.юум_СоответствиеКодовНоменклатурыЦГ_Статье" category="List">
+				<xr:TypeId>d8444c74-0010-488a-9e08-8deb86a9215f</xr:TypeId>
+				<xr:ValueId>317725a2-43bb-45dd-bc8b-e933949683d7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.юум_СоответствиеКодовНоменклатурыЦГ_Статье" category="RecordSet">
+				<xr:TypeId>64c0f58c-2e55-400f-ab63-6d79e4e78905</xr:TypeId>
+				<xr:ValueId>6a5cc936-7dbb-4540-8a89-845894c9ea0e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.юум_СоответствиеКодовНоменклатурыЦГ_Статье" category="RecordKey">
+				<xr:TypeId>c1a919b6-5a0d-436b-9fae-395b390a5a01</xr:TypeId>
+				<xr:ValueId>f879ab65-7ed0-4ed0-b642-9bfca480fd27</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.юум_СоответствиеКодовНоменклатурыЦГ_Статье" category="RecordManager">
+				<xr:TypeId>14fb4c70-9654-412d-b6c8-3e47952d542b</xr:TypeId>
+				<xr:ValueId>73ba0938-63d7-4cca-9dbd-9da163e60102</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_СоответствиеКодовНоменклатурыЦГ_Статье</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>69f6e424-54ed-4703-9031-241f6dde376e</ExtendedConfigurationObject>
+			<DefaultListForm>InformationRegister.юум_СоответствиеКодовНоменклатурыЦГ_Статье.Form.юум_ФормаСписка</DefaultListForm>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="28d3c601-cc8a-4d7e-905a-1ce04a1f1334">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЦеноваяГруппа</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3d31437b-31a1-4847-a9b6-71fda5ade825</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ЦеновыеГруппы</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="7621b76d-713e-4591-8403-93ba4cb13b47">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СтатьяКалькуляции</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e55657f3-fd6f-4b62-97eb-76567f64e412</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтатьиКалькуляции</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="bf10d999-bf16-43a1-bb89-dd794bf1528c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Комментарий</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>331b39cd-54b0-4dd6-a66c-bf95db999270</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="3d2dad92-a260-40ea-b51d-a43e2cff5b6b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Шаблон</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>59607720-9211-4994-8b91-ab8481e6cb49</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>300</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="e1637624-3926-4b05-ac1c-1ff68a4be244">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Содержит</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>ae2064c7-a41f-4553-b74b-586a95e425ee</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Form>юум_ФормаСписка</Form>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>
