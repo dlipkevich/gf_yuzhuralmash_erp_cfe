@@ -25,6 +25,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоотвествиеНоменклатурыПоТребованию</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоотвествиеЭтаповВерсииСпецификации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаАОН</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.юум_ОбменДО_ERP</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
