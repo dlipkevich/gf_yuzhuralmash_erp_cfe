@@ -14,6 +14,7 @@
 			<ExtendedConfigurationObject>bfe6a2e5-ee3b-4791-b965-42bfc518d891</ExtendedConfigurationObject>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.юум_КлассификаторЗаказов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.юум_ГруппыОтходов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

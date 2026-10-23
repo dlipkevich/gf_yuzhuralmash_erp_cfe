@@ -31,14 +31,21 @@
 		</Properties>
 		<ChildObjects>
 			<Attribute uuid="4f7e0e23-26f5-4abd-b569-f87e783eef85">
-				<InternalInfo/>
+				<InternalInfo>
+					<xr:PropertyState>
+						<xr:Property>Type</xr:Property>
+						<xr:State>MultiState</xr:State>
+					</xr:PropertyState>
+				</InternalInfo>
 				<Properties>
 					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>юум_ГруппаОтходов</Name>
 					<Comment/>
 					<ExtendedConfigurationObject>d39bd8b3-de4a-4381-8d72-b77325b1c404</ExtendedConfigurationObject>
-					<Type>
-						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					<Type xsi:type="xr:ExtendedProperty">
+						<xr:ExtendValue xsi:type="v8:TypeDescription">
+							<v8:Type>cfg:CatalogRef.юум_ГруппыОтходов</v8:Type>
+						</xr:ExtendValue>
 					</Type>
 				</Properties>
 			</Attribute>
