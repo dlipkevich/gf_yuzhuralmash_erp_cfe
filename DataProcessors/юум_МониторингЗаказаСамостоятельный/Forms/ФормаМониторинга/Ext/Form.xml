@@ -3,13 +3,22 @@
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
-			<v8:content>Мониторинг заказа [21.10.2026.21]</v8:content>
+			<v8:content>Мониторинг заказа — нетиповой источник [22.10.2026.N4]</v8:content>
 		</v8:item>
 	</Title>
 	<Width>160</Width>
 	<Height>38</Height>
 	<AutoTitle>false</AutoTitle>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="РежимДиагностикиКнопка" id="19">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.РежимДиагностики</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="РежимДиагностикиКнопкаПодсказка" id="20"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -18,7 +27,7 @@
 		<UsualGroup name="ГруппаЗаказ" id="1">
 			<Group>Horizontal</Group>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаЗаказРасширеннаяПодсказка" id="19"/>
+			<ExtendedTooltip name="ГруппаЗаказРасширеннаяПодсказка" id="21"/>
 			<ChildItems>
 				<InputField name="ЗаказНаПроизводство" id="2">
 					<DataPath>ЗаказНаПроизводство</DataPath>
@@ -45,8 +54,8 @@
 						</v8:item>
 					</Title>
 					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ПоказыватьЭтапыКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="ПоказыватьЭтапыРасширеннаяПодсказка" id="21"/>
+					<ContextMenu name="ПоказыватьЭтапыКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ПоказыватьЭтапыРасширеннаяПодсказка" id="23"/>
 					<Events>
 						<Event name="OnChange">ОтборПриИзменении</Event>
 					</Events>
@@ -56,7 +65,7 @@
 		<UsualGroup name="ГруппаОтборы" id="6">
 			<Group>Horizontal</Group>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаОтборыРасширеннаяПодсказка" id="22"/>
+			<ExtendedTooltip name="ГруппаОтборыРасширеннаяПодсказка" id="24"/>
 			<ChildItems>
 				<InputField name="Номенклатура" id="7">
 					<DataPath>Номенклатура</DataPath>
@@ -91,7 +100,7 @@
 				<Button name="ОбновитьКнопка" id="13">
 					<Type>UsualButton</Type>
 					<CommandName>Form.Command.Обновить</CommandName>
-					<ExtendedTooltip name="ОбновитьКнопкаРасширеннаяПодсказка" id="23"/>
+					<ExtendedTooltip name="ОбновитьКнопкаРасширеннаяПодсказка" id="25"/>
 				</Button>
 			</ChildItems>
 		</UsualGroup>
@@ -113,14 +122,14 @@
 					<v8:content>Зеленый - завершено; синий - собственные незавершенные этапы; серый - незавершенные подчиненные этапы</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="ЛегендаКонтекстноеМеню" id="24"/>
-			<ExtendedTooltip name="ЛегендаРасширеннаяПодсказка" id="25"/>
+			<ContextMenu name="ЛегендаКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ЛегендаРасширеннаяПодсказка" id="27"/>
 		</LabelDecoration>
 		<LabelField name="ПолеСостояние" id="18">
 			<DataPath>Состояние</DataPath>
 			<TitleLocation>None</TitleLocation>
-			<ContextMenu name="ПолеСостояниеКонтекстноеМеню" id="26"/>
-			<ExtendedTooltip name="ПолеСостояниеРасширеннаяПодсказка" id="27"/>
+			<ContextMenu name="ПолеСостояниеКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ПолеСостояниеРасширеннаяПодсказка" id="29"/>
 		</LabelField>
 	</ChildItems>
 	<Attributes>
@@ -132,20 +141,12 @@
 		</Attribute>
 		<Attribute name="ЗаказНаПроизводство" id="2">
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство2_2</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="Номенклатура" id="3">
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="Код" id="4">
@@ -256,6 +257,20 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ШириныКолонок" id="16">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимДиагностики" id="21">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Обновить" id="1">
@@ -266,6 +281,15 @@
 				</v8:item>
 			</Title>
 			<Action>Обновить</Action>
+		</Command>
+		<Command name="РежимДиагностики" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим диагностики</v8:content>
+				</v8:item>
+			</Title>
+			<Action>РежимДиагностикиПереключить</Action>
 		</Command>
 	</Commands>
 </Form>
