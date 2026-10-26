@@ -172,6 +172,7 @@ AccumulationRegisters\ДоступностьВидовРабочихЦентро
 AccumulationRegisters\ДоступностьВидовРабочихЦентров\Ext\RecordSetModule.bsl:025AE5D33F6B4A6165318C4519BEE136:4:AccumulationRegisters\ДоступностьВидовРабочихЦентров\Ext\RecordSetModule.bsl
 547e548e-66ff-43ef-a60c-ab3fe14e58c4:E40FABE0AA42BABEE7D5D9DD25B3E259:4:AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\ФормаСписка.xml
 065322da-2e0f-4498-b4d2-78815f914184:3D87334D717817EC8EA7D4FE52B274B9:4:AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\юум_ФормаСписка.xml
+363b0771-d2bc-4ee9-90b0-d4165d8459b5:58A8CB3C12826E9227B6E8C652FE8D5C:4:Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента.xml
 cdb4b24a-039c-4804-8337-3e415b50ce22:097139E5292CFA2FD90418344A45C104:4:Catalogs\Номенклатура\Forms\ФормаЭлемента.xml
 69798bd8-f301-498d-91c8-bc704132e12b:3709DF5FC676334B0B5A0957BF75CF11:4:Catalogs\РесурсныеСпецификации\Forms\ФормаЭлемента.xml
 b328100b-0023-49e2-b923-daa8a9b1a606:F474854893AF0F27F7DD193033576E6B:4:Catalogs\юум_ДеревоЗаказаСлужебный\Forms\юум_ФормаСписка.xml
@@ -274,6 +275,7 @@ b5f91641-8f23-424d-b720-6fd30803edcd:D79B8586771A9B8072F8F915EFF843B7:4:Subsyste
 CommonForms\НастройкаСчетовУчетаОперации\Ext\Form\Module.bsl:D5131002E61A61758E39060ED4AB55D1:5:CommonForms\НастройкаСчетовУчетаОперации\Ext\Form\Module.bsl
 AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\ФормаСписка\Ext\Form.xml:5F24CD747EF537C939836F873AC965DF:6:AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\ФормаСписка\Ext\Form.xml
 AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\юум_ФормаСписка\Ext\Form.xml:97234C9D37B2806498AF38279613A138:6:AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\юум_ФормаСписка\Ext\Form.xml
+Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента\Ext\Form.xml:1D1C416756A753F5BB0B16C190AF3438:6:Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента\Ext\Form.xml
 Catalogs\Номенклатура\Forms\ФормаЭлемента\Ext\Form.xml:F4E167B760AB62C27F3CEF23C21EBB8D:6:Catalogs\Номенклатура\Forms\ФормаЭлемента\Ext\Form.xml
 Catalogs\РесурсныеСпецификации\Forms\ФормаЭлемента\Ext\Form.xml:8FBEF1AF4372C511C9B6B65C5D398D46:6:Catalogs\РесурсныеСпецификации\Forms\ФормаЭлемента\Ext\Form.xml
 Catalogs\юум_ДеревоЗаказаСлужебный\Forms\юум_ФормаСписка\Ext\Form.xml:60B61303F7C8CAB59EA3C11129180F62:6:Catalogs\юум_ДеревоЗаказаСлужебный\Forms\юум_ФормаСписка\Ext\Form.xml
@@ -314,6 +316,7 @@ bd1f84f1-3ef8-437c-a32e-3d336f06196f:84F5A25CC3CB7BED4C10D0C34FB364E0:6:Subsyste
 Subsystems\юум_Доработки\Subsystems\Интеграция\Ext\CommandInterface.xml:4D32FAE28FDAE9F3CA11225BD4B68B58:6:Subsystems\юум_Доработки\Subsystems\Интеграция\Ext\CommandInterface.xml
 AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\ФормаСписка\Ext\Form\Module.bsl:6B26966A00A7A034A59F0B16A35D6163:7:AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\ФормаСписка\Ext\Form\Module.bsl
 AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\юум_ФормаСписка\Ext\Form\Module.bsl:6F4E2536A4814F09E50CE880BC6F788F:7:AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\юум_ФормаСписка\Ext\Form\Module.bsl
+Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента\Ext\Form\Module.bsl:F12DC0711676794AC9A29BA51EEB1013:7:Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 Catalogs\Номенклатура\Forms\ФормаЭлемента\Ext\Form\Module.bsl:CB18E909CE3C09F58178CCB8E295A9A8:7:Catalogs\Номенклатура\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 Catalogs\РесурсныеСпецификации\Forms\ФормаЭлемента\Ext\Form\Module.bsl:D672CCE98783D077494E46DB5EA5197A:7:Catalogs\РесурсныеСпецификации\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 Catalogs\юум_ДеревоЗаказаСлужебный\Forms\юум_ФормаСписка\Ext\Form\Module.bsl:73D6ACF8F16214A3E094B0EF163E3B00:7:Catalogs\юум_ДеревоЗаказаСлужебный\Forms\юум_ФормаСписка\Ext\Form\Module.bsl

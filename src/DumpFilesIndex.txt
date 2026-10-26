@@ -1,4 +1,0 @@
-﻿022ee053-29d1-4185-80bd-821f1dc2cb71:FFFFD0A18B35A8B57C5464BFF44502CB:2:Catalogs\НаправленияДеятельности.xml
-363b0771-d2bc-4ee9-90b0-d4165d8459b5:58A8CB3C12826E9227B6E8C652FE8D5C:4:Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента.xml
-Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента\Ext\Form.xml:1D1C416756A753F5BB0B16C190AF3438:6:Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента\Ext\Form.xml
-Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента\Ext\Form\Module.bsl:F12DC0711676794AC9A29BA51EEB1013:7:Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента\Ext\Form\Module.bsl

@@ -29,6 +29,24 @@
 			<Comment/>
 			<ExtendedConfigurationObject>87a384c3-ab2e-4314-85a9-9834c3877db5</ExtendedConfigurationObject>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Attribute uuid="d3a8dd0e-efc1-4ee8-b40e-7d75bdaaf891">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>юум_КодЦентральный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b56f95d5-600d-4c76-9294-65f286ce429b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>9</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
