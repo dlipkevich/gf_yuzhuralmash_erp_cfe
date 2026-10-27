@@ -231,7 +231,10 @@ f62ed4a2-dedb-5ca9-9003-b7146abfb7bf:5C8F6F2C250F893C042DD8981725B566:4:DataProc
 e2391936-4aab-4a83-959b-ef4606ad92a8:990D31F5CE7B6D141DBF9E37369E8804:4:DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма.xml
 b19a8621-e043-48e9-84e2-f0eab60a327e:0B579088AD872F7421FCA7961BC57ABA:4:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчет_ru.xml
 29687e5a-3caa-4f5e-9c44-0f15080a454f:CBE48F3432E51FD538BE82F47DB41D97:4:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчетВИностраннойВалюте_ru.xml
+Documents\ЗаказКлиента\Ext\ManagerModule.bsl:0BDC1C5FA765B5A85481291F778BB23F:4:Documents\ЗаказКлиента\Ext\ManagerModule.bsl
+Documents\ЗаказКлиента\Ext\ObjectModule.bsl:45B8B51BDAE3758086099C9947E709BF:4:Documents\ЗаказКлиента\Ext\ObjectModule.bsl
 17f66b1b-fb7f-458b-b501-54fb7d130e8f:FA7F6154A8ED6815C536A2C5F367FC58:4:Documents\ЗаказКлиента\Forms\ФормаДокумента.xml
+b2e5ad3a-d21c-41ec-a38a-f77c2d84ad67:0050F340D0692562F3CBECF22E0ECB83:4:Documents\ЗаказКлиента\Templates\юум_СводнаяСпецификация.xml
 ac3e589f-509d-4fcf-950d-90a53cd1aa8d:061787C53B0ED8A7FA293DC2E60CF7A8:4:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента.xml
 dca94ae5-8c1a-4845-b74b-fb0726ec60be:9D7C9F6DE23DF1EC9BAF93A6701091A0:4:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента.xml
 746022b2-a927-46ac-b782-8a1017d99cb4:1ECAE6D550215277DDAEFD63F840C678:4:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel.xml
@@ -304,6 +307,7 @@ DataProcessors\юум_СохранениеДереваЗаказа\Forms\Фор�
 Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчет_ru\Ext\Template.xml:308C71F986F523826A0A030803C22A1B:6:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчет_ru\Ext\Template.xml
 Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчетВИностраннойВалюте_ru\Ext\Template.xml:C266410DD58B975B3E1D942023C8F9BB:6:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчетВИностраннойВалюте_ru\Ext\Template.xml
 Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form.xml:45485412C86C698BE8E5743BBB7CABDF:6:Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form.xml
+Documents\ЗаказКлиента\Templates\юум_СводнаяСпецификация\Ext\Template.xml:779C5EB1421DF63E19C6F4FF95C32A06:6:Documents\ЗаказКлиента\Templates\юум_СводнаяСпецификация\Ext\Template.xml
 Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form.xml:5F3F19F3FA71108D72605BDCC4287E23:6:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form.xml:1355A8C5B328D41E6A2DD5A49895630A:6:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form.xml:3B3BAD87C1B0FCDF697379C35B27882C:6:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form.xml
@@ -337,6 +341,7 @@ DataProcessors\ЗагрузкаНоменклатуры\Forms\Форма\Ext\For
 DataProcessors\ОбеспечениеПотребностей\Forms\Форма\Ext\Form\Module.bsl:B862F67DACF427E30ECB9742A69F641B:7:DataProcessors\ОбеспечениеПотребностей\Forms\Форма\Ext\Form\Module.bsl
 DataProcessors\юум_МониторингЗаказаСамостоятельный\Forms\ФормаМониторинга\Ext\Form\Module.bsl:257630D5E889F3C1279D5465C627CCEE:7:DataProcessors\юум_МониторингЗаказаСамостоятельный\Forms\ФормаМониторинга\Ext\Form\Module.bsl
 DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма\Ext\Form\Module.bsl:8EB7CA8A69556B9236F168BD96A0F2C7:7:DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма\Ext\Form\Module.bsl
+Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form\Module.bsl:3C99409F4B98175632CC045B6CD3937E:7:Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form\Module.bsl:5667D50A7A04CAF7FF47FB0F15424210:7:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form\Module.bsl:1588D0F38635A91541BA99E4457DD32C:7:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form\Module.bsl:DED5B7558F7847AF185C6225D36DB786:7:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form\Module.bsl
