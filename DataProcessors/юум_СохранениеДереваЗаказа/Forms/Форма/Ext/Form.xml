@@ -98,7 +98,9 @@
 			<Save>
 				<Field>СписокЗаказов</Field>
 			</Save>
-			<Settings xsi:type="v8:TypeDescription"/>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство2_2</v8:Type>
+			</Settings>
 		</Attribute>
 		<Attribute name="ПоПравиламОтчета" id="3">
 			<Title>
