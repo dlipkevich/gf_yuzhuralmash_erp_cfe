@@ -90,18 +90,18 @@
 			<CommonPicture>СостоянияДокумента</CommonPicture>
 			<CommonPicture>СинхронизацияДанныхВыполнение</CommonPicture>
 			<CommonPicture>СинхронизацияДанных</CommonPicture>
-			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
-			<CommonPicture>Отчеты</CommonPicture>
-			<CommonPicture>Внимание16</CommonPicture>
+			<CommonPicture>ПодписанЗашифрованСостояния</CommonPicture>
 			<CommonPicture>ЗаполнитьФорму</CommonPicture>
+			<CommonPicture>Внимание16</CommonPicture>
+			<CommonPicture>КоллекцияПиктограммФайлов</CommonPicture>
 			<CommonPicture>ПиктограммыЭлементов</CommonPicture>
 			<CommonPicture>Пустая</CommonPicture>
-			<CommonPicture>КоллекцияПиктограммФайлов</CommonPicture>
 			<CommonPicture>ПодписанЗашифрованЗаголовок</CommonPicture>
-			<CommonPicture>ПодписанЗашифрованСостояния</CommonPicture>
+			<CommonPicture>ОбновитьФайлИзФайлаНаДиске</CommonPicture>
+			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
 			<CommonPicture>ФайловыйАрхив</CommonPicture>
 			<CommonPicture>ЗеленаяГалкаСредняя</CommonPicture>
-			<CommonPicture>ОбновитьФайлИзФайлаНаДиске</CommonPicture>
+			<CommonPicture>Отчеты</CommonPicture>
 			<CommonPicture>Набор</CommonPicture>
 			<CommonPicture>Наборы</CommonPicture>
 			<Role>юум_ЧтениеГлобальныеЗначения</Role>
@@ -194,19 +194,21 @@
 			<Document>ЭтапПроизводства2_2</Document>
 			<Document>АвансовыйОтчет</Document>
 			<Document>ЗаказКлиента</Document>
-			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
+			<Document>ПриобретениеУслугПрочихАктивов</Document>
+			<Document>ПриобретениеТоваровУслуг</Document>
+			<Enum>СпособыФормированияСегментов</Enum>
 			<Enum>ТипыПроизводственныхПроцессов</Enum>
 			<Enum>СостоянияЭтаповНаВнутрицеховомУровне</Enum>
-			<Enum>Периодичность</Enum>
-			<Enum>СпособыФормированияСегментов</Enum>
+			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
 			<Enum>ТипыОбеспечения</Enum>
+			<Enum>СтатусыДействияВидовЦен</Enum>
 			<Enum>СпособыОтраженияМатериальнойПередачиМеждуЭтапамиПартии</Enum>
 			<Enum>ВариантыНазначенияСпецификации</Enum>
 			<Enum>ЕдиницыИзмеренияВремени</Enum>
 			<Enum>ВариантыПечатиМаршрутнойКартыНаПродукцию</Enum>
-			<Enum>СпособыДоставки</Enum>
+			<Enum>Периодичность</Enum>
 			<Enum>ТипыНалогообложенияНДС</Enum>
-			<Enum>СтатусыДействияВидовЦен</Enum>
+			<Enum>СпособыДоставки</Enum>
 			<Report>МониторингЗаказа</Report>
 			<Report>ВедомостьПоОС2_4</Report>
 			<Report>СтруктураЗаказаНаПроизводствоДинамическая</Report>

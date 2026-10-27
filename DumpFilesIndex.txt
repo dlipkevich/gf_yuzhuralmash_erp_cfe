@@ -99,6 +99,8 @@ a30a35b6-730f-47ab-8953-27225ee6d3ed:04B5B094459D6E6A7C00E20E33F12A18:2:Document
 0d0d3445-cdea-490d-988b-e83d8354417f:AE6421A336E165F835C65C08A9976E7A:2:Documents\ЗаказКлиента.xml
 0c62e66c-596a-40f1-8a28-ff611d3c0b9a:52CDB1AC90AFDEB2A767D9E9C3B28EBC:2:Documents\ЗаказНаПроизводство2_2.xml
 0d688d5d-3fa2-43d7-a797-9b2ab2f308c2:562AC074CBA9F9909B82B7EE6F6FEF52:2:Documents\ЗаявкаНаРасходованиеДенежныхСредств.xml
+6660ec52-45d4-4a3f-81dd-19310bc4c798:2D7953E0B34AB987622C857F2B09A133:2:Documents\ПриобретениеТоваровУслуг.xml
+027373c5-4a85-465e-854e-52123c6b126c:946001D0A420E2C2D6D792B9297A48C6:2:Documents\ПриобретениеУслугПрочихАктивов.xml
 1d9f84b2-bafb-4a77-aadf-22487a43a671:D6BF02700F07DD86AC3C6CBCE63B8F60:2:Documents\ПрочиеДоходыРасходы.xml
 68d9b2db-5eb6-4bc1-af34-675607b8e2b3:C9322DC4DCEC64D70F78E02663314615:2:Documents\ЭтапПроизводства2_2.xml
 f893d99d-46ef-4ba3-b990-34ce5d1af420:D256C0E6C27C322643BAB3951126BFE2:2:Enums\ВариантыНазначенияСпецификации.xml
@@ -236,6 +238,8 @@ Documents\ЗаказКлиента\Ext\ObjectModule.bsl:45B8B51BDAE3758086099C99
 17f66b1b-fb7f-458b-b501-54fb7d130e8f:FA7F6154A8ED6815C536A2C5F367FC58:4:Documents\ЗаказКлиента\Forms\ФормаДокумента.xml
 b2e5ad3a-d21c-41ec-a38a-f77c2d84ad67:0050F340D0692562F3CBECF22E0ECB83:4:Documents\ЗаказКлиента\Templates\юум_СводнаяСпецификация.xml
 ac3e589f-509d-4fcf-950d-90a53cd1aa8d:061787C53B0ED8A7FA293DC2E60CF7A8:4:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента.xml
+a34f0b80-efa3-4fd2-9366-e18fa320dbb4:E464D507E80E1E898F4D23D0420A343B:4:Documents\ПриобретениеТоваровУслуг\Forms\ФормаДокумента.xml
+48215534-dbde-4fa3-b4cb-c84319941ac3:797A4AF1204CCC08C51B6CD281E664D3:4:Documents\ПриобретениеУслугПрочихАктивов\Forms\ФормаДокумента.xml
 dca94ae5-8c1a-4845-b74b-fb0726ec60be:9D7C9F6DE23DF1EC9BAF93A6701091A0:4:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента.xml
 746022b2-a927-46ac-b782-8a1017d99cb4:1ECAE6D550215277DDAEFD63F840C678:4:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel.xml
 5656032d-ea68-45e6-910c-76b48117d9c7:24A8CCF5B4CA02CA910856787A0AD215:4:Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента.xml
@@ -309,6 +313,8 @@ Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОт
 Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form.xml:45485412C86C698BE8E5743BBB7CABDF:6:Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ЗаказКлиента\Templates\юум_СводнаяСпецификация\Ext\Template.xml:779C5EB1421DF63E19C6F4FF95C32A06:6:Documents\ЗаказКлиента\Templates\юум_СводнаяСпецификация\Ext\Template.xml
 Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form.xml:5F3F19F3FA71108D72605BDCC4287E23:6:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form.xml
+Documents\ПриобретениеТоваровУслуг\Forms\ФормаДокумента\Ext\Form.xml:A48D3ED8947B0549645A3D4F6E875652:6:Documents\ПриобретениеТоваровУслуг\Forms\ФормаДокумента\Ext\Form.xml
+Documents\ПриобретениеУслугПрочихАктивов\Forms\ФормаДокумента\Ext\Form.xml:4A1C087B047AAA2A3C7F66D9E0D87A44:6:Documents\ПриобретениеУслугПрочихАктивов\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form.xml:1355A8C5B328D41E6A2DD5A49895630A:6:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form.xml:3B3BAD87C1B0FCDF697379C35B27882C:6:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form.xml
 Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента\Ext\Form.xml:7565E787E7C3FB118F64AE4C21E754FA:6:Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента\Ext\Form.xml
@@ -343,6 +349,8 @@ DataProcessors\юум_МониторингЗаказаСамостоятельн
 DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма\Ext\Form\Module.bsl:8EB7CA8A69556B9236F168BD96A0F2C7:7:DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма\Ext\Form\Module.bsl
 Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form\Module.bsl:3C99409F4B98175632CC045B6CD3937E:7:Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form\Module.bsl:5667D50A7A04CAF7FF47FB0F15424210:7:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form\Module.bsl
+Documents\ПриобретениеТоваровУслуг\Forms\ФормаДокумента\Ext\Form\Module.bsl:5AE4E3CF62DCB2F0BBFA3889B3E007F8:7:Documents\ПриобретениеТоваровУслуг\Forms\ФормаДокумента\Ext\Form\Module.bsl
+Documents\ПриобретениеУслугПрочихАктивов\Forms\ФормаДокумента\Ext\Form\Module.bsl:EA3911B631A9206F0FCDC3CF38093BCA:7:Documents\ПриобретениеУслугПрочихАктивов\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form\Module.bsl:1588D0F38635A91541BA99E4457DD32C:7:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form\Module.bsl:DED5B7558F7847AF185C6225D36DB786:7:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form\Module.bsl
 Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента\Ext\Form\Module.bsl:2D2FD18DC076030A8DCFA9792763C454:7:Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента\Ext\Form\Module.bsl
