@@ -75,6 +75,7 @@
 			<StyleItem>ЦветТекстаНевыбраннойКартинки</StyleItem>
 			<StyleItem>ГруппаВариантовОтчетовЦвет</StyleItem>
 			<StyleItem>ПолужирныйНаклонныйШрифтРаботаСНоменклатурой</StyleItem>
+			<StyleItem>ЦветТекстаПроблема</StyleItem>
 			<CommonPicture>СрочноКЗаказу</CommonPicture>
 			<CommonPicture>КоричневыйШар</CommonPicture>
 			<CommonPicture>ТребуетсяОформитьВыработкуСотрудников</CommonPicture>
@@ -101,6 +102,8 @@
 			<CommonPicture>ФайловыйАрхив</CommonPicture>
 			<CommonPicture>ЗеленаяГалкаСредняя</CommonPicture>
 			<CommonPicture>ОбновитьФайлИзФайлаНаДиске</CommonPicture>
+			<CommonPicture>Набор</CommonPicture>
+			<CommonPicture>Наборы</CommonPicture>
 			<Role>юум_ЧтениеГлобальныеЗначения</Role>
 			<Role>юум_ПросмотрРазделаНастройки</Role>
 			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
@@ -190,6 +193,7 @@
 			<Document>ЗаказНаПроизводство2_2</Document>
 			<Document>ЭтапПроизводства2_2</Document>
 			<Document>АвансовыйОтчет</Document>
+			<Document>ЗаказКлиента</Document>
 			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
 			<Enum>ТипыПроизводственныхПроцессов</Enum>
 			<Enum>СостоянияЭтаповНаВнутрицеховомУровне</Enum>
@@ -200,6 +204,9 @@
 			<Enum>ВариантыНазначенияСпецификации</Enum>
 			<Enum>ЕдиницыИзмеренияВремени</Enum>
 			<Enum>ВариантыПечатиМаршрутнойКартыНаПродукцию</Enum>
+			<Enum>СпособыДоставки</Enum>
+			<Enum>ТипыНалогообложенияНДС</Enum>
+			<Enum>СтатусыДействияВидовЦен</Enum>
 			<Report>МониторингЗаказа</Report>
 			<Report>ВедомостьПоОС2_4</Report>
 			<Report>СтруктураЗаказаНаПроизводствоДинамическая</Report>

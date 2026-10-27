@@ -66,6 +66,8 @@ a8e7e2fd-932b-4a7a-b3bc-5629ac262102:1C0CA547B1ED86C80C3429AB3DDBB85D:2:CommonPi
 e01218eb-77c9-4a6d-b5be-144051280745:2C81BACDD6BC61E221D611E2775CCEA5:2:CommonPictures\КоллекцияПиктограммСостоянияОперацийЭтапаПроизводства.xml
 6795939b-dd03-44cb-9568-799a362f3284:2D5E8ED16F94FB46DDAF94698CA18A2A:2:CommonPictures\КоллекцияПиктограммФайлов.xml
 cfd2ca0a-e884-4cba-8dfb-2e5e0f502fe7:AD28B2C06AB9FF9E2BB6318DCCE44CAE:2:CommonPictures\КоричневыйШар.xml
+652039bd-bc4b-4274-bc3d-af37e0434553:12DC1BC530BE58227E60EC1435C6AF94:2:CommonPictures\Набор.xml
+ed323c05-9c9c-4d34-ab14-5f096984b4a9:B09C4C4A4B65875DBC1C8797D38E6961:2:CommonPictures\Наборы.xml
 a559ac54-ec6d-4e37-a9d6-ae077b605ca7:8C2832CF45098483AE0937CAA0CC8141:2:CommonPictures\ОбновитьФайлИзФайлаНаДиске.xml
 b29468b0-a5fd-4521-afea-e5755e87c7fd:C4933A779ED990C9F4E8C0C440DE71DB:2:CommonPictures\Отчеты.xml
 83118443-b86b-443d-896a-6976929503c4:45E4B70011BA869B07CC5844825E8623:2:CommonPictures\ПиктограммыЭлементов.xml
@@ -94,6 +96,7 @@ b0a7a2b1-da58-44e3-a8e6-88fb76708114:AB54AA19DE525B616A3CA83F16864DD7:2:DataProc
 bb6532da-3d31-4768-87ae-6a81abc114d1:EFAC4554C88232E05CE7FD4FDB8E6BA4:2:DataProcessors\юум_СохранениеДереваЗаказа.xml
 ba90da34-2231-4d2b-9d68-bc603e7470f0:C499E203E62A8DAA7FE6A588FC4701AE:2:DefinedTypes\ПланыОбменаБСД.xml
 a30a35b6-730f-47ab-8953-27225ee6d3ed:04B5B094459D6E6A7C00E20E33F12A18:2:Documents\АвансовыйОтчет.xml
+0d0d3445-cdea-490d-988b-e83d8354417f:AE6421A336E165F835C65C08A9976E7A:2:Documents\ЗаказКлиента.xml
 0c62e66c-596a-40f1-8a28-ff611d3c0b9a:52CDB1AC90AFDEB2A767D9E9C3B28EBC:2:Documents\ЗаказНаПроизводство2_2.xml
 0d688d5d-3fa2-43d7-a797-9b2ab2f308c2:562AC074CBA9F9909B82B7EE6F6FEF52:2:Documents\ЗаявкаНаРасходованиеДенежныхСредств.xml
 1d9f84b2-bafb-4a77-aadf-22487a43a671:D6BF02700F07DD86AC3C6CBCE63B8F60:2:Documents\ПрочиеДоходыРасходы.xml
@@ -104,8 +107,11 @@ f893d99d-46ef-4ba3-b990-34ce5d1af420:D256C0E6C27C322643BAB3951126BFE2:2:Enums\В
 fd803786-80bb-4148-b2a2-3c941c10e6fb:3073DC80BA823AF8A72519E32A05237F:2:Enums\Периодичность.xml
 6b225312-b47f-4c8d-8585-064cd57a767d:DB5DB50DD5FE821D272979E3504074FD:2:Enums\СостоянияОбеспеченияЭтапаПроизводства.xml
 1dbe772f-ba60-4831-aaec-fe5927bddf05:B838F9D878CDD37E4B9300AE1FDAEE74:2:Enums\СостоянияЭтаповНаВнутрицеховомУровне.xml
+2ea86629-525a-48f4-a5d2-f9e5479bcb09:543CC21785ECE39FA92BF43D400B4418:2:Enums\СпособыДоставки.xml
 61f2ade9-7430-486a-b80d-09b9f220e6f2:C9350604936C1E1DBA3D32B841D40FED:2:Enums\СпособыОтраженияМатериальнойПередачиМеждуЭтапамиПартии.xml
 f4fb7aaf-4afc-4a81-853d-4627c0dc536a:D1FE821CA9806A711E2315042889AF51:2:Enums\СпособыФормированияСегментов.xml
+bc76ef0f-e764-4076-8c25-23d99a680ed4:00074748D84420D6AC4339EEEE215BF4:2:Enums\СтатусыДействияВидовЦен.xml
+be8be3dc-e3bd-41f0-b6cb-cab5eb4fddb4:E942EA76EA9706CEEFE2C6240F2E9633:2:Enums\ТипыНалогообложенияНДС.xml
 fdc5d41c-bfb0-47f3-abb2-33993588f24f:38EBB8B38B9255388591318220042E13:2:Enums\ТипыОбеспечения.xml
 08f51015-d06d-4f29-a9a2-5a21006eb081:D338A1252E7C639809BA68E52596BFBD:2:Enums\ТипыПроизводственныхПроцессов.xml
 ab61d138-4ed1-450e-8551-459a486c8e31:34FFB1C71BBC5432EFBE4732F524698A:2:EventSubscriptions\юум_ПроверитьЗапретНаИзменениеПередЗаписьюДокумента.xml
@@ -163,6 +169,7 @@ e7fc9ff1-d7b0-49bd-8fdb-67d639306556:61267B6120416A3F8D990E6026162684:2:StyleIte
 65b9391e-2dbd-4257-920c-388aa71c58dc:6679D257D02FE1D24634EBC86250A896:2:StyleItems\ТекстИнформационнойНадписи.xml
 f1382d24-45a3-4b5d-86a8-b220c3147c85:5D388D33D65064147C9BD15C1B634904:2:StyleItems\ФонУправляющегоПоля.xml
 a4b614cc-cf3d-48b8-8e8b-440f711c3a0d:577232F860EA834B247D4B2D4110A2CD:2:StyleItems\ЦветТекстаНевыбраннойКартинки.xml
+a50b0815-3184-466f-aadf-dd915a83631a:D3D6F0D5183F182426DFE634935CECCC:2:StyleItems\ЦветТекстаПроблема.xml
 a09e131d-f954-4b4a-aea1-36529fdd610e:8A668C494F372FF9AB0DC3858E7F79F9:2:StyleItems\ЦветФонаВыделения.xml
 ef32ff78-8d7d-4311-b1e6-e0165c58d1c0:527C5E636BB46BA4BD475AF3A3594CB3:2:StyleItems\ЦветФонаУдачнойОтправки.xml
 0da19dda-87e1-4b81-a9cf-f825c0a3d331:80011D14DF26733F9FF65BB7DC2C17D5:2:Subsystems\Администрирование.xml
@@ -224,6 +231,7 @@ f62ed4a2-dedb-5ca9-9003-b7146abfb7bf:5C8F6F2C250F893C042DD8981725B566:4:DataProc
 e2391936-4aab-4a83-959b-ef4606ad92a8:990D31F5CE7B6D141DBF9E37369E8804:4:DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма.xml
 b19a8621-e043-48e9-84e2-f0eab60a327e:0B579088AD872F7421FCA7961BC57ABA:4:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчет_ru.xml
 29687e5a-3caa-4f5e-9c44-0f15080a454f:CBE48F3432E51FD538BE82F47DB41D97:4:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчетВИностраннойВалюте_ru.xml
+17f66b1b-fb7f-458b-b501-54fb7d130e8f:FA7F6154A8ED6815C536A2C5F367FC58:4:Documents\ЗаказКлиента\Forms\ФормаДокумента.xml
 ac3e589f-509d-4fcf-950d-90a53cd1aa8d:061787C53B0ED8A7FA293DC2E60CF7A8:4:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента.xml
 dca94ae5-8c1a-4845-b74b-fb0726ec60be:9D7C9F6DE23DF1EC9BAF93A6701091A0:4:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента.xml
 746022b2-a927-46ac-b782-8a1017d99cb4:1ECAE6D550215277DDAEFD63F840C678:4:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel.xml
@@ -295,6 +303,7 @@ DataProcessors\юум_МониторингЗаказаСамостоятельн
 DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма\Ext\Form.xml:845AB84D36F46774293370152CA1CE6A:6:DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма\Ext\Form.xml
 Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчет_ru\Ext\Template.xml:308C71F986F523826A0A030803C22A1B:6:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчет_ru\Ext\Template.xml
 Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчетВИностраннойВалюте_ru\Ext\Template.xml:C266410DD58B975B3E1D942023C8F9BB:6:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчетВИностраннойВалюте_ru\Ext\Template.xml
+Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form.xml:45485412C86C698BE8E5743BBB7CABDF:6:Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form.xml:5F3F19F3FA71108D72605BDCC4287E23:6:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form.xml:1355A8C5B328D41E6A2DD5A49895630A:6:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form.xml:3B3BAD87C1B0FCDF697379C35B27882C:6:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form.xml
