@@ -91,19 +91,21 @@
 			<CommonPicture>СинхронизацияДанныхВыполнение</CommonPicture>
 			<CommonPicture>СинхронизацияДанных</CommonPicture>
 			<CommonPicture>ПодписанЗашифрованСостояния</CommonPicture>
-			<CommonPicture>ЗаполнитьФорму</CommonPicture>
-			<CommonPicture>Внимание16</CommonPicture>
+			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
+			<CommonPicture>Отчеты</CommonPicture>
 			<CommonPicture>КоллекцияПиктограммФайлов</CommonPicture>
-			<CommonPicture>ПиктограммыЭлементов</CommonPicture>
-			<CommonPicture>Пустая</CommonPicture>
+			<CommonPicture>Внимание16</CommonPicture>
+			<CommonPicture>ЗаполнитьФорму</CommonPicture>
 			<CommonPicture>ПодписанЗашифрованЗаголовок</CommonPicture>
 			<CommonPicture>ОбновитьФайлИзФайлаНаДиске</CommonPicture>
-			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
+			<CommonPicture>ПиктограммыЭлементов</CommonPicture>
 			<CommonPicture>ФайловыйАрхив</CommonPicture>
 			<CommonPicture>ЗеленаяГалкаСредняя</CommonPicture>
-			<CommonPicture>Отчеты</CommonPicture>
+			<CommonPicture>Пустая</CommonPicture>
 			<CommonPicture>Набор</CommonPicture>
 			<CommonPicture>Наборы</CommonPicture>
+			<CommonPicture>юум_СтруктураЗказа</CommonPicture>
+			<CommonPicture>юум_ЭтапПроизводства</CommonPicture>
 			<Role>юум_ЧтениеГлобальныеЗначения</Role>
 			<Role>юум_ПросмотрРазделаНастройки</Role>
 			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
@@ -198,17 +200,17 @@
 			<Document>ЗаказКлиента</Document>
 			<Document>ПриобретениеУслугПрочихАктивов</Document>
 			<Document>ПриобретениеТоваровУслуг</Document>
-			<Enum>СпособыФормированияСегментов</Enum>
+			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
 			<Enum>ТипыПроизводственныхПроцессов</Enum>
 			<Enum>СостоянияЭтаповНаВнутрицеховомУровне</Enum>
-			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
-			<Enum>ТипыОбеспечения</Enum>
+			<Enum>Периодичность</Enum>
+			<Enum>СпособыФормированияСегментов</Enum>
 			<Enum>СтатусыДействияВидовЦен</Enum>
+			<Enum>ТипыОбеспечения</Enum>
 			<Enum>СпособыОтраженияМатериальнойПередачиМеждуЭтапамиПартии</Enum>
 			<Enum>ВариантыНазначенияСпецификации</Enum>
 			<Enum>ЕдиницыИзмеренияВремени</Enum>
 			<Enum>ВариантыПечатиМаршрутнойКартыНаПродукцию</Enum>
-			<Enum>Периодичность</Enum>
 			<Enum>ТипыНалогообложенияНДС</Enum>
 			<Enum>СпособыДоставки</Enum>
 			<Report>МониторингЗаказа</Report>

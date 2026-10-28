@@ -87,6 +87,8 @@ ed6ab026-34c5-4435-b7b6-7c244f568dc6:74BE65A6891C007A7B8BC48D1F7479C0:2:CommonPi
 11dfe039-2fbb-45f3-8e06-f560e9914002:40D758FF5EA709DE811A4369A202971B:2:CommonPictures\ТребуетсяОформитьВыработкуСотрудников.xml
 d0561af3-9145-413b-8ac9-4fb27727253a:5659E414AFB419FF7BE01F6C56B148EE:2:CommonPictures\ТребуетсяПланированиеГрафика.xml
 a9225186-fb9b-4e3d-97d3-291f26863283:FB2ADC9ED67D4C4B0655097D1D05D80D:2:CommonPictures\ФайловыйАрхив.xml
+3d8361a5-781e-4801-a475-9c8f85fe4599:B986F608E6EC373C21485835F482B9FE:2:CommonPictures\юум_СтруктураЗказа.xml
+d34926a3-031b-4593-a511-e96b11240375:2A7D60942C75560BD16142F97BD80212:2:CommonPictures\юум_ЭтапПроизводства.xml
 99164c4e-bc13-41cb-baac-baa591cb104a:C92D421D39779CEE434C210C8FDF787C:2:DataProcessors\ВыполнениеЭтаповПроизводства.xml
 1a8fbb8a-c907-4724-b0a7-e13018948249:6C9D9281B76EA8FF8365002EC19AC382:2:DataProcessors\ЗагрузкаАОН.xml
 22b07cc6-5c0d-4869-be3c-0b73fc11593b:DE8DC68BA547292A6111A051A4DDE358:2:DataProcessors\ЗагрузкаНоменклатуры.xml
@@ -219,6 +221,8 @@ CommonModules\юум_ОбщегоНазначенияКлиентСервер\Ex
 CommonModules\юум_РаботаСФормой\Ext\Module.bsl:DDF348A38498305715E945EAE74CB42A:4:CommonModules\юум_РаботаСФормой\Ext\Module.bsl
 CommonModules\юум_РаботаСФормойКлиентСервер\Ext\Module.bsl:67DBD6178D495DDFB4B6EA85CCD030BD:4:CommonModules\юум_РаботаСФормойКлиентСервер\Ext\Module.bsl
 CommonModules\юум_СхемыЗапросов\Ext\Module.bsl:7C59CAF798B683C8B3AF4F75CECF07A1:4:CommonModules\юум_СхемыЗапросов\Ext\Module.bsl
+CommonPictures\юум_СтруктураЗказа\Ext\Picture.xml:9041482012440FB127152A9EE1B0D8E0:4:CommonPictures\юум_СтруктураЗказа\Ext\Picture.xml
+CommonPictures\юум_ЭтапПроизводства\Ext\Picture.xml:3A276D2359E98B239A299923F76ECE70:4:CommonPictures\юум_ЭтапПроизводства\Ext\Picture.xml
 9b158017-da38-4718-b2e5-e6dd12448b9e:DC5AC31EB6B30152EFA604E3B0830073:4:DataProcessors\ВыполнениеЭтаповПроизводства\Forms\юум_Форма.xml
 DataProcessors\ЗагрузкаАОН\Ext\ObjectModule.bsl:25E9333DC431FA10F87D9EF07814E0EF:4:DataProcessors\ЗагрузкаАОН\Ext\ObjectModule.bsl
 5e84ce70-0114-4bb9-a0a4-f1def28ceeb8:2DF8495464A70C556103025AC1FCFB06:4:DataProcessors\ЗагрузкаАОН\Forms\Форма.xml
@@ -298,6 +302,8 @@ bc6eb26d-2460-47ea-8bc7-b4bc2b4673ea:5AEAED1EFD79BD1BD8A19B5D016DE4EB:4:Subsyste
 b5f91641-8f23-424d-b720-6fd30803edcd:D79B8586771A9B8072F8F915EFF843B7:4:Subsystems\Производство\Subsystems\юум_ПроизводствоСлужебные.xml
 26978b5c-c83f-44a7-b6f7-4e8c34427f84:5AB0A0BADF04F3604275470D9C0DC023:4:Subsystems\юум_Доработки\Subsystems\Интеграция.xml
 CommonForms\НастройкаСчетовУчетаОперации\Ext\Form\Module.bsl:D5131002E61A61758E39060ED4AB55D1:5:CommonForms\НастройкаСчетовУчетаОперации\Ext\Form\Module.bsl
+CommonPictures\юум_СтруктураЗказа\Ext\Picture\Picture.svg:DE5BE00329F92F50D1507D9DEC941603:5:CommonPictures\юум_СтруктураЗказа\Ext\Picture\Picture.svg
+CommonPictures\юум_ЭтапПроизводства\Ext\Picture\Picture.svg:677D7B5F91139B6AD93F722766E9600B:5:CommonPictures\юум_ЭтапПроизводства\Ext\Picture\Picture.svg
 Reports\юум_ЗагрузкаВРЦПоИзделиямИЭтапам\Ext\Help\ru.html:9A4E76339FFA5D12A1FE2E355F5548C6:5:Reports\юум_ЗагрузкаВРЦПоИзделиямИЭтапам\Ext\Help\ru.html
 AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\ФормаСписка\Ext\Form.xml:5F24CD747EF537C939836F873AC965DF:6:AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\ФормаСписка\Ext\Form.xml
 AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\юум_ФормаСписка\Ext\Form.xml:97234C9D37B2806498AF38279613A138:6:AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\юум_ФормаСписка\Ext\Form.xml
