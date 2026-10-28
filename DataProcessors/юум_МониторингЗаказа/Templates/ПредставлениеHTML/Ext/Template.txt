@@ -1,0 +1,201 @@
+﻿<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Мониторинг заказа</title><style>
+*{box-sizing:border-box}html,body{height:100%;margin:0;font:13px Arial,sans-serif;color:#263b53;background:#fff}
+body{display:flex;flex-direction:column}button{font:inherit;color:inherit;background:#fff;border:1px solid #aebac5;border-radius:3px;padding:5px 15px;cursor:pointer}
+button:hover{background:#edf5fd}button.active{background:#e6f4e8;border-color:#58b958}
+.toolbar{padding:7px 12px;display:flex;gap:8px;align-items:center;border-bottom:1px solid #ccd5df;flex-shrink:0}
+.header-layout,.body-layout,.scrollbar-layout{display:flex;min-width:0}
+.header-layout{flex-shrink:0;border-bottom:1px solid #ccd5df;overflow:hidden}
+.metrics{flex:none;overflow:hidden}.calendar-window{flex:1;min-width:0;overflow:hidden;position:relative}
+.header-viewport{overflow:hidden;flex:none}.viewport{overflow-y:auto;overflow-x:hidden;flex:1;min-height:0}
+.scrollbar-layout{flex-shrink:0;height:17px;overflow:hidden}
+.horizontal-scroll{overflow-x:scroll;overflow-y:hidden;min-width:0;height:17px}
+.scroll-track{height:1px}.gutter{flex:none}
+table{border-collapse:separate;border-spacing:0;table-layout:fixed}
+col.name{width:360px}col.qty{width:84px}col.hours{width:140px}col.ready{width:110px}col.day{width:20px}
+th,td{height:32px;padding:5px 9px;border-right:1px solid #d5dee7;border-bottom:1px solid #e3e8ed;white-space:nowrap}
+thead th{background:#f0f3f7;font-weight:600;text-align:center;position:relative;height:28px;overflow:hidden}
+thead tr:nth-child(2) th{padding:3px 0;font-size:11px;font-weight:normal;height:25px}
+td{text-align:right;background:#fff}td.name{text-align:left}tbody tr:hover td{background-color:#f4f9ff}
+.fixed{position:relative}#ganttHeader th{height:54px}
+.namecontent{display:block;width:100%;overflow:hidden}
+.toggle{width:18px;padding:0;border:0;background:transparent;font-size:16px;line-height:20px;vertical-align:middle;margin-right:6px}
+.leaf{display:inline-block;width:18px;vertical-align:middle;margin-right:6px}
+.label{display:inline-block;max-width:calc(100% - 24px);vertical-align:middle;overflow:hidden;text-overflow:ellipsis;color:inherit;text-decoration:none}
+.label:hover{text-decoration:underline}.readybar{display:inline-block;width:40px;height:8px;background:#e5e9ed;vertical-align:middle;margin-left:7px;border-radius:2px}
+.readybar span{display:block;height:100%;background:#58b958;border-radius:2px}
+.timeline{padding:0!important;position:relative;background-image:repeating-linear-gradient(to right,transparent 0,transparent 19px,#e6ecf2 19px,#e6ecf2 20px)}
+.bar{position:absolute;height:15px;top:8px;border-radius:3px}.gray{background:#c9cdd2}.blue{background:#238bfa}.green{background:#58b958}
+.today{position:absolute;top:0;bottom:0;border-left:1px dashed #328ef3;pointer-events:none}
+.weekend{color:#8796a5}.empty{padding:24px;color:#52677d}#monitoringState{display:none}
+.resize-handle{position:absolute;right:0;top:0;bottom:0;width:7px;cursor:col-resize;z-index:12}
+.resize-handle:hover{background:#a9cbed}.resizing,.resizing *{cursor:col-resize!important;user-select:none;-ms-user-select:none}
+</style></head><body>
+<div class="toolbar"><span>Раскрыть до уровня:</span><button data-level="1" onclick="setLevel(1)">1</button>
+<button data-level="2" onclick="setLevel(2)">2</button><button data-level="3" onclick="setLevel(3)">3</button>
+<button data-level="4" onclick="setLevel(4)">4</button><button data-level="64" onclick="setLevel(64)">Все</button>
+<span style="margin-left:12px">Масштаб:</span><button onclick="setZoom(dayWidth-4)" aria-label="Уменьшить масштаб">−</button>
+<button id="zoomValue" onclick="setZoom(20)" title="Вернуть исходный масштаб">100%</button>
+<button onclick="setZoom(dayWidth+4)" aria-label="Увеличить масштаб">+</button>
+<span id="counter" style="margin-left:auto"></span></div>
+<div id="monitoringState"></div>
+<div class="header-layout" id="headerLayout"><div class="metrics" id="metricsHeader"><table id="ganttHeader">
+<colgroup id="columns"><col class="name"><col class="qty"><col class="qty"><col class="hours"><col class="hours"><col class="ready"></colgroup>
+<thead><tr id="metricsHead"><th class="fixed f0">Номенклатура, этап</th>
+<th class="fixed f1">План, шт</th><th class="fixed f2">Факт, шт</th>
+<th class="fixed f3" title="Плановые трудозатраты в часах">План, ч</th>
+<th class="fixed f4" title="Фактические трудозатраты в часах">Факт, ч</th>
+<th class="fixed f5">Готовность, %</th></tr></thead></table></div>
+<div class="calendar-window header-viewport" id="headerViewport"><table id="calendarHeader"><colgroup id="calendarColumns"></colgroup><thead><tr id="months"></tr><tr id="days"></tr></thead></table></div>
+<div class="gutter" id="headerGutter"></div></div>
+<div class="viewport" id="viewport" tabindex="0"><div class="body-layout">
+<div class="metrics" id="metricsBody"><table id="gantt"><colgroup id="bodyColumns"></colgroup><tbody id="rows"></tbody></table></div>
+<div class="calendar-window" id="calendarViewport"><table id="calendarTable"><colgroup id="calendarBodyColumns"></colgroup><tbody id="calendarRows"></tbody></table></div>
+</div></div>
+<div class="scrollbar-layout"><div class="metrics" id="scrollbarSpacer"></div><div class="horizontal-scroll" id="horizontalScroll" tabindex="0" aria-label="Горизонтальная прокрутка календаря"><div class="scroll-track" id="scrollTrack"></div></div><div class="gutter" id="scrollbarGutter"></div></div>
+<script>
+var model=__DATA__;
+var data=model.rows,calendar=model.calendar,children={},collapsed={},level=model.level;
+var viewport=document.getElementById('viewport'),headerViewport=document.getElementById('headerViewport');
+var state=document.getElementById('monitoringState'),tbody=document.getElementById('rows');
+var calendarViewport=document.getElementById('calendarViewport'),calendarRows=document.getElementById('calendarRows');
+var horizontalScroll=document.getElementById('horizontalScroll');
+var metricsHeader=document.getElementById('metricsHeader'),metricsBody=document.getElementById('metricsBody');
+var headerGutter=document.getElementById('headerGutter'),scrollbarGutter=document.getElementById('scrollbarGutter');
+var dayWidth=model.dayWidth||20,expanded={},columnWidths=[360,84,84,140,140,110];
+var minimumWidths=[160,70,70,90,90,110],minimumCalendarWidth=80;
+var resizeState=null;
+for(var i=0;i<columnWidths.length;i++){
+    if(model.columnWidths&&isFinite(model.columnWidths[i]))columnWidths[i]=Math.max(minimumWidths[i],Math.min(1200,model.columnWidths[i]));
+}
+for(var i=0;i<model.expanded.length;i++)expanded[model.expanded[i]]=true;
+for(var i=0;i<data.length;i++){if(data[i].parent>=0)children[data[i].parent]=true;collapsed[i]=!expanded[data[i].key];}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function detail(node,stage){return 'monitoring:detail/'+node+'/'+stage;}
+function initializeCalendar(){
+    var cols=[],months=[],days=[],month='',span=0;
+    for(var d=0;d<calendar.length;d++){
+        var c=calendar[d];cols.push('<col class="day">');
+        if(c.month!==month){if(span)months.push('<th colspan="'+span+'">'+esc(month)+'</th>');month=c.month;span=0;}
+        span++;days.push('<th title="'+esc(c.date)+'"'+(c.weekend?' class="weekend"':'')+'>'+esc(c.day)+'</th>');
+    }
+    if(span)months.push('<th colspan="'+span+'">'+esc(month)+'</th>');
+    document.getElementById('bodyColumns').innerHTML=document.getElementById('columns').innerHTML;
+    document.getElementById('calendarColumns').innerHTML=cols.join('');
+    document.getElementById('calendarBodyColumns').innerHTML=cols.join('');
+    document.getElementById('months').insertAdjacentHTML('beforeend',months.join(''));
+    document.getElementById('days').innerHTML=days.join('');
+}
+function fixedWidth(){var width=0;for(var c=0;c<columnWidths.length;c++)width+=columnWidths[c];return width;}
+function saveScroll(){
+    state.setAttribute('data-top',String(viewport.scrollTop));state.setAttribute('data-left',String(horizontalScroll.scrollLeft));
+    state.setAttribute('data-day-width',String(dayWidth));state.setAttribute('data-column-widths',JSON.stringify(columnWidths));
+}
+function synchronizeCalendar(){
+    calendarViewport.scrollLeft=horizontalScroll.scrollLeft;
+    headerViewport.scrollLeft=horizontalScroll.scrollLeft;
+}
+function onScroll(){synchronizeCalendar();saveScroll();}
+function synchronizeViewport(){
+    var gutter=document.getElementById('headerLayout').clientWidth-viewport.clientWidth;
+    headerGutter.style.width=gutter+'px';scrollbarGutter.style.width=gutter+'px';
+    headerViewport.style.width=calendarViewport.clientWidth+'px';
+    horizontalScroll.style.width=calendarViewport.clientWidth+'px';
+    synchronizeCalendar();
+}
+function onWheel(event){
+    var horizontal=event.deltaX||(event.shiftKey?event.deltaY:0);
+    if(!horizontal)return;
+    var unit=event.deltaMode===1?20:(event.deltaMode===2?calendarViewport.clientWidth:1);
+    horizontalScroll.scrollLeft+=horizontal*unit;
+    if(event.deltaX&&event.deltaY)viewport.scrollTop+=event.deltaY*unit;
+    onScroll();event.preventDefault();
+}
+function applyColumnWidths(){
+    var groups=[document.getElementById('columns'),document.getElementById('bodyColumns')];
+    for(var g=0;g<groups.length;g++){
+        var columns=groups[g].children;
+        for(var c=0;c<columnWidths.length;c++)columns[c].style.width=columnWidths[c]+'px';
+    }
+    var width=fixedWidth(),calendarWidth=calendar.length*dayWidth;
+    metricsHeader.style.width=width+'px';metricsBody.style.width=width+'px';
+    document.getElementById('scrollbarSpacer').style.width=width+'px';
+    document.getElementById('gantt').style.width=width+'px';document.getElementById('ganttHeader').style.width=width+'px';
+    document.getElementById('calendarTable').style.width=calendarWidth+'px';
+    document.getElementById('calendarHeader').style.width=calendarWidth+'px';
+    document.getElementById('scrollTrack').style.width=calendarWidth+'px';
+    var calendarGroups=[document.getElementById('calendarColumns'),document.getElementById('calendarBodyColumns')];
+    for(var g=0;g<calendarGroups.length;g++){
+        var days=calendarGroups[g].children;
+        for(var d=0;d<days.length;d++)days[d].style.width=dayWidth+'px';
+    }
+    synchronizeViewport();saveScroll();
+}
+function applyZoom(){
+    applyColumnWidths();document.getElementById('zoomValue').textContent=Math.round(dayWidth/20*100)+'%';
+    var grid=document.querySelectorAll('td.timeline');
+    for(var z=0;z<grid.length;z++)grid[z].style.backgroundImage='repeating-linear-gradient(to right,transparent 0,transparent '+(dayWidth-1)+'px,#e6ecf2 '+(dayWidth-1)+'px,#e6ecf2 '+dayWidth+'px)';
+}
+function setZoom(value){var logicalLeft=horizontalScroll.scrollLeft/dayWidth;dayWidth=Math.max(8,Math.min(40,value));render();horizontalScroll.scrollLeft=logicalLeft*dayWidth;onScroll();}
+function saveTree(){
+    var keys=[];for(var i=0;i<data.length;i++)if(children[i]&&!collapsed[i])keys.push(data[i].key);
+    state.setAttribute('data-expanded',JSON.stringify(keys));state.setAttribute('data-level',String(level));
+    var buttons=document.querySelectorAll('button[data-level]');
+    for(var b=0;b<buttons.length;b++)buttons[b].className=Number(buttons[b].getAttribute('data-level'))===level?'active':'';
+}
+function rowMarkup(r,n){
+    var name='<div class="namecontent" style="padding-left:'+((r.level-1)*14)+'px">';
+    name+=children[n]?'<button class="toggle" onclick="toggleNode('+n+')" aria-label="Развернуть или свернуть">'+(collapsed[n]?'+':'−')+'</button>':'<span class="leaf"></span>';
+    name+='<a class="label" href="'+detail(r.node,r.stage)+'" title="'+esc(r.name)+'">'+esc(r.name)+'</a></div>';
+    var ready=esc(r.readyText),bar='';
+    if(r.readyText!=='-'){ready+='%';bar='<span class="readybar"><span style="width:'+Math.max(0,Math.min(100,r.ready))+'%;'+(r.ready>100?'background:#efa537':'')+'"></span></span>';}
+    var intervals=[];
+    for(var j=0;j<r.intervals.length;j++){
+        var x=r.intervals[j];intervals.push('<a class="bar '+x.color+'" href="'+detail(x.node,x.stage)+'" title="'+esc(x.title)+'" style="left:'+(x.start*dayWidth)+'px;width:'+Math.max(1,(x.finish-x.start)*dayWidth)+'px"></a>');
+    }
+    if(model.today>=0&&model.today<calendar.length)intervals.push('<span class="today" style="left:'+(model.today*dayWidth)+'px"></span>');
+    var hint=esc(r.laborHint||'');
+    return {metrics:'<tr data-id="'+n+'" data-key="'+esc(r.key)+'"><td class="name fixed f0">'+name+'</td><td class="fixed f1">'+esc(r.planQty)+'</td><td class="fixed f2">'+esc(r.actualQty)+'</td>'+
+        '<td class="fixed f3" title="'+hint+'">'+esc(r.planHours)+'</td><td class="fixed f4" title="'+hint+'">'+esc(r.actualHours)+'</td><td class="fixed f5" title="'+hint+'">'+ready+bar+'</td></tr>',
+        calendar:'<tr data-id="'+n+'"><td class="timeline" colspan="'+calendar.length+'">'+intervals.join('')+'</td></tr>'};
+}
+function render(){
+    var out=[],calendarOut=[],shown=[],count=0;
+    for(var n=0;n<data.length;n++){
+        var r=data[n];shown[n]=r.parent<0||(shown[r.parent]&&!collapsed[r.parent]);if(!shown[n])continue;
+        count++;var row=rowMarkup(r,n);out.push(row.metrics);calendarOut.push(row.calendar);
+    }
+    tbody.innerHTML=out.join('');calendarRows.innerHTML=calendarOut.join('');
+    applyZoom();document.getElementById('counter').textContent='Видимых строк: '+count+' из '+data.length;saveTree();saveScroll();
+}
+function setLevel(value){level=value;for(var n=0;n<data.length;n++)collapsed[n]=data[n].level>=value;viewport.scrollTop=0;render();}
+function toggleNode(id){collapsed[id]=!collapsed[id];level=0;render();}
+function beginResize(event,index){
+    if(event.button!==0)return;
+    resizeState={index:index,x:event.clientX,width:columnWidths[index]};document.body.className='resizing';
+    event.preventDefault();event.stopPropagation();
+}
+function continueResize(event){
+    if(!resizeState)return;
+    var index=resizeState.index,otherWidth=fixedWidth()-columnWidths[index];
+    var maximum=Math.max(resizeState.width,viewport.clientWidth-otherWidth-minimumCalendarWidth);
+    columnWidths[index]=Math.round(Math.max(minimumWidths[index],Math.min(maximum,resizeState.width+event.clientX-resizeState.x)));
+    applyColumnWidths();event.preventDefault();
+}
+function finishResize(){if(!resizeState)return;resizeState=null;document.body.className='';saveScroll();}
+function initializeResizing(){
+    var headers=document.querySelectorAll('#metricsHead th.fixed');
+    for(var h=0;h<headers.length;h++){
+        var handle=document.createElement('span');handle.className='resize-handle';handle.setAttribute('data-column',String(h));
+        handle.title='Изменить ширину колонки';handle.onmousedown=function(event){beginResize(event,Number(this.getAttribute('data-column')));};
+        headers[h].appendChild(handle);
+    }
+    document.addEventListener('mousemove',continueResize);document.addEventListener('mouseup',finishResize);window.addEventListener('blur',finishResize);
+}
+initializeCalendar();initializeResizing();viewport.addEventListener('scroll',saveScroll);
+horizontalScroll.addEventListener('scroll',onScroll);viewport.addEventListener('wheel',onWheel,{passive:false});
+document.getElementById('headerLayout').addEventListener('wheel',onWheel,{passive:false});
+window.addEventListener('resize',synchronizeViewport);
+render();viewport.scrollTop=model.top;horizontalScroll.scrollLeft=model.left;synchronizeCalendar();saveScroll();
+</script></body></html>

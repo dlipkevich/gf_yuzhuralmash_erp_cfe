@@ -220,7 +220,7 @@
 			<DataProcessor>юум_СохранениеДереваЗаказа</DataProcessor>
 			<DataProcessor>ВыполнениеЭтаповПроизводства</DataProcessor>
 			<DataProcessor>ПечатьОбщихФорм</DataProcessor>
-			<DataProcessor>юум_МониторингЗаказаСамостоятельный</DataProcessor>
+			<DataProcessor>юум_МониторингЗаказа</DataProcessor>
 			<DataProcessor>ЗагрузкаАОН</DataProcessor>
 			<DataProcessor>ЗагрузкаНоменклатуры</DataProcessor>
 			<InformationRegister>СтруктураЗаказа</InformationRegister>
