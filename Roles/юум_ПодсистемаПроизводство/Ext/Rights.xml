@@ -4,6 +4,13 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>Subsystem.Производство.Subsystem.МежцеховоеУправление2_2.Subsystem.юум_МежцеховоеУправление2_2</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Configuration.юум_Производство</name>
 		<right>
 			<name>ThinClient</name>

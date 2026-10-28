@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>Галфинд</Vendor>
-			<Version>2.6.2.59_45</Version>
+			<Version>2.6.2.59_54</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -129,6 +129,7 @@
 			<Role>БазовыеПраваБСП</Role>
 			<Role>юум_ПросмотрРСюум_СоответствиеКодовНоменклатурыЦГ_Статье</Role>
 			<Role>юум_РедактированиеРСюум_СоответствиеКодовНоменклатурыЦГ_Статье</Role>
+			<Role>ПросмотрОтчетовОЗагрузкеРабочихЦентров</Role>
 			<CommonModule>ГрафикПроизводстваСтруктурыЗаказа</CommonModule>
 			<CommonModule>юум_РаботаСФормой</CommonModule>
 			<CommonModule>юум_РаботаСФормойКлиентСервер</CommonModule>
@@ -144,6 +145,7 @@
 			<CommonModule>юум_ЗапретНаИзменениеСобытия</CommonModule>
 			<CommonModule>юум_ОбщегоНазначенияКлиентСервер</CommonModule>
 			<CommonModule>юум_Интеграция</CommonModule>
+			<CommonModule>ВариантыОтчетовУТПереопределяемый</CommonModule>
 			<ExchangePlan>юум_ОбменДО_ERP</ExchangePlan>
 			<EventSubscription>юум_ПроверитьЗапретНаИзменениеПередЗаписьюДокумента</EventSubscription>
 			<EventSubscription>юум_ПроверитьЗапретНаИзменениеПередЗаписьюСправочника</EventSubscription>
@@ -212,6 +214,7 @@
 			<Report>МониторингЗаказа</Report>
 			<Report>ВедомостьПоОС2_4</Report>
 			<Report>СтруктураЗаказаНаПроизводствоДинамическая</Report>
+			<Report>юум_ЗагрузкаВРЦПоИзделиямИЭтапам</Report>
 			<DataProcessor>ОбеспечениеПотребностей</DataProcessor>
 			<DataProcessor>ПечатьМ11</DataProcessor>
 			<DataProcessor>юум_СохранениеДереваЗаказа</DataProcessor>

@@ -18,6 +18,7 @@
 			<Subsystem>юум_ПроизводствоСлужебные</Subsystem>
 			<Subsystem>ВнутрицеховоеУправление2_2</Subsystem>
 			<Subsystem>НСИ</Subsystem>
+			<Subsystem>МежцеховоеУправление2_2</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
