@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>Галфинд</Vendor>
-			<Version>2.6.2.59_57</Version>
+			<Version>2.6.2.59_58</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -132,6 +132,7 @@
 			<Role>юум_ПросмотрРСюум_СоответствиеКодовНоменклатурыЦГ_Статье</Role>
 			<Role>юум_РедактированиеРСюум_СоответствиеКодовНоменклатурыЦГ_Статье</Role>
 			<Role>ПросмотрОтчетовОЗагрузкеРабочихЦентров</Role>
+			<Role>ОтчетыГлавногоДиспетчера</Role>
 			<CommonModule>ГрафикПроизводстваСтруктурыЗаказа</CommonModule>
 			<CommonModule>юум_РаботаСФормой</CommonModule>
 			<CommonModule>юум_РаботаСФормойКлиентСервер</CommonModule>
@@ -217,6 +218,7 @@
 			<Report>ВедомостьПоОС2_4</Report>
 			<Report>СтруктураЗаказаНаПроизводствоДинамическая</Report>
 			<Report>юум_ЗагрузкаВРЦПоИзделиямИЭтапам</Report>
+			<Report>юум_ТрудоемкостьЗаказаНаПроизводствоПоИзделиям</Report>
 			<DataProcessor>ОбеспечениеПотребностей</DataProcessor>
 			<DataProcessor>ПечатьМ11</DataProcessor>
 			<DataProcessor>юум_СохранениеДереваЗаказа</DataProcessor>
