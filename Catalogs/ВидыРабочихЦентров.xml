@@ -29,6 +29,8 @@
 			<Comment/>
 			<ExtendedConfigurationObject>d9c3d2cf-72d8-4ae4-9c66-7adbc31c98a7</ExtendedConfigurationObject>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

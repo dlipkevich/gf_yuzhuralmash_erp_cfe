@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>true</independentRightsOfChildObjects>
 	<object>
-		<name>Configuration.юум_ПечатнаяФормаЗаявкиДС</name>
+		<name>Configuration.юум_Производство</name>
 		<right>
 			<name>ThinClient</name>
 			<value>true</value>

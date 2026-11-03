@@ -1,0 +1,103 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20">
+	<import namespace="http://www.1c.ru/SSL/Exchange/Message"/>
+	<import namespace="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.умБригады" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.юумФизическиеЛица" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.юумПодразделения" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="РегистрСведений.юумКоличествоВРЦ" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.РазрядыКатегорииДолжностей" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="РегистрСведений.ЗначенияТарифов" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.умЗаказы" base="d2p1:Ref"/>
+	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="ДокументСсылка.умИсходныеДанныеСделок" base="d2p1:Ref"/>
+	<objectType name="КлючевыеСвойстваумБригады" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.умБригады" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.умБригады" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваумБригады"/>
+		<property name="НомерБригады" type="xs:decimal" lowerBound="0"/>
+		<property name="ПодразделениеКодБУ" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваюумФизическиеЛица" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.юумФизическиеЛица" lowerBound="0"/>
+		<property name="СтраховойНомерПФР" type="xs:string" lowerBound="1"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.юумФизическиеЛица" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваюумФизическиеЛица"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="НаименованиеСлужебное" type="xs:string" lowerBound="0"/>
+		<property name="Инициалы" type="xs:string" lowerBound="0"/>
+		<property name="Пол" type="xs:string" lowerBound="0"/>
+		<property name="ДатаРождения" type="xs:date" lowerBound="0"/>
+		<property name="ИНН" type="xs:string" lowerBound="0"/>
+		<property name="ФИО" type="xs:string" lowerBound="0"/>
+		<property name="Имя" type="xs:string" lowerBound="0"/>
+		<property name="Фамилия" type="xs:string" lowerBound="0"/>
+		<property name="Отчество" type="xs:string" lowerBound="0"/>
+		<property name="Состояние" type="xs:string" lowerBound="1"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваюумПодразделения" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.юумПодразделения" lowerBound="0"/>
+		<property name="КодБУ" type="xs:string" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.юумПодразделения" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваюумПодразделения"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваюумКоличествоВРЦ" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Ссылка" type="d3p1:РегистрСведений.юумКоличествоВРЦ" lowerBound="0"/>
+		<property name="Период" type="xs:date"/>
+		<property name="КодБУ" type="xs:string" lowerBound="1"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Должность" type="d3p1:КлючевыеСвойстваДолжности" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Регистр.юумКоличествоВРЦ" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваюумКоличествоВРЦ"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Количество" type="d3p1:ТипКоличество"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваРазрядыКатегорииДолжностей" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.РазрядыКатегорииДолжностей" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.РазрядыКатегорииДолжностей" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваРазрядыКатегорииДолжностей"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваЗначенияТарифов" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Ссылка" type="d3p1:РегистрСведений.ЗначенияТарифов" lowerBound="0"/>
+		<property name="Дата" type="xs:date"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Номер" type="d3p1:ТипНомерДокумента"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Регистр.ЗначенияТарифов" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваЗначенияТарифов" lowerBound="1"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Записи" type="d3p1:Регистр.ЗначенияТарифов.Записи" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+	<objectType name="Регистр.ЗначенияТарифов.Записи">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Строка" type="d3p1:Регистр.ЗначенияТарифов.Записи.Строка" upperBound="-1"/>
+	</objectType>
+	<objectType name="Регистр.ЗначенияТарифов.Записи.Строка" open="true" sequenced="true">
+		<property name="Период" type="xs:date"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="РазрядКатегория" type="d3p1:КлючевыеСвойстваРазрядыКатегорииДолжностей" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Тариф" type="d3p1:ТипСумма"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваумЗаказы" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.умЗаказы" lowerBound="0"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Справочник.умЗаказы" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваумЗаказы"/>
+		<property name="Статус" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+	<objectType name="КлючевыеСвойстваумИсходныеДанныеСделок" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Ссылка" type="d3p1:ДокументСсылка.умИсходныеДанныеСделок" lowerBound="0"/>
+		<property name="Месяц" type="xs:date"/>
+	</objectType>
+	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Документ.умИсходныеДанныеСделок" base="d2p1:Object" open="true" sequenced="true">
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваумИсходныеДанныеСделок"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="ОбщиеСвойстваОбъектовФормата" type="d3p1:ОбщиеСвойстваОбъектовФормата" lowerBound="0"/>
+	</objectType>
+</package>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="f5180617-be72-49e8-8e5f-ac9cf3739d0c">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыФормОтчетовОРасходахИЧисленностиРаботниковГосударственныхОрганов" category="Ref">
+				<xr:TypeId>ba3e6526-c4c0-4c89-892f-9c95c5293201</xr:TypeId>
+				<xr:ValueId>04e92e9b-7992-4f4f-874d-68563970f11f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыФормОтчетовОРасходахИЧисленностиРаботниковГосударственныхОрганов" category="Manager">
+				<xr:TypeId>cf9de6f2-d791-402a-8468-d28db869ad45</xr:TypeId>
+				<xr:ValueId>2889577d-87f7-427b-91a0-79a61ab884aa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыФормОтчетовОРасходахИЧисленностиРаботниковГосударственныхОрганов" category="List">
+				<xr:TypeId>5c79e721-39bb-46e6-aa3a-5a4bc6bcd568</xr:TypeId>
+				<xr:ValueId>bededc27-62a6-445b-89fa-304c06dffc6a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВидыФормОтчетовОРасходахИЧисленностиРаботниковГосударственныхОрганов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>34935e2e-48fc-4d9a-850a-a820dbf405c7</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="299a2c2a-9aa9-4e92-9e5a-eab6c4048a71">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Форма14МО</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f305db1c-3007-4d14-b0df-a17dc4359b2b</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="86141f1f-f2d6-46b4-bec8-837452d5e2df">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Форма14</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>08b58eb4-04a2-469c-b413-28c44cdda6d9</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="3c0d21e9-8959-4716-928b-39be4cf30bd5">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Форма3ОБ</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c9b2a542-1eda-4e55-b2f5-be75f8733612</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

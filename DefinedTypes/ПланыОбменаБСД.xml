@@ -18,6 +18,7 @@
 			<ExtendedConfigurationObject>cfe452ac-3e0b-4cca-811f-892ab36ed327</ExtendedConfigurationObject>
 			<Type xsi:type="xr:ExtendedProperty">
 				<xr:ExtendValue xsi:type="v8:TypeDescription">
+					<v8:Type>cfg:ExchangePlanRef.юум_ИнтеграцияЗУП_ЕРП_УниверсальныйФормат</v8:Type>
 					<v8:Type>cfg:ExchangePlanRef.юум_ОбменДО_ERP</v8:Type>
 				</xr:ExtendValue>
 			</Type>
