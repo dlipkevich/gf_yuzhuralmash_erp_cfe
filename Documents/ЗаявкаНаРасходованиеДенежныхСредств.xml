@@ -31,7 +31,20 @@
 			<RegisterRecords/>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="3672121c-3bd1-4540-a8cc-f2c57536410b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>юум_Согласовал</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>7b4eaf84-f3b2-4423-b778-9d2ed3e6dabc</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
 			<Form>ФормаДокумента</Form>
+			<Template>юум_ПФ_MXL_ЗаявкаНаРасходованиеДС</Template>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

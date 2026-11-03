@@ -23,7 +23,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Configuration.юум_Производство</name>
+		<name>Configuration.юум_ПечатнаяФормаЗаявкиДС</name>
 		<right>
 			<name>ThinClient</name>
 			<value>true</value>

@@ -10,7 +10,7 @@
 		<Properties>
 			<ObjectBelonging>Adopted</ObjectBelonging>
 			<Name>ФормаДокумента</Name>
-			<Comment/>
+			<Comment>ЧТЗ 02.02.01. Галфинд mr. Cherryman 2026/10/30</Comment>
 			<ExtendedConfigurationObject>54890472-830a-48e0-95ff-a9af5042b491</ExtendedConfigurationObject>
 			<FormType>Managed</FormType>
 		</Properties>

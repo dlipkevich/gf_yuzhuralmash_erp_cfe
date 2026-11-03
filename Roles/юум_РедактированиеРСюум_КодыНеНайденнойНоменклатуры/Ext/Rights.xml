@@ -67,7 +67,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Configuration.юум_Производство</name>
+		<name>Configuration.юум_ПечатнаяФормаЗаявкиДС</name>
 		<right>
 			<name>MainWindowModeNormal</name>
 			<value>true</value>
