@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>Галфинд</Vendor>
-			<Version>2.6.2.59_58</Version>
+			<Version>2.6.2.59_59</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -76,6 +76,9 @@
 			<StyleItem>ГруппаВариантовОтчетовЦвет</StyleItem>
 			<StyleItem>ПолужирныйНаклонныйШрифтРаботаСНоменклатурой</StyleItem>
 			<StyleItem>ЦветТекстаПроблема</StyleItem>
+			<StyleItem>ЦветФонаПредупреждения</StyleItem>
+			<StyleItem>ТекстПредопределенногоЗначения</StyleItem>
+			<StyleItem>ЦветТекстаПредупреждение</StyleItem>
 			<CommonPicture>СрочноКЗаказу</CommonPicture>
 			<CommonPicture>КоричневыйШар</CommonPicture>
 			<CommonPicture>ТребуетсяОформитьВыработкуСотрудников</CommonPicture>
@@ -90,18 +93,18 @@
 			<CommonPicture>СостоянияДокумента</CommonPicture>
 			<CommonPicture>СинхронизацияДанныхВыполнение</CommonPicture>
 			<CommonPicture>СинхронизацияДанных</CommonPicture>
-			<CommonPicture>ПодписанЗашифрованСостояния</CommonPicture>
 			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
 			<CommonPicture>Отчеты</CommonPicture>
-			<CommonPicture>КоллекцияПиктограммФайлов</CommonPicture>
 			<CommonPicture>Внимание16</CommonPicture>
 			<CommonPicture>ЗаполнитьФорму</CommonPicture>
-			<CommonPicture>ПодписанЗашифрованЗаголовок</CommonPicture>
-			<CommonPicture>ОбновитьФайлИзФайлаНаДиске</CommonPicture>
 			<CommonPicture>ПиктограммыЭлементов</CommonPicture>
+			<CommonPicture>Пустая</CommonPicture>
+			<CommonPicture>КоллекцияПиктограммФайлов</CommonPicture>
+			<CommonPicture>ПодписанЗашифрованЗаголовок</CommonPicture>
+			<CommonPicture>ПодписанЗашифрованСостояния</CommonPicture>
 			<CommonPicture>ФайловыйАрхив</CommonPicture>
 			<CommonPicture>ЗеленаяГалкаСредняя</CommonPicture>
-			<CommonPicture>Пустая</CommonPicture>
+			<CommonPicture>ОбновитьФайлИзФайлаНаДиске</CommonPicture>
 			<CommonPicture>Набор</CommonPicture>
 			<CommonPicture>Наборы</CommonPicture>
 			<CommonPicture>юум_СтруктураЗказа</CommonPicture>
@@ -193,6 +196,9 @@
 			<Catalog>СтатьиКалькуляции</Catalog>
 			<Catalog>ПроизводственныеУчастки</Catalog>
 			<Catalog>юум_ГруппыОтходов</Catalog>
+			<Catalog>ВидыРаботСотрудников</Catalog>
+			<Catalog>юум_ШифрыПрофессий</Catalog>
+			<Catalog>СтатьиДвиженияДенежныхСредств</Catalog>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
 			<Document>ПрочиеДоходыРасходы</Document>
 			<Document>ЗаказНаПроизводство2_2</Document>
@@ -214,6 +220,12 @@
 			<Enum>ВариантыПечатиМаршрутнойКартыНаПродукцию</Enum>
 			<Enum>ТипыНалогообложенияНДС</Enum>
 			<Enum>СпособыДоставки</Enum>
+			<Enum>ХарактерПроизводственныхЗатрат</Enum>
+			<Enum>ВариантыРаздельногоУчетаНДС</Enum>
+			<Enum>НазначениеПравилРаспределенияРасходов</Enum>
+			<Enum>ВидыДеятельностиРасходов</Enum>
+			<Enum>ВидыДеятельностиДляНалоговогоУчетаЗатрат</Enum>
+			<Enum>ВидыДвиженийДенежныхСредств</Enum>
 			<Report>МониторингЗаказа</Report>
 			<Report>ВедомостьПоОС2_4</Report>
 			<Report>СтруктураЗаказаНаПроизводствоДинамическая</Report>
@@ -240,6 +252,7 @@
 			<InformationRegister>юум_СоотвествиеЭтаповВерсииСпецификации</InformationRegister>
 			<InformationRegister>юум_СоответствиеГруппыОтходовНоменклатуреОтходов</InformationRegister>
 			<InformationRegister>юум_СоответствиеКодовНоменклатурыЦГ_Статье</InformationRegister>
+			<InformationRegister>юум_СпецификацииИнтермех</InformationRegister>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>
 			<ChartOfCharacteristicTypes>юум_ГлобальныеЗначения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>СтатьиДоходов</ChartOfCharacteristicTypes>

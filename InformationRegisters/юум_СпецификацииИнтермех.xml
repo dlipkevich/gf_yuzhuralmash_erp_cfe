@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="7562c443-801f-495a-9789-f7af6d6a6222">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.юум_СпецификацииИнтермех" category="Record">
+				<xr:TypeId>46a253aa-80fe-4279-9e0d-038981380237</xr:TypeId>
+				<xr:ValueId>e57a62b1-e4f8-431a-8ddc-16cbd294fe85</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.юум_СпецификацииИнтермех" category="Manager">
+				<xr:TypeId>f52ddfc3-9a3d-40c8-802e-2511cf5fd733</xr:TypeId>
+				<xr:ValueId>4a1ff4c0-769f-45a3-9346-61ab7ddc92ae</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.юум_СпецификацииИнтермех" category="Selection">
+				<xr:TypeId>2928c455-65b8-4fe0-b68b-cac02452e71d</xr:TypeId>
+				<xr:ValueId>1b38d1eb-cac0-4149-b8a0-8d5fc86e8801</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.юум_СпецификацииИнтермех" category="List">
+				<xr:TypeId>1d5052e1-2d0c-4318-8eba-17e3b6a2afad</xr:TypeId>
+				<xr:ValueId>cd1449c7-544e-474f-ae2a-5876fd650e24</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.юум_СпецификацииИнтермех" category="RecordSet">
+				<xr:TypeId>b2d3469e-2a9c-4600-a705-51fcae89d42a</xr:TypeId>
+				<xr:ValueId>4ad66bba-023d-40ee-ab38-cc043c5f576b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.юум_СпецификацииИнтермех" category="RecordKey">
+				<xr:TypeId>fea60b0b-917b-4fd6-b56f-b884885f9bd3</xr:TypeId>
+				<xr:ValueId>a170a7a8-96a8-497c-9416-d4e49d429dd4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.юум_СпецификацииИнтермех" category="RecordManager">
+				<xr:TypeId>35ccf575-d7de-4895-b0a0-43a68bfe49f4</xr:TypeId>
+				<xr:ValueId>ff16c1bc-2f92-4a41-9871-4e113cd77367</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_СпецификацииИнтермех</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>4086fb38-d93f-489a-be06-540d5cc642ae</ExtendedConfigurationObject>
+			<DefaultRecordForm>InformationRegister.юум_СпецификацииИнтермех.Form.юум_ФормаЗаписи</DefaultRecordForm>
+			<DefaultListForm>InformationRegister.юум_СпецификацииИнтермех.Form.юум_ФормаСписка</DefaultListForm>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="f977078f-ef45-49fc-8c0d-ecd17e57e2b5">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>тзНМК</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>76365c89-2dec-4a34-b3d2-7418b10093b4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="f14714ae-9e7a-4025-85cb-f33e33b8f142">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>тзСПЦ</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3bfcb226-373c-4c17-80f4-080e1c1cdb58</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="f0de22d0-509f-4fe7-8bbc-84a5788b86c0">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>тзТЕХ</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>36a57a92-24ee-442e-b774-abcc741381bb</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
+			<Attribute uuid="99ba08ae-05f2-4558-8453-18b9638d520c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Дата</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>300c3406-32b4-46de-acfe-ebf9a5a7304c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Dimension uuid="27828593-d0aa-4c61-82f3-583d48cbe659">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НомерЗаказа</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d92e3403-e9be-45bc-812c-fd55a6568b06</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>255</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Form>юум_ФормаЗаписи</Form>
+			<Form>юум_ФормаСписка</Form>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="5cc114e1-da5d-46f9-8fd3-3ba8037a965d">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.НазначениеПравилРаспределенияРасходов" category="Ref">
+				<xr:TypeId>13dddc9a-f1bd-4634-9f95-dbbfd315d2c2</xr:TypeId>
+				<xr:ValueId>470a866f-79f0-4a32-a192-fd40f85e40eb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.НазначениеПравилРаспределенияРасходов" category="Manager">
+				<xr:TypeId>4e14bd3c-a868-42e4-9b09-68fe88b4be1f</xr:TypeId>
+				<xr:ValueId>70955516-2d81-42c7-ab98-4656d529b814</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.НазначениеПравилРаспределенияРасходов" category="List">
+				<xr:TypeId>f013571a-b5cd-40fc-b739-c42e4933ad07</xr:TypeId>
+				<xr:ValueId>e38905b0-e8ea-4e3e-97df-0f5f81aaae11</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>НазначениеПравилРаспределенияРасходов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>17c18726-a846-4116-b4a1-1abd49b07e40</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="233e2abf-ac8b-4201-9644-2b564f2fce8d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РаспределениеРасходовНаСебестоимостьТоваров</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>982b48cc-091b-4666-815a-d3864c9bfbaa</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

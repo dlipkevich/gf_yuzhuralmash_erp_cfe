@@ -33,6 +33,8 @@
 			<Comment/>
 			<ExtendedConfigurationObject>7d5d6311-c003-4592-8a85-fbff7eee27b4</ExtendedConfigurationObject>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
+		</ChildObjects>
 	</ChartOfCharacteristicTypes>
 </MetaDataObject>
