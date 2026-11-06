@@ -76,6 +76,18 @@
 					</Type>
 				</Properties>
 			</Dimension>
+			<Dimension uuid="c4d694e1-96e1-45ba-8a33-a11171207ead">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Стружка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c8b616ca-0f00-453d-880f-e26b51a54a6c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>
