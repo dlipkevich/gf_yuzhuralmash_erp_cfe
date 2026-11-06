@@ -226,6 +226,9 @@ AccumulationRegisters\ДоступностьВидовРабочихЦентро
 59699951-c612-4fdc-9308-5647eb5ada99:6B18D8D27FA59B581F07502BC9712229:4:Catalogs\Бригады\Forms\ФормаЭлемента.xml
 4ea1bb26-6538-44b7-be99-e454e8e77efe:26348B383BA80E079B000269F7CF1387:4:Catalogs\ВидыРаботСотрудников\Forms\ФормаЭлемента.xml
 d1131136-8061-4a78-91f4-95eecc474c70:60A15A907ED6BE22A4FCAD7C766C0E49:4:Catalogs\ВидыРабочихЦентров\Forms\ФормаЭлемента.xml
+0443014f-4a8e-4c04-83b1-0dca5fe65a5c:BFC85BF9CF5742F7E491BBF951E8C955:4:Catalogs\ДоговорыАренды\Forms\ФормаЭлемента.xml
+87c5bae5-08fe-46ee-ac57-0f3a2b4868e5:99659E0274E82BF1CDA2DE90183E628B:4:Catalogs\ДоговорыКонтрагентов\Forms\ФормаЭлемента.xml
+22f7a154-9a49-43a2-b911-4cfc55041a41:536953AFFD74A17570D294D91B4C5CB6:4:Catalogs\ДоговорыКредитовИДепозитов\Forms\ФормаЭлемента.xml
 b1bf6c3c-ddd0-4324-967e-8e57cfe0e441:61EDDB450B4AE6647D99BA98DE92109E:4:Catalogs\Должности\Forms\ФормаЭлемента.xml
 363b0771-d2bc-4ee9-90b0-d4165d8459b5:58A8CB3C12826E9227B6E8C652FE8D5C:4:Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента.xml
 cdb4b24a-039c-4804-8337-3e415b50ce22:097139E5292CFA2FD90418344A45C104:4:Catalogs\Номенклатура\Forms\ФормаЭлемента.xml
@@ -370,6 +373,9 @@ AccumulationRegisters\ДоступностьВидовРабочихЦентро
 Catalogs\Бригады\Forms\ФормаЭлемента\Ext\Form.xml:AAA64666C617F1343659F885BAD70F9D:6:Catalogs\Бригады\Forms\ФормаЭлемента\Ext\Form.xml
 Catalogs\ВидыРаботСотрудников\Forms\ФормаЭлемента\Ext\Form.xml:C054A15E85E25BC546BB73EA9A634D38:6:Catalogs\ВидыРаботСотрудников\Forms\ФормаЭлемента\Ext\Form.xml
 Catalogs\ВидыРабочихЦентров\Forms\ФормаЭлемента\Ext\Form.xml:44B19055768BF75A04E2479206949FB2:6:Catalogs\ВидыРабочихЦентров\Forms\ФормаЭлемента\Ext\Form.xml
+Catalogs\ДоговорыАренды\Forms\ФормаЭлемента\Ext\Form.xml:C5ECE50CB735E5D3FB02C86D41258432:6:Catalogs\ДоговорыАренды\Forms\ФормаЭлемента\Ext\Form.xml
+Catalogs\ДоговорыКонтрагентов\Forms\ФормаЭлемента\Ext\Form.xml:27C39D675ED6525CE52743FF2F278BD6:6:Catalogs\ДоговорыКонтрагентов\Forms\ФормаЭлемента\Ext\Form.xml
+Catalogs\ДоговорыКредитовИДепозитов\Forms\ФормаЭлемента\Ext\Form.xml:D30A2015CE4625F3EADF504F5B531CC2:6:Catalogs\ДоговорыКредитовИДепозитов\Forms\ФормаЭлемента\Ext\Form.xml
 Catalogs\Должности\Forms\ФормаЭлемента\Ext\Form.xml:108E2E5C359F959B18583C148C91490C:6:Catalogs\Должности\Forms\ФормаЭлемента\Ext\Form.xml
 Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента\Ext\Form.xml:1D1C416756A753F5BB0B16C190AF3438:6:Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента\Ext\Form.xml
 Catalogs\Номенклатура\Forms\ФормаЭлемента\Ext\Form.xml:F4E167B760AB62C27F3CEF23C21EBB8D:6:Catalogs\Номенклатура\Forms\ФормаЭлемента\Ext\Form.xml
@@ -430,6 +436,9 @@ AccumulationRegisters\ДоступностьВидовРабочихЦентро
 Catalogs\Бригады\Forms\ФормаЭлемента\Ext\Form\Module.bsl:A86DC8D261229E12E6DB3ABD895F9D0A:7:Catalogs\Бригады\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 Catalogs\ВидыРаботСотрудников\Forms\ФормаЭлемента\Ext\Form\Module.bsl:7E1D0EDB9B18705FBF73312269B7091D:7:Catalogs\ВидыРаботСотрудников\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 Catalogs\ВидыРабочихЦентров\Forms\ФормаЭлемента\Ext\Form\Module.bsl:6A3F46ADA3679AC84279F16B44BA0B1F:7:Catalogs\ВидыРабочихЦентров\Forms\ФормаЭлемента\Ext\Form\Module.bsl
+Catalogs\ДоговорыАренды\Forms\ФормаЭлемента\Ext\Form\Module.bsl:EEFCFF3982FAACB65DD5B2CA96240169:7:Catalogs\ДоговорыАренды\Forms\ФормаЭлемента\Ext\Form\Module.bsl
+Catalogs\ДоговорыКонтрагентов\Forms\ФормаЭлемента\Ext\Form\Module.bsl:F104079A0608DE8D81D728947769FF10:7:Catalogs\ДоговорыКонтрагентов\Forms\ФормаЭлемента\Ext\Form\Module.bsl
+Catalogs\ДоговорыКредитовИДепозитов\Forms\ФормаЭлемента\Ext\Form\Module.bsl:8C05803A8DB0BC67E5676AC4BF2047AB:7:Catalogs\ДоговорыКредитовИДепозитов\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 Catalogs\Должности\Forms\ФормаЭлемента\Ext\Form\Module.bsl:0EE1E049E1D3C741077D7ACC575DBCBD:7:Catalogs\Должности\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента\Ext\Form\Module.bsl:F12DC0711676794AC9A29BA51EEB1013:7:Catalogs\НаправленияДеятельности\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 Catalogs\Номенклатура\Forms\ФормаЭлемента\Ext\Form\Module.bsl:CB18E909CE3C09F58178CCB8E295A9A8:7:Catalogs\Номенклатура\Forms\ФормаЭлемента\Ext\Form\Module.bsl
