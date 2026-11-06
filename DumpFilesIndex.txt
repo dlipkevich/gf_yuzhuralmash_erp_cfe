@@ -166,6 +166,7 @@ ebbb24b5-07f3-496f-bb95-dc313ee27e56:444397886346F44D6DD01F6B02170CDE:2:Informat
 26501615-5b97-4df0-ae14-64153de94538:EFF946AA8AEEC303E5F7E565EA09C643:2:Languages\Русский.xml
 b94e9c3e-19d4-4c32-8ed5-83716c35f48e:8BBBE90E7E6E8AE3CCD33119B7EBC54A:2:Reports\ВедомостьПоОС2_4.xml
 1eecd203-3f57-4b5d-848d-0d7e8d3ee34a:A06A1A67348837DFC2308A1755BC22AF:2:Reports\МониторингЗаказа.xml
+1738b5a1-4450-4c06-a2f8-b9b2b3c25064:7826978F32FD347AAE475387BA7F3559:2:Reports\СебестоимостьТоваров.xml
 2d0b0fff-7ce1-47ae-9450-e67011aec644:911B4895A60489462101F1D05BA659F1:2:Reports\СтруктураЗаказаНаПроизводствоДинамическая.xml
 f1011470-9553-4a7d-b04e-75fb4a020304:8DC0F387894B0121E65B0F820C62B14B:2:Reports\юум_ЗагрузкаВРЦПоИзделиямИЭтапам.xml
 89a65107-929b-437c-92bd-4ada2ba1ba73:D3CAF03ED25409A48DCC1C6EC46DEFD3:2:Reports\юум_ТрудоемкостьЗаказаНаПроизводствоПоИзделиям.xml
@@ -315,6 +316,7 @@ ad0fb8ea-e63b-4789-beb3-4560fdfdcbdc:BEF94C8092BDC4E26D8D6931F1C1F655:4:Informat
 a3afdd43-2d03-43e2-b611-bd85dad18407:84E45E0248A47680DCF92D4472C7A8C7:4:InformationRegisters\юум_СпецификацииИнтермех\Forms\юум_ФормаСписка.xml
 Reports\ВедомостьПоОС2_4\Ext\ObjectModule.bsl:ED0E7AC2ED1D7B8515A8A73719E7ECA5:4:Reports\ВедомостьПоОС2_4\Ext\ObjectModule.bsl
 Reports\МониторингЗаказа\Ext\ManagerModule.bsl:C10272F6964322688D7E8DADB3F9D08E:4:Reports\МониторингЗаказа\Ext\ManagerModule.bsl
+Reports\СебестоимостьТоваров\Ext\ManagerModule.bsl:E717A40F505A877FC31E81BE9A348D40:4:Reports\СебестоимостьТоваров\Ext\ManagerModule.bsl
 Reports\СтруктураЗаказаНаПроизводствоДинамическая\Ext\ManagerModule.bsl:9434F655C7CA20A17433548400CCB1A2:4:Reports\СтруктураЗаказаНаПроизводствоДинамическая\Ext\ManagerModule.bsl
 Reports\юум_ЗагрузкаВРЦПоИзделиямИЭтапам\Ext\Help.xml:4965DDC46460FA60BABA5EF196A519A6:4:Reports\юум_ЗагрузкаВРЦПоИзделиямИЭтапам\Ext\Help.xml
 Reports\юум_ЗагрузкаВРЦПоИзделиямИЭтапам\Ext\ManagerModule.bsl:1A3F5B38667F31BDC11DE35CDDF4696D:4:Reports\юум_ЗагрузкаВРЦПоИзделиямИЭтапам\Ext\ManagerModule.bsl

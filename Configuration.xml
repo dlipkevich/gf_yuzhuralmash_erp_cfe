@@ -93,18 +93,18 @@
 			<CommonPicture>СостоянияДокумента</CommonPicture>
 			<CommonPicture>СинхронизацияДанныхВыполнение</CommonPicture>
 			<CommonPicture>СинхронизацияДанных</CommonPicture>
-			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
-			<CommonPicture>Отчеты</CommonPicture>
-			<CommonPicture>Внимание16</CommonPicture>
+			<CommonPicture>ПодписанЗашифрованСостояния</CommonPicture>
 			<CommonPicture>ЗаполнитьФорму</CommonPicture>
+			<CommonPicture>Внимание16</CommonPicture>
+			<CommonPicture>КоллекцияПиктограммФайлов</CommonPicture>
 			<CommonPicture>ПиктограммыЭлементов</CommonPicture>
 			<CommonPicture>Пустая</CommonPicture>
-			<CommonPicture>КоллекцияПиктограммФайлов</CommonPicture>
 			<CommonPicture>ПодписанЗашифрованЗаголовок</CommonPicture>
-			<CommonPicture>ПодписанЗашифрованСостояния</CommonPicture>
+			<CommonPicture>ОбновитьФайлИзФайлаНаДиске</CommonPicture>
+			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
 			<CommonPicture>ФайловыйАрхив</CommonPicture>
 			<CommonPicture>ЗеленаяГалкаСредняя</CommonPicture>
-			<CommonPicture>ОбновитьФайлИзФайлаНаДиске</CommonPicture>
+			<CommonPicture>Отчеты</CommonPicture>
 			<CommonPicture>Набор</CommonPicture>
 			<CommonPicture>Наборы</CommonPicture>
 			<CommonPicture>юум_СтруктураЗказа</CommonPicture>
@@ -209,12 +209,12 @@
 			<Catalog>ГруппыФинансовогоУчетаНоменклатуры</Catalog>
 			<Catalog>ЦеновыеГруппы</Catalog>
 			<Catalog>СтатьиКалькуляции</Catalog>
-			<Catalog>юум_ГруппыОтходов</Catalog>
+			<Catalog>ПроизводственныеУчастки</Catalog>
 			<Catalog>СпособыОтраженияЗарплатыВБухУчете</Catalog>
 			<Catalog>юум_ШифрыПрофессий</Catalog>
 			<Catalog>СтатьиДвиженияДенежныхСредств</Catalog>
 			<Catalog>Пользователи</Catalog>
-			<Catalog>ПроизводственныеУчастки</Catalog>
+			<Catalog>юум_ГруппыОтходов</Catalog>
 			<Catalog>Должности</Catalog>
 			<Catalog>ВидыРаботСотрудников</Catalog>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
@@ -225,33 +225,34 @@
 			<Document>ЗаказКлиента</Document>
 			<Document>ПриобретениеУслугПрочихАктивов</Document>
 			<Document>ПриобретениеТоваровУслуг</Document>
-			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
+			<Enum>СпособыФормированияСегментов</Enum>
 			<Enum>ТипыБазыРаспределенияРасходов</Enum>
 			<Enum>ТипыПроизводственныхПроцессов</Enum>
 			<Enum>СостоянияЭтаповНаВнутрицеховомУровне</Enum>
-			<Enum>Периодичность</Enum>
-			<Enum>СтатусыДействияВидовЦен</Enum>
-			<Enum>СпособыФормированияСегментов</Enum>
+			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
 			<Enum>ТипыОбеспечения</Enum>
+			<Enum>СтатусыДействияВидовЦен</Enum>
 			<Enum>СпособыОтраженияМатериальнойПередачиМеждуЭтапамиПартии</Enum>
 			<Enum>ВариантыНазначенияСпецификации</Enum>
 			<Enum>ЕдиницыИзмеренияВремени</Enum>
+			<Enum>ВариантыПечатиМаршрутнойКартыНаПродукцию</Enum>
+			<Enum>Периодичность</Enum>
 			<Enum>ТипыНалогообложенияНДС</Enum>
-			<Enum>СпособыДоставки</Enum>
 			<Enum>ХарактерПроизводственныхЗатрат</Enum>
 			<Enum>ВариантыРаздельногоУчетаНДС</Enum>
 			<Enum>НазначениеПравилРаспределенияРасходов</Enum>
 			<Enum>ВидыДеятельностиРасходов</Enum>
 			<Enum>ВидыДеятельностиДляНалоговогоУчетаЗатрат</Enum>
 			<Enum>ВидыДвиженийДенежныхСредств</Enum>
-			<Enum>ВариантыПечатиМаршрутнойКартыНаПродукцию</Enum>
+			<Enum>СпособыДоставки</Enum>
 			<Enum>ВариантыЗагрузкиРабочихЦентров</Enum>
 			<Enum>ВидыФормОтчетовОРасходахИЧисленностиРаботниковГосударственныхОрганов</Enum>
 			<Report>МониторингЗаказа</Report>
+			<Report>СебестоимостьТоваров</Report>
 			<Report>ВедомостьПоОС2_4</Report>
 			<Report>СтруктураЗаказаНаПроизводствоДинамическая</Report>
-			<Report>юум_ЗагрузкаВРЦПоИзделиямИЭтапам</Report>
 			<Report>юум_ТрудоемкостьЗаказаНаПроизводствоПоИзделиям</Report>
+			<Report>юум_ЗагрузкаВРЦПоИзделиямИЭтапам</Report>
 			<DataProcessor>ОбеспечениеПотребностей</DataProcessor>
 			<DataProcessor>ПечатьМ11</DataProcessor>
 			<DataProcessor>юум_СохранениеДереваЗаказа</DataProcessor>
