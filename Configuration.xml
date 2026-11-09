@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>Галфинд</Vendor>
-			<Version>2.6.2.59_69</Version>
+			<Version>2.6.2.59_72</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -93,18 +93,18 @@
 			<CommonPicture>СостоянияДокумента</CommonPicture>
 			<CommonPicture>СинхронизацияДанныхВыполнение</CommonPicture>
 			<CommonPicture>СинхронизацияДанных</CommonPicture>
-			<CommonPicture>ПодписанЗашифрованСостояния</CommonPicture>
-			<CommonPicture>ЗаполнитьФорму</CommonPicture>
+			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
+			<CommonPicture>Отчеты</CommonPicture>
 			<CommonPicture>Внимание16</CommonPicture>
-			<CommonPicture>КоллекцияПиктограммФайлов</CommonPicture>
+			<CommonPicture>ЗаполнитьФорму</CommonPicture>
 			<CommonPicture>ПиктограммыЭлементов</CommonPicture>
 			<CommonPicture>Пустая</CommonPicture>
+			<CommonPicture>КоллекцияПиктограммФайлов</CommonPicture>
 			<CommonPicture>ПодписанЗашифрованЗаголовок</CommonPicture>
-			<CommonPicture>ОбновитьФайлИзФайлаНаДиске</CommonPicture>
-			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
+			<CommonPicture>ПодписанЗашифрованСостояния</CommonPicture>
 			<CommonPicture>ФайловыйАрхив</CommonPicture>
 			<CommonPicture>ЗеленаяГалкаСредняя</CommonPicture>
-			<CommonPicture>Отчеты</CommonPicture>
+			<CommonPicture>ОбновитьФайлИзФайлаНаДиске</CommonPicture>
 			<CommonPicture>Набор</CommonPicture>
 			<CommonPicture>Наборы</CommonPicture>
 			<CommonPicture>юум_СтруктураЗказа</CommonPicture>
@@ -136,6 +136,7 @@
 			<Role>юум_РедактированиеРСюум_СоответствиеКодовНоменклатурыЦГ_Статье</Role>
 			<Role>ПросмотрОтчетовОЗагрузкеРабочихЦентров</Role>
 			<Role>ОтчетыГлавногоДиспетчера</Role>
+			<Role>ОтчетыЛокальногоДиспетчера</Role>
 			<CommonModule>ГрафикПроизводстваСтруктурыЗаказа</CommonModule>
 			<CommonModule>юум_РаботаСФормой</CommonModule>
 			<CommonModule>юум_РаботаСФормойКлиентСервер</CommonModule>
@@ -154,6 +155,7 @@
 			<CommonModule>ВариантыОтчетовУТПереопределяемый</CommonModule>
 			<CommonModule>МенеджерОбменаЧерезУниверсальныйФормат</CommonModule>
 			<CommonModule>РезервыПоОплатеТрудаБазовый</CommonModule>
+			<CommonModule>юум_ПроизводственныеОтчеты</CommonModule>
 			<ExchangePlan>юум_ОбменДО_ERP</ExchangePlan>
 			<ExchangePlan>юум_ИнтеграцияЗУП_ЕРП_УниверсальныйФормат</ExchangePlan>
 			<XDTOPackage>yum_EnterpriseData_1_20_2</XDTOPackage>
@@ -209,12 +211,12 @@
 			<Catalog>ГруппыФинансовогоУчетаНоменклатуры</Catalog>
 			<Catalog>ЦеновыеГруппы</Catalog>
 			<Catalog>СтатьиКалькуляции</Catalog>
-			<Catalog>ПроизводственныеУчастки</Catalog>
+			<Catalog>юум_ГруппыОтходов</Catalog>
 			<Catalog>СпособыОтраженияЗарплатыВБухУчете</Catalog>
 			<Catalog>юум_ШифрыПрофессий</Catalog>
 			<Catalog>СтатьиДвиженияДенежныхСредств</Catalog>
 			<Catalog>Пользователи</Catalog>
-			<Catalog>юум_ГруппыОтходов</Catalog>
+			<Catalog>ПроизводственныеУчастки</Catalog>
 			<Catalog>Должности</Catalog>
 			<Catalog>ВидыРаботСотрудников</Catalog>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
@@ -225,34 +227,35 @@
 			<Document>ЗаказКлиента</Document>
 			<Document>ПриобретениеУслугПрочихАктивов</Document>
 			<Document>ПриобретениеТоваровУслуг</Document>
-			<Enum>СпособыФормированияСегментов</Enum>
+			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
 			<Enum>ТипыБазыРаспределенияРасходов</Enum>
 			<Enum>ТипыПроизводственныхПроцессов</Enum>
 			<Enum>СостоянияЭтаповНаВнутрицеховомУровне</Enum>
-			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
-			<Enum>ТипыОбеспечения</Enum>
+			<Enum>Периодичность</Enum>
 			<Enum>СтатусыДействияВидовЦен</Enum>
+			<Enum>СпособыФормированияСегментов</Enum>
+			<Enum>ТипыОбеспечения</Enum>
 			<Enum>СпособыОтраженияМатериальнойПередачиМеждуЭтапамиПартии</Enum>
 			<Enum>ВариантыНазначенияСпецификации</Enum>
 			<Enum>ЕдиницыИзмеренияВремени</Enum>
-			<Enum>ВариантыПечатиМаршрутнойКартыНаПродукцию</Enum>
-			<Enum>Периодичность</Enum>
 			<Enum>ТипыНалогообложенияНДС</Enum>
+			<Enum>СпособыДоставки</Enum>
 			<Enum>ХарактерПроизводственныхЗатрат</Enum>
 			<Enum>ВариантыРаздельногоУчетаНДС</Enum>
 			<Enum>НазначениеПравилРаспределенияРасходов</Enum>
 			<Enum>ВидыДеятельностиРасходов</Enum>
 			<Enum>ВидыДеятельностиДляНалоговогоУчетаЗатрат</Enum>
 			<Enum>ВидыДвиженийДенежныхСредств</Enum>
-			<Enum>СпособыДоставки</Enum>
+			<Enum>ВариантыПечатиМаршрутнойКартыНаПродукцию</Enum>
 			<Enum>ВариантыЗагрузкиРабочихЦентров</Enum>
 			<Enum>ВидыФормОтчетовОРасходахИЧисленностиРаботниковГосударственныхОрганов</Enum>
 			<Report>МониторингЗаказа</Report>
 			<Report>СебестоимостьТоваров</Report>
 			<Report>ВедомостьПоОС2_4</Report>
 			<Report>СтруктураЗаказаНаПроизводствоДинамическая</Report>
-			<Report>юум_ТрудоемкостьЗаказаНаПроизводствоПоИзделиям</Report>
 			<Report>юум_ЗагрузкаВРЦПоИзделиямИЭтапам</Report>
+			<Report>юум_ТрудоемкостьЗаказаНаПроизводствоПоИзделиям</Report>
+			<Report>юум_ГрафикПроизводстваПоИзделиямИЭтапам</Report>
 			<DataProcessor>ОбеспечениеПотребностей</DataProcessor>
 			<DataProcessor>ПечатьМ11</DataProcessor>
 			<DataProcessor>юум_СохранениеДереваЗаказа</DataProcessor>
