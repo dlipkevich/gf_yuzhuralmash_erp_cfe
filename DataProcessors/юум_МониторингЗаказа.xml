@@ -16,7 +16,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Мониторинг заказа</v8:content>
+					<v8:content>Мониторинг заказа (юум)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>#юум #04.01.03.1 Галфинд mr. Cherryman 2026/10/26. Рефакторинг сопровождения; поведение N5 сохранено.</Comment>
@@ -31,6 +31,29 @@
 			<Form>ФормаМониторинга</Form>
 			<Template>ПредставлениеHTML</Template>
 			<Template>ЗапросСтатическойСтруктуры</Template>
+			<Command uuid="0e8bacdc-1ef0-4eaa-b592-bf7bef0d8ffc">
+				<Properties>
+					<Name>юум_МониторингЗаказа</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мониторинг заказа (юум)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormNavigationPanelSeeAlso</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство2_2</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

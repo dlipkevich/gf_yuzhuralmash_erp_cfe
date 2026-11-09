@@ -12,13 +12,13 @@ button:hover{background:#edf5fd}button.active{background:#e6f4e8;border-color:#5
 .scrollbar-layout{flex-shrink:0;height:17px;overflow:hidden}
 .horizontal-scroll{overflow-x:scroll;overflow-y:hidden;min-width:0;height:17px}
 .scroll-track{height:1px}.gutter{flex:none}
-table{border-collapse:separate;border-spacing:0;table-layout:fixed}
+table{border-collapse:separate;border-spacing:0;table-layout:fixed;font:inherit}
 col.name{width:360px}col.qty{width:84px}col.hours{width:140px}col.ready{width:110px}col.day{width:20px}
 th,td{height:32px;padding:5px 9px;border-right:1px solid #d5dee7;border-bottom:1px solid #e3e8ed;white-space:nowrap}
 thead th{background:#f0f3f7;font-weight:600;text-align:center;position:relative;height:28px;overflow:hidden}
 thead tr:nth-child(2) th{padding:3px 0;font-size:11px;font-weight:normal;height:25px}
 td{text-align:right;background:#fff}td.name{text-align:left}tbody tr:hover td{background-color:#f4f9ff}
-.fixed{position:relative}#ganttHeader th{height:54px}
+.fixed{position:relative;overflow:hidden}#ganttHeader th{height:54px}
 .namecontent{display:block;width:100%;overflow:hidden}
 .toggle{width:18px;padding:0;border:0;background:transparent;font-size:16px;line-height:20px;vertical-align:middle;margin-right:6px}
 .leaf{display:inline-block;width:18px;vertical-align:middle;margin-right:6px}
@@ -66,6 +66,7 @@ var headerGutter=document.getElementById('headerGutter'),scrollbarGutter=documen
 var dayWidth=model.dayWidth||20,expanded={},columnWidths=[360,84,84,140,140,110];
 var minimumWidths=[160,70,70,90,90,110],minimumCalendarWidth=80;
 var resizeState=null;
+var rowLayoutFrame=0;
 for(var i=0;i<columnWidths.length;i++){
     if(model.columnWidths&&isFinite(model.columnWidths[i]))columnWidths[i]=Math.max(minimumWidths[i],Math.min(1200,model.columnWidths[i]));
 }
@@ -104,6 +105,22 @@ function synchronizeViewport(){
     horizontalScroll.style.width=calendarViewport.clientWidth+'px';
     synchronizeCalendar();
 }
+// #юум #04.01.03.1 Галфинд mr. Cherryman 2026/11/06
+// Read layout CSS pixels before updating; viewport rectangles include document zoom.
+// Row measurement is scheduled only after layout changes, never on scroll.
+function synchronizeRowHeights(){
+    rowLayoutFrame=0;
+    var metricRows=tbody.rows,timelineRows=calendarRows.rows,heights=[];
+    for(var i=0;i<metricRows.length;i++)heights.push(window.getComputedStyle(metricRows[i]).height);
+    for(var i=0;i<timelineRows.length;i++){
+        var cell=timelineRows[i].cells[0],height=heights[i];
+        if(cell.style.height!==height)cell.style.height=height;
+    }
+    synchronizeViewport();
+}
+function scheduleRowLayout(){
+    if(!rowLayoutFrame)rowLayoutFrame=window.requestAnimationFrame(synchronizeRowHeights);
+}
 function onWheel(event){
     var horizontal=event.deltaX||(event.shiftKey?event.deltaY:0);
     if(!horizontal)return;
@@ -112,7 +129,20 @@ function onWheel(event){
     if(event.deltaX&&event.deltaY)viewport.scrollTop+=event.deltaY*unit;
     onScroll();event.preventDefault();
 }
+// #юум #04.01.03.1 Галфинд mr. Cherryman 2026/11/06
+// V8WebKit may distribute separate metric tables differently when only COLs have widths.
+// Give header and body cells the same bounded width; content must not expand a column.
+function setFixedWidth(element,width){
+    var pixels=width+'px';
+    if(element.style.width===pixels&&element.style.minWidth===pixels&&element.style.maxWidth===pixels)return;
+    element.style.width=pixels;element.style.minWidth=pixels;element.style.maxWidth=pixels;
+}
+function sizeMetricCells(row){
+    for(var c=0;c<columnWidths.length;c++)setFixedWidth(row.cells[c],columnWidths[c]);
+}
 function applyColumnWidths(){
+    sizeMetricCells(document.getElementById('metricsHead'));
+    for(var r=0;r<tbody.rows.length;r++)sizeMetricCells(tbody.rows[r]);
     var groups=[document.getElementById('columns'),document.getElementById('bodyColumns')];
     for(var g=0;g<groups.length;g++){
         var columns=groups[g].children;
@@ -121,7 +151,7 @@ function applyColumnWidths(){
     var width=fixedWidth(),calendarWidth=calendar.length*dayWidth;
     metricsHeader.style.width=width+'px';metricsBody.style.width=width+'px';
     document.getElementById('scrollbarSpacer').style.width=width+'px';
-    document.getElementById('gantt').style.width=width+'px';document.getElementById('ganttHeader').style.width=width+'px';
+    setFixedWidth(document.getElementById('gantt'),width);setFixedWidth(document.getElementById('ganttHeader'),width);
     document.getElementById('calendarTable').style.width=calendarWidth+'px';
     document.getElementById('calendarHeader').style.width=calendarWidth+'px';
     document.getElementById('scrollTrack').style.width=calendarWidth+'px';
@@ -130,7 +160,7 @@ function applyColumnWidths(){
         var days=calendarGroups[g].children;
         for(var d=0;d<days.length;d++)days[d].style.width=dayWidth+'px';
     }
-    synchronizeViewport();saveScroll();
+    synchronizeViewport();scheduleRowLayout();saveScroll();
 }
 function applyZoom(){
     applyColumnWidths();document.getElementById('zoomValue').textContent=Math.round(dayWidth/20*100)+'%';
@@ -196,6 +226,11 @@ function initializeResizing(){
 initializeCalendar();initializeResizing();viewport.addEventListener('scroll',saveScroll);
 horizontalScroll.addEventListener('scroll',onScroll);viewport.addEventListener('wheel',onWheel,{passive:false});
 document.getElementById('headerLayout').addEventListener('wheel',onWheel,{passive:false});
-window.addEventListener('resize',synchronizeViewport);
+window.addEventListener('resize',function(){synchronizeViewport();scheduleRowLayout();});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(scheduleRowLayout);
+if(window.ResizeObserver){
+    var rowLayoutObserver=new ResizeObserver(scheduleRowLayout);
+    rowLayoutObserver.observe(document.getElementById('gantt'));
+}
 render();viewport.scrollTop=model.top;horizontalScroll.scrollLeft=model.left;synchronizeCalendar();saveScroll();
 </script></body></html>

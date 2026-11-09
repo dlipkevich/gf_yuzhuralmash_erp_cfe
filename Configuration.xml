@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>Галфинд</Vendor>
-			<Version>2.6.2.59_72</Version>
+			<Version>2.6.2.59_73</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -137,6 +137,7 @@
 			<Role>ПросмотрОтчетовОЗагрузкеРабочихЦентров</Role>
 			<Role>ОтчетыГлавногоДиспетчера</Role>
 			<Role>ОтчетыЛокальногоДиспетчера</Role>
+			<Role>ПланированиеГрафикаПроизводства2_2</Role>
 			<CommonModule>ГрафикПроизводстваСтруктурыЗаказа</CommonModule>
 			<CommonModule>юум_РаботаСФормой</CommonModule>
 			<CommonModule>юум_РаботаСФормойКлиентСервер</CommonModule>

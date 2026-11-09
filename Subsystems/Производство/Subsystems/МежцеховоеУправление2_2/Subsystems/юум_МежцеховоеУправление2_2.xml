@@ -19,6 +19,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Report.юум_ЗагрузкаВРЦПоИзделиямИЭтапам</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.юум_ТрудоемкостьЗаказаНаПроизводствоПоИзделиям</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.юум_ГрафикПроизводстваПоИзделиямИЭтапам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.юум_МониторингЗаказа</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
