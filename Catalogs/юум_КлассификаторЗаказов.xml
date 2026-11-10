@@ -108,7 +108,7 @@
 					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ТипДокументаОснования</Name>
 					<Comment/>
-					<ExtendedConfigurationObject>431acfae-579a-4060-abe0-69878110bea6</ExtendedConfigurationObject>
+					<ExtendedConfigurationObject>59a60612-f29f-49ea-ae7a-180859b51c7c</ExtendedConfigurationObject>
 					<Type>
 						<v8:Type>cfg:EnumRef.юум_ТипДокументаОснования</v8:Type>
 					</Type>
