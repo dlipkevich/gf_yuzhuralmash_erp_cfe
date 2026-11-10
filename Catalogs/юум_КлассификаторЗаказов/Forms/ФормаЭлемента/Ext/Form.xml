@@ -53,6 +53,12 @@
 			<ContextMenu name="РемонтныйЗаказКонтекстноеМеню" id="20"/>
 			<ExtendedTooltip name="РемонтныйЗаказРасширеннаяПодсказка" id="21"/>
 		</CheckBoxField>
+		<InputField name="ТипДокументаОснования" id="22">
+			<DataPath>Объект.ТипДокументаОснования</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТипДокументаОснованияКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ТипДокументаОснованияРасширеннаяПодсказка" id="24"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">

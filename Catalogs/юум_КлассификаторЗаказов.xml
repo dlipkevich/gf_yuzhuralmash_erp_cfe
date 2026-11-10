@@ -102,6 +102,18 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="23d22c8c-0cb9-4321-a218-f96d7e020b2e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ТипДокументаОснования</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>431acfae-579a-4060-abe0-69878110bea6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.юум_ТипДокументаОснования</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
 			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
 		</ChildObjects>
