@@ -34,6 +34,8 @@
 			<ExtendedConfigurationObject>04b45cc8-19da-4fc2-ab25-fcf16e66f5ee</ExtendedConfigurationObject>
 			<RegisterRecords/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Template>юум_ПФ_MXL_КонтрольноСдаточнаяКарта</Template>
+		</ChildObjects>
 	</Document>
 </MetaDataObject>
