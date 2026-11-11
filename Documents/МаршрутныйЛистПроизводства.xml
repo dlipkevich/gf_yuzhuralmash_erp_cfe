@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="59344a34-e4b4-8f14-8e4d-19e543bf0216">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.МаршрутныйЛистПроизводства" category="Object">
+				<xr:TypeId>f46c2482-582d-8c72-8cc5-808421aa934e</xr:TypeId>
+				<xr:ValueId>54250f27-b672-8f93-81a1-83e2af9e8bb6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.МаршрутныйЛистПроизводства" category="Ref">
+				<xr:TypeId>2354351e-63fe-8137-b67c-f7b023fa1ec0</xr:TypeId>
+				<xr:ValueId>a7f16238-0c6b-84b6-8e0a-3a28077626ec</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.МаршрутныйЛистПроизводства" category="Selection">
+				<xr:TypeId>4468251a-3630-83c6-9fce-e7fcfe5c618d</xr:TypeId>
+				<xr:ValueId>be08ee13-e2b8-8b07-aacb-1d5b1eef2dfc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.МаршрутныйЛистПроизводства" category="List">
+				<xr:TypeId>8774732b-ee47-891d-af29-6f7ef56e626b</xr:TypeId>
+				<xr:ValueId>bdfb763b-e05c-817f-b81e-1198af970bd6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.МаршрутныйЛистПроизводства" category="Manager">
+				<xr:TypeId>042a762b-32df-89de-9c2b-687be2b934f8</xr:TypeId>
+				<xr:ValueId>0bcdfc12-29ea-8cf4-af3d-2deaf266fce2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>МаршрутныйЛистПроизводства</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>35dc9f65-869d-44ed-ad56-67301d392a12</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="a1d60330-c198-5629-b931-1a2c57a68d0c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Распоряжение</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b564d46f-abd3-4f05-8086-5699edb34896</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЗаказНаПроизводство</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

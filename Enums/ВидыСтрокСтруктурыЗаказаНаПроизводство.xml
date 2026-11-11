@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="5b23c782-7b30-896d-aa09-5361b518cf0f">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВидыСтрокСтруктурыЗаказаНаПроизводство" category="Ref">
+				<xr:TypeId>389e6ded-9af3-8ce7-bc2c-5df36a3ea914</xr:TypeId>
+				<xr:ValueId>82f1012e-a757-818c-836a-d59f5265fe3b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВидыСтрокСтруктурыЗаказаНаПроизводство" category="Manager">
+				<xr:TypeId>0736ccfc-890e-8024-8845-255d1122cffe</xr:TypeId>
+				<xr:ValueId>0d9ed0dd-62c9-8f1d-a0aa-8ba586d3a95f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВидыСтрокСтруктурыЗаказаНаПроизводство" category="List">
+				<xr:TypeId>0266aa07-ce90-84ae-bde0-fbc076993dca</xr:TypeId>
+				<xr:ValueId>42e4fbd8-3cb6-8aec-884c-87e90a6e89c0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВидыСтрокСтруктурыЗаказаНаПроизводство</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>80d1075c-4b65-4ac4-bce9-6ea8a82483e1</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

@@ -79,6 +79,7 @@
 			<StyleItem>ЦветФонаПредупреждения</StyleItem>
 			<StyleItem>ТекстПредопределенногоЗначения</StyleItem>
 			<StyleItem>ЦветТекстаПредупреждение</StyleItem>
+			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<CommonPicture>СрочноКЗаказу</CommonPicture>
 			<CommonPicture>КоричневыйШар</CommonPicture>
 			<CommonPicture>ТребуетсяОформитьВыработкуСотрудников</CommonPicture>
@@ -157,6 +158,7 @@
 			<CommonModule>МенеджерОбменаЧерезУниверсальныйФормат</CommonModule>
 			<CommonModule>РезервыПоОплатеТрудаБазовый</CommonModule>
 			<CommonModule>юум_ПроизводственныеОтчеты</CommonModule>
+			<CommonModule>ФормированиеЭтаповПроизводства</CommonModule>
 			<ExchangePlan>юум_ОбменДО_ERP</ExchangePlan>
 			<ExchangePlan>юум_ИнтеграцияЗУП_ЕРП_УниверсальныйФормат</ExchangePlan>
 			<XDTOPackage>yum_EnterpriseData_1_20_2</XDTOPackage>
@@ -189,21 +191,21 @@
 			<CommandGroup>СинхронизацияДанных</CommandGroup>
 			<CommandGroup>ПараметрыСинхронизацииДанных</CommandGroup>
 			<CommonForm>НастройкаСчетовУчетаОперации</CommonForm>
-			<Catalog>БанковскиеСчетаКонтрагентов</Catalog>
+			<Catalog>ВидыРаботСотрудников</Catalog>
 			<Catalog>Бригады</Catalog>
 			<Catalog>БанковскиеСчетаОрганизаций</Catalog>
-			<Catalog>ДоговорыКонтрагентов</Catalog>
+			<Catalog>БанковскиеСчетаКонтрагентов</Catalog>
 			<Catalog>ДоговорыАренды</Catalog>
-			<Catalog>юум_ДеревоЗаказаСлужебный</Catalog>
-			<Catalog>ХарактеристикиНоменклатуры</Catalog>
-			<Catalog>Назначения</Catalog>
-			<Catalog>РесурсныеСпецификации</Catalog>
 			<Catalog>ВидыРабочихЦентров</Catalog>
+			<Catalog>ДоговорыКонтрагентов</Catalog>
+			<Catalog>Назначения</Catalog>
+			<Catalog>Номенклатура</Catalog>
+			<Catalog>ПартииПроизводства</Catalog>
 			<Catalog>ДоговорыКредитовИДепозитов</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>Партнеры</Catalog>
 			<Catalog>НаправленияДеятельности</Catalog>
-			<Catalog>Номенклатура</Catalog>
+			<Catalog>РесурсныеСпецификации</Catalog>
 			<Catalog>Склады</Catalog>
 			<Catalog>СтруктураПредприятия</Catalog>
 			<Catalog>УпаковкиЕдиницыИзмерения</Catalog>
@@ -219,15 +221,19 @@
 			<Catalog>Пользователи</Catalog>
 			<Catalog>ПроизводственныеУчастки</Catalog>
 			<Catalog>Должности</Catalog>
-			<Catalog>ВидыРаботСотрудников</Catalog>
-			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
+			<Catalog>ХарактеристикиНоменклатуры</Catalog>
+			<Catalog>ЭтапыПроизводства</Catalog>
+			<Catalog>юум_ДеревоЗаказаСлужебный</Catalog>
+			<Document>ЗаказНаПроизводство</Document>
 			<Document>ПрочиеДоходыРасходы</Document>
+			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
 			<Document>ЗаказНаПроизводство2_2</Document>
-			<Document>ЭтапПроизводства2_2</Document>
 			<Document>АвансовыйОтчет</Document>
 			<Document>ЗаказКлиента</Document>
 			<Document>ПриобретениеУслугПрочихАктивов</Document>
 			<Document>ПриобретениеТоваровУслуг</Document>
+			<Document>МаршрутныйЛистПроизводства</Document>
+			<Document>ЭтапПроизводства2_2</Document>
 			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
 			<Enum>ТипыБазыРаспределенияРасходов</Enum>
 			<Enum>ТипыПроизводственныхПроцессов</Enum>
@@ -251,6 +257,7 @@
 			<Enum>ВариантыЗагрузкиРабочихЦентров</Enum>
 			<Enum>ВидыФормОтчетовОРасходахИЧисленностиРаботниковГосударственныхОрганов</Enum>
 			<Enum>юум_ТипДокументаОснования</Enum>
+			<Enum>ВидыСтрокСтруктурыЗаказаНаПроизводство</Enum>
 			<Report>МониторингЗаказа</Report>
 			<Report>СебестоимостьТоваров</Report>
 			<Report>ВедомостьПоОС2_4</Report>
@@ -266,6 +273,7 @@
 			<DataProcessor>юум_МониторингЗаказа</DataProcessor>
 			<DataProcessor>ЗагрузкаАОН</DataProcessor>
 			<DataProcessor>ЗагрузкаНоменклатуры</DataProcessor>
+			<DataProcessor>ФормированиеЭтаповПроизводства</DataProcessor>
 			<InformationRegister>СтруктураЗаказа</InformationRegister>
 			<InformationRegister>СоответствияОбъектовИнформационныхБаз</InformationRegister>
 			<InformationRegister>ПравилаДляОбменаДанными</InformationRegister>
@@ -280,6 +288,7 @@
 			<InformationRegister>юум_СоответствиеГруппыОтходовНоменклатуреОтходов</InformationRegister>
 			<InformationRegister>юум_СоответствиеКодовНоменклатурыЦГ_Статье</InformationRegister>
 			<InformationRegister>юум_СпецификацииИнтермех</InformationRegister>
+			<InformationRegister>ТрудозатратыСтруктурыЗаказа</InformationRegister>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>
 			<ChartOfCharacteristicTypes>юум_ГлобальныеЗначения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>СтатьиДоходов</ChartOfCharacteristicTypes>

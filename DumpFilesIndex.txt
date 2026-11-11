@@ -15,6 +15,7 @@ a2c29c30-707f-4e05-923b-706c3d4b989b:4AB67662B9807F525519CEED255F42CD:2:Catalogs
 957c3442-4262-4eac-a5c9-d371fd1f0a05:90D6AFE049C4A0EF68446F709A572529:2:Catalogs\Назначения.xml
 022ee053-29d1-4185-80bd-821f1dc2cb71:FFFFD0A18B35A8B57C5464BFF44502CB:2:Catalogs\НаправленияДеятельности.xml
 f5855f51-2388-4673-b7a3-61b603d0c115:F56143C8D800A18C2B2F6BE042233FF7:2:Catalogs\Номенклатура.xml
+2d501a47-7476-8dec-82c2-33879e4d5a36:C4AD66EB64DC8B35706B80691F86345C:2:Catalogs\ПартииПроизводства.xml
 23bdd895-2a92-4923-9350-08df1597e110:03A856949A3B84CCC29F2B19CFF0532D:2:Catalogs\Партнеры.xml
 8d4bedcb-16a5-80b6-9757-359044309391:9CBE463736EB9D6B14C9BE94F7919D4D:2:Catalogs\Пользователи.xml
 196c3c4e-ecc2-40f8-94a8-e115d815aeda:F346631EE0569E00A1C0F146A8FDE8ED:2:Catalogs\ПроизводственныеУчастки.xml
@@ -27,6 +28,7 @@ dbe75b9f-6132-4f06-b103-d7b0277871c4:EE092A490BCB6E9DA952E8643D16890F:2:Catalogs
 3cd5c2eb-6f41-4e8d-a1ba-803ccd3644f3:0B390AF09D807C80994BB3C093F14265:2:Catalogs\УпаковкиЕдиницыИзмерения.xml
 16034c2d-9761-4c20-8246-a4ed19dd9076:561E2BAD0FA633CBB4DE3E845833AE7E:2:Catalogs\ХарактеристикиНоменклатуры.xml
 2f10295f-30e2-483b-9e29-efd8d5c69df2:39F545EBFD68B27C2CD200F93DB33A81:2:Catalogs\ЦеновыеГруппы.xml
+5388c2b3-fd07-8e19-84d6-bfa9a6c94a5e:14C2BFB2F2F5D5B0C6039A8FD901B598:2:Catalogs\ЭтапыПроизводства.xml
 4a33836f-a9c7-45b8-86dd-b2ad765b5308:D8EBA4CADFDE4398EE631378F6C24A9B:2:Catalogs\юум_ГруппыОтходов.xml
 ba8a0d8b-8bb5-46c1-95e0-8e1bd28c3421:3C8FE95E170CD444665CA01A7CBEEC0D:2:Catalogs\юум_ДеревоЗаказаСлужебный.xml
 d86077ef-27fa-492a-9e5a-dfb9a4c2ac52:DCDE4B2407ED553A651182E07B41D250:2:Catalogs\юум_КлассификаторЗаказов.xml
@@ -68,6 +70,7 @@ bb3f88e9-d4a1-4d65-8dcd-e3fd78ad4e35:E1E28484453521DE5C1451BBA30AA3A4:2:CommonMo
 c74da3bf-c4a0-4719-8d0e-7d0f43c85d34:07F0EDE83DD36CAC1E9A01177D9467D1:2:CommonModules\РаспределениеЗапасов.xml
 72264b1f-b4ea-4f10-9afa-8ff50b683217:0BDFBD62BE8D14A65E2F68C2F8069329:2:CommonModules\РезервыПоОплатеТрудаБазовый.xml
 400a9a47-03ac-4a62-bfeb-7269f65442ee:B26D9B4AEBB831C64B0B1498334CF570:2:CommonModules\СтруктураЗаказаВызовСервера.xml
+aa8d2d10-d414-8626-8b60-ed66a6373839:C86438F4F45AEE3252572B318F412EC4:2:CommonModules\ФормированиеЭтаповПроизводства.xml
 65bd66be-42c7-48ac-9b94-5f2147a5db70:9C39237B5AE833D2612092789CA9062D:2:CommonModules\юум_ДеревоЗаказа.xml
 b0180076-cd51-4256-a941-5e625f68844d:B65A22A395E6BB90125CCD66B85DEB46:2:CommonModules\юум_ЗапретНаИзменениеСобытия.xml
 8b95e502-8024-4fa9-8b06-a1086f9619f3:7835DB38B29065142888818604116853:2:CommonModules\юум_Интеграция.xml
@@ -113,13 +116,16 @@ d34926a3-031b-4593-a511-e96b11240375:2A7D60942C75560BD16142F97BD80212:2:CommonPi
 1090a886-ed5e-4ab7-8a61-5668121255d6:74F0783621136750ED98EEE0711F6DD2:2:DataProcessors\ОбеспечениеПотребностей.xml
 6ccce4c7-161b-4586-ae5d-ac5c05e4228c:447D276F2DACF89A8A84AE5D041CD551:2:DataProcessors\ПечатьМ11.xml
 030bc2d5-b534-46ef-aff3-887ca3817a11:AA10EAF022AE5287C4C154DD6F5510FA:2:DataProcessors\ПечатьОбщихФорм.xml
+911fc329-1426-832c-879e-c7db41e8de10:7A84D39CF859E6800F43276D32EBA7B8:2:DataProcessors\ФормированиеЭтаповПроизводства.xml
 b0a7a2b1-da58-44e3-a8e6-88fb76708114:244A92D4963C266883EFFB11D8A32891:2:DataProcessors\юум_МониторингЗаказа.xml
 bb6532da-3d31-4768-87ae-6a81abc114d1:EFAC4554C88232E05CE7FD4FDB8E6BA4:2:DataProcessors\юум_СохранениеДереваЗаказа.xml
 ba90da34-2231-4d2b-9d68-bc603e7470f0:C499E203E62A8DAA7FE6A588FC4701AE:2:DefinedTypes\ПланыОбменаБСД.xml
 a30a35b6-730f-47ab-8953-27225ee6d3ed:04B5B094459D6E6A7C00E20E33F12A18:2:Documents\АвансовыйОтчет.xml
 0d0d3445-cdea-490d-988b-e83d8354417f:AE6421A336E165F835C65C08A9976E7A:2:Documents\ЗаказКлиента.xml
+173226a4-7ca2-83f9-8091-f3641b7f1dff:E770016FEEAC2E5128BC9C48085A93A5:2:Documents\ЗаказНаПроизводство.xml
 0c62e66c-596a-40f1-8a28-ff611d3c0b9a:52CDB1AC90AFDEB2A767D9E9C3B28EBC:2:Documents\ЗаказНаПроизводство2_2.xml
 0d688d5d-3fa2-43d7-a797-9b2ab2f308c2:562AC074CBA9F9909B82B7EE6F6FEF52:2:Documents\ЗаявкаНаРасходованиеДенежныхСредств.xml
+59344a34-e4b4-8f14-8e4d-19e543bf0216:FB23803705C3F7DBE3CC681D8B735A2C:2:Documents\МаршрутныйЛистПроизводства.xml
 6660ec52-45d4-4a3f-81dd-19310bc4c798:2D7953E0B34AB987622C857F2B09A133:2:Documents\ПриобретениеТоваровУслуг.xml
 027373c5-4a85-465e-854e-52123c6b126c:946001D0A420E2C2D6D792B9297A48C6:2:Documents\ПриобретениеУслугПрочихАктивов.xml
 1d9f84b2-bafb-4a77-aadf-22487a43a671:D6BF02700F07DD86AC3C6CBCE63B8F60:2:Documents\ПрочиеДоходыРасходы.xml
@@ -131,6 +137,7 @@ f893d99d-46ef-4ba3-b990-34ce5d1af420:D256C0E6C27C322643BAB3951126BFE2:2:Enums\В
 2e315179-c7b0-4514-a7b7-7321fff32832:2485E2BE69ED137DEFA99A1AFA3E1B44:2:Enums\ВидыДвиженийДенежныхСредств.xml
 9f9f0198-1d4c-4fbb-b6e9-1665a4d1fbe6:F81AD8B00696889183256F56C5AB4D53:2:Enums\ВидыДеятельностиДляНалоговогоУчетаЗатрат.xml
 11a2d60f-9008-4efc-9186-efe2bbf422cf:1B6CD83CCFC09B82E143FE6896348CE2:2:Enums\ВидыДеятельностиРасходов.xml
+5b23c782-7b30-896d-aa09-5361b518cf0f:4A891848CF463B0550A04B37318D7107:2:Enums\ВидыСтрокСтруктурыЗаказаНаПроизводство.xml
 f5180617-be72-49e8-8e5f-ac9cf3739d0c:3E00A7CCA97F5D43E2594DC7D0A89538:2:Enums\ВидыФормОтчетовОРасходахИЧисленностиРаботниковГосударственныхОрганов.xml
 4f7945ce-6dda-47c6-9526-143bb77fd431:6B63966CCA59D8BFB3796A2392228014:2:Enums\ЕдиницыИзмеренияВремени.xml
 5cc114e1-da5d-46f9-8fd3-3ba8037a965d:9D7E6A4404FB164B007E00B34A518885:2:Enums\НазначениеПравилРаспределенияРасходов.xml
@@ -154,6 +161,7 @@ ab61d138-4ed1-450e-8551-459a486c8e31:34FFB1C71BBC5432EFBE4732F524698A:2:EventSub
 d54c97ff-24fa-4b47-9eec-aa9ff2ee8bd2:F29AB247EB9AC1869B4B746C377EE4DC:2:InformationRegisters\ПравилаДляОбменаДанными.xml
 47d3cd58-64fc-46f0-8377-41048e1dc68b:66FC7C6473DA24BD65E9EAB3047015D3:2:InformationRegisters\СоответствияОбъектовИнформационныхБаз.xml
 b04de351-09a0-44b1-9076-1400b5ea9a0f:2BB58E77347CEB7C660272C6A47E67E2:2:InformationRegisters\СтруктураЗаказа.xml
+cd6216ce-577e-8636-8679-9aa0c0e997ae:83D4CF96C9EC601247EDF983B510D5DB:2:InformationRegisters\ТрудозатратыСтруктурыЗаказа.xml
 eab9889c-95bb-4438-8dfa-970bb8eec5d0:E1BFFDF13D9F51A7DA3F4F246E36EC13:2:InformationRegisters\юум_ЗапрещенныеДляРучногоИзмененияОбъекты.xml
 0ca6cbe6-5fdc-46e3-b172-03bb166f7528:E96EB703E3D54B44910500177420D406:2:InformationRegisters\юум_КодыНеНайденнойНоменклатуры.xml
 c4f41bae-8a69-4b3f-b578-4831d9d25c12:165854C78A3EDF3B831FE2F485493F95:2:InformationRegisters\юум_РазрешенныеРеквизитыЗапрещенныхОбъектов.xml
@@ -204,6 +212,7 @@ a514e516-e65f-4d23-8942-abcf50645062:4A5A8F3F61A192E107860DC66B67498F:2:Roles\ю
 4f61fe7b-b58c-49cd-9f5f-c016d081b667:C1B0B8077C87ABC836D76598B5166B3C:2:Roles\юум_ЧтениеКлассификатораЗаказов.xml
 0b4be199-59ee-404c-b5a1-4122b46025e4:A7A7C7F212388FF86D01CB3F15C84C3B:2:ScheduledJobs\юум_ЗагрузкаАОН.xml
 eaeb681a-6543-4ea2-bcc4-374408f8ddd2:D3F10B937FE4D98645919D196D024207:2:ScheduledJobs\юум_ЗагрузкаНоменклатуры.xml
+ddcbf326-15ea-8906-bdb4-6787f8ed9dae:B4194ABA91BFC5AAEF31A8181D785C13:2:StyleItems\ВажнаяНадписьШрифт.xml
 9f24bedd-12c7-47a7-85e7-7e29b9d9cd47:79A1769FCC55F398AB5F4732B6747144:2:StyleItems\ГиперссылкаЦвет.xml
 f633a9ed-1d31-45f1-b9ec-93c9bf22e35c:55B563D34F82D3859AA7EF08584E6EB3:2:StyleItems\ГруппаВариантовОтчетовЦвет.xml
 0a8cea9b-8a11-4781-a71d-82c71dc85c25:904B4C0A4CD4FFFD1998F56C2514FC23:2:StyleItems\ИтогиФон.xml
@@ -269,6 +278,7 @@ CommonModules\ПрочееОприходованиеТоваровЛокализ
 CommonModules\РаспределениеЗапасов\Ext\Module.bsl:AF5746E2DB2577225C59B348B6EEAF49:4:CommonModules\РаспределениеЗапасов\Ext\Module.bsl
 CommonModules\РезервыПоОплатеТрудаБазовый\Ext\Module.bsl:CE0D590432E93424365A3EC09830A234:4:CommonModules\РезервыПоОплатеТрудаБазовый\Ext\Module.bsl
 CommonModules\СтруктураЗаказаВызовСервера\Ext\Module.bsl:A84B238624C4E6C5ECB29D63BDE4FAAC:4:CommonModules\СтруктураЗаказаВызовСервера\Ext\Module.bsl
+CommonModules\ФормированиеЭтаповПроизводства\Ext\Module.bsl:C1B7ED35CDBEA2F52BF33842A59C730E:4:CommonModules\ФормированиеЭтаповПроизводства\Ext\Module.bsl
 CommonModules\юум_ДеревоЗаказа\Ext\Module.bsl:AD5FFC1E6AB27F4886548D28E4DCB034:4:CommonModules\юум_ДеревоЗаказа\Ext\Module.bsl
 CommonModules\юум_ЗапретНаИзменениеСобытия\Ext\Module.bsl:708BDDFDC546427848085DF2285B8F6D:4:CommonModules\юум_ЗапретНаИзменениеСобытия\Ext\Module.bsl
 CommonModules\юум_Интеграция\Ext\Module.bsl:989E96E35C8D6A087F824F4F704158A6:4:CommonModules\юум_Интеграция\Ext\Module.bsl
@@ -291,6 +301,8 @@ DataProcessors\ПечатьМ11\Ext\ManagerModule.bsl:9A6F5728A9401C822C6D81A481
 23fe9823-6943-4392-838a-76d46f4a425b:0764EC122F44DFE1879688A10792D5D4:4:DataProcessors\ПечатьМ11\Templates\юум_ПФ_MXL_М11.xml
 DataProcessors\ПечатьОбщихФорм\Ext\ManagerModule.bsl:7C07C2992EE7E75C8E1FD41E7D2C1B8B:4:DataProcessors\ПечатьОбщихФорм\Ext\ManagerModule.bsl
 eb55a6d5-2209-4be3-a155-e2e00ad239c2:A426729E73ADF2C6B0B337E3B46FB387:4:DataProcessors\ПечатьОбщихФорм\Templates\юум_ПФ_MXL_М4_ru_Дополнение.xml
+DataProcessors\ФормированиеЭтаповПроизводства\Ext\ManagerModule.bsl:FFB86CBB31499025936049D2BD463786:4:DataProcessors\ФормированиеЭтаповПроизводства\Ext\ManagerModule.bsl
+1d773c66-4e21-5715-9138-d573b4251b7a:3BCF59694468F8EC00902B4A0E281CC2:4:DataProcessors\ФормированиеЭтаповПроизводства\Forms\Форма.xml
 DataProcessors\юум_МониторингЗаказа\Ext\ObjectModule.bsl:2BE017203472377CA333B3FD70353649:4:DataProcessors\юум_МониторингЗаказа\Ext\ObjectModule.bsl
 023cda80-2bd5-4375-a799-f08a67385150:C732EEC6E1FF5083CC4C9AB8FF285FDF:4:DataProcessors\юум_МониторингЗаказа\Forms\ФормаМониторинга.xml
 d0ffcc1c-8d01-4be8-9f95-93d481e4db66:A7AABE5DAF97696982CA6A62666D628C:4:DataProcessors\юум_МониторингЗаказа\Templates\ЗапросСтатическойСтруктуры.xml
@@ -403,6 +415,7 @@ DataProcessors\ЗагрузкаНоменклатуры\Forms\Форма\Ext\For
 DataProcessors\ОбеспечениеПотребностей\Forms\Форма\Ext\Form.xml:F1A190BAB98AD2572603FC65640AE283:6:DataProcessors\ОбеспечениеПотребностей\Forms\Форма\Ext\Form.xml
 DataProcessors\ПечатьМ11\Templates\юум_ПФ_MXL_М11\Ext\Template.xml:2F6F0F9404A8109CE7C2433D4991425A:6:DataProcessors\ПечатьМ11\Templates\юум_ПФ_MXL_М11\Ext\Template.xml
 DataProcessors\ПечатьОбщихФорм\Templates\юум_ПФ_MXL_М4_ru_Дополнение\Ext\Template.xml:DC8C4AB94145EEFA30C82A89381D5E42:6:DataProcessors\ПечатьОбщихФорм\Templates\юум_ПФ_MXL_М4_ru_Дополнение\Ext\Template.xml
+DataProcessors\ФормированиеЭтаповПроизводства\Forms\Форма\Ext\Form.xml:0872EC5A26307D8AD508704E26D8420B:6:DataProcessors\ФормированиеЭтаповПроизводства\Forms\Форма\Ext\Form.xml
 DataProcessors\юум_МониторингЗаказа\Commands\юум_МониторингЗаказа\Ext\CommandModule.bsl:9AB10D758703A515F2A6F12A1A693932:6:DataProcessors\юум_МониторингЗаказа\Commands\юум_МониторингЗаказа\Ext\CommandModule.bsl
 DataProcessors\юум_МониторингЗаказа\Forms\ФормаМониторинга\Ext\Form.xml:75C983297EE94398E89D1634CA0393E8:6:DataProcessors\юум_МониторингЗаказа\Forms\ФормаМониторинга\Ext\Form.xml
 DataProcessors\юум_МониторингЗаказа\Templates\ЗапросСтатическойСтруктуры\Ext\Template.txt:98F395FFDDE407485709AEB34C9F0D29:6:DataProcessors\юум_МониторингЗаказа\Templates\ЗапросСтатическойСтруктуры\Ext\Template.txt
@@ -464,6 +477,7 @@ DataProcessors\ВыполнениеЭтаповПроизводства\Forms\ю
 DataProcessors\ЗагрузкаАОН\Forms\Форма\Ext\Form\Module.bsl:DCD6DBF4DFCBA147A20B0F5A04268BB4:7:DataProcessors\ЗагрузкаАОН\Forms\Форма\Ext\Form\Module.bsl
 DataProcessors\ЗагрузкаНоменклатуры\Forms\Форма\Ext\Form\Module.bsl:65A19486BC593012451FD080ABB164DC:7:DataProcessors\ЗагрузкаНоменклатуры\Forms\Форма\Ext\Form\Module.bsl
 DataProcessors\ОбеспечениеПотребностей\Forms\Форма\Ext\Form\Module.bsl:B862F67DACF427E30ECB9742A69F641B:7:DataProcessors\ОбеспечениеПотребностей\Forms\Форма\Ext\Form\Module.bsl
+DataProcessors\ФормированиеЭтаповПроизводства\Forms\Форма\Ext\Form\Module.bsl:19AA1C42F970CF3E650CA83269FB65C5:7:DataProcessors\ФормированиеЭтаповПроизводства\Forms\Форма\Ext\Form\Module.bsl
 DataProcessors\юум_МониторингЗаказа\Forms\ФормаМониторинга\Ext\Form\Module.bsl:652162B71CA4B68F8673C767F24ED34F:7:DataProcessors\юум_МониторингЗаказа\Forms\ФормаМониторинга\Ext\Form\Module.bsl
 DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма\Ext\Form\Module.bsl:8EB7CA8A69556B9236F168BD96A0F2C7:7:DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма\Ext\Form\Module.bsl
 Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form\Module.bsl:3C99409F4B98175632CC045B6CD3937E:7:Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form\Module.bsl

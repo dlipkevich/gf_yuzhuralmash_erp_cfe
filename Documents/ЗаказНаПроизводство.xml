@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="173226a4-7ca2-83f9-8091-f3641b7f1dff">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ЗаказНаПроизводство" category="Object">
+				<xr:TypeId>3652ea99-fe47-8404-bf95-5fa05f52f934</xr:TypeId>
+				<xr:ValueId>6cf6d316-2b14-8ecf-9380-5155327de598</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ЗаказНаПроизводство" category="Ref">
+				<xr:TypeId>89828924-d64d-898c-a875-2f6b567d770f</xr:TypeId>
+				<xr:ValueId>93980f58-123f-8e55-aed7-5f63c3dd7275</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ЗаказНаПроизводство" category="Selection">
+				<xr:TypeId>7f9ec3c8-e766-8b93-a186-26cdb842a662</xr:TypeId>
+				<xr:ValueId>86e3af80-12b4-8e02-8db3-a1d592b752a3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ЗаказНаПроизводство" category="List">
+				<xr:TypeId>c35631dc-80db-8cd4-907f-072f4778ac40</xr:TypeId>
+				<xr:ValueId>d57b376d-ed2e-815f-9937-fc39fb808f53</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ЗаказНаПроизводство" category="Manager">
+				<xr:TypeId>ec270e0a-91df-86b7-bacd-c87a6b2c01ae</xr:TypeId>
+				<xr:ValueId>3a50e5b6-440e-87c1-bf66-837e35b4d4e9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЗаказНаПроизводство</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>f5b37155-fbc0-4708-9e1c-0099dd0c2839</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="97495cc4-e015-5bfc-9b77-b7af84505c3a">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Статус</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bb965d59-b4c2-4a46-818b-75c868ecdc96</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeId>24d23c0c-725b-4e7e-8aef-6fee259820c0</v8:TypeId>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="f6dd0b0f-27fc-5e32-9261-29db682547de">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ЗаказНаПроизводство.Продукция" category="TabularSection">
+						<xr:TypeId>5080fef6-24ea-56aa-9cbc-5935e9256d8a</xr:TypeId>
+						<xr:ValueId>14f3f292-6078-53e9-9d18-c207a3d4f8c8</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ЗаказНаПроизводство.Продукция" category="TabularSectionRow">
+						<xr:TypeId>6922af41-ff85-576f-b96f-f97fc4ae4c3a</xr:TypeId>
+						<xr:ValueId>55bfcdb5-231b-5ded-8f98-3bc06af0391e</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Продукция</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>791c0e70-5c0f-4401-8f1e-c1dff515b427</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="287fc05e-ca8f-5e24-aedd-b3ebfb36ec0d">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>КодСтроки</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>49e0db59-e774-400a-a7a7-7f1bf73cd37a</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>10</v8:Digits>
+									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="a3acab64-cdc6-57a8-b4c1-2442f1db9143">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ГрафикРассчитан</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>71e9384e-2b09-4a3a-98f7-5407f433ecda</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>
