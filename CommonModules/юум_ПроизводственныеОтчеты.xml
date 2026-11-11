@@ -9,7 +9,7 @@
 					<v8:content>Производственные отчеты (юум)</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment/>
+			<Comment>Функции вызываемые из настроек СКД</Comment>
 			<Global>false</Global>
 			<ClientManagedApplication>false</ClientManagedApplication>
 			<Server>true</Server>
