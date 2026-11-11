@@ -1,0 +1,9 @@
+{
+  "$schema": "https://github.io",
+  "configuration": {
+    "contexts": {
+      "ordinaryApplicationClient": false,
+      "thickClientOrdinaryApplication": false
+    }
+  }
+}
