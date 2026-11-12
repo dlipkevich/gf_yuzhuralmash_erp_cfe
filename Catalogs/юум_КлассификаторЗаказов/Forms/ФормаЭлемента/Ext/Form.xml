@@ -59,6 +59,18 @@
 			<ContextMenu name="ТипДокументаОснованияКонтекстноеМеню" id="23"/>
 			<ExtendedTooltip name="ТипДокументаОснованияРасширеннаяПодсказка" id="24"/>
 		</InputField>
+		<InputField name="Родитель" id="25">
+			<DataPath>Объект.Parent</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="РодительКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="27"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
