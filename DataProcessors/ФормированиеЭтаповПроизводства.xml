@@ -23,6 +23,9 @@
 		</Properties>
 		<ChildObjects>
 			<Form>Форма</Form>
+			<Form>юум_ФП_СправкаВРЦ</Form>
+			<Form>юум_ФП_ПредупрежденияВРЦ</Form>
+			<Template>юум_ФП_СправкаВРЦ</Template>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>
