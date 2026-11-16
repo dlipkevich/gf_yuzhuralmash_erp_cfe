@@ -71,6 +71,7 @@ c74da3bf-c4a0-4719-8d0e-7d0f43c85d34:07F0EDE83DD36CAC1E9A01177D9467D1:2:CommonMo
 72264b1f-b4ea-4f10-9afa-8ff50b683217:0BDFBD62BE8D14A65E2F68C2F8069329:2:CommonModules\РезервыПоОплатеТрудаБазовый.xml
 400a9a47-03ac-4a62-bfeb-7269f65442ee:B26D9B4AEBB831C64B0B1498334CF570:2:CommonModules\СтруктураЗаказаВызовСервера.xml
 aa8d2d10-d414-8626-8b60-ed66a6373839:C86438F4F45AEE3252572B318F412EC4:2:CommonModules\ФормированиеЭтаповПроизводства.xml
+bb86bba1-1ec6-48e7-8afa-7aefc9224770:8F9ACC9993108EB4A09B48987EBF8E36:2:CommonModules\юум_ГрафикПроизводстваПриФормированииПартий.xml
 65bd66be-42c7-48ac-9b94-5f2147a5db70:9C39237B5AE833D2612092789CA9062D:2:CommonModules\юум_ДеревоЗаказа.xml
 b0180076-cd51-4256-a941-5e625f68844d:B65A22A395E6BB90125CCD66B85DEB46:2:CommonModules\юум_ЗапретНаИзменениеСобытия.xml
 8b95e502-8024-4fa9-8b06-a1086f9619f3:7835DB38B29065142888818604116853:2:CommonModules\юум_Интеграция.xml
@@ -279,6 +280,7 @@ CommonModules\РаспределениеЗапасов\Ext\Module.bsl:AF5746E2DB
 CommonModules\РезервыПоОплатеТрудаБазовый\Ext\Module.bsl:CE0D590432E93424365A3EC09830A234:4:CommonModules\РезервыПоОплатеТрудаБазовый\Ext\Module.bsl
 CommonModules\СтруктураЗаказаВызовСервера\Ext\Module.bsl:A84B238624C4E6C5ECB29D63BDE4FAAC:4:CommonModules\СтруктураЗаказаВызовСервера\Ext\Module.bsl
 CommonModules\ФормированиеЭтаповПроизводства\Ext\Module.bsl:C1B7ED35CDBEA2F52BF33842A59C730E:4:CommonModules\ФормированиеЭтаповПроизводства\Ext\Module.bsl
+CommonModules\юум_ГрафикПроизводстваПриФормированииПартий\Ext\Module.bsl:76C7E9EA245C942C487E1A5F1D47942F:4:CommonModules\юум_ГрафикПроизводстваПриФормированииПартий\Ext\Module.bsl
 CommonModules\юум_ДеревоЗаказа\Ext\Module.bsl:AD5FFC1E6AB27F4886548D28E4DCB034:4:CommonModules\юум_ДеревоЗаказа\Ext\Module.bsl
 CommonModules\юум_ЗапретНаИзменениеСобытия\Ext\Module.bsl:708BDDFDC546427848085DF2285B8F6D:4:CommonModules\юум_ЗапретНаИзменениеСобытия\Ext\Module.bsl
 CommonModules\юум_Интеграция\Ext\Module.bsl:989E96E35C8D6A087F824F4F704158A6:4:CommonModules\юум_Интеграция\Ext\Module.bsl
