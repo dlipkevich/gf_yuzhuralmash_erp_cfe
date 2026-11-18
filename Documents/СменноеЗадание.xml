@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="84aca29a-4435-4f99-851c-086e14160cdb">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.СменноеЗадание" category="Object">
+				<xr:TypeId>c5bc78d7-d7d4-4c1e-b6a7-3c4170d83101</xr:TypeId>
+				<xr:ValueId>d3c5e11b-a77b-4af1-8f4f-4f00547a52b8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.СменноеЗадание" category="Ref">
+				<xr:TypeId>bd3af1fa-a467-4c46-9049-c2d3ffebcf2b</xr:TypeId>
+				<xr:ValueId>3bec2dad-a1e1-48dc-b1ab-9fe360988848</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.СменноеЗадание" category="Selection">
+				<xr:TypeId>ec893143-46a3-4fa8-a009-943955bb18bc</xr:TypeId>
+				<xr:ValueId>62a8d282-648f-4171-8c9e-64982eb8a554</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.СменноеЗадание" category="List">
+				<xr:TypeId>131f6f95-4133-4d83-9792-1701d4348e4b</xr:TypeId>
+				<xr:ValueId>11efa81a-d9ac-4f2f-8e81-ac15d4f70124</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.СменноеЗадание" category="Manager">
+				<xr:TypeId>36922cb3-9f9d-4773-8097-56011ad0b3b0</xr:TypeId>
+				<xr:ValueId>ffd48e14-cb4a-4725-9936-f8f79b3cc6c8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СменноеЗадание</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>082fb8a6-da4e-4e3d-859b-af34a30e4d09</ExtendedConfigurationObject>
+			<NumberType>String</NumberType>
+			<NumberLength>11</NumberLength>
+			<NumberAllowedLength>Variable</NumberAllowedLength>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаДокумента</Form>
+			<Form>ФормаВыбораПоКалендарю</Form>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

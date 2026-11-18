@@ -211,7 +211,7 @@
 			<Catalog>НаправленияДеятельности</Catalog>
 			<Catalog>Номенклатура</Catalog>
 			<Catalog>Склады</Catalog>
-			<Catalog>СтруктураПредприятия</Catalog>
+			<Catalog>Пользователи</Catalog>
 			<Catalog>УпаковкиЕдиницыИзмерения</Catalog>
 			<Catalog>ВидыНоменклатуры</Catalog>
 			<Catalog>юум_КлассификаторЗаказов</Catalog>
@@ -220,7 +220,7 @@
 			<Catalog>СпособыОтраженияЗарплатыВБухУчете</Catalog>
 			<Catalog>юум_ШифрыПрофессий</Catalog>
 			<Catalog>СтатьиДвиженияДенежныхСредств</Catalog>
-			<Catalog>Пользователи</Catalog>
+			<Catalog>СтруктураПредприятия</Catalog>
 			<Catalog>ЦеновыеГруппы</Catalog>
 			<Catalog>Должности</Catalog>
 			<Catalog>СтатьиКалькуляции</Catalog>
@@ -229,14 +229,16 @@
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
 			<Document>ЗаказНаПроизводство</Document>
 			<Document>ПрочиеДоходыРасходы</Document>
-			<Document>ЗаказНаПроизводство2_2</Document>
 			<Document>ЭтапПроизводства2_2</Document>
+			<Document>ЗаказНаПроизводство2_2</Document>
 			<Document>ЗаказКлиента</Document>
 			<Document>ПриобретениеУслугПрочихАктивов</Document>
 			<Document>ПриобретениеТоваровУслуг</Document>
 			<Document>МаршрутныйЛистПроизводства</Document>
 			<Document>АвансовыйОтчет</Document>
 			<Document>ЗаявкаНаЗакупку</Document>
+			<Document>ПроизводственнаяОперация2_2</Document>
+			<Document>СменноеЗадание</Document>
 			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
 			<Enum>ТипыБазыРаспределенияРасходов</Enum>
 			<Enum>ТипыПроизводственныхПроцессов</Enum>
@@ -277,6 +279,7 @@
 			<DataProcessor>ЗагрузкаАОН</DataProcessor>
 			<DataProcessor>ЗагрузкаНоменклатуры</DataProcessor>
 			<DataProcessor>ФормированиеЭтаповПроизводства</DataProcessor>
+			<DataProcessor>ВыполнениеОпераций2_2</DataProcessor>
 			<InformationRegister>СтруктураЗаказа</InformationRegister>
 			<InformationRegister>СоответствияОбъектовИнформационныхБаз</InformationRegister>
 			<InformationRegister>ПравилаДляОбменаДанными</InformationRegister>

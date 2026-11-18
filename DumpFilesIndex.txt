@@ -112,6 +112,7 @@ d0561af3-9145-413b-8ac9-4fb27727253a:5659E414AFB419FF7BE01F6C56B148EE:2:CommonPi
 a9225186-fb9b-4e3d-97d3-291f26863283:FB2ADC9ED67D4C4B0655097D1D05D80D:2:CommonPictures\ФайловыйАрхив.xml
 3d8361a5-781e-4801-a475-9c8f85fe4599:B986F608E6EC373C21485835F482B9FE:2:CommonPictures\юум_СтруктураЗказа.xml
 d34926a3-031b-4593-a511-e96b11240375:2A7D60942C75560BD16142F97BD80212:2:CommonPictures\юум_ЭтапПроизводства.xml
+ec36f8eb-6b60-4e08-a5c4-cadcbb338308:54117652960A5A5AAD75F8879E2E035B:2:DataProcessors\ВыполнениеОпераций2_2.xml
 99164c4e-bc13-41cb-baac-baa591cb104a:C92D421D39779CEE434C210C8FDF787C:2:DataProcessors\ВыполнениеЭтаповПроизводства.xml
 1a8fbb8a-c907-4724-b0a7-e13018948249:6C9D9281B76EA8FF8365002EC19AC382:2:DataProcessors\ЗагрузкаАОН.xml
 22b07cc6-5c0d-4869-be3c-0b73fc11593b:DE8DC68BA547292A6111A051A4DDE358:2:DataProcessors\ЗагрузкаНоменклатуры.xml
@@ -131,7 +132,9 @@ a30a35b6-730f-47ab-8953-27225ee6d3ed:04B5B094459D6E6A7C00E20E33F12A18:2:Document
 59344a34-e4b4-8f14-8e4d-19e543bf0216:FB23803705C3F7DBE3CC681D8B735A2C:2:Documents\МаршрутныйЛистПроизводства.xml
 6660ec52-45d4-4a3f-81dd-19310bc4c798:2D7953E0B34AB987622C857F2B09A133:2:Documents\ПриобретениеТоваровУслуг.xml
 027373c5-4a85-465e-854e-52123c6b126c:946001D0A420E2C2D6D792B9297A48C6:2:Documents\ПриобретениеУслугПрочихАктивов.xml
+b84c587f-d291-4676-bd9b-7cd02b6d5aaa:66562093445AE2F1EA0E7A46D2B46362:2:Documents\ПроизводственнаяОперация2_2.xml
 1d9f84b2-bafb-4a77-aadf-22487a43a671:D6BF02700F07DD86AC3C6CBCE63B8F60:2:Documents\ПрочиеДоходыРасходы.xml
+84aca29a-4435-4f99-851c-086e14160cdb:E9D345CE4F709C6F2AF68FB9C95EE0CE:2:Documents\СменноеЗадание.xml
 68d9b2db-5eb6-4bc1-af34-675607b8e2b3:C9322DC4DCEC64D70F78E02663314615:2:Documents\ЭтапПроизводства2_2.xml
 1cfaf4b0-a9f7-4536-9763-862a54cd52bd:B653EDD2F65A38B17E2C626444201935:2:Enums\ВариантыЗагрузкиРабочихЦентров.xml
 f893d99d-46ef-4ba3-b990-34ce5d1af420:D256C0E6C27C322643BAB3951126BFE2:2:Enums\ВариантыНазначенияСпецификации.xml
@@ -294,6 +297,7 @@ CommonModules\юум_РаботаСФормойКлиентСервер\Ext\Modu
 CommonModules\юум_СхемыЗапросов\Ext\Module.bsl:7C59CAF798B683C8B3AF4F75CECF07A1:4:CommonModules\юум_СхемыЗапросов\Ext\Module.bsl
 CommonPictures\юум_СтруктураЗказа\Ext\Picture.xml:9041482012440FB127152A9EE1B0D8E0:4:CommonPictures\юум_СтруктураЗказа\Ext\Picture.xml
 CommonPictures\юум_ЭтапПроизводства\Ext\Picture.xml:3A276D2359E98B239A299923F76ECE70:4:CommonPictures\юум_ЭтапПроизводства\Ext\Picture.xml
+abc2ab90-f8fa-4712-8622-34d34d0df95c:6CFEF4A9BC62DB3D056997782214C02D:4:DataProcessors\ВыполнениеОпераций2_2\Forms\РабочееМесто.xml
 9b158017-da38-4718-b2e5-e6dd12448b9e:DC5AC31EB6B30152EFA604E3B0830073:4:DataProcessors\ВыполнениеЭтаповПроизводства\Forms\юум_Форма.xml
 DataProcessors\ЗагрузкаАОН\Ext\ObjectModule.bsl:25E9333DC431FA10F87D9EF07814E0EF:4:DataProcessors\ЗагрузкаАОН\Ext\ObjectModule.bsl
 5e84ce70-0114-4bb9-a0a4-f1def28ceeb8:2DF8495464A70C556103025AC1FCFB06:4:DataProcessors\ЗагрузкаАОН\Forms\Форма.xml
@@ -331,8 +335,15 @@ ac3e589f-509d-4fcf-950d-90a53cd1aa8d:061787C53B0ED8A7FA293DC2E60CF7A8:4:Document
 1b3f1496-ddfa-4801-b2e4-0ea9696f3631:9F2BBEC24A5D0140673FE9AAD81CDDDD:4:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Templates\юум_ПФ_MXL_ЗаявкаНаРасходованиеДС.xml
 a34f0b80-efa3-4fd2-9366-e18fa320dbb4:E464D507E80E1E898F4D23D0420A343B:4:Documents\ПриобретениеТоваровУслуг\Forms\ФормаДокумента.xml
 48215534-dbde-4fa3-b4cb-c84319941ac3:797A4AF1204CCC08C51B6CD281E664D3:4:Documents\ПриобретениеУслугПрочихАктивов\Forms\ФормаДокумента.xml
+Documents\ПроизводственнаяОперация2_2\Ext\ManagerModule.bsl:017DBA67513D3378D8B9272F9753351A:4:Documents\ПроизводственнаяОперация2_2\Ext\ManagerModule.bsl
+Documents\ПроизводственнаяОперация2_2\Ext\ObjectModule.bsl:B7592CF96E8D5F92345B13353BFFC4CF:4:Documents\ПроизводственнаяОперация2_2\Ext\ObjectModule.bsl
+89b6089a-440a-4233-af5b-041ddcf2da8b:4EB3F3A124B23F937EAFD30E623E9191:4:Documents\ПроизводственнаяОперация2_2\Forms\ФормаДокумента.xml
 dca94ae5-8c1a-4845-b74b-fb0726ec60be:9D7C9F6DE23DF1EC9BAF93A6701091A0:4:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента.xml
 746022b2-a927-46ac-b782-8a1017d99cb4:1ECAE6D550215277DDAEFD63F840C678:4:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel.xml
+Documents\СменноеЗадание\Ext\ManagerModule.bsl:7506B1567618DB969F91705DC7E126E5:4:Documents\СменноеЗадание\Ext\ManagerModule.bsl
+Documents\СменноеЗадание\Ext\ObjectModule.bsl:4078C061F1BDDAE986FC43A2C3FAC8FA:4:Documents\СменноеЗадание\Ext\ObjectModule.bsl
+5abbcebb-76ec-44c6-a3ce-76e976fbf7f3:79608AE88DEBE8F869623D8F65B4015D:4:Documents\СменноеЗадание\Forms\ФормаВыбораПоКалендарю.xml
+3f2205c7-c587-4196-8789-47fcbae07528:F94F8EF617961F59A9C5D91DEDC39C29:4:Documents\СменноеЗадание\Forms\ФормаДокумента.xml
 5656032d-ea68-45e6-910c-76b48117d9c7:24A8CCF5B4CA02CA910856787A0AD215:4:Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента.xml
 21e0acac-0cc1-4db9-9eb4-45b6a71a9f4d:D7DD38B397D9BCE3DA62135E9EF43D49:4:ExchangePlans\юум_ОбменДО_ERP\Forms\ФормаУзла.xml
 2435de20-325a-4905-9f79-c4379fa3d502:7FFB00B9AD83E8B19E5214C4199C8F73:4:InformationRegisters\ПравилаДляОбменаДанными\Forms\юум_ЗагрузитьПравилаСинхронизацииДанныхОЛД.xml
@@ -420,6 +431,7 @@ Catalogs\юум_КлассификаторЗаказов\Forms\ФормаЭле�
 ChartsOfCharacteristicTypes\СтатьиАктивовПассивов\Forms\ФормаЭлемента\Ext\Form.xml:E13A269453DBE9B0C5A05C59346B452B:6:ChartsOfCharacteristicTypes\СтатьиАктивовПассивов\Forms\ФормаЭлемента\Ext\Form.xml
 ChartsOfCharacteristicTypes\СтатьиДоходов\Forms\ФормаЭлемента\Ext\Form.xml:2CBE42D719F8D13F55BBF8D32826A6A7:6:ChartsOfCharacteristicTypes\СтатьиДоходов\Forms\ФормаЭлемента\Ext\Form.xml
 ChartsOfCharacteristicTypes\СтатьиРасходов\Forms\ФормаЭлемента\Ext\Form.xml:94C89993E8277EDA530C731BABEF9EDC:6:ChartsOfCharacteristicTypes\СтатьиРасходов\Forms\ФормаЭлемента\Ext\Form.xml
+DataProcessors\ВыполнениеОпераций2_2\Forms\РабочееМесто\Ext\Form.xml:0936967A28C0E34FFE49DBD0A12D27D8:6:DataProcessors\ВыполнениеОпераций2_2\Forms\РабочееМесто\Ext\Form.xml
 DataProcessors\ВыполнениеЭтаповПроизводства\Forms\юум_Форма\Ext\Form.xml:77BB9C9EC91CF4C86BE1AC98424EADB4:6:DataProcessors\ВыполнениеЭтаповПроизводства\Forms\юум_Форма\Ext\Form.xml
 DataProcessors\ВыполнениеЭтаповПроизводства\Forms\юум_Форма\Ext\Help.xml:CFCEABECA62C90983DFA67C67E65F1AC:6:DataProcessors\ВыполнениеЭтаповПроизводства\Forms\юум_Форма\Ext\Help.xml
 DataProcessors\ЗагрузкаАОН\Forms\Форма\Ext\Form.xml:012CD599B1D56D983FF0E1FF75E98697:6:DataProcessors\ЗагрузкаАОН\Forms\Форма\Ext\Form.xml
@@ -446,8 +458,11 @@ Documents\ЗаявкаНаРасходованиеДенежныхСредств
 Documents\ЗаявкаНаРасходованиеДенежныхСредств\Templates\юум_ПФ_MXL_ЗаявкаНаРасходованиеДС\Ext\Template.xml:C89CD9E87523F3BC82D31134176D9BBB:6:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Templates\юум_ПФ_MXL_ЗаявкаНаРасходованиеДС\Ext\Template.xml
 Documents\ПриобретениеТоваровУслуг\Forms\ФормаДокумента\Ext\Form.xml:A48D3ED8947B0549645A3D4F6E875652:6:Documents\ПриобретениеТоваровУслуг\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ПриобретениеУслугПрочихАктивов\Forms\ФормаДокумента\Ext\Form.xml:4A1C087B047AAA2A3C7F66D9E0D87A44:6:Documents\ПриобретениеУслугПрочихАктивов\Forms\ФормаДокумента\Ext\Form.xml
+Documents\ПроизводственнаяОперация2_2\Forms\ФормаДокумента\Ext\Form.xml:BDF3CA7BC76B1973D64ECF3835C93656:6:Documents\ПроизводственнаяОперация2_2\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form.xml:1355A8C5B328D41E6A2DD5A49895630A:6:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form.xml:3B3BAD87C1B0FCDF697379C35B27882C:6:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form.xml
+Documents\СменноеЗадание\Forms\ФормаВыбораПоКалендарю\Ext\Form.xml:1BFC0843EA76C11832413BAA1647F0A7:6:Documents\СменноеЗадание\Forms\ФормаВыбораПоКалендарю\Ext\Form.xml
+Documents\СменноеЗадание\Forms\ФормаДокумента\Ext\Form.xml:604102B299827AC3EADF6416FFAA6ECF:6:Documents\СменноеЗадание\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента\Ext\Form.xml:7565E787E7C3FB118F64AE4C21E754FA:6:Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента\Ext\Form.xml
 ExchangePlans\юум_ОбменДО_ERP\Forms\ФормаУзла\Ext\Form.xml:3BD056C46CE53CDBB718499B1CE062BD:6:ExchangePlans\юум_ОбменДО_ERP\Forms\ФормаУзла\Ext\Form.xml
 InformationRegisters\ПравилаДляОбменаДанными\Forms\юум_ЗагрузитьПравилаСинхронизацииДанныхОЛД\Ext\Form.xml:817D837C9D98F1DC79FABD7B6CEB301A:6:InformationRegisters\ПравилаДляОбменаДанными\Forms\юум_ЗагрузитьПравилаСинхронизацииДанныхОЛД\Ext\Form.xml
@@ -489,6 +504,7 @@ Catalogs\юум_ДеревоЗаказаСлужебный\Forms\юум_Форм
 ChartsOfCharacteristicTypes\СтатьиАктивовПассивов\Forms\ФормаЭлемента\Ext\Form\Module.bsl:201D61CD6BF20B709CC9E35A59FEC661:7:ChartsOfCharacteristicTypes\СтатьиАктивовПассивов\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 ChartsOfCharacteristicTypes\СтатьиДоходов\Forms\ФормаЭлемента\Ext\Form\Module.bsl:591AC4D09FEFDAD0B20E3D42F15E0C6C:7:ChartsOfCharacteristicTypes\СтатьиДоходов\Forms\ФормаЭлемента\Ext\Form\Module.bsl
 ChartsOfCharacteristicTypes\СтатьиРасходов\Forms\ФормаЭлемента\Ext\Form\Module.bsl:17DA729DA7CC8AA927CC25E5C0D4564C:7:ChartsOfCharacteristicTypes\СтатьиРасходов\Forms\ФормаЭлемента\Ext\Form\Module.bsl
+DataProcessors\ВыполнениеОпераций2_2\Forms\РабочееМесто\Ext\Form\Module.bsl:5DC33A17A4ED6C99A03EC6C8A539E193:7:DataProcessors\ВыполнениеОпераций2_2\Forms\РабочееМесто\Ext\Form\Module.bsl
 DataProcessors\ВыполнениеЭтаповПроизводства\Forms\юум_Форма\Ext\Form\Module.bsl:C61E5AA96035595ADBEEC7B30860F481:7:DataProcessors\ВыполнениеЭтаповПроизводства\Forms\юум_Форма\Ext\Form\Module.bsl
 DataProcessors\ВыполнениеЭтаповПроизводства\Forms\юум_Форма\Ext\Help\ru.html:67F75D975BE25C72D539D4B700EBE6F0:7:DataProcessors\ВыполнениеЭтаповПроизводства\Forms\юум_Форма\Ext\Help\ru.html
 DataProcessors\ЗагрузкаАОН\Forms\Форма\Ext\Form\Module.bsl:DCD6DBF4DFCBA147A20B0F5A04268BB4:7:DataProcessors\ЗагрузкаАОН\Forms\Форма\Ext\Form\Module.bsl
@@ -504,8 +520,11 @@ Documents\ЗаявкаНаЗакупку\Forms\ФормаДокумента\Ext\
 Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form\Module.bsl:5667D50A7A04CAF7FF47FB0F15424210:7:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ПриобретениеТоваровУслуг\Forms\ФормаДокумента\Ext\Form\Module.bsl:5AE4E3CF62DCB2F0BBFA3889B3E007F8:7:Documents\ПриобретениеТоваровУслуг\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ПриобретениеУслугПрочихАктивов\Forms\ФормаДокумента\Ext\Form\Module.bsl:EA3911B631A9206F0FCDC3CF38093BCA:7:Documents\ПриобретениеУслугПрочихАктивов\Forms\ФормаДокумента\Ext\Form\Module.bsl
+Documents\ПроизводственнаяОперация2_2\Forms\ФормаДокумента\Ext\Form\Module.bsl:E2C182273C14FC2342FB3C1261CF4749:7:Documents\ПроизводственнаяОперация2_2\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form\Module.bsl:1588D0F38635A91541BA99E4457DD32C:7:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form\Module.bsl:DED5B7558F7847AF185C6225D36DB786:7:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form\Module.bsl
+Documents\СменноеЗадание\Forms\ФормаВыбораПоКалендарю\Ext\Form\Module.bsl:4CA5EA2EA75373F7F5535D30680334C4:7:Documents\СменноеЗадание\Forms\ФормаВыбораПоКалендарю\Ext\Form\Module.bsl
+Documents\СменноеЗадание\Forms\ФормаДокумента\Ext\Form\Module.bsl:5CA08DA1EE38A4C02FD8637B72AD89CF:7:Documents\СменноеЗадание\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента\Ext\Form\Module.bsl:2D2FD18DC076030A8DCFA9792763C454:7:Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента\Ext\Form\Module.bsl
 InformationRegisters\ПравилаДляОбменаДанными\Forms\юум_ЗагрузитьПравилаСинхронизацииДанныхОЛД\Ext\Form\Module.bsl:C474B8C69762F6D3C53FCAB2FDB44110:7:InformationRegisters\ПравилаДляОбменаДанными\Forms\юум_ЗагрузитьПравилаСинхронизацииДанныхОЛД\Ext\Form\Module.bsl
 InformationRegisters\ПравилаДляОбменаДанными\Forms\юум_ЗагрузитьПравилаСинхронизацииДанныхОЛД\Ext\Help\ru.html:6E6BE1C7594545E6F4BE40995A1368C6:7:InformationRegisters\ПравилаДляОбменаДанными\Forms\юум_ЗагрузитьПравилаСинхронизацииДанныхОЛД\Ext\Help\ru.html
