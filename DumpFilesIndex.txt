@@ -196,6 +196,7 @@ fa3e8a26-4b76-4f24-8764-0a85c3614ace:29042B9BD008AEDBB2555D6AD90CD0D4:2:Roles\П
 d9cdfa3a-5507-444f-96f6-146495ac5efd:EB568D0AB9EFE2E6B0705F63943CC246:2:Roles\юум_ДобавлениеИзменениеГлобальныеЗначения.xml
 f948c6e9-a008-49f9-94e2-76824325a717:4D4A2FFBACFB5434C18E14B27F61D911:2:Roles\юум_ДобавлениеИзменениеКлассификатораЗаказов.xml
 44c1ec86-7359-4493-9185-3913e70c2e2c:B0F946E9AC77032AD3198AA9DEB262D1:2:Roles\юум_ИзменениеГруппыОтходов.xml
+3a9975ca-3255-4106-ac26-82a0e4347017:5184E020FE6B07144E6C117BE24E5CB0:2:Roles\юум_ИспользоватьЗаданияКВыполнению.xml
 04448c01-9524-44f3-9454-230b86e11cc6:4170D0694C9FED58B6C804F985925E35:2:Roles\юум_Мастер.xml
 53e659b8-2d94-48e1-9eef-709fcbe0ab82:D1472A337317472B0C8DBDF99F43BD17:2:Roles\юум_НачальникСмены.xml
 4d292d16-0fa3-4150-8916-7a2b7a4de1c6:08CD8CE4790E8C6838D4F9A3558312E6:2:Roles\юум_НачальникЦеха.xml
@@ -380,6 +381,7 @@ Roles\ПросмотрОтчетовОЗагрузкеРабочихЦентро
 Roles\юум_ДобавлениеИзменениеГлобальныеЗначения\Ext\Rights.xml:E241952D24A750F48CF856BDA51E5484:4:Roles\юум_ДобавлениеИзменениеГлобальныеЗначения\Ext\Rights.xml
 Roles\юум_ДобавлениеИзменениеКлассификатораЗаказов\Ext\Rights.xml:962CDD080C13C3B44CBE4D329CA246A2:4:Roles\юум_ДобавлениеИзменениеКлассификатораЗаказов\Ext\Rights.xml
 Roles\юум_ИзменениеГруппыОтходов\Ext\Rights.xml:1D2C7F9CA225A8E10B5B6CC5AEB5D073:4:Roles\юум_ИзменениеГруппыОтходов\Ext\Rights.xml
+Roles\юум_ИспользоватьЗаданияКВыполнению\Ext\Rights.xml:FAC8797776B52426CCF2DD524F295AE3:4:Roles\юум_ИспользоватьЗаданияКВыполнению\Ext\Rights.xml
 Roles\юум_Мастер\Ext\Rights.xml:09B3C017F6B4693FC97F679A6B96785F:4:Roles\юум_Мастер\Ext\Rights.xml
 Roles\юум_НачальникСмены\Ext\Rights.xml:25EF67F5C5902FB78DEB243BBABC5D1C:4:Roles\юум_НачальникСмены\Ext\Rights.xml
 Roles\юум_НачальникЦеха\Ext\Rights.xml:1D5EAD0887A7FCDE92E3694309F94553:4:Roles\юум_НачальникЦеха\Ext\Rights.xml
