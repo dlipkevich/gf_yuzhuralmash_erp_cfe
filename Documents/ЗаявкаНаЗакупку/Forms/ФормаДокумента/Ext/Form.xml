@@ -1,0 +1,3320 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПровестиИЗакрыть" id="483">
+				<Type>CommandBarButton</Type>
+				<Representation>Text</Representation>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаПровестиИЗакрытьРасширеннаяПодсказка" id="484"/>
+			</Button>
+			<Button name="ФормаЗаписать" id="485">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="486"/>
+			</Button>
+			<Button name="ФормаПровести" id="487">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаПровестиРасширеннаяПодсказка" id="488"/>
+			</Button>
+			<Button name="ФормаУстановитьПометкуУдаленияДокумента" id="589">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаУстановитьПометкуУдаленияДокументаРасширеннаяПодсказка" id="590"/>
+			</Button>
+			<Popup name="ПодменюСоздатьНаОсновании" id="489">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Создать на основании</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Generate</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>CommonPicture.ЗаполнитьПоШаблону</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="490"/>
+				<ChildItems>
+					<ButtonGroup name="ПодменюСоздатьНаОснованииВажное" id="491">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Создать на основании (Важное)</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Generate (Important)</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ПодменюСоздатьНаОснованииВажноеРасширеннаяПодсказка" id="492"/>
+					</ButtonGroup>
+					<ButtonGroup name="ПодменюСоздатьНаОснованииОбычное" id="493">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Создать на основании (Обычное)</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Generate (Standard)</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ПодменюСоздатьНаОснованииОбычноеРасширеннаяПодсказка" id="494"/>
+					</ButtonGroup>
+					<ButtonGroup name="ПодменюСоздатьНаОснованииСмТакже" id="495">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Создать на основании (См. также)</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Generate (See also)</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ПодменюСоздатьНаОснованииСмТакжеРасширеннаяПодсказка" id="496"/>
+					</ButtonGroup>
+				</ChildItems>
+			</Popup>
+			<ButtonGroup name="ФормаГруппаКомандыФормы" id="497">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Команды формы</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Form commands</v8:content>
+					</v8:item>
+				</Title>
+				<CommandSource>Form</CommandSource>
+				<ExtendedTooltip name="ФормаГруппаКомандыФормыРасширеннаяПодсказка" id="498"/>
+			</ButtonGroup>
+			<Popup name="ПодменюЗаполнить" id="499">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Заполнение</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Filling</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Дополнительные команды заполнения</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Additional filling commands</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>CommonPicture.ЗаполнитьФорму</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ПодменюЗаполнитьРасширеннаяПодсказка" id="500"/>
+			</Popup>
+			<Popup name="ПодменюПечать" id="501">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Печать</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Print</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Команды печати</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Form's print commands.</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.Print</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ПодменюПечатьРасширеннаяПодсказка" id="502"/>
+			</Popup>
+			<Popup name="ПодменюОтчеты" id="503">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отчеты</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Reports</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>CommonPicture.Отчеты</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<Representation>PictureAndText</Representation>
+				<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="504"/>
+				<ChildItems>
+					<ButtonGroup name="ПодменюОтчетыВажное" id="505">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подменю отчеты важное</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Submenu reports important</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ПодменюОтчетыВажноеРасширеннаяПодсказка" id="506"/>
+					</ButtonGroup>
+					<ButtonGroup name="ПодменюОтчетыОбычное" id="507">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подменю отчеты обычное</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Submenu reports standard</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подменю отчеты важное</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Submenu reports important</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ПодменюОтчетыОбычноеРасширеннаяПодсказка" id="508"/>
+					</ButtonGroup>
+					<ButtonGroup name="ПодменюОтчетыСмТакже" id="509">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подменю отчеты см также</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Submenu reports see also</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Подменю отчеты важное</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Submenu reports important</v8:content>
+							</v8:item>
+						</ToolTip>
+						<ExtendedTooltip name="ПодменюОтчетыСмТакжеРасширеннаяПодсказка" id="510"/>
+					</ButtonGroup>
+				</ChildItems>
+			</Popup>
+			<Button name="ФормаСправка" id="591">
+				<Type>CommandBarButton</Type>
+				<CommandName>0</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="592"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="213d1900-dcad-4616-9f20-3f077156a40f" callType="After">юум_ПослеЗаписиНаСервереПосле</Event>
+		<Event name="8f42e083-be92-4102-b1f0-fa58452c1a63" callType="After">юум_ПередЗаписьюНаСервереПосле</Event>
+		<Event name="OnCreateAtServer" callType="After">юум_ПриСозданииНаСервереПосле</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаПротокол" id="713">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа протокол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group log</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа протокол</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Group log</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПротоколРасширеннаяПодсказка" id="714"/>
+			<ChildItems>
+				<LabelField name="ПредставлениеСтатуса" id="701">
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>96</MaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ПредставлениеСтатусаКонтекстноеМеню" id="702"/>
+					<ExtendedTooltip name="ПредставлениеСтатусаРасширеннаяПодсказка" id="703"/>
+				</LabelField>
+				<LabelField name="ПредставлениеИсполнителя" id="710">
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MaxWidth>96</MaxWidth>
+					<ContextMenu name="ПредставлениеИсполнителяКонтекстноеМеню" id="711"/>
+					<ExtendedTooltip name="ПредставлениеИсполнителяРасширеннаяПодсказка" id="712"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Pages</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<Page name="ГруппаОсновное" id="162">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Main</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalStretch>true</VerticalStretch>
+					<ChildrenAlign>None</ChildrenAlign>
+					<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="163"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаШапка" id="225">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Шапка</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Header</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<ChildrenAlign>ItemsLeftTitlesLeft</ChildrenAlign>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="226"/>
+							<ChildItems>
+								<UsualGroup name="ШапкаЛево" id="227">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шапка лево</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Header left</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<United>false</United>
+									<ChildItemsWidth>Equal</ChildItemsWidth>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ШапкаЛевоРасширеннаяПодсказка" id="228"/>
+									<ChildItems>
+										<UsualGroup name="НомерДата" id="229">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Номер и дата</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Number and date</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="НомерДатаРасширеннаяПодсказка" id="230"/>
+											<ChildItems>
+												<InputField name="Номер" id="231">
+													<TitleLocation>Left</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>9</MaxWidth>
+													<HorizontalStretch>true</HorizontalStretch>
+													<Wrap>false</Wrap>
+													<ContextMenu name="НомерКонтекстноеМеню" id="232"/>
+													<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="233"/>
+												</InputField>
+												<InputField name="Дата" id="234">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>от</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>dated</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Left</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>14</MaxWidth>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Wrap>false</Wrap>
+													<ContextMenu name="ДатаКонтекстноеМеню" id="235"/>
+													<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="236"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<InputField name="Ответственный" id="375">
+											<ContextMenu name="ОтветственныйКонтекстноеМеню" id="376"/>
+											<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="377"/>
+										</InputField>
+										<InputField name="Менеджер" id="295">
+											<TitleLocation>Left</TitleLocation>
+											<MaxWidth>28</MaxWidth>
+											<Wrap>false</Wrap>
+											<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+											<ContextMenu name="МенеджерКонтекстноеМеню" id="296"/>
+											<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="297"/>
+										</InputField>
+										<InputField name="ЦельЗакупки" id="865">
+											<ContextMenu name="ЦельЗакупкиКонтекстноеМеню" id="866"/>
+											<ExtendedTooltip name="ЦельЗакупкиРасширеннаяПодсказка" id="867"/>
+										</InputField>
+										<InputField name="НаправлениеДеятельности" id="868">
+											<TitleHeight>2</TitleHeight>
+											<ContextMenu name="НаправлениеДеятельностиКонтекстноеМеню" id="869"/>
+											<ExtendedTooltip name="НаправлениеДеятельностиРасширеннаяПодсказка" id="870"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ШапкаПраво" id="251">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шапка право</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Header right</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<United>false</United>
+									<ChildItemsWidth>Equal</ChildItemsWidth>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ШапкаПравоРасширеннаяПодсказка" id="252"/>
+									<ChildItems>
+										<InputField name="Организация" id="256">
+											<TitleLocation>Left</TitleLocation>
+											<MaxWidth>28</MaxWidth>
+											<Wrap>false</Wrap>
+											<ContextMenu name="ОрганизацияКонтекстноеМеню" id="257"/>
+											<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="258"/>
+										</InputField>
+										<InputField name="Подразделение" id="298">
+											<TitleLocation>Left</TitleLocation>
+											<MaxWidth>28</MaxWidth>
+											<AutoMarkIncomplete>false</AutoMarkIncomplete>
+											<ContextMenu name="ПодразделениеКонтекстноеМеню" id="299"/>
+											<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="300"/>
+										</InputField>
+										<InputField name="Склад" id="262">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Склад</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Warehouse</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Left</TitleLocation>
+											<MaxWidth>28</MaxWidth>
+											<Wrap>false</Wrap>
+											<DropListButton>false</DropListButton>
+											<ChoiceButton>true</ChoiceButton>
+											<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+											<ContextMenu name="СкладКонтекстноеМеню" id="263"/>
+											<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="264"/>
+										</InputField>
+										<UsualGroup name="ГруппаНалогообложение" id="715">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Налогообложение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Taxation</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаНалогообложениеРасширеннаяПодсказка" id="716"/>
+											<ChildItems>
+												<InputField name="Валюта" id="717">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>5</MaxWidth>
+													<HorizontalStretch>false</HorizontalStretch>
+													<Wrap>false</Wrap>
+													<OpenButton>false</OpenButton>
+													<QuickChoice>true</QuickChoice>
+													<ContextMenu name="ВалютаКонтекстноеМеню" id="718"/>
+													<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="719"/>
+												</InputField>
+												<CheckBoxField name="ЦенаВключаетНДС" id="720">
+													<TitleLocation>Right</TitleLocation>
+													<WarningOnEditRepresentation>Show</WarningOnEditRepresentation>
+													<WarningOnEdit>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Все виды цен в документе будут очищены</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>All price types in the document will be cleared</v8:content>
+														</v8:item>
+													</WarningOnEdit>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ЦенаВключаетНДСКонтекстноеМеню" id="721"/>
+													<ExtendedTooltip name="ЦенаВключаетНДСРасширеннаяПодсказка" id="722"/>
+												</CheckBoxField>
+											</ChildItems>
+										</UsualGroup>
+										<CheckBoxField name="БезКонтроляЛимита" id="957">
+											<TitleLocation>Right</TitleLocation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="БезКонтроляЛимитаКонтекстноеМеню" id="958"/>
+											<ExtendedTooltip name="БезКонтроляЛимитаРасширеннаяПодсказка" id="959"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ШапкаНадписи" id="854">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Шапка надписи</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Label header</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<United>false</United>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ШапкаНадписиРасширеннаяПодсказка" id="855"/>
+									<ChildItems>
+										<LabelDecoration name="Декорация2" id="856">
+											<ContextMenu name="Декорация2КонтекстноеМеню" id="857"/>
+											<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="858"/>
+										</LabelDecoration>
+										<LabelDecoration name="Декорация3" id="859">
+											<ContextMenu name="Декорация3КонтекстноеМеню" id="860"/>
+											<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="861"/>
+										</LabelDecoration>
+										<UsualGroup name="ГруппаСклад" id="844">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Склад</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Warehouse</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСкладРасширеннаяПодсказка" id="845"/>
+											<ChildItems>
+												<PictureDecoration name="КартинкаНесколькоСкладов" id="846">
+													<Width>2</Width>
+													<Height>1</Height>
+													<VerticalStretch>false</VerticalStretch>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Картинка несколько складов</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Picture multiple warehouses</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Поступление осуществляется на несколько складов</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Receipt for several warehouses</v8:content>
+														</v8:item>
+													</ToolTip>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<FileDragMode>AsFile</FileDragMode>
+													<ContextMenu name="КартинкаНесколькоСкладовКонтекстноеМеню" id="847"/>
+													<ExtendedTooltip name="КартинкаНесколькоСкладовРасширеннаяПодсказка" id="848"/>
+												</PictureDecoration>
+												<LabelField name="НадписьНесколькоСкладов" id="849">
+													<TitleLocation>None</TitleLocation>
+													<Width>9</Width>
+													<TextColor>#162779</TextColor>
+													<ContextMenu name="НадписьНесколькоСкладовКонтекстноеМеню" id="850"/>
+													<ExtendedTooltip name="НадписьНесколькоСкладовРасширеннаяПодсказка" id="851"/>
+												</LabelField>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДополнительныеРеквизиты" id="362">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные реквизиты</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Additional attributes</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="363"/>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТовары" id="45">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Товары</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Goods</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаТоварыРасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаТаблицы" id="438">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа таблицы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group tables</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа таблицы</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Group tables</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТаблицыРасширеннаяПодсказка" id="439"/>
+							<ChildItems>
+								<Table name="Товары" id="47">
+									<Representation>List</Representation>
+									<VerticalLines>false</VerticalLines>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<AutoAddIncomplete>false</AutoAddIncomplete>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ТоварыКонтекстноеМеню" id="48"/>
+									<AutoCommandBar name="ТоварыКоманднаяПанель" id="49">
+										<ChildItems>
+											<Popup name="ТоварыСоздатьНаОсновании" id="886">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Создать на основании</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Generate</v8:content>
+													</v8:item>
+												</Title>
+												<Representation>Picture</Representation>
+												<ExtendedTooltip name="ТоварыСоздатьНаОснованииРасширеннаяПодсказка" id="887"/>
+												<ChildItems>
+													<Button name="ТоварыСоздатьЗаказПоставщику" id="725">
+														<Type>CommandBarButton</Type>
+														<CommandName>0</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Заказ поставщику</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Purchase order</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ТоварыСоздатьЗаказПоставщикуРасширеннаяПодсказка" id="726"/>
+													</Button>
+													<Button name="ТоварыСоздатьЗапросКоммерческихПредложенийПоставщиков" id="888">
+														<Type>CommandBarButton</Type>
+														<CommandName>0</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Запрос коммерческих предложений у поставщиков</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Request for quotation</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ТоварыСоздатьЗапросКоммерческихПредложенийПоставщиковРасширеннаяПодсказка" id="889"/>
+													</Button>
+												</ChildItems>
+											</Popup>
+											<Button name="ТоварыСкопироватьСтроки" id="583">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ТоварыСкопироватьСтрокиРасширеннаяПодсказка" id="584"/>
+											</Button>
+											<Button name="ТоварыВставитьСтроки" id="585">
+												<Type>CommandBarButton</Type>
+												<CommandName>0</CommandName>
+												<ExtendedTooltip name="ТоварыВставитьСтрокиРасширеннаяПодсказка" id="586"/>
+											</Button>
+											<Button name="ТоварыРазбитьСтроку" id="668">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.РазбитьСтроку</CommandName>
+												<ExtendedTooltip name="ТоварыРазбитьСтрокуРасширеннаяПодсказка" id="669"/>
+											</Button>
+											<ButtonGroup name="ГруппаДобавитьСтроки" id="812">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Добавить строки</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Add lines</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ГруппаДобавитьСтрокиРасширеннаяПодсказка" id="813"/>
+												<ChildItems>
+													<Button name="ТоварыПоискПоШтрихкоду" id="814">
+														<Type>CommandBarButton</Type>
+														<Representation>Picture</Representation>
+														<SkipOnInput>false</SkipOnInput>
+														<CommandName>0</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Найти товар по штрихкоду</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Find goods by barcode</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ТоварыПоискПоШтрихкодуРасширеннаяПодсказка" id="815"/>
+													</Button>
+													<Button name="ТоварыЗагрузитьДанныеИзТСД" id="816">
+														<Type>CommandBarButton</Type>
+														<Representation>Picture</Representation>
+														<SkipOnInput>false</SkipOnInput>
+														<CommandName>0</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Загрузить товары из ТСД</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Import goods from PDT</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ТоварыЗагрузитьДанныеИзТСДРасширеннаяПодсказка" id="817"/>
+													</Button>
+												</ChildItems>
+											</ButtonGroup>
+											<ButtonGroup name="ТоварыГруппаПараметрыЗакупки" id="475">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Товары группа параметры закупки</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Goods group purchase parameters</v8:content>
+													</v8:item>
+												</Title>
+												<Representation>Compact</Representation>
+												<ExtendedTooltip name="ТоварыГруппаПараметрыЗакупкиРасширеннаяПодсказка" id="476"/>
+												<ChildItems>
+													<Button name="ТоварыСкопироватьУсловияЗакупки" id="471">
+														<Type>CommandBarButton</Type>
+														<CommandName>0</CommandName>
+														<ExtendedTooltip name="ТоварыСкопироватьУсловияЗакупкиРасширеннаяПодсказка" id="472"/>
+													</Button>
+													<Button name="ТоварыВставитьУсловияЗакупки" id="473">
+														<Type>CommandBarButton</Type>
+														<Enabled>false</Enabled>
+														<CommandName>0</CommandName>
+														<ExtendedTooltip name="ТоварыВставитьУсловияЗакупкиРасширеннаяПодсказка" id="474"/>
+													</Button>
+												</ChildItems>
+											</ButtonGroup>
+											<Popup name="ТоварыГруппаЗаполнить" id="664">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Заполнить</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Fill</v8:content>
+													</v8:item>
+												</Title>
+												<ExtendedTooltip name="ТоварыГруппаЗаполнитьРасширеннаяПодсказка" id="665"/>
+												<ChildItems>
+													<Button name="ТоварыЗаполнитьУсловияЗакупкиПоКоммерческимПредложениям" id="723">
+														<Type>CommandBarButton</Type>
+														<CommandName>0</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Условия закупки по коммерческим предложениям</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Terms of purchase by sales quotations</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ТоварыЗаполнитьУсловияЗакупкиПоКоммерческимПредложениямРасширеннаяПодсказка" id="724"/>
+													</Button>
+													<Button name="ТоварыПодобратьНоменклатуру" id="670">
+														<Type>CommandBarButton</Type>
+														<SkipOnInput>false</SkipOnInput>
+														<CommandName>0</CommandName>
+														<ExtendedTooltip name="ТоварыПодобратьНоменклатуруРасширеннаяПодсказка" id="671"/>
+													</Button>
+													<Button name="ТоварыПодобратьАналоги" id="674">
+														<Type>CommandBarButton</Type>
+														<CommandName>0</CommandName>
+														<ExtendedTooltip name="ТоварыПодобратьАналогиРасширеннаяПодсказка" id="675"/>
+													</Button>
+													<Button name="ТоварыЗагрузитьИзВнешнегоФайла" id="676">
+														<Type>CommandBarButton</Type>
+														<CommandName>0</CommandName>
+														<ExtendedTooltip name="ТоварыЗагрузитьИзВнешнегоФайлаРасширеннаяПодсказка" id="677"/>
+													</Button>
+													<ButtonGroup name="ГруппаТоварыОтменаСтрок" id="678">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Отмена строк</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Cancel lines</v8:content>
+															</v8:item>
+														</Title>
+														<ExtendedTooltip name="ГруппаТоварыОтменаСтрокРасширеннаяПодсказка" id="679"/>
+														<ChildItems>
+															<Button name="ТоварыОтменитьВыделенныеСтроки" id="680">
+																<Type>CommandBarButton</Type>
+																<SkipOnInput>false</SkipOnInput>
+																<CommandName>0</CommandName>
+																<ExtendedTooltip name="ТоварыОтменитьВыделенныеСтрокиРасширеннаяПодсказка" id="681"/>
+															</Button>
+															<Button name="ТоварыОтменитьНезаказанныеСтроки" id="682">
+																<Type>CommandBarButton</Type>
+																<CommandName>0</CommandName>
+																<ExtendedTooltip name="ТоварыОтменитьНезаказанныеСтрокиРасширеннаяПодсказка" id="683"/>
+															</Button>
+															<ButtonGroup name="ГруппаТоварыОтменаСтрокНастройки" id="684">
+																<Title>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Товары отмена строк настройки</v8:content>
+																	</v8:item>
+																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>Goods cancel setting lines</v8:content>
+																	</v8:item>
+																</Title>
+																<ExtendedTooltip name="ГруппаТоварыОтменаСтрокНастройкиРасширеннаяПодсказка" id="685"/>
+																<ChildItems>
+																	<Button name="ТоварыСкрыватьОтмененныеСтроки" id="686">
+																		<Type>CommandBarButton</Type>
+																		<SkipOnInput>false</SkipOnInput>
+																		<CommandName>0</CommandName>
+																		<ExtendedTooltip name="ТоварыСкрыватьОтмененныеСтрокиРасширеннаяПодсказка" id="687"/>
+																	</Button>
+																</ChildItems>
+															</ButtonGroup>
+														</ChildItems>
+													</ButtonGroup>
+													<Button name="ТоварыЗаполнитьСкладВВыделенныхСтроках" id="852">
+														<Type>CommandBarButton</Type>
+														<CommandName>0</CommandName>
+														<ExtendedTooltip name="ТоварыЗаполнитьСкладВВыделенныхСтрокахРасширеннаяПодсказка" id="853"/>
+													</Button>
+												</ChildItems>
+											</Popup>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ТоварыРасширеннаяПодсказка" id="50"/>
+									<SearchStringAddition name="ТоварыСтрокаПоиска" id="51">
+										<AdditionSource>
+											<Item>Товары</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТоварыСтрокаПоискаКонтекстноеМеню" id="52"/>
+										<ExtendedTooltip name="ТоварыСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТоварыСостояниеПросмотра" id="54">
+										<AdditionSource>
+											<Item>Товары</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТоварыСостояниеПросмотраКонтекстноеМеню" id="55"/>
+										<ExtendedTooltip name="ТоварыСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТоварыУправлениеПоиском" id="57">
+										<AdditionSource>
+											<Item>Товары</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТоварыУправлениеПоискомКонтекстноеМеню" id="58"/>
+										<ExtendedTooltip name="ТоварыУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="01d80ddd-dce5-4db3-beb5-f63c97cb05b9" callType="After">юум_ТоварыПриОкончанииРедактированияПосле</Event>
+										<Event name="b3c10170-c5ff-4cba-b537-679e1c872b45" callType="After">юум_ТоварыПриНачалеРедактированияПосле</Event>
+									</Events>
+									<ChildItems>
+										<LabelField name="ТоварыНомерСтроки" id="60">
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТоварыНомерСтрокиКонтекстноеМеню" id="61"/>
+											<ExtendedTooltip name="ТоварыНомерСтрокиРасширеннаяПодсказка" id="62"/>
+										</LabelField>
+										<LabelField name="ТоварыНоменклатураТипНоменклатуры" id="593">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Тип</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Type</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>18</Width>
+											<ContextMenu name="ТоварыНоменклатураТипНоменклатурыКонтекстноеМеню" id="594"/>
+											<ExtendedTooltip name="ТоварыНоменклатураТипНоменклатурыРасширеннаяПодсказка" id="595"/>
+										</LabelField>
+										<LabelField name="ТоварыНоменклатураКод" id="596">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>16</Width>
+											<ContextMenu name="ТоварыНоменклатураКодКонтекстноеМеню" id="597"/>
+											<ExtendedTooltip name="ТоварыНоменклатураКодРасширеннаяПодсказка" id="598"/>
+										</LabelField>
+										<LabelField name="ТоварыНоменклатураАртикул" id="599">
+											<EditMode>EnterOnInput</EditMode>
+											<Width>16</Width>
+											<ContextMenu name="ТоварыНоменклатураАртикулКонтекстноеМеню" id="600"/>
+											<ExtendedTooltip name="ТоварыНоменклатураАртикулРасширеннаяПодсказка" id="601"/>
+										</LabelField>
+										<InputField name="ТоварыНоменклатура" id="63">
+											<EditMode>EnterOnInput</EditMode>
+											<Width>16</Width>
+											<ContextMenu name="ТоварыНоменклатураКонтекстноеМеню" id="64"/>
+											<ExtendedTooltip name="ТоварыНоменклатураРасширеннаяПодсказка" id="65"/>
+										</InputField>
+										<InputField name="ТоварыХарактеристика" id="66">
+											<EditMode>EnterOnInput</EditMode>
+											<Width>16</Width>
+											<ContextMenu name="ТоварыХарактеристикаКонтекстноеМеню" id="67"/>
+											<ExtendedTooltip name="ТоварыХарактеристикаРасширеннаяПодсказка" id="68"/>
+										</InputField>
+										<InputField name="ТоварыНазначение" id="126">
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТоварыНазначениеКонтекстноеМеню" id="127"/>
+											<ExtendedTooltip name="ТоварыНазначениеРасширеннаяПодсказка" id="128"/>
+										</InputField>
+										<InputField name="ТоварыКоличествоУпаковок" id="78">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Количество</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Quantity</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>8</Width>
+											<ContextMenu name="ТоварыКоличествоУпаковокКонтекстноеМеню" id="79"/>
+											<ExtendedTooltip name="ТоварыКоличествоУпаковокРасширеннаяПодсказка" id="80"/>
+										</InputField>
+										<ColumnGroup name="ТоварыУпаковкаЕдиницаИзмерения" id="378">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Упаковка, единица измерения</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Packaging unit, UOM</v8:content>
+												</v8:item>
+											</Title>
+											<Group>InCell</Group>
+											<ExtendedTooltip name="ТоварыУпаковкаЕдиницаИзмеренияРасширеннаяПодсказка" id="379"/>
+											<ChildItems>
+												<InputField name="ТоварыУпаковка" id="380">
+													<ShowInHeader>false</ShowInHeader>
+													<Width>10</Width>
+													<DropListButton>false</DropListButton>
+													<ChoiceButton>true</ChoiceButton>
+													<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ТоварыУпаковкаКонтекстноеМеню" id="381"/>
+													<ExtendedTooltip name="ТоварыУпаковкаРасширеннаяПодсказка" id="382"/>
+												</InputField>
+												<LabelField name="ТоварыНоменклатураЕдиницаИзмерения" id="383">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ед. изм.</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Unit of measure</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<Width>8</Width>
+													<ContextMenu name="ТоварыНоменклатураЕдиницаИзмеренияКонтекстноеМеню" id="384"/>
+													<ExtendedTooltip name="ТоварыНоменклатураЕдиницаИзмеренияРасширеннаяПодсказка" id="385"/>
+												</LabelField>
+											</ChildItems>
+										</ColumnGroup>
+										<InputField name="ТоварыЖелаемаяДатаПоступления" id="81">
+											<EditMode>EnterOnInput</EditMode>
+											<Width>8</Width>
+											<ContextMenu name="ТоварыЖелаемаяДатаПоступленияКонтекстноеМеню" id="82"/>
+											<ExtendedTooltip name="ТоварыЖелаемаяДатаПоступленияРасширеннаяПодсказка" id="83"/>
+										</InputField>
+										<InputField name="ТоварыПартнер" id="800">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>16</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТоварыПартнерКонтекстноеМеню" id="801"/>
+											<ExtendedTooltip name="ТоварыПартнерРасширеннаяПодсказка" id="802"/>
+										</InputField>
+										<InputField name="ТоварыКонтрагент" id="803">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<DropListWidth>16</DropListWidth>
+											<ContextMenu name="ТоварыКонтрагентКонтекстноеМеню" id="804"/>
+											<ExtendedTooltip name="ТоварыКонтрагентРасширеннаяПодсказка" id="805"/>
+										</InputField>
+										<InputField name="ТоварыСоглашение" id="806">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>16</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТоварыСоглашениеКонтекстноеМеню" id="807"/>
+											<ExtendedTooltip name="ТоварыСоглашениеРасширеннаяПодсказка" id="808"/>
+										</InputField>
+										<InputField name="ТоварыДоговор" id="809">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТоварыДоговорКонтекстноеМеню" id="810"/>
+											<ExtendedTooltip name="ТоварыДоговорРасширеннаяПодсказка" id="811"/>
+										</InputField>
+										<InputField name="ТоварыНоменклатураПартнера" id="862">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТоварыНоменклатураПартнераКонтекстноеМеню" id="863"/>
+											<ExtendedTooltip name="ТоварыНоменклатураПартнераРасширеннаяПодсказка" id="864"/>
+										</InputField>
+										<InputField name="ТоварыВидЦеныПоставщика" id="818">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>16</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТоварыВидЦеныПоставщикаКонтекстноеМеню" id="819"/>
+											<ExtendedTooltip name="ТоварыВидЦеныПоставщикаРасширеннаяПодсказка" id="820"/>
+										</InputField>
+										<InputField name="ТоварыНалогообложениеНДС" id="883">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Налогообложение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Taxation</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ContextMenu name="ТоварыНалогообложениеНДСКонтекстноеМеню" id="884"/>
+											<ExtendedTooltip name="ТоварыНалогообложениеНДСРасширеннаяПодсказка" id="885"/>
+										</InputField>
+										<InputField name="ТоварыЦена" id="832">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>9</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТоварыЦенаКонтекстноеМеню" id="833"/>
+											<ExtendedTooltip name="ТоварыЦенаРасширеннаяПодсказка" id="834"/>
+										</InputField>
+										<InputField name="ТоварыСумма" id="838">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>9</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТоварыСуммаКонтекстноеМеню" id="839"/>
+											<ExtendedTooltip name="ТоварыСуммаРасширеннаяПодсказка" id="840"/>
+										</InputField>
+										<InputField name="ТоварыСтавкаНДС" id="835">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>9</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТоварыСтавкаНДСКонтекстноеМеню" id="836"/>
+											<ExtendedTooltip name="ТоварыСтавкаНДСРасширеннаяПодсказка" id="837"/>
+										</InputField>
+										<InputField name="ТоварыСуммаНДС" id="841">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>9</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТоварыСуммаНДСКонтекстноеМеню" id="842"/>
+											<ExtendedTooltip name="ТоварыСуммаНДСРасширеннаяПодсказка" id="843"/>
+										</InputField>
+										<InputField name="ТоварыСуммаСНДС" id="821">
+											<UserVisible>
+												<xr:Common>false</xr:Common>
+											</UserVisible>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>9</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТоварыСуммаСНДСКонтекстноеМеню" id="822"/>
+											<ExtendedTooltip name="ТоварыСуммаСНДСРасширеннаяПодсказка" id="823"/>
+										</InputField>
+										<ColumnGroup name="ТоварыГруппаПолучатель" id="824">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Получатель</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Recipient</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Товары группа получатель</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Goods group recipient</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ShowInHeader>true</ShowInHeader>
+											<ExtendedTooltip name="ТоварыГруппаПолучательРасширеннаяПодсказка" id="825"/>
+											<ChildItems>
+												<InputField name="ТоварыСклад" id="826">
+													<EditMode>EnterOnInput</EditMode>
+													<ShowInHeader>false</ShowInHeader>
+													<Width>16</Width>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ТоварыСкладКонтекстноеМеню" id="827"/>
+													<ExtendedTooltip name="ТоварыСкладРасширеннаяПодсказка" id="828"/>
+												</InputField>
+												<InputField name="ТоварыПодразделение" id="829">
+													<EditMode>EnterOnInput</EditMode>
+													<ShowInHeader>false</ShowInHeader>
+													<Width>16</Width>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ТоварыПодразделениеКонтекстноеМеню" id="830"/>
+													<ExtendedTooltip name="ТоварыПодразделениеРасширеннаяПодсказка" id="831"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<LabelField name="ТоварыПредставлениеУсловийЗакупки" id="435">
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТоварыПредставлениеУсловийЗакупкиКонтекстноеМеню" id="436"/>
+											<ExtendedTooltip name="ТоварыПредставлениеУсловийЗакупкиРасширеннаяПодсказка" id="437"/>
+										</LabelField>
+										<CheckBoxField name="ТоварыОтменено" id="661">
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ТоварыОтмененоКонтекстноеМеню" id="662"/>
+											<ExtendedTooltip name="ТоварыОтмененоРасширеннаяПодсказка" id="663"/>
+										</CheckBoxField>
+										<InputField name="ТоварыСтатьяРасходов" id="871">
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТоварыСтатьяРасходовКонтекстноеМеню" id="872"/>
+											<ExtendedTooltip name="ТоварыСтатьяРасходовРасширеннаяПодсказка" id="873"/>
+										</InputField>
+										<InputField name="ТоварыАналитикаРасходов" id="874">
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТоварыАналитикаРасходовКонтекстноеМеню" id="875"/>
+											<ExtendedTooltip name="ТоварыАналитикаРасходовРасширеннаяПодсказка" id="876"/>
+										</InputField>
+										<InputField name="ТоварыСтатьяБюджетов" id="877">
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ТоварыСтатьяБюджетовКонтекстноеМеню" id="878"/>
+											<ExtendedTooltip name="ТоварыСтатьяБюджетовРасширеннаяПодсказка" id="879"/>
+										</InputField>
+										<InputField name="ТоварыКомментарий" id="132">
+											<EditMode>EnterOnInput</EditMode>
+											<Height>1</Height>
+											<ContextMenu name="ТоварыКомментарийКонтекстноеМеню" id="133"/>
+											<ExtendedTooltip name="ТоварыКомментарийРасширеннаяПодсказка" id="134"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаТоварыПодвал" id="511">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Товары подвал</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Goods footer</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТоварыПодвалРасширеннаяПодсказка" id="512"/>
+							<ChildItems>
+								<CheckBoxField name="ПоступлениеОднойДатой" id="518">
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПоступлениеОднойДатойКонтекстноеМеню" id="519"/>
+									<ExtendedTooltip name="ПоступлениеОднойДатойРасширеннаяПодсказка" id="520"/>
+								</CheckBoxField>
+								<InputField name="ЖелаемаяДатаПоступления" id="513">
+									<TitleLocation>None</TitleLocation>
+									<Width>11</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Wrap>false</Wrap>
+									<ChoiceListButton>true</ChoiceListButton>
+									<ContextMenu name="ЖелаемаяДатаПоступленияКонтекстноеМеню" id="514"/>
+									<ExtendedTooltip name="ЖелаемаяДатаПоступленияРасширеннаяПодсказка" id="515"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаУсловияЗакупки" id="391">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Условия закупки</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Purchase conditions</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Collapsible</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаУсловияЗакупкиРасширеннаяПодсказка" id="392"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаУсловияЗакупкиЛево" id="426">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Условия закупки лево</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Purchase conditions left</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа условия закупки лево</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group purchase conditions left</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУсловияЗакупкиЛевоРасширеннаяПодсказка" id="427"/>
+									<ChildItems>
+										<InputField name="Партнер" id="393">
+											<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:05fc2197-fb62-46b9-a85d-c6f1f221ffbd</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПартнерКонтекстноеМеню" id="394"/>
+											<ExtendedTooltip name="ПартнерРасширеннаяПодсказка" id="395"/>
+										</InputField>
+										<InputField name="Контрагент" id="396">
+											<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:79ec6006-f26f-49ec-8642-9403b08f31e9</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КонтрагентКонтекстноеМеню" id="397"/>
+											<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="398"/>
+										</InputField>
+										<InputField name="Соглашение" id="480">
+											<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:a5832f64-216a-450e-adfc-ba0b7a405638</DataPath>
+											<MaxWidth>28</MaxWidth>
+											<Wrap>false</Wrap>
+											<DropListButton>false</DropListButton>
+											<ChoiceButton>true</ChoiceButton>
+											<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+											<ContextMenu name="СоглашениеКонтекстноеМеню" id="481"/>
+											<ExtendedTooltip name="СоглашениеРасширеннаяПодсказка" id="482"/>
+										</InputField>
+										<InputField name="Договор" id="402">
+											<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:ca1d14d4-44a8-418c-b0ca-25d855dec6e2</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ДоговорКонтекстноеМеню" id="403"/>
+											<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="404"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаУсловияЗакупкиЦентр" id="428">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Условия закупки центр</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Purchase conditions center</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа параметры закупки лево</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group purchase parameters left</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУсловияЗакупкиЦентрРасширеннаяПодсказка" id="429"/>
+									<ChildItems>
+										<InputField name="НоменклатураПартнера" id="423">
+											<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:daad5af2-7e34-4200-9aa5-c9e2f16e171d</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="НоменклатураПартнераКонтекстноеМеню" id="424"/>
+											<ExtendedTooltip name="НоменклатураПартнераРасширеннаяПодсказка" id="425"/>
+										</InputField>
+										<InputField name="ВидЦеныПоставщика" id="405">
+											<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:084a7e02-6992-4def-8747-18d8c3212819</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ВидЦеныПоставщикаКонтекстноеМеню" id="406"/>
+											<ExtendedTooltip name="ВидЦеныПоставщикаРасширеннаяПодсказка" id="407"/>
+										</InputField>
+										<InputField name="НалогообложениеНДС" id="880">
+											<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:c5871c40-9b00-40b3-98d0-2e174deea868</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Налогообложение</v8:content>
+												</v8:item>
+												<v8:item>
+													<v8:lang>en</v8:lang>
+													<v8:content>Taxation</v8:content>
+												</v8:item>
+											</Title>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ContextMenu name="НалогообложениеНДСКонтекстноеМеню" id="881"/>
+											<ExtendedTooltip name="НалогообложениеНДСРасширеннаяПодсказка" id="882"/>
+										</InputField>
+										<InputField name="СтавкаНДС" id="414">
+											<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:166a0c2e-c75d-4a91-8350-ba92ae595b25</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СтавкаНДСКонтекстноеМеню" id="415"/>
+											<ExtendedTooltip name="СтавкаНДСРасширеннаяПодсказка" id="416"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаУсловияЗакупкиПраво" id="430">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа условия закупки право</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group purchase conditions right</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа условия закупки право</v8:content>
+										</v8:item>
+										<v8:item>
+											<v8:lang>en</v8:lang>
+											<v8:content>Group purchase conditions right</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУсловияЗакупкиПравоРасширеннаяПодсказка" id="431"/>
+									<ChildItems>
+										<InputField name="Цена" id="408">
+											<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:1c24883f-61ed-44c1-8fc5-8cda47aecefc</DataPath>
+											<Width>9</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ЦенаКонтекстноеМеню" id="409"/>
+											<ExtendedTooltip name="ЦенаРасширеннаяПодсказка" id="410"/>
+										</InputField>
+										<InputField name="Сумма" id="411">
+											<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:6fe8d510-1bc0-4cd4-8084-94fb775b647a</DataPath>
+											<Width>9</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СуммаКонтекстноеМеню" id="412"/>
+											<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="413"/>
+										</InputField>
+										<InputField name="СуммаНДС" id="417">
+											<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:977587b1-7fdf-42c8-8d2c-f255cf08b578</DataPath>
+											<Width>9</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СуммаНДСКонтекстноеМеню" id="418"/>
+											<ExtendedTooltip name="СуммаНДСРасширеннаяПодсказка" id="419"/>
+										</InputField>
+										<InputField name="СуммаСНДС" id="420">
+											<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:45fe0222-a6b6-434f-b3fe-148bcf4d1c02</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<Width>11</Width>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СуммаСНДСКонтекстноеМеню" id="421"/>
+											<ExtendedTooltip name="СуммаСНДСРасширеннаяПодсказка" id="422"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаПодвал" id="761">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Footer group</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Footer group</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="762"/>
+			<ChildItems>
+				<LabelField name="Автор" id="658">
+					<Hiperlink>true</Hiperlink>
+					<TextColor>style:ГиперссылкаЦвет</TextColor>
+					<ContextMenu name="АвторКонтекстноеМеню" id="659"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="660"/>
+				</LabelField>
+				<UsualGroup name="ГруппаИтого" id="763">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итоговая сумма</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Total amount</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итоги</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Totals</v8:content>
+						</v8:item>
+					</ToolTip>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:ИтогиФон</BackColor>
+					<ExtendedTooltip name="ГруппаИтогоРасширеннаяПодсказка" id="764"/>
+					<ChildItems>
+						<InputField name="СуммаВсегоНДС" id="797">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>НДС</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>VAT</v8:content>
+								</v8:item>
+							</Title>
+							<Width>10</Width>
+							<ContextMenu name="СуммаВсегоНДСКонтекстноеМеню" id="798"/>
+							<ExtendedTooltip name="СуммаВсегоНДСРасширеннаяПодсказка" id="799"/>
+						</InputField>
+						<InputField name="СуммаВсегоСНДС" id="786">
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Всего с НДС</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Total including VAT</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Right</HorizontalAlign>
+							<Width>10</Width>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ЧДЦ=2; ЧН=0,00</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>NFD=2; NZ=0.00</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="СуммаВсегоСНДСКонтекстноеМеню" id="787"/>
+							<ExtendedTooltip name="СуммаВсегоСНДСРасширеннаяПодсказка" id="788"/>
+						</InputField>
+						<LabelField name="ВалютаДокумента" id="794">
+							<TitleLocation>None</TitleLocation>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<Width>4</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ВалютаДокументаКонтекстноеМеню" id="795"/>
+							<ExtendedTooltip name="ВалютаДокументаРасширеннаяПодсказка" id="796"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes/>
+	<Commands>
+		<Command name="РазбитьСтроку" id="1000002">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разбить строку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Split line</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разбить строку</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Split line</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+F9</Shortcut>
+			<Picture>
+				<xr:Ref>CommonPicture.РазбитьСтроку</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action callType="After">юум_РазбитьСтрокуПосле</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<BaseForm version="2.20">
+		<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+			<Autofill>false</Autofill>
+			<ChildItems>
+				<Button name="ФормаПровестиИЗакрыть" id="483">
+					<Type>CommandBarButton</Type>
+					<Representation>Text</Representation>
+					<DefaultButton>true</DefaultButton>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаПровестиИЗакрытьРасширеннаяПодсказка" id="484"/>
+				</Button>
+				<Button name="ФормаЗаписать" id="485">
+					<Type>CommandBarButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="486"/>
+				</Button>
+				<Button name="ФормаПровести" id="487">
+					<Type>CommandBarButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаПровестиРасширеннаяПодсказка" id="488"/>
+				</Button>
+				<Button name="ФормаУстановитьПометкуУдаленияДокумента" id="589">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+					<ExtendedTooltip name="ФормаУстановитьПометкуУдаленияДокументаРасширеннаяПодсказка" id="590"/>
+				</Button>
+				<Popup name="ПодменюСоздатьНаОсновании" id="489">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Создать на основании</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Generate</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.ЗаполнитьПоШаблону</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<Representation>Picture</Representation>
+					<ExtendedTooltip name="ПодменюСоздатьНаОснованииРасширеннаяПодсказка" id="490"/>
+					<ChildItems>
+						<ButtonGroup name="ПодменюСоздатьНаОснованииВажное" id="491">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создать на основании (Важное)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Generate (Important)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПодменюСоздатьНаОснованииВажноеРасширеннаяПодсказка" id="492"/>
+						</ButtonGroup>
+						<ButtonGroup name="ПодменюСоздатьНаОснованииОбычное" id="493">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создать на основании (Обычное)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Generate (Standard)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПодменюСоздатьНаОснованииОбычноеРасширеннаяПодсказка" id="494"/>
+						</ButtonGroup>
+						<ButtonGroup name="ПодменюСоздатьНаОснованииСмТакже" id="495">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Создать на основании (См. также)</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Generate (See also)</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПодменюСоздатьНаОснованииСмТакжеРасширеннаяПодсказка" id="496"/>
+						</ButtonGroup>
+					</ChildItems>
+				</Popup>
+				<ButtonGroup name="ФормаГруппаКомандыФормы" id="497">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команды формы</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Form commands</v8:content>
+						</v8:item>
+					</Title>
+					<CommandSource>Form</CommandSource>
+					<ExtendedTooltip name="ФормаГруппаКомандыФормыРасширеннаяПодсказка" id="498"/>
+				</ButtonGroup>
+				<Popup name="ПодменюЗаполнить" id="499">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заполнение</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Filling</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные команды заполнения</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Additional filling commands</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>CommonPicture.ЗаполнитьФорму</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ПодменюЗаполнитьРасширеннаяПодсказка" id="500"/>
+				</Popup>
+				<Popup name="ПодменюПечать" id="501">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Печать</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Print</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команды печати</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Form's print commands.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>StdPicture.Print</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ПодменюПечатьРасширеннаяПодсказка" id="502"/>
+				</Popup>
+				<Popup name="ПодменюОтчеты" id="503">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты</v8:content>
+						</v8:item>
+						<v8:item>
+							<v8:lang>en</v8:lang>
+							<v8:content>Reports</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.Отчеты</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<Representation>PictureAndText</Representation>
+					<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="504"/>
+					<ChildItems>
+						<ButtonGroup name="ПодменюОтчетыВажное" id="505">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подменю отчеты важное</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Submenu reports important</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ПодменюОтчетыВажноеРасширеннаяПодсказка" id="506"/>
+						</ButtonGroup>
+						<ButtonGroup name="ПодменюОтчетыОбычное" id="507">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подменю отчеты обычное</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Submenu reports standard</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подменю отчеты важное</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Submenu reports important</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПодменюОтчетыОбычноеРасширеннаяПодсказка" id="508"/>
+						</ButtonGroup>
+						<ButtonGroup name="ПодменюОтчетыСмТакже" id="509">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подменю отчеты см также</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Submenu reports see also</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подменю отчеты важное</v8:content>
+								</v8:item>
+								<v8:item>
+									<v8:lang>en</v8:lang>
+									<v8:content>Submenu reports important</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПодменюОтчетыСмТакжеРасширеннаяПодсказка" id="510"/>
+						</ButtonGroup>
+					</ChildItems>
+				</Popup>
+				<Button name="ФормаСправка" id="591">
+					<Type>CommandBarButton</Type>
+					<CommandName>0</CommandName>
+					<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="592"/>
+				</Button>
+			</ChildItems>
+		</AutoCommandBar>
+		<ChildItems>
+			<UsualGroup name="ГруппаПротокол" id="713">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа протокол</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Group log</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа протокол</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Group log</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Group>Vertical</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаПротоколРасширеннаяПодсказка" id="714"/>
+				<ChildItems>
+					<LabelField name="ПредставлениеСтатуса" id="701">
+						<TitleLocation>None</TitleLocation>
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<MaxWidth>96</MaxWidth>
+						<HorizontalStretch>true</HorizontalStretch>
+						<ContextMenu name="ПредставлениеСтатусаКонтекстноеМеню" id="702"/>
+						<ExtendedTooltip name="ПредставлениеСтатусаРасширеннаяПодсказка" id="703"/>
+					</LabelField>
+					<LabelField name="ПредставлениеИсполнителя" id="710">
+						<TitleLocation>None</TitleLocation>
+						<AutoMaxWidth>false</AutoMaxWidth>
+						<MaxWidth>96</MaxWidth>
+						<ContextMenu name="ПредставлениеИсполнителяКонтекстноеМеню" id="711"/>
+						<ExtendedTooltip name="ПредставлениеИсполнителяРасширеннаяПодсказка" id="712"/>
+					</LabelField>
+				</ChildItems>
+			</UsualGroup>
+			<Pages name="ГруппаСтраницы" id="43">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Страницы</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Pages</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="44"/>
+				<ChildItems>
+					<Page name="ГруппаОсновное" id="162">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Основное</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Main</v8:content>
+							</v8:item>
+						</Title>
+						<VerticalStretch>true</VerticalStretch>
+						<ChildrenAlign>None</ChildrenAlign>
+						<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="163"/>
+						<ChildItems>
+							<UsualGroup name="ГруппаШапка" id="225">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Шапка</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Header</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Horizontal</Group>
+								<ChildrenAlign>ItemsLeftTitlesLeft</ChildrenAlign>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="226"/>
+								<ChildItems>
+									<UsualGroup name="ШапкаЛево" id="227">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шапка лево</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Header left</v8:content>
+											</v8:item>
+										</Title>
+										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<United>false</United>
+										<ChildItemsWidth>Equal</ChildItemsWidth>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ШапкаЛевоРасширеннаяПодсказка" id="228"/>
+										<ChildItems>
+											<UsualGroup name="НомерДата" id="229">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Номер и дата</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Number and date</v8:content>
+													</v8:item>
+												</Title>
+												<Group>Horizontal</Group>
+												<Behavior>Usual</Behavior>
+												<Representation>None</Representation>
+												<ShowTitle>false</ShowTitle>
+												<ExtendedTooltip name="НомерДатаРасширеннаяПодсказка" id="230"/>
+												<ChildItems>
+													<InputField name="Номер" id="231">
+														<TitleLocation>Left</TitleLocation>
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<MaxWidth>9</MaxWidth>
+														<HorizontalStretch>true</HorizontalStretch>
+														<Wrap>false</Wrap>
+														<ContextMenu name="НомерКонтекстноеМеню" id="232"/>
+														<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="233"/>
+													</InputField>
+													<InputField name="Дата" id="234">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>от</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>dated</v8:content>
+															</v8:item>
+														</Title>
+														<TitleLocation>Left</TitleLocation>
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<MaxWidth>14</MaxWidth>
+														<HorizontalStretch>false</HorizontalStretch>
+														<Wrap>false</Wrap>
+														<ContextMenu name="ДатаКонтекстноеМеню" id="235"/>
+														<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="236"/>
+													</InputField>
+												</ChildItems>
+											</UsualGroup>
+											<InputField name="Ответственный" id="375">
+												<ContextMenu name="ОтветственныйКонтекстноеМеню" id="376"/>
+												<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="377"/>
+											</InputField>
+											<InputField name="Менеджер" id="295">
+												<TitleLocation>Left</TitleLocation>
+												<MaxWidth>28</MaxWidth>
+												<Wrap>false</Wrap>
+												<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+												<ContextMenu name="МенеджерКонтекстноеМеню" id="296"/>
+												<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="297"/>
+											</InputField>
+											<InputField name="ЦельЗакупки" id="865">
+												<ContextMenu name="ЦельЗакупкиКонтекстноеМеню" id="866"/>
+												<ExtendedTooltip name="ЦельЗакупкиРасширеннаяПодсказка" id="867"/>
+											</InputField>
+											<InputField name="НаправлениеДеятельности" id="868">
+												<TitleHeight>2</TitleHeight>
+												<ContextMenu name="НаправлениеДеятельностиКонтекстноеМеню" id="869"/>
+												<ExtendedTooltip name="НаправлениеДеятельностиРасширеннаяПодсказка" id="870"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+									<UsualGroup name="ШапкаПраво" id="251">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шапка право</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Header right</v8:content>
+											</v8:item>
+										</Title>
+										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<United>false</United>
+										<ChildItemsWidth>Equal</ChildItemsWidth>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ШапкаПравоРасширеннаяПодсказка" id="252"/>
+										<ChildItems>
+											<InputField name="Организация" id="256">
+												<TitleLocation>Left</TitleLocation>
+												<MaxWidth>28</MaxWidth>
+												<Wrap>false</Wrap>
+												<ContextMenu name="ОрганизацияКонтекстноеМеню" id="257"/>
+												<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="258"/>
+											</InputField>
+											<InputField name="Подразделение" id="298">
+												<TitleLocation>Left</TitleLocation>
+												<MaxWidth>28</MaxWidth>
+												<AutoMarkIncomplete>false</AutoMarkIncomplete>
+												<ContextMenu name="ПодразделениеКонтекстноеМеню" id="299"/>
+												<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="300"/>
+											</InputField>
+											<InputField name="Склад" id="262">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Склад</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Warehouse</v8:content>
+													</v8:item>
+												</Title>
+												<TitleLocation>Left</TitleLocation>
+												<MaxWidth>28</MaxWidth>
+												<Wrap>false</Wrap>
+												<DropListButton>false</DropListButton>
+												<ChoiceButton>true</ChoiceButton>
+												<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+												<ContextMenu name="СкладКонтекстноеМеню" id="263"/>
+												<ExtendedTooltip name="СкладРасширеннаяПодсказка" id="264"/>
+											</InputField>
+											<UsualGroup name="ГруппаНалогообложение" id="715">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Налогообложение</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Taxation</v8:content>
+													</v8:item>
+												</Title>
+												<Group>Horizontal</Group>
+												<Behavior>Usual</Behavior>
+												<Representation>None</Representation>
+												<ShowTitle>false</ShowTitle>
+												<ExtendedTooltip name="ГруппаНалогообложениеРасширеннаяПодсказка" id="716"/>
+												<ChildItems>
+													<InputField name="Валюта" id="717">
+														<AutoMaxWidth>false</AutoMaxWidth>
+														<MaxWidth>5</MaxWidth>
+														<HorizontalStretch>false</HorizontalStretch>
+														<Wrap>false</Wrap>
+														<OpenButton>false</OpenButton>
+														<QuickChoice>true</QuickChoice>
+														<ContextMenu name="ВалютаКонтекстноеМеню" id="718"/>
+														<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="719"/>
+													</InputField>
+													<CheckBoxField name="ЦенаВключаетНДС" id="720">
+														<TitleLocation>Right</TitleLocation>
+														<WarningOnEditRepresentation>Show</WarningOnEditRepresentation>
+														<WarningOnEdit>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Все виды цен в документе будут очищены</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>All price types in the document will be cleared</v8:content>
+															</v8:item>
+														</WarningOnEdit>
+														<CheckBoxType>Auto</CheckBoxType>
+														<ContextMenu name="ЦенаВключаетНДСКонтекстноеМеню" id="721"/>
+														<ExtendedTooltip name="ЦенаВключаетНДСРасширеннаяПодсказка" id="722"/>
+													</CheckBoxField>
+												</ChildItems>
+											</UsualGroup>
+											<CheckBoxField name="БезКонтроляЛимита" id="957">
+												<TitleLocation>Right</TitleLocation>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="БезКонтроляЛимитаКонтекстноеМеню" id="958"/>
+												<ExtendedTooltip name="БезКонтроляЛимитаРасширеннаяПодсказка" id="959"/>
+											</CheckBoxField>
+										</ChildItems>
+									</UsualGroup>
+									<UsualGroup name="ШапкаНадписи" id="854">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Шапка надписи</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Label header</v8:content>
+											</v8:item>
+										</Title>
+										<Group>Vertical</Group>
+										<Behavior>Usual</Behavior>
+										<Representation>None</Representation>
+										<United>false</United>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ШапкаНадписиРасширеннаяПодсказка" id="855"/>
+										<ChildItems>
+											<LabelDecoration name="Декорация2" id="856">
+												<ContextMenu name="Декорация2КонтекстноеМеню" id="857"/>
+												<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="858"/>
+											</LabelDecoration>
+											<LabelDecoration name="Декорация3" id="859">
+												<ContextMenu name="Декорация3КонтекстноеМеню" id="860"/>
+												<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="861"/>
+											</LabelDecoration>
+											<UsualGroup name="ГруппаСклад" id="844">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Склад</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Warehouse</v8:content>
+													</v8:item>
+												</Title>
+												<Group>Horizontal</Group>
+												<Behavior>Usual</Behavior>
+												<Representation>None</Representation>
+												<ShowTitle>false</ShowTitle>
+												<ExtendedTooltip name="ГруппаСкладРасширеннаяПодсказка" id="845"/>
+												<ChildItems>
+													<PictureDecoration name="КартинкаНесколькоСкладов" id="846">
+														<Width>2</Width>
+														<Height>1</Height>
+														<VerticalStretch>false</VerticalStretch>
+														<Title formatted="false">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Картинка несколько складов</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Picture multiple warehouses</v8:content>
+															</v8:item>
+														</Title>
+														<ToolTip>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Поступление осуществляется на несколько складов</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Receipt for several warehouses</v8:content>
+															</v8:item>
+														</ToolTip>
+														<GroupVerticalAlign>Center</GroupVerticalAlign>
+														<FileDragMode>AsFile</FileDragMode>
+														<ContextMenu name="КартинкаНесколькоСкладовКонтекстноеМеню" id="847"/>
+														<ExtendedTooltip name="КартинкаНесколькоСкладовРасширеннаяПодсказка" id="848"/>
+													</PictureDecoration>
+													<LabelField name="НадписьНесколькоСкладов" id="849">
+														<TitleLocation>None</TitleLocation>
+														<Width>9</Width>
+														<TextColor>#162779</TextColor>
+														<ContextMenu name="НадписьНесколькоСкладовКонтекстноеМеню" id="850"/>
+														<ExtendedTooltip name="НадписьНесколькоСкладовРасширеннаяПодсказка" id="851"/>
+													</LabelField>
+												</ChildItems>
+											</UsualGroup>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаДополнительныеРеквизиты" id="362">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Дополнительные реквизиты</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Additional attributes</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Vertical</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="363"/>
+							</UsualGroup>
+						</ChildItems>
+					</Page>
+					<Page name="ГруппаТовары" id="45">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Товары</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Goods</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ГруппаТоварыРасширеннаяПодсказка" id="46"/>
+						<ChildItems>
+							<UsualGroup name="ГруппаТаблицы" id="438">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа таблицы</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Group tables</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Группа таблицы</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Group tables</v8:content>
+									</v8:item>
+								</ToolTip>
+								<Group>AlwaysHorizontal</Group>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаТаблицыРасширеннаяПодсказка" id="439"/>
+								<ChildItems>
+									<Table name="Товары" id="47">
+										<Representation>List</Representation>
+										<VerticalLines>false</VerticalLines>
+										<AutoInsertNewRow>true</AutoInsertNewRow>
+										<AutoAddIncomplete>false</AutoAddIncomplete>
+										<EnableStartDrag>true</EnableStartDrag>
+										<EnableDrag>true</EnableDrag>
+										<RowFilter xsi:nil="true"/>
+										<ContextMenu name="ТоварыКонтекстноеМеню" id="48"/>
+										<AutoCommandBar name="ТоварыКоманднаяПанель" id="49">
+											<ChildItems>
+												<Popup name="ТоварыСоздатьНаОсновании" id="886">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Создать на основании</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Generate</v8:content>
+														</v8:item>
+													</Title>
+													<Representation>Picture</Representation>
+													<ExtendedTooltip name="ТоварыСоздатьНаОснованииРасширеннаяПодсказка" id="887"/>
+													<ChildItems>
+														<Button name="ТоварыСоздатьЗаказПоставщику" id="725">
+															<Type>CommandBarButton</Type>
+															<CommandName>0</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Заказ поставщику</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Purchase order</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ТоварыСоздатьЗаказПоставщикуРасширеннаяПодсказка" id="726"/>
+														</Button>
+														<Button name="ТоварыСоздатьЗапросКоммерческихПредложенийПоставщиков" id="888">
+															<Type>CommandBarButton</Type>
+															<CommandName>0</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Запрос коммерческих предложений у поставщиков</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Request for quotation</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ТоварыСоздатьЗапросКоммерческихПредложенийПоставщиковРасширеннаяПодсказка" id="889"/>
+														</Button>
+													</ChildItems>
+												</Popup>
+												<Button name="ТоварыСкопироватьСтроки" id="583">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ТоварыСкопироватьСтрокиРасширеннаяПодсказка" id="584"/>
+												</Button>
+												<Button name="ТоварыВставитьСтроки" id="585">
+													<Type>CommandBarButton</Type>
+													<CommandName>0</CommandName>
+													<ExtendedTooltip name="ТоварыВставитьСтрокиРасширеннаяПодсказка" id="586"/>
+												</Button>
+												<Button name="ТоварыРазбитьСтроку" id="668">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.РазбитьСтроку</CommandName>
+													<ExtendedTooltip name="ТоварыРазбитьСтрокуРасширеннаяПодсказка" id="669"/>
+												</Button>
+												<ButtonGroup name="ГруппаДобавитьСтроки" id="812">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Добавить строки</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Add lines</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ГруппаДобавитьСтрокиРасширеннаяПодсказка" id="813"/>
+													<ChildItems>
+														<Button name="ТоварыПоискПоШтрихкоду" id="814">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<SkipOnInput>false</SkipOnInput>
+															<CommandName>0</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Найти товар по штрихкоду</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Find goods by barcode</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ТоварыПоискПоШтрихкодуРасширеннаяПодсказка" id="815"/>
+														</Button>
+														<Button name="ТоварыЗагрузитьДанныеИзТСД" id="816">
+															<Type>CommandBarButton</Type>
+															<Representation>Picture</Representation>
+															<SkipOnInput>false</SkipOnInput>
+															<CommandName>0</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Загрузить товары из ТСД</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Import goods from PDT</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ТоварыЗагрузитьДанныеИзТСДРасширеннаяПодсказка" id="817"/>
+														</Button>
+													</ChildItems>
+												</ButtonGroup>
+												<ButtonGroup name="ТоварыГруппаПараметрыЗакупки" id="475">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Товары группа параметры закупки</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Goods group purchase parameters</v8:content>
+														</v8:item>
+													</Title>
+													<Representation>Compact</Representation>
+													<ExtendedTooltip name="ТоварыГруппаПараметрыЗакупкиРасширеннаяПодсказка" id="476"/>
+													<ChildItems>
+														<Button name="ТоварыСкопироватьУсловияЗакупки" id="471">
+															<Type>CommandBarButton</Type>
+															<CommandName>0</CommandName>
+															<ExtendedTooltip name="ТоварыСкопироватьУсловияЗакупкиРасширеннаяПодсказка" id="472"/>
+														</Button>
+														<Button name="ТоварыВставитьУсловияЗакупки" id="473">
+															<Type>CommandBarButton</Type>
+															<Enabled>false</Enabled>
+															<CommandName>0</CommandName>
+															<ExtendedTooltip name="ТоварыВставитьУсловияЗакупкиРасширеннаяПодсказка" id="474"/>
+														</Button>
+													</ChildItems>
+												</ButtonGroup>
+												<Popup name="ТоварыГруппаЗаполнить" id="664">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Заполнить</v8:content>
+														</v8:item>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Fill</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ТоварыГруппаЗаполнитьРасширеннаяПодсказка" id="665"/>
+													<ChildItems>
+														<Button name="ТоварыЗаполнитьУсловияЗакупкиПоКоммерческимПредложениям" id="723">
+															<Type>CommandBarButton</Type>
+															<CommandName>0</CommandName>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Условия закупки по коммерческим предложениям</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Terms of purchase by sales quotations</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ТоварыЗаполнитьУсловияЗакупкиПоКоммерческимПредложениямРасширеннаяПодсказка" id="724"/>
+														</Button>
+														<Button name="ТоварыПодобратьНоменклатуру" id="670">
+															<Type>CommandBarButton</Type>
+															<SkipOnInput>false</SkipOnInput>
+															<CommandName>0</CommandName>
+															<ExtendedTooltip name="ТоварыПодобратьНоменклатуруРасширеннаяПодсказка" id="671"/>
+														</Button>
+														<Button name="ТоварыПодобратьАналоги" id="674">
+															<Type>CommandBarButton</Type>
+															<CommandName>0</CommandName>
+															<ExtendedTooltip name="ТоварыПодобратьАналогиРасширеннаяПодсказка" id="675"/>
+														</Button>
+														<Button name="ТоварыЗагрузитьИзВнешнегоФайла" id="676">
+															<Type>CommandBarButton</Type>
+															<CommandName>0</CommandName>
+															<ExtendedTooltip name="ТоварыЗагрузитьИзВнешнегоФайлаРасширеннаяПодсказка" id="677"/>
+														</Button>
+														<ButtonGroup name="ГруппаТоварыОтменаСтрок" id="678">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Отмена строк</v8:content>
+																</v8:item>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Cancel lines</v8:content>
+																</v8:item>
+															</Title>
+															<ExtendedTooltip name="ГруппаТоварыОтменаСтрокРасширеннаяПодсказка" id="679"/>
+															<ChildItems>
+																<Button name="ТоварыОтменитьВыделенныеСтроки" id="680">
+																	<Type>CommandBarButton</Type>
+																	<SkipOnInput>false</SkipOnInput>
+																	<CommandName>0</CommandName>
+																	<ExtendedTooltip name="ТоварыОтменитьВыделенныеСтрокиРасширеннаяПодсказка" id="681"/>
+																</Button>
+																<Button name="ТоварыОтменитьНезаказанныеСтроки" id="682">
+																	<Type>CommandBarButton</Type>
+																	<CommandName>0</CommandName>
+																	<ExtendedTooltip name="ТоварыОтменитьНезаказанныеСтрокиРасширеннаяПодсказка" id="683"/>
+																</Button>
+																<ButtonGroup name="ГруппаТоварыОтменаСтрокНастройки" id="684">
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Товары отмена строк настройки</v8:content>
+																		</v8:item>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Goods cancel setting lines</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="ГруппаТоварыОтменаСтрокНастройкиРасширеннаяПодсказка" id="685"/>
+																	<ChildItems>
+																		<Button name="ТоварыСкрыватьОтмененныеСтроки" id="686">
+																			<Type>CommandBarButton</Type>
+																			<SkipOnInput>false</SkipOnInput>
+																			<CommandName>0</CommandName>
+																			<ExtendedTooltip name="ТоварыСкрыватьОтмененныеСтрокиРасширеннаяПодсказка" id="687"/>
+																		</Button>
+																	</ChildItems>
+																</ButtonGroup>
+															</ChildItems>
+														</ButtonGroup>
+														<Button name="ТоварыЗаполнитьСкладВВыделенныхСтроках" id="852">
+															<Type>CommandBarButton</Type>
+															<CommandName>0</CommandName>
+															<ExtendedTooltip name="ТоварыЗаполнитьСкладВВыделенныхСтрокахРасширеннаяПодсказка" id="853"/>
+														</Button>
+													</ChildItems>
+												</Popup>
+											</ChildItems>
+										</AutoCommandBar>
+										<ExtendedTooltip name="ТоварыРасширеннаяПодсказка" id="50"/>
+										<SearchStringAddition name="ТоварыСтрокаПоиска" id="51">
+											<AdditionSource>
+												<Item>Товары</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ТоварыСтрокаПоискаКонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="ТоварыСтрокаПоискаРасширеннаяПодсказка" id="53"/>
+										</SearchStringAddition>
+										<ViewStatusAddition name="ТоварыСостояниеПросмотра" id="54">
+											<AdditionSource>
+												<Item>Товары</Item>
+												<Type>ViewStatusRepresentation</Type>
+											</AdditionSource>
+											<ContextMenu name="ТоварыСостояниеПросмотраКонтекстноеМеню" id="55"/>
+											<ExtendedTooltip name="ТоварыСостояниеПросмотраРасширеннаяПодсказка" id="56"/>
+										</ViewStatusAddition>
+										<SearchControlAddition name="ТоварыУправлениеПоиском" id="57">
+											<AdditionSource>
+												<Item>Товары</Item>
+												<Type>SearchControl</Type>
+											</AdditionSource>
+											<ContextMenu name="ТоварыУправлениеПоискомКонтекстноеМеню" id="58"/>
+											<ExtendedTooltip name="ТоварыУправлениеПоискомРасширеннаяПодсказка" id="59"/>
+										</SearchControlAddition>
+										<ChildItems>
+											<LabelField name="ТоварыНомерСтроки" id="60">
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ТоварыНомерСтрокиКонтекстноеМеню" id="61"/>
+												<ExtendedTooltip name="ТоварыНомерСтрокиРасширеннаяПодсказка" id="62"/>
+											</LabelField>
+											<LabelField name="ТоварыНоменклатураТипНоменклатуры" id="593">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Тип</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Type</v8:content>
+													</v8:item>
+												</Title>
+												<EditMode>EnterOnInput</EditMode>
+												<Width>18</Width>
+												<ContextMenu name="ТоварыНоменклатураТипНоменклатурыКонтекстноеМеню" id="594"/>
+												<ExtendedTooltip name="ТоварыНоменклатураТипНоменклатурыРасширеннаяПодсказка" id="595"/>
+											</LabelField>
+											<LabelField name="ТоварыНоменклатураКод" id="596">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<EditMode>EnterOnInput</EditMode>
+												<Width>16</Width>
+												<ContextMenu name="ТоварыНоменклатураКодКонтекстноеМеню" id="597"/>
+												<ExtendedTooltip name="ТоварыНоменклатураКодРасширеннаяПодсказка" id="598"/>
+											</LabelField>
+											<LabelField name="ТоварыНоменклатураАртикул" id="599">
+												<EditMode>EnterOnInput</EditMode>
+												<Width>16</Width>
+												<ContextMenu name="ТоварыНоменклатураАртикулКонтекстноеМеню" id="600"/>
+												<ExtendedTooltip name="ТоварыНоменклатураАртикулРасширеннаяПодсказка" id="601"/>
+											</LabelField>
+											<InputField name="ТоварыНоменклатура" id="63">
+												<EditMode>EnterOnInput</EditMode>
+												<Width>16</Width>
+												<ContextMenu name="ТоварыНоменклатураКонтекстноеМеню" id="64"/>
+												<ExtendedTooltip name="ТоварыНоменклатураРасширеннаяПодсказка" id="65"/>
+											</InputField>
+											<InputField name="ТоварыХарактеристика" id="66">
+												<EditMode>EnterOnInput</EditMode>
+												<Width>16</Width>
+												<ContextMenu name="ТоварыХарактеристикаКонтекстноеМеню" id="67"/>
+												<ExtendedTooltip name="ТоварыХарактеристикаРасширеннаяПодсказка" id="68"/>
+											</InputField>
+											<InputField name="ТоварыНазначение" id="126">
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ТоварыНазначениеКонтекстноеМеню" id="127"/>
+												<ExtendedTooltip name="ТоварыНазначениеРасширеннаяПодсказка" id="128"/>
+											</InputField>
+											<InputField name="ТоварыКоличествоУпаковок" id="78">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Количество</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Quantity</v8:content>
+													</v8:item>
+												</Title>
+												<EditMode>EnterOnInput</EditMode>
+												<Width>8</Width>
+												<ContextMenu name="ТоварыКоличествоУпаковокКонтекстноеМеню" id="79"/>
+												<ExtendedTooltip name="ТоварыКоличествоУпаковокРасширеннаяПодсказка" id="80"/>
+											</InputField>
+											<ColumnGroup name="ТоварыУпаковкаЕдиницаИзмерения" id="378">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Упаковка, единица измерения</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Packaging unit, UOM</v8:content>
+													</v8:item>
+												</Title>
+												<Group>InCell</Group>
+												<ExtendedTooltip name="ТоварыУпаковкаЕдиницаИзмеренияРасширеннаяПодсказка" id="379"/>
+												<ChildItems>
+													<InputField name="ТоварыУпаковка" id="380">
+														<ShowInHeader>false</ShowInHeader>
+														<Width>10</Width>
+														<DropListButton>false</DropListButton>
+														<ChoiceButton>true</ChoiceButton>
+														<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+														<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+														<ContextMenu name="ТоварыУпаковкаКонтекстноеМеню" id="381"/>
+														<ExtendedTooltip name="ТоварыУпаковкаРасширеннаяПодсказка" id="382"/>
+													</InputField>
+													<LabelField name="ТоварыНоменклатураЕдиницаИзмерения" id="383">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Ед. изм.</v8:content>
+															</v8:item>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Unit of measure</v8:content>
+															</v8:item>
+														</Title>
+														<EditMode>EnterOnInput</EditMode>
+														<Width>8</Width>
+														<ContextMenu name="ТоварыНоменклатураЕдиницаИзмеренияКонтекстноеМеню" id="384"/>
+														<ExtendedTooltip name="ТоварыНоменклатураЕдиницаИзмеренияРасширеннаяПодсказка" id="385"/>
+													</LabelField>
+												</ChildItems>
+											</ColumnGroup>
+											<InputField name="ТоварыЖелаемаяДатаПоступления" id="81">
+												<EditMode>EnterOnInput</EditMode>
+												<Width>8</Width>
+												<ContextMenu name="ТоварыЖелаемаяДатаПоступленияКонтекстноеМеню" id="82"/>
+												<ExtendedTooltip name="ТоварыЖелаемаяДатаПоступленияРасширеннаяПодсказка" id="83"/>
+											</InputField>
+											<InputField name="ТоварыПартнер" id="800">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<EditMode>EnterOnInput</EditMode>
+												<Width>16</Width>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ТоварыПартнерКонтекстноеМеню" id="801"/>
+												<ExtendedTooltip name="ТоварыПартнерРасширеннаяПодсказка" id="802"/>
+											</InputField>
+											<InputField name="ТоварыКонтрагент" id="803">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<EditMode>EnterOnInput</EditMode>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<DropListWidth>16</DropListWidth>
+												<ContextMenu name="ТоварыКонтрагентКонтекстноеМеню" id="804"/>
+												<ExtendedTooltip name="ТоварыКонтрагентРасширеннаяПодсказка" id="805"/>
+											</InputField>
+											<InputField name="ТоварыСоглашение" id="806">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<EditMode>EnterOnInput</EditMode>
+												<Width>16</Width>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ТоварыСоглашениеКонтекстноеМеню" id="807"/>
+												<ExtendedTooltip name="ТоварыСоглашениеРасширеннаяПодсказка" id="808"/>
+											</InputField>
+											<InputField name="ТоварыДоговор" id="809">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<EditMode>EnterOnInput</EditMode>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ТоварыДоговорКонтекстноеМеню" id="810"/>
+												<ExtendedTooltip name="ТоварыДоговорРасширеннаяПодсказка" id="811"/>
+											</InputField>
+											<InputField name="ТоварыНоменклатураПартнера" id="862">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<EditMode>EnterOnInput</EditMode>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ТоварыНоменклатураПартнераКонтекстноеМеню" id="863"/>
+												<ExtendedTooltip name="ТоварыНоменклатураПартнераРасширеннаяПодсказка" id="864"/>
+											</InputField>
+											<InputField name="ТоварыВидЦеныПоставщика" id="818">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<EditMode>EnterOnInput</EditMode>
+												<Width>16</Width>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ТоварыВидЦеныПоставщикаКонтекстноеМеню" id="819"/>
+												<ExtendedTooltip name="ТоварыВидЦеныПоставщикаРасширеннаяПодсказка" id="820"/>
+											</InputField>
+											<InputField name="ТоварыНалогообложениеНДС" id="883">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Налогообложение</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Taxation</v8:content>
+													</v8:item>
+												</Title>
+												<EditMode>EnterOnInput</EditMode>
+												<ListChoiceMode>true</ListChoiceMode>
+												<ContextMenu name="ТоварыНалогообложениеНДСКонтекстноеМеню" id="884"/>
+												<ExtendedTooltip name="ТоварыНалогообложениеНДСРасширеннаяПодсказка" id="885"/>
+											</InputField>
+											<InputField name="ТоварыЦена" id="832">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<EditMode>EnterOnInput</EditMode>
+												<Width>9</Width>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ТоварыЦенаКонтекстноеМеню" id="833"/>
+												<ExtendedTooltip name="ТоварыЦенаРасширеннаяПодсказка" id="834"/>
+											</InputField>
+											<InputField name="ТоварыСумма" id="838">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<EditMode>EnterOnInput</EditMode>
+												<Width>9</Width>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ТоварыСуммаКонтекстноеМеню" id="839"/>
+												<ExtendedTooltip name="ТоварыСуммаРасширеннаяПодсказка" id="840"/>
+											</InputField>
+											<InputField name="ТоварыСтавкаНДС" id="835">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<EditMode>EnterOnInput</EditMode>
+												<Width>9</Width>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ТоварыСтавкаНДСКонтекстноеМеню" id="836"/>
+												<ExtendedTooltip name="ТоварыСтавкаНДСРасширеннаяПодсказка" id="837"/>
+											</InputField>
+											<InputField name="ТоварыСуммаНДС" id="841">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<EditMode>EnterOnInput</EditMode>
+												<Width>9</Width>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ТоварыСуммаНДСКонтекстноеМеню" id="842"/>
+												<ExtendedTooltip name="ТоварыСуммаНДСРасширеннаяПодсказка" id="843"/>
+											</InputField>
+											<InputField name="ТоварыСуммаСНДС" id="821">
+												<UserVisible>
+													<xr:Common>false</xr:Common>
+												</UserVisible>
+												<ReadOnly>true</ReadOnly>
+												<EditMode>EnterOnInput</EditMode>
+												<Width>9</Width>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ТоварыСуммаСНДСКонтекстноеМеню" id="822"/>
+												<ExtendedTooltip name="ТоварыСуммаСНДСРасширеннаяПодсказка" id="823"/>
+											</InputField>
+											<ColumnGroup name="ТоварыГруппаПолучатель" id="824">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Получатель</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Recipient</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Товары группа получатель</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Goods group recipient</v8:content>
+													</v8:item>
+												</ToolTip>
+												<ShowInHeader>true</ShowInHeader>
+												<ExtendedTooltip name="ТоварыГруппаПолучательРасширеннаяПодсказка" id="825"/>
+												<ChildItems>
+													<InputField name="ТоварыСклад" id="826">
+														<EditMode>EnterOnInput</EditMode>
+														<ShowInHeader>false</ShowInHeader>
+														<Width>16</Width>
+														<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+														<ContextMenu name="ТоварыСкладКонтекстноеМеню" id="827"/>
+														<ExtendedTooltip name="ТоварыСкладРасширеннаяПодсказка" id="828"/>
+													</InputField>
+													<InputField name="ТоварыПодразделение" id="829">
+														<EditMode>EnterOnInput</EditMode>
+														<ShowInHeader>false</ShowInHeader>
+														<Width>16</Width>
+														<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+														<ContextMenu name="ТоварыПодразделениеКонтекстноеМеню" id="830"/>
+														<ExtendedTooltip name="ТоварыПодразделениеРасширеннаяПодсказка" id="831"/>
+													</InputField>
+												</ChildItems>
+											</ColumnGroup>
+											<LabelField name="ТоварыПредставлениеУсловийЗакупки" id="435">
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ТоварыПредставлениеУсловийЗакупкиКонтекстноеМеню" id="436"/>
+												<ExtendedTooltip name="ТоварыПредставлениеУсловийЗакупкиРасширеннаяПодсказка" id="437"/>
+											</LabelField>
+											<CheckBoxField name="ТоварыОтменено" id="661">
+												<EditMode>EnterOnInput</EditMode>
+												<CheckBoxType>Auto</CheckBoxType>
+												<ContextMenu name="ТоварыОтмененоКонтекстноеМеню" id="662"/>
+												<ExtendedTooltip name="ТоварыОтмененоРасширеннаяПодсказка" id="663"/>
+											</CheckBoxField>
+											<InputField name="ТоварыСтатьяРасходов" id="871">
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ТоварыСтатьяРасходовКонтекстноеМеню" id="872"/>
+												<ExtendedTooltip name="ТоварыСтатьяРасходовРасширеннаяПодсказка" id="873"/>
+											</InputField>
+											<InputField name="ТоварыАналитикаРасходов" id="874">
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ТоварыАналитикаРасходовКонтекстноеМеню" id="875"/>
+												<ExtendedTooltip name="ТоварыАналитикаРасходовРасширеннаяПодсказка" id="876"/>
+											</InputField>
+											<InputField name="ТоварыСтатьяБюджетов" id="877">
+												<EditMode>EnterOnInput</EditMode>
+												<ContextMenu name="ТоварыСтатьяБюджетовКонтекстноеМеню" id="878"/>
+												<ExtendedTooltip name="ТоварыСтатьяБюджетовРасширеннаяПодсказка" id="879"/>
+											</InputField>
+											<InputField name="ТоварыКомментарий" id="132">
+												<EditMode>EnterOnInput</EditMode>
+												<Height>1</Height>
+												<ContextMenu name="ТоварыКомментарийКонтекстноеМеню" id="133"/>
+												<ExtendedTooltip name="ТоварыКомментарийРасширеннаяПодсказка" id="134"/>
+											</InputField>
+										</ChildItems>
+									</Table>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаТоварыПодвал" id="511">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Товары подвал</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Goods footer</v8:content>
+									</v8:item>
+								</Title>
+								<Group>Horizontal</Group>
+								<Behavior>Usual</Behavior>
+								<Representation>None</Representation>
+								<ShowTitle>false</ShowTitle>
+								<ExtendedTooltip name="ГруппаТоварыПодвалРасширеннаяПодсказка" id="512"/>
+								<ChildItems>
+									<CheckBoxField name="ПоступлениеОднойДатой" id="518">
+										<TitleLocation>Right</TitleLocation>
+										<CheckBoxType>Auto</CheckBoxType>
+										<ContextMenu name="ПоступлениеОднойДатойКонтекстноеМеню" id="519"/>
+										<ExtendedTooltip name="ПоступлениеОднойДатойРасширеннаяПодсказка" id="520"/>
+									</CheckBoxField>
+									<InputField name="ЖелаемаяДатаПоступления" id="513">
+										<TitleLocation>None</TitleLocation>
+										<Width>11</Width>
+										<HorizontalStretch>false</HorizontalStretch>
+										<Wrap>false</Wrap>
+										<ChoiceListButton>true</ChoiceListButton>
+										<ContextMenu name="ЖелаемаяДатаПоступленияКонтекстноеМеню" id="514"/>
+										<ExtendedTooltip name="ЖелаемаяДатаПоступленияРасширеннаяПодсказка" id="515"/>
+									</InputField>
+								</ChildItems>
+							</UsualGroup>
+							<UsualGroup name="ГруппаУсловияЗакупки" id="391">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Условия закупки</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Purchase conditions</v8:content>
+									</v8:item>
+								</Title>
+								<Group>AlwaysHorizontal</Group>
+								<Behavior>Collapsible</Behavior>
+								<Representation>None</Representation>
+								<ExtendedTooltip name="ГруппаУсловияЗакупкиРасширеннаяПодсказка" id="392"/>
+								<ChildItems>
+									<UsualGroup name="ГруппаУсловияЗакупкиЛево" id="426">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Условия закупки лево</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Purchase conditions left</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа условия закупки лево</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Group purchase conditions left</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Group>Vertical</Group>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаУсловияЗакупкиЛевоРасширеннаяПодсказка" id="427"/>
+										<ChildItems>
+											<InputField name="Партнер" id="393">
+												<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:05fc2197-fb62-46b9-a85d-c6f1f221ffbd</DataPath>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ПартнерКонтекстноеМеню" id="394"/>
+												<ExtendedTooltip name="ПартнерРасширеннаяПодсказка" id="395"/>
+											</InputField>
+											<InputField name="Контрагент" id="396">
+												<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:79ec6006-f26f-49ec-8642-9403b08f31e9</DataPath>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="КонтрагентКонтекстноеМеню" id="397"/>
+												<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="398"/>
+											</InputField>
+											<InputField name="Соглашение" id="480">
+												<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:a5832f64-216a-450e-adfc-ba0b7a405638</DataPath>
+												<MaxWidth>28</MaxWidth>
+												<Wrap>false</Wrap>
+												<DropListButton>false</DropListButton>
+												<ChoiceButton>true</ChoiceButton>
+												<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+												<ContextMenu name="СоглашениеКонтекстноеМеню" id="481"/>
+												<ExtendedTooltip name="СоглашениеРасширеннаяПодсказка" id="482"/>
+											</InputField>
+											<InputField name="Договор" id="402">
+												<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:ca1d14d4-44a8-418c-b0ca-25d855dec6e2</DataPath>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ДоговорКонтекстноеМеню" id="403"/>
+												<ExtendedTooltip name="ДоговорРасширеннаяПодсказка" id="404"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+									<UsualGroup name="ГруппаУсловияЗакупкиЦентр" id="428">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Условия закупки центр</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Purchase conditions center</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа параметры закупки лево</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Group purchase parameters left</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Group>Vertical</Group>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаУсловияЗакупкиЦентрРасширеннаяПодсказка" id="429"/>
+										<ChildItems>
+											<InputField name="НоменклатураПартнера" id="423">
+												<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:daad5af2-7e34-4200-9aa5-c9e2f16e171d</DataPath>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="НоменклатураПартнераКонтекстноеМеню" id="424"/>
+												<ExtendedTooltip name="НоменклатураПартнераРасширеннаяПодсказка" id="425"/>
+											</InputField>
+											<InputField name="ВидЦеныПоставщика" id="405">
+												<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:084a7e02-6992-4def-8747-18d8c3212819</DataPath>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ВидЦеныПоставщикаКонтекстноеМеню" id="406"/>
+												<ExtendedTooltip name="ВидЦеныПоставщикаРасширеннаяПодсказка" id="407"/>
+											</InputField>
+											<InputField name="НалогообложениеНДС" id="880">
+												<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:c5871c40-9b00-40b3-98d0-2e174deea868</DataPath>
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Налогообложение</v8:content>
+													</v8:item>
+													<v8:item>
+														<v8:lang>en</v8:lang>
+														<v8:content>Taxation</v8:content>
+													</v8:item>
+												</Title>
+												<ListChoiceMode>true</ListChoiceMode>
+												<ContextMenu name="НалогообложениеНДСКонтекстноеМеню" id="881"/>
+												<ExtendedTooltip name="НалогообложениеНДСРасширеннаяПодсказка" id="882"/>
+											</InputField>
+											<InputField name="СтавкаНДС" id="414">
+												<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:166a0c2e-c75d-4a91-8350-ba92ae595b25</DataPath>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="СтавкаНДСКонтекстноеМеню" id="415"/>
+												<ExtendedTooltip name="СтавкаНДСРасширеннаяПодсказка" id="416"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+									<UsualGroup name="ГруппаУсловияЗакупкиПраво" id="430">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа условия закупки право</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Group purchase conditions right</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа условия закупки право</v8:content>
+											</v8:item>
+											<v8:item>
+												<v8:lang>en</v8:lang>
+												<v8:content>Group purchase conditions right</v8:content>
+											</v8:item>
+										</ToolTip>
+										<Group>Vertical</Group>
+										<Representation>None</Representation>
+										<ShowTitle>false</ShowTitle>
+										<ExtendedTooltip name="ГруппаУсловияЗакупкиПравоРасширеннаяПодсказка" id="431"/>
+										<ChildItems>
+											<InputField name="Цена" id="408">
+												<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:1c24883f-61ed-44c1-8fc5-8cda47aecefc</DataPath>
+												<Width>9</Width>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="ЦенаКонтекстноеМеню" id="409"/>
+												<ExtendedTooltip name="ЦенаРасширеннаяПодсказка" id="410"/>
+											</InputField>
+											<InputField name="Сумма" id="411">
+												<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:6fe8d510-1bc0-4cd4-8084-94fb775b647a</DataPath>
+												<Width>9</Width>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="СуммаКонтекстноеМеню" id="412"/>
+												<ExtendedTooltip name="СуммаРасширеннаяПодсказка" id="413"/>
+											</InputField>
+											<InputField name="СуммаНДС" id="417">
+												<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:977587b1-7fdf-42c8-8d2c-f255cf08b578</DataPath>
+												<Width>9</Width>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="СуммаНДСКонтекстноеМеню" id="418"/>
+												<ExtendedTooltip name="СуммаНДСРасширеннаяПодсказка" id="419"/>
+											</InputField>
+											<InputField name="СуммаСНДС" id="420">
+												<DataPath>47:02023637-7868-4a5f-8576-835a76e0c9ba/0:45fe0222-a6b6-434f-b3fe-148bcf4d1c02</DataPath>
+												<ReadOnly>true</ReadOnly>
+												<Width>11</Width>
+												<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+												<ContextMenu name="СуммаСНДСКонтекстноеМеню" id="421"/>
+												<ExtendedTooltip name="СуммаСНДСРасширеннаяПодсказка" id="422"/>
+											</InputField>
+										</ChildItems>
+									</UsualGroup>
+								</ChildItems>
+							</UsualGroup>
+						</ChildItems>
+					</Page>
+				</ChildItems>
+			</Pages>
+			<UsualGroup name="ГруппаПодвал" id="761">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа подвал</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Footer group</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа подвал</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Footer group</v8:content>
+					</v8:item>
+				</ToolTip>
+				<HorizontalStretch>true</HorizontalStretch>
+				<Group>AlwaysHorizontal</Group>
+				<Representation>None</Representation>
+				<ShowTitle>false</ShowTitle>
+				<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="762"/>
+				<ChildItems>
+					<LabelField name="Автор" id="658">
+						<Hiperlink>true</Hiperlink>
+						<TextColor>style:ГиперссылкаЦвет</TextColor>
+						<ContextMenu name="АвторКонтекстноеМеню" id="659"/>
+						<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="660"/>
+					</LabelField>
+					<UsualGroup name="ГруппаИтого" id="763">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Итоговая сумма</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Total amount</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Итоги</v8:content>
+							</v8:item>
+							<v8:item>
+								<v8:lang>en</v8:lang>
+								<v8:content>Totals</v8:content>
+							</v8:item>
+						</ToolTip>
+						<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+						<Group>Horizontal</Group>
+						<Behavior>Usual</Behavior>
+						<Representation>None</Representation>
+						<ShowTitle>false</ShowTitle>
+						<BackColor>style:ИтогиФон</BackColor>
+						<ExtendedTooltip name="ГруппаИтогоРасширеннаяПодсказка" id="764"/>
+						<ChildItems>
+							<InputField name="СуммаВсегоНДС" id="797">
+								<ReadOnly>true</ReadOnly>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>НДС</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>VAT</v8:content>
+									</v8:item>
+								</Title>
+								<Width>10</Width>
+								<ContextMenu name="СуммаВсегоНДСКонтекстноеМеню" id="798"/>
+								<ExtendedTooltip name="СуммаВсегоНДСРасширеннаяПодсказка" id="799"/>
+							</InputField>
+							<InputField name="СуммаВсегоСНДС" id="786">
+								<ReadOnly>true</ReadOnly>
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Всего с НДС</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>Total including VAT</v8:content>
+									</v8:item>
+								</Title>
+								<HorizontalAlign>Right</HorizontalAlign>
+								<Width>10</Width>
+								<Format>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>ЧДЦ=2; ЧН=0,00</v8:content>
+									</v8:item>
+									<v8:item>
+										<v8:lang>en</v8:lang>
+										<v8:content>NFD=2; NZ=0.00</v8:content>
+									</v8:item>
+								</Format>
+								<ContextMenu name="СуммаВсегоСНДСКонтекстноеМеню" id="787"/>
+								<ExtendedTooltip name="СуммаВсегоСНДСРасширеннаяПодсказка" id="788"/>
+							</InputField>
+							<LabelField name="ВалютаДокумента" id="794">
+								<TitleLocation>None</TitleLocation>
+								<GroupVerticalAlign>Center</GroupVerticalAlign>
+								<Width>4</Width>
+								<HorizontalStretch>false</HorizontalStretch>
+								<ContextMenu name="ВалютаДокументаКонтекстноеМеню" id="795"/>
+								<ExtendedTooltip name="ВалютаДокументаРасширеннаяПодсказка" id="796"/>
+							</LabelField>
+						</ChildItems>
+					</UsualGroup>
+				</ChildItems>
+			</UsualGroup>
+		</ChildItems>
+		<Attributes/>
+		<Commands>
+			<Command name="РазбитьСтроку" id="1000001">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Разбить строку</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Split line</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Разбить строку</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Split line</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Shortcut>Ctrl+F9</Shortcut>
+				<Picture>
+					<xr:Ref>CommonPicture.РазбитьСтроку</xr:Ref>
+					<xr:LoadTransparent>false</xr:LoadTransparent>
+				</Picture>
+				<Action callType="Before">РазбитьСтроку</Action>
+				<ModifiesSavedData>true</ModifiesSavedData>
+				<CurrentRowUse>DontUse</CurrentRowUse>
+			</Command>
+		</Commands>
+	</BaseForm>
+</Form>

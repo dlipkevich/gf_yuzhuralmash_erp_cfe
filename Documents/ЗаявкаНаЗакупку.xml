@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="50ff4a2c-d0f2-440c-84f2-b260dacc8cb6">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ЗаявкаНаЗакупку" category="Object">
+				<xr:TypeId>88982c61-f74f-40d9-909b-4519503627b7</xr:TypeId>
+				<xr:ValueId>c8ceb2b2-b64a-4dde-b989-6e68b7ea1424</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ЗаявкаНаЗакупку" category="Ref">
+				<xr:TypeId>422d37fb-8b68-4d43-b5bf-48bc457f61a2</xr:TypeId>
+				<xr:ValueId>a6c3ff22-3dd0-4945-a758-71d734a2ffb9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ЗаявкаНаЗакупку" category="Selection">
+				<xr:TypeId>a167a896-1b42-49b8-b037-0247169e6375</xr:TypeId>
+				<xr:ValueId>b810e4f3-47eb-4c90-9328-e20e966bb6c8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ЗаявкаНаЗакупку" category="List">
+				<xr:TypeId>c32d35ae-451e-402a-a15b-a73ffed5b2b4</xr:TypeId>
+				<xr:ValueId>10835c03-7062-473d-9576-fbcc8452f1c8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ЗаявкаНаЗакупку" category="Manager">
+				<xr:TypeId>06db30aa-4a63-459f-976a-d7aaf25a9cfb</xr:TypeId>
+				<xr:ValueId>4b2e674e-8634-463d-a590-add0b19e6517</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ObjectModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЗаявкаНаЗакупку</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>d88a374e-3dfa-4376-8d23-09db748dd8b4</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="0bb0622d-368d-4863-adca-5b069051dedd">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>юум_ЗОЗ</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3839c456-28d4-4b9b-a962-9a98678d6ee4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="e3fdbdbe-2fca-42bf-9ba0-7ba3d1173de6">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ЗаявкаНаЗакупку.Товары" category="TabularSection">
+						<xr:TypeId>ba0c5ef7-8128-406e-8aff-a9663f510c40</xr:TypeId>
+						<xr:ValueId>db22b655-7c7e-437d-bdd8-6e6266105e7c</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ЗаявкаНаЗакупку.Товары" category="TabularSectionRow">
+						<xr:TypeId>522661e2-1f10-4fb1-8f9f-d3253b57692f</xr:TypeId>
+						<xr:ValueId>c9ce87db-d00d-4f51-a38d-3087d8fcd25b</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Товары</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bc46bf26-69aa-4fe6-973f-a8289323d273</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+			<TabularSection uuid="f4e76fa6-371e-431d-b5bc-86361854fed1">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ЗаявкаНаЗакупку.юум_ПотребностьЗОЗ" category="TabularSection">
+						<xr:TypeId>8d6f04c5-70f8-4d6a-8ede-f6024dc7e0cf</xr:TypeId>
+						<xr:ValueId>a559e3aa-902a-42fc-89ef-330bb8c9e051</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ЗаявкаНаЗакупку.юум_ПотребностьЗОЗ" category="TabularSectionRow">
+						<xr:TypeId>e7d115a5-41c8-4917-b547-3f0e884a1e30</xr:TypeId>
+						<xr:ValueId>5fc06f4d-fdc3-41eb-a387-b5c8157eb345</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>юум_ПотребностьЗОЗ</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f082dc3b-0666-493b-833c-470504c7e532</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects/>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

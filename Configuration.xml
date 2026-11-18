@@ -110,6 +110,7 @@
 			<CommonPicture>Наборы</CommonPicture>
 			<CommonPicture>юум_СтруктураЗказа</CommonPicture>
 			<CommonPicture>юум_ЭтапПроизводства</CommonPicture>
+			<CommonPicture>РазбитьСтроку</CommonPicture>
 			<Role>юум_ЧтениеГлобальныеЗначения</Role>
 			<Role>юум_ПросмотрРазделаНастройки</Role>
 			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
@@ -192,49 +193,50 @@
 			<CommandGroup>СинхронизацияДанных</CommandGroup>
 			<CommandGroup>ПараметрыСинхронизацииДанных</CommandGroup>
 			<CommonForm>НастройкаСчетовУчетаОперации</CommonForm>
-			<Catalog>ВидыРаботСотрудников</Catalog>
-			<Catalog>Бригады</Catalog>
-			<Catalog>БанковскиеСчетаОрганизаций</Catalog>
 			<Catalog>БанковскиеСчетаКонтрагентов</Catalog>
-			<Catalog>ДоговорыАренды</Catalog>
-			<Catalog>ВидыРабочихЦентров</Catalog>
+			<Catalog>Бригады</Catalog>
+			<Catalog>ВидыРаботСотрудников</Catalog>
+			<Catalog>БанковскиеСчетаОрганизаций</Catalog>
 			<Catalog>ДоговорыКонтрагентов</Catalog>
+			<Catalog>ДоговорыАренды</Catalog>
+			<Catalog>юум_ДеревоЗаказаСлужебный</Catalog>
+			<Catalog>ХарактеристикиНоменклатуры</Catalog>
 			<Catalog>Назначения</Catalog>
-			<Catalog>Номенклатура</Catalog>
 			<Catalog>ПартииПроизводства</Catalog>
+			<Catalog>РесурсныеСпецификации</Catalog>
+			<Catalog>ВидыРабочихЦентров</Catalog>
 			<Catalog>ДоговорыКредитовИДепозитов</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>Партнеры</Catalog>
 			<Catalog>НаправленияДеятельности</Catalog>
-			<Catalog>РесурсныеСпецификации</Catalog>
+			<Catalog>Номенклатура</Catalog>
 			<Catalog>Склады</Catalog>
 			<Catalog>СтруктураПредприятия</Catalog>
 			<Catalog>УпаковкиЕдиницыИзмерения</Catalog>
 			<Catalog>ВидыНоменклатуры</Catalog>
 			<Catalog>юум_КлассификаторЗаказов</Catalog>
 			<Catalog>ГруппыФинансовогоУчетаНоменклатуры</Catalog>
-			<Catalog>ЦеновыеГруппы</Catalog>
-			<Catalog>СтатьиКалькуляции</Catalog>
 			<Catalog>юум_ГруппыОтходов</Catalog>
 			<Catalog>СпособыОтраженияЗарплатыВБухУчете</Catalog>
 			<Catalog>юум_ШифрыПрофессий</Catalog>
 			<Catalog>СтатьиДвиженияДенежныхСредств</Catalog>
 			<Catalog>Пользователи</Catalog>
-			<Catalog>ПроизводственныеУчастки</Catalog>
+			<Catalog>ЦеновыеГруппы</Catalog>
 			<Catalog>Должности</Catalog>
-			<Catalog>ХарактеристикиНоменклатуры</Catalog>
+			<Catalog>СтатьиКалькуляции</Catalog>
 			<Catalog>ЭтапыПроизводства</Catalog>
-			<Catalog>юум_ДеревоЗаказаСлужебный</Catalog>
+			<Catalog>ПроизводственныеУчастки</Catalog>
+			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
 			<Document>ЗаказНаПроизводство</Document>
 			<Document>ПрочиеДоходыРасходы</Document>
-			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
 			<Document>ЗаказНаПроизводство2_2</Document>
-			<Document>АвансовыйОтчет</Document>
+			<Document>ЭтапПроизводства2_2</Document>
 			<Document>ЗаказКлиента</Document>
 			<Document>ПриобретениеУслугПрочихАктивов</Document>
 			<Document>ПриобретениеТоваровУслуг</Document>
 			<Document>МаршрутныйЛистПроизводства</Document>
-			<Document>ЭтапПроизводства2_2</Document>
+			<Document>АвансовыйОтчет</Document>
+			<Document>ЗаявкаНаЗакупку</Document>
 			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
 			<Enum>ТипыБазыРаспределенияРасходов</Enum>
 			<Enum>ТипыПроизводственныхПроцессов</Enum>
