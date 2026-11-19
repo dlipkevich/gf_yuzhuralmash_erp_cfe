@@ -27,6 +27,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаНоменклатуры</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.юум_ШифрыПрофессий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоответствиеГруппыОтходовНоменклатуреОтходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоответсвиеГФУРТипуДоговора</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

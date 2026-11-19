@@ -301,6 +301,7 @@
 			<InformationRegister>юум_СоответствиеКодовНоменклатурыЦГ_Статье</InformationRegister>
 			<InformationRegister>юум_СпецификацииИнтермех</InformationRegister>
 			<InformationRegister>ТрудозатратыСтруктурыЗаказа</InformationRegister>
+			<InformationRegister>юум_СоответсвиеГФУРТипуДоговора</InformationRegister>
 			<AccumulationRegister>ДоступностьВидовРабочихЦентров</AccumulationRegister>
 			<ChartOfCharacteristicTypes>юум_ГлобальныеЗначения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>СтатьиДоходов</ChartOfCharacteristicTypes>
