@@ -21,6 +21,25 @@
 			<Comment/>
 			<ExtendedConfigurationObject>803dd55f-cc32-4983-912b-43b34afe2a71</ExtendedConfigurationObject>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<EnumValue uuid="641d1962-9261-4c7f-a37f-a5d7771f4331">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Ремонт</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6d3191d8-db5c-4ec0-a782-b624f6c172e3</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ad0637ea-12b0-4bc6-ac4e-1c8dae2ac371">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Сборка</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>711949ce-de2a-4db3-b1d1-beafbad9c077</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
 	</Enum>
 </MetaDataObject>
