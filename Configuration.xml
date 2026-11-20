@@ -153,7 +153,6 @@
 			<CommonModule>РаспределениеЗапасов</CommonModule>
 			<CommonModule>юум_ДеревоЗаказа</CommonModule>
 			<CommonModule>ОбменДаннымиПереопределяемый</CommonModule>
-			<CommonModule>ОбменДаннымиКлиент</CommonModule>
 			<CommonModule>ПрочееОприходованиеТоваровЛокализация</CommonModule>
 			<CommonModule>АвансовыйОтчетЛокализация</CommonModule>
 			<CommonModule>юум_ОбщегоНазначения</CommonModule>
@@ -290,7 +289,6 @@
 			<DataProcessor>ВыполнениеОпераций2_2</DataProcessor>
 			<InformationRegister>СтруктураЗаказа</InformationRegister>
 			<InformationRegister>СоответствияОбъектовИнформационныхБаз</InformationRegister>
-			<InformationRegister>ПравилаДляОбменаДанными</InformationRegister>
 			<InformationRegister>юум_СоответствиеЕдиницИзмеренияВнешнейСистемы</InformationRegister>
 			<InformationRegister>юум_ЗапрещенныеДляРучногоИзмененияОбъекты</InformationRegister>
 			<InformationRegister>юум_РазрешенныеРеквизитыЗапрещенныхОбъектов</InformationRegister>
