@@ -196,6 +196,7 @@
 			<CommandGroup>СинхронизацияДанных</CommandGroup>
 			<CommandGroup>ПараметрыСинхронизацииДанных</CommandGroup>
 			<CommonForm>НастройкаСчетовУчетаОперации</CommonForm>
+			<CommonForm>ФормаОтчета</CommonForm>
 			<Catalog>ВидыРаботСотрудников</Catalog>
 			<Catalog>Бригады</Catalog>
 			<Catalog>БанковскиеСчетаОрганизаций</Catalog>

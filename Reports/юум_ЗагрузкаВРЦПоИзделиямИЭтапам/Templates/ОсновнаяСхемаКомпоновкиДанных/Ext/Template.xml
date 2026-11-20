@@ -375,7 +375,7 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Изделие</v8:content>
+					<v8:content>юум_ЭлементДерева</v8:content>
 				</v8:item>
 			</title>
 			<valueType>
@@ -1680,6 +1680,12 @@
 								</dcsset:item>
 								<dcsset:item xsi:type="dcsset:SelectedItemField">
 									<dcsset:field>юум_ЭлементДерева</dcsset:field>
+									<dcsset:lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Изделие</v8:content>
+										</v8:item>
+									</dcsset:lwsTitle>
 								</dcsset:item>
 								<dcsset:item xsi:type="dcsset:SelectedItemField">
 									<dcsset:use>false</dcsset:use>

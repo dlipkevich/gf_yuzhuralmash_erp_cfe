@@ -144,7 +144,7 @@
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Изделие</v8:content>
+					<v8:content>юум_ЭлементДерева</v8:content>
 				</v8:item>
 			</title>
 			<presentationExpression>юум_ПроизводственныеОтчеты.ПредставлениеУзлаДереваЗаказа(юум_ЭлементДерева)</presentationExpression>
@@ -1707,6 +1707,7 @@
 					</dcsset:outputParameters>
 				</dcsset:column>
 				<dcsset:row>
+					<dcsset:name>юум_ЭлементДерева</dcsset:name>
 					<dcsset:groupItems>
 						<dcsset:item xsi:type="dcsset:GroupItemField">
 							<dcsset:field>юум_ЭлементДерева</dcsset:field>
@@ -1733,6 +1734,12 @@
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:SelectedItemField">
 							<dcsset:field>юум_ЭлементДерева</dcsset:field>
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Изделие</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:SelectedItemField">
 							<dcsset:field>юум_ЭлементДерева.Номенклатура.ЕдиницаИзмерения</dcsset:field>
@@ -1794,6 +1801,7 @@
 						</dcscor:item>
 					</dcsset:outputParameters>
 					<dcsset:item>
+						<dcsset:name>Этап</dcsset:name>
 						<dcsset:groupItems>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
 								<dcsset:field>Этап</dcsset:field>
@@ -1803,6 +1811,7 @@
 								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:use>false</dcsset:use>
 								<dcsset:field>ЕдиницаИзмерения</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
@@ -1810,6 +1819,7 @@
 								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 							</dcsset:item>
 							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:use>false</dcsset:use>
 								<dcsset:field>Подразделение</dcsset:field>
 								<dcsset:groupType>Items</dcsset:groupType>
 								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
@@ -1826,7 +1836,7 @@
 						<dcsset:selection>
 							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
 						</dcsset:selection>
-						<dcsset:userSettingID>47e824fb-e5a6-4479-929e-804019b65229</dcsset:userSettingID>
+						<dcsset:userSettingID>708c8dfb-34db-4903-9bd3-e8e2400992e5</dcsset:userSettingID>
 						<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
 							<v8:item>
 								<v8:lang>ru</v8:lang>

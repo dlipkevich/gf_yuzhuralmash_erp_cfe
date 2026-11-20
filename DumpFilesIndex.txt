@@ -60,6 +60,7 @@ f563a3d4-13dc-478d-b421-3076bfb820f4:32019DAD549A3F0D86900B79D5576E9A:2:CommonCo
 91f37221-55e6-4bc2-9ccd-234926c40052:DCF2E95611A2CE73C68384748BD1CD3D:2:CommonCommands\юум_СоставОтправляемыхДанных.xml
 da859529-874a-4603-8067-1ff088d03661:A2E6F5F7A4B7CB3FC223ED94998CC722:2:CommonCommands\юум_СценарииСинхронизации.xml
 c213f55c-a97e-42cf-9545-331ada019a46:3064EE65522431502919F0FE18F5FA6D:2:CommonForms\НастройкаСчетовУчетаОперации.xml
+b5126e5a-2ea2-450a-a432-7e829ff56543:2E811F0300D12896CD0B3C5A6F2AF5DB:2:CommonForms\ФормаОтчета.xml
 1c130610-0537-459d-9573-255a6bff639c:C63E9BEF4B983AE101140065D63A5C2D:2:CommonModules\АвансовыйОтчетЛокализация.xml
 7a3e2836-3943-4f88-9146-9bcff2d831c2:8CEAFE468902EB8A770BB1EEBF92442F:2:CommonModules\ВариантыОтчетовУТПереопределяемый.xml
 7ed95ae1-0656-4c5f-9a61-1c0b6a5f0f14:77F419E77BF171229FCAA1C176D8F927:2:CommonModules\ГрафикПроизводстваСтруктурыЗаказа.xml
@@ -282,6 +283,7 @@ CommonCommands\юум_СобытияПолучения\Ext\CommandModule.bsl:660
 CommonCommands\юум_СоставОтправляемыхДанных\Ext\CommandModule.bsl:45B106B1B0D911829958539BDD829EFF:4:CommonCommands\юум_СоставОтправляемыхДанных\Ext\CommandModule.bsl
 CommonCommands\юум_СценарииСинхронизации\Ext\CommandModule.bsl:42173C1B9720FE6ACA5B397F94B51102:4:CommonCommands\юум_СценарииСинхронизации\Ext\CommandModule.bsl
 CommonForms\НастройкаСчетовУчетаОперации\Ext\Form.xml:E690AD6F75D88C52964360CCC7655519:4:CommonForms\НастройкаСчетовУчетаОперации\Ext\Form.xml
+CommonForms\ФормаОтчета\Ext\Form.xml:F4AC1DFB653FAB5415838EB0DAD9BA83:4:CommonForms\ФормаОтчета\Ext\Form.xml
 CommonModules\АвансовыйОтчетЛокализация\Ext\Module.bsl:0F39C78FD5FF44C03BA34BD4831E9475:4:CommonModules\АвансовыйОтчетЛокализация\Ext\Module.bsl
 CommonModules\ВариантыОтчетовУТПереопределяемый\Ext\Module.bsl:6085B019635204091342863147F0C0C0:4:CommonModules\ВариантыОтчетовУТПереопределяемый\Ext\Module.bsl
 CommonModules\ГрафикПроизводстваСтруктурыЗаказа\Ext\Module.bsl:591F38B5D5D353BEBA544318A3D56C1C:4:CommonModules\ГрафикПроизводстваСтруктурыЗаказа\Ext\Module.bsl
@@ -418,6 +420,7 @@ b5f91641-8f23-424d-b720-6fd30803edcd:D79B8586771A9B8072F8F915EFF843B7:4:Subsyste
 26978b5c-c83f-44a7-b6f7-4e8c34427f84:5AB0A0BADF04F3604275470D9C0DC023:4:Subsystems\юум_Доработки\Subsystems\Интеграция.xml
 XDTOPackages\yum_EnterpriseData_1_20_2\Ext\Package.bin:BDEAD68C743F98F803C2078BAEEBD085:4:XDTOPackages\yum_EnterpriseData_1_20_2\Ext\Package.bin
 CommonForms\НастройкаСчетовУчетаОперации\Ext\Form\Module.bsl:D5131002E61A61758E39060ED4AB55D1:5:CommonForms\НастройкаСчетовУчетаОперации\Ext\Form\Module.bsl
+CommonForms\ФормаОтчета\Ext\Form\Module.bsl:E8A2BA6DAABF4BF60A60539B684D5621:5:CommonForms\ФормаОтчета\Ext\Form\Module.bsl
 CommonPictures\юум_СтруктураЗказа\Ext\Picture\Picture.svg:DE5BE00329F92F50D1507D9DEC941603:5:CommonPictures\юум_СтруктураЗказа\Ext\Picture\Picture.svg
 CommonPictures\юум_ЭтапПроизводства\Ext\Picture\Picture.svg:677D7B5F91139B6AD93F722766E9600B:5:CommonPictures\юум_ЭтапПроизводства\Ext\Picture\Picture.svg
 AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\ФормаСписка\Ext\Form.xml:5F24CD747EF537C939836F873AC965DF:6:AccumulationRegisters\ДоступностьВидовРабочихЦентров\Forms\ФормаСписка\Ext\Form.xml
