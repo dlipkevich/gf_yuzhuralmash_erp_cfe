@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<InformationRegister uuid="1895ceb0-d51d-41fe-ad52-3de78fff1b71">
+	<InformationRegister uuid="26bddb4d-4371-4f6e-9cb1-6a626cab296a">
 		<InternalInfo>
 			<xr:GeneratedType name="InformationRegisterRecord.юум_СоответсвиеГФУРТипуДоговора" category="Record">
-				<xr:TypeId>96bbda8f-ad49-40cf-91fa-97452b1354c1</xr:TypeId>
-				<xr:ValueId>7bdce1f1-e9b8-4041-bf33-51972eccd76f</xr:ValueId>
+				<xr:TypeId>fba26a4e-1562-41ff-94a8-abab3a40cec7</xr:TypeId>
+				<xr:ValueId>55340057-2d6d-4c17-8eb8-6cd25502841b</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterManager.юум_СоответсвиеГФУРТипуДоговора" category="Manager">
-				<xr:TypeId>2831af72-6b02-4e76-9d4b-da9f09f4c689</xr:TypeId>
-				<xr:ValueId>6b4cdf15-8b4d-4127-b20e-442d5653b9e6</xr:ValueId>
+				<xr:TypeId>4dbfdbcf-31bf-47eb-8a3c-79a398a0854c</xr:TypeId>
+				<xr:ValueId>c6c67d56-e7b4-493d-9bdb-3d2700eb35c7</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterSelection.юум_СоответсвиеГФУРТипуДоговора" category="Selection">
-				<xr:TypeId>07f8628c-e5ae-46f4-98a6-47cc651986f8</xr:TypeId>
-				<xr:ValueId>918575b8-6edf-4135-bf09-593201bf66e4</xr:ValueId>
+				<xr:TypeId>2f6efb67-7c8e-4e9c-a7be-d88471e08a65</xr:TypeId>
+				<xr:ValueId>57b141a5-751b-417a-8b80-23a9d309ddf8</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterList.юум_СоответсвиеГФУРТипуДоговора" category="List">
-				<xr:TypeId>bc52910e-c7be-4998-9e51-adca47cd4db2</xr:TypeId>
-				<xr:ValueId>ee53eb87-7340-4bf1-8166-90db5153c1fe</xr:ValueId>
+				<xr:TypeId>77209821-5903-4f24-98d8-e503dbb492ef</xr:TypeId>
+				<xr:ValueId>8c6d69e4-3d5f-4f60-97eb-8276c3819d2c</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordSet.юум_СоответсвиеГФУРТипуДоговора" category="RecordSet">
-				<xr:TypeId>c2b0f729-442d-4a4c-95d4-9dca69a6a500</xr:TypeId>
-				<xr:ValueId>edfc9e70-cc98-48bc-bab3-138c020db151</xr:ValueId>
+				<xr:TypeId>3867e46e-cd97-4299-aa57-33e2561f13a0</xr:TypeId>
+				<xr:ValueId>3b3f6a27-2f67-4f89-bdf8-942e0ef93dd4</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordKey.юум_СоответсвиеГФУРТипуДоговора" category="RecordKey">
-				<xr:TypeId>18181c1f-0c3a-489a-b1a1-2175d5f3286b</xr:TypeId>
-				<xr:ValueId>945ac3ea-0b7f-4e45-bc10-b86f06d7a1c8</xr:ValueId>
+				<xr:TypeId>839c34a6-3699-47be-b62d-981b850cfedc</xr:TypeId>
+				<xr:ValueId>499969af-34c2-4ef0-b0c6-0b9fb1a2aa1f</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordManager.юум_СоответсвиеГФУРТипуДоговора" category="RecordManager">
-				<xr:TypeId>022c2339-cc8c-4080-8ffe-78b6e256a747</xr:TypeId>
-				<xr:ValueId>1495372e-6ffb-4f22-90f2-b89f8c3c5b74</xr:ValueId>
+				<xr:TypeId>d5f6b7d8-a086-487f-9d5e-c0ce613fc2cf</xr:TypeId>
+				<xr:ValueId>b31251c6-7330-4be6-8bc0-c33bd6142fdb</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
