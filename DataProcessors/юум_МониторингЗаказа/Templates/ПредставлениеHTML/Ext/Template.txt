@@ -4,7 +4,7 @@
 *{box-sizing:border-box}html,body{height:100%;margin:0;font:13px Arial,sans-serif;color:#263b53;background:#fff}
 body{display:flex;flex-direction:column}button{font:inherit;color:inherit;background:#fff;border:1px solid #aebac5;border-radius:3px;padding:5px 15px;cursor:pointer}
 button:hover{background:#edf5fd}button.active{background:#e6f4e8;border-color:#58b958}
-.toolbar{padding:7px 12px;display:flex;gap:8px;align-items:center;border-bottom:1px solid #ccd5df;flex-shrink:0}
+.toolbar{padding:7px 12px;display:flex;flex-wrap:wrap;gap:8px;align-items:center;border-bottom:1px solid #ccd5df;flex-shrink:0}
 .header-layout,.body-layout,.scrollbar-layout{display:flex;min-width:0}
 .header-layout{flex-shrink:0;border-bottom:1px solid #ccd5df;overflow:hidden}
 .metrics{flex:none;overflow:hidden}.calendar-window{flex:1;min-width:0;overflow:hidden;position:relative}
@@ -35,6 +35,10 @@ td{text-align:right;background:#fff}td.name{text-align:left}tbody tr:hover td{ba
 <div class="toolbar"><span>Раскрыть до уровня:</span><button data-level="1" onclick="setLevel(1)">1</button>
 <button data-level="2" onclick="setLevel(2)">2</button><button data-level="3" onclick="setLevel(3)">3</button>
 <button data-level="4" onclick="setLevel(4)">4</button><button data-level="64" onclick="setLevel(64)">Все</button>
+<span style="margin-left:12px">Периодичность:</span>
+<button data-period="day" onclick="setPeriodicity('day')">День</button>
+<button data-period="week" onclick="setPeriodicity('week')">Неделя</button>
+<button data-period="month" onclick="setPeriodicity('month')">Месяц</button>
 <span style="margin-left:12px">Масштаб:</span><button onclick="setZoom(dayWidth-4)" aria-label="Уменьшить масштаб">−</button>
 <button id="zoomValue" onclick="setZoom(20)" title="Вернуть исходный масштаб">100%</button>
 <button onclick="setZoom(dayWidth+4)" aria-label="Увеличить масштаб">+</button>
@@ -67,6 +71,8 @@ var dayWidth=model.dayWidth||20,expanded={},columnWidths=[360,84,84,140,140,110]
 var minimumWidths=[160,70,70,90,90,110],minimumCalendarWidth=80;
 var resizeState=null;
 var rowLayoutFrame=0;
+var periodicity=model.periodicity==='week'||model.periodicity==='month'?model.periodicity:'day';
+var calendarAxis={periods:[],positions:[],width:dayWidth};
 for(var i=0;i<columnWidths.length;i++){
     if(model.columnWidths&&isFinite(model.columnWidths[i]))columnWidths[i]=Math.max(minimumWidths[i],Math.min(1200,model.columnWidths[i]));
 }
@@ -74,24 +80,80 @@ for(var i=0;i<model.expanded.length;i++)expanded[model.expanded[i]]=true;
 for(var i=0;i<data.length;i++){if(data[i].parent>=0)children[data[i].parent]=true;collapsed[i]=!expanded[data[i].key];}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function detail(node,stage){return 'monitoring:detail/'+node+'/'+stage;}
-function initializeCalendar(){
-    var cols=[],months=[],days=[],month='',span=0;
-    for(var d=0;d<calendar.length;d++){
-        var c=calendar[d];cols.push('<col class="day">');
-        if(c.month!==month){if(span)months.push('<th colspan="'+span+'">'+esc(month)+'</th>');month=c.month;span=0;}
-        span++;days.push('<th title="'+esc(c.date)+'"'+(c.weekend?' class="weekend"':'')+'>'+esc(c.day)+'</th>');
+// #юум #04.01.03.1 Галфинд mr. Cherryman 2026/11/23
+// Calendar periods are exact UTC date boundaries; interval data stays in original day coordinates.
+function calendarDate(text){var parts=text.split('.');return Date.UTC(Number(parts[2]),Number(parts[1])-1,Number(parts[0]));}
+function shortDate(time){var d=new Date(time);return ('0'+d.getUTCDate()).slice(-2)+'.'+('0'+(d.getUTCMonth()+1)).slice(-2);}
+function fullDate(time){return shortDate(time)+'.'+new Date(time).getUTCFullYear();}
+function buildCalendarAxis(){
+    var dayMilliseconds=86400000,periods=[],positions=[],first=calendar.length?calendarDate(calendar[0].date):0;
+    var width=(periodicity==='week'?64:(periodicity==='month'?96:20))*dayWidth/20;
+    if(!calendar.length)return {periods:periods,positions:[0],width:width};
+    var cursor=first,last=first+(calendar.length-1)*dayMilliseconds,date=new Date(first);
+    if(periodicity==='week')cursor-=((date.getUTCDay()+6)%7)*dayMilliseconds;
+    if(periodicity==='month')cursor=Date.UTC(date.getUTCFullYear(),date.getUTCMonth(),1);
+    var monthNames=['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+    for(;cursor<=last;){
+        date=new Date(cursor);
+        var finish=periodicity==='month'?Date.UTC(date.getUTCFullYear(),date.getUTCMonth()+1,1):cursor+(periodicity==='week'?7:1)*dayMilliseconds;
+        var startDay=Math.round((cursor-first)/dayMilliseconds),finishDay=Math.round((finish-first)/dayMilliseconds);
+        var source=calendar[Math.max(0,startDay)],label=source.day,group=source.month;
+        var title=source.date,weekend=source.weekend;
+        if(periodicity!=='day'){
+            label=periodicity==='week'?shortDate(cursor):monthNames[date.getUTCMonth()];
+            var groupDate=periodicity==='week'?new Date(cursor+3*dayMilliseconds):date;
+            group=String(groupDate.getUTCFullYear());
+            title=(periodicity==='week'?'Неделя: ':'Месяц: ')+fullDate(cursor)+' — '+fullDate(finish-dayMilliseconds);weekend=false;
+        }
+        var index=periods.length;
+        periods.push({start:startDay,finish:finishDay,label:label,group:group,title:title,weekend:weekend});
+        for(var d=Math.max(0,startDay);d<=Math.min(calendar.length,finishDay);d++)positions[d]=(index+(d-startDay)/(finishDay-startDay))*width;
+        cursor=finish;
     }
-    if(span)months.push('<th colspan="'+span+'">'+esc(month)+'</th>');
+    return {periods:periods,positions:positions,width:width};
+}
+function calendarX(day){
+    var positions=calendarAxis.positions,last=positions.length-1;
+    if(last<1)return 0;
+    if(day<=0)return positions[0]+day*(positions[1]-positions[0]);
+    if(day>=last)return positions[last]+(day-last)*(positions[last]-positions[last-1]);
+    var whole=Math.floor(day);return positions[whole]+(day-whole)*(positions[whole+1]-positions[whole]);
+}
+function dayAtCalendarX(position){
+    var periods=calendarAxis.periods;if(!periods.length)return 0;
+    var index=Math.max(0,Math.min(periods.length-1,Math.floor(position/calendarAxis.width))),period=periods[index];
+    return period.start+(position/calendarAxis.width-index)*(period.finish-period.start);
+}
+function initializeCalendar(){
+    calendarAxis=buildCalendarAxis();
+    var cols=[],groups=[],labels=[],group='',span=0;
+    for(var d=0;d<calendarAxis.periods.length;d++){
+        var period=calendarAxis.periods[d];cols.push('<col class="day">');
+        if(period.group!==group){if(span)groups.push('<th colspan="'+span+'">'+esc(group)+'</th>');group=period.group;span=0;}
+        span++;labels.push('<th title="'+esc(period.title)+'"'+(period.weekend?' class="weekend"':'')+'>'+esc(period.label)+'</th>');
+    }
+    if(span)groups.push('<th colspan="'+span+'">'+esc(group)+'</th>');
     document.getElementById('bodyColumns').innerHTML=document.getElementById('columns').innerHTML;
     document.getElementById('calendarColumns').innerHTML=cols.join('');
     document.getElementById('calendarBodyColumns').innerHTML=cols.join('');
-    document.getElementById('months').insertAdjacentHTML('beforeend',months.join(''));
-    document.getElementById('days').innerHTML=days.join('');
+    document.getElementById('months').innerHTML=groups.join('');document.getElementById('days').innerHTML=labels.join('');
+    var buttons=document.querySelectorAll('button[data-period]');
+    for(var b=0;b<buttons.length;b++){
+        var active=buttons[b].getAttribute('data-period')===periodicity;
+        buttons[b].className=active?'active':'';buttons[b].setAttribute('aria-pressed',String(active));
+    }
+}
+function setPeriodicity(value){
+    if(value!=='day'&&value!=='week'&&value!=='month')return;
+    if(value===periodicity)return;
+    var anchor=dayAtCalendarX(horizontalScroll.scrollLeft),top=viewport.scrollTop;
+    periodicity=value;initializeCalendar();render();viewport.scrollTop=top;
+    horizontalScroll.scrollLeft=Math.max(0,calendarX(anchor));onScroll();
 }
 function fixedWidth(){var width=0;for(var c=0;c<columnWidths.length;c++)width+=columnWidths[c];return width;}
 function saveScroll(){
     state.setAttribute('data-top',String(viewport.scrollTop));state.setAttribute('data-left',String(horizontalScroll.scrollLeft));
-    state.setAttribute('data-day-width',String(dayWidth));state.setAttribute('data-column-widths',JSON.stringify(columnWidths));
+    state.setAttribute('data-periodicity',periodicity);state.setAttribute('data-day-width',String(dayWidth));state.setAttribute('data-column-widths',JSON.stringify(columnWidths));
 }
 function synchronizeCalendar(){
     calendarViewport.scrollLeft=horizontalScroll.scrollLeft;
@@ -148,7 +210,7 @@ function applyColumnWidths(){
         var columns=groups[g].children;
         for(var c=0;c<columnWidths.length;c++)columns[c].style.width=columnWidths[c]+'px';
     }
-    var width=fixedWidth(),calendarWidth=calendar.length*dayWidth;
+    var width=fixedWidth(),calendarWidth=calendarAxis.periods.length*calendarAxis.width;
     metricsHeader.style.width=width+'px';metricsBody.style.width=width+'px';
     document.getElementById('scrollbarSpacer').style.width=width+'px';
     setFixedWidth(document.getElementById('gantt'),width);setFixedWidth(document.getElementById('ganttHeader'),width);
@@ -158,16 +220,16 @@ function applyColumnWidths(){
     var calendarGroups=[document.getElementById('calendarColumns'),document.getElementById('calendarBodyColumns')];
     for(var g=0;g<calendarGroups.length;g++){
         var days=calendarGroups[g].children;
-        for(var d=0;d<days.length;d++)days[d].style.width=dayWidth+'px';
+        for(var d=0;d<days.length;d++)days[d].style.width=calendarAxis.width+'px';
     }
     synchronizeViewport();scheduleRowLayout();saveScroll();
 }
 function applyZoom(){
     applyColumnWidths();document.getElementById('zoomValue').textContent=Math.round(dayWidth/20*100)+'%';
     var grid=document.querySelectorAll('td.timeline');
-    for(var z=0;z<grid.length;z++)grid[z].style.backgroundImage='repeating-linear-gradient(to right,transparent 0,transparent '+(dayWidth-1)+'px,#e6ecf2 '+(dayWidth-1)+'px,#e6ecf2 '+dayWidth+'px)';
+    for(var z=0;z<grid.length;z++)grid[z].style.backgroundImage='repeating-linear-gradient(to right,transparent 0,transparent '+(calendarAxis.width-1)+'px,#e6ecf2 '+(calendarAxis.width-1)+'px,#e6ecf2 '+calendarAxis.width+'px)';
 }
-function setZoom(value){var logicalLeft=horizontalScroll.scrollLeft/dayWidth;dayWidth=Math.max(8,Math.min(40,value));render();horizontalScroll.scrollLeft=logicalLeft*dayWidth;onScroll();}
+function setZoom(value){var anchor=dayAtCalendarX(horizontalScroll.scrollLeft);dayWidth=Math.max(8,Math.min(40,value));initializeCalendar();render();horizontalScroll.scrollLeft=Math.max(0,calendarX(anchor));onScroll();}
 function saveTree(){
     var keys=[];for(var i=0;i<data.length;i++)if(children[i]&&!collapsed[i])keys.push(data[i].key);
     state.setAttribute('data-expanded',JSON.stringify(keys));state.setAttribute('data-level',String(level));
@@ -182,13 +244,13 @@ function rowMarkup(r,n){
     if(r.readyText!=='-'){ready+='%';bar='<span class="readybar"><span style="width:'+Math.max(0,Math.min(100,r.ready))+'%;'+(r.ready>100?'background:#efa537':'')+'"></span></span>';}
     var intervals=[];
     for(var j=0;j<r.intervals.length;j++){
-        var x=r.intervals[j];intervals.push('<a class="bar '+x.color+'" href="'+detail(x.node,x.stage)+'" title="'+esc(x.title)+'" style="left:'+(x.start*dayWidth)+'px;width:'+Math.max(1,(x.finish-x.start)*dayWidth)+'px"></a>');
+        var x=r.intervals[j],start=calendarX(x.start),finish=calendarX(x.finish);intervals.push('<a class="bar '+x.color+'" href="'+detail(x.node,x.stage)+'" title="'+esc(x.title)+'" style="left:'+start+'px;width:'+Math.max(1,finish-start)+'px"></a>');
     }
-    if(model.today>=0&&model.today<calendar.length)intervals.push('<span class="today" style="left:'+(model.today*dayWidth)+'px"></span>');
+    if(model.today>=0&&model.today<calendar.length)intervals.push('<span class="today" style="left:'+calendarX(model.today)+'px"></span>');
     var hint=esc(r.laborHint||'');
     return {metrics:'<tr data-id="'+n+'" data-key="'+esc(r.key)+'"><td class="name fixed f0">'+name+'</td><td class="fixed f1">'+esc(r.planQty)+'</td><td class="fixed f2">'+esc(r.actualQty)+'</td>'+
         '<td class="fixed f3" title="'+hint+'">'+esc(r.planHours)+'</td><td class="fixed f4" title="'+hint+'">'+esc(r.actualHours)+'</td><td class="fixed f5" title="'+hint+'">'+ready+bar+'</td></tr>',
-        calendar:'<tr data-id="'+n+'"><td class="timeline" colspan="'+calendar.length+'">'+intervals.join('')+'</td></tr>'};
+        calendar:'<tr data-id="'+n+'"><td class="timeline" colspan="'+Math.max(1,calendarAxis.periods.length)+'">'+intervals.join('')+'</td></tr>'};
 }
 function render(){
     var out=[],calendarOut=[],shown=[],count=0;

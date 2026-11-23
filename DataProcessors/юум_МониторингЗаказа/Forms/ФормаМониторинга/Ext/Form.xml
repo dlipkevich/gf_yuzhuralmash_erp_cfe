@@ -3,7 +3,7 @@
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
-			<v8:content>Мониторинг заказа — нетиповой источник [06.11.2026.N9]</v8:content>
+			<v8:content>Мониторинг заказа — нетиповой источник [2.6.2.72_99_2]</v8:content>
 		</v8:item>
 	</Title>
 	<Width>160</Width>
@@ -269,6 +269,15 @@
 		<Attribute name="РежимДиагностики" id="21">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПериодичностьШкалы" id="22">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>5</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
