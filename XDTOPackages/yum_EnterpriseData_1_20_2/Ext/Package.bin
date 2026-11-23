@@ -9,6 +9,7 @@
 	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="РегистрСведений.ЗначенияТарифов" base="d2p1:Ref"/>
 	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="СправочникСсылка.умЗаказы" base="d2p1:Ref"/>
 	<valueType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="ДокументСсылка.умИсходныеДанныеСделок" base="d2p1:Ref"/>
+	<valueType name="ТипКоличествоВРЦ" base="xs:decimal" totalDigits="10" fractionDigits="2"/>
 	<objectType name="КлючевыеСвойстваумБригады" open="true" sequenced="true">
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.умБригады" lowerBound="0"/>
 		<property name="Наименование" type="xs:string"/>
@@ -55,7 +56,7 @@
 	</objectType>
 	<objectType xmlns:d2p1="http://www.1c.ru/SSL/Exchange/Message" name="Регистр.юумКоличествоВРЦ" base="d2p1:Object" open="true" sequenced="true">
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="КлючевыеСвойства" type="d3p1:КлючевыеСвойстваюумКоличествоВРЦ"/>
-		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/EnterpriseData/1.20" name="Количество" type="d3p1:ТипКоличество"/>
+		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Количество" type="d3p1:ТипКоличествоВРЦ"/>
 	</objectType>
 	<objectType name="КлючевыеСвойстваРазрядыКатегорииДолжностей" open="true" sequenced="true">
 		<property xmlns:d3p1="http://v8.1c.ru/edi/edi_stnd/yum_EnterpriseData/1.20" name="Ссылка" type="d3p1:СправочникСсылка.РазрядыКатегорииДолжностей" lowerBound="0"/>
