@@ -244,7 +244,6 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="213d1900-dcad-4616-9f20-3f077156a40f" callType="After">юум_ПослеЗаписиНаСервереПосле</Event>
-		<Event name="8f42e083-be92-4102-b1f0-fa58452c1a63" callType="After">юум_ПередЗаписьюНаСервереПосле</Event>
 		<Event name="OnCreateAtServer" callType="After">юум_ПриСозданииНаСервереПосле</Event>
 	</Events>
 	<ChildItems>
