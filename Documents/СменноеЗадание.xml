@@ -44,6 +44,8 @@
 		<ChildObjects>
 			<Form>ФормаДокумента</Form>
 			<Form>ФормаВыбораПоКалендарю</Form>
+			<Template>юум_ПФ_MXL_Наряд</Template>
+			<Template>юум_НарядПример</Template>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>

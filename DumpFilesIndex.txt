@@ -354,6 +354,8 @@ Documents\СменноеЗадание\Ext\ManagerModule.bsl:7506B1567618DB969F9
 Documents\СменноеЗадание\Ext\ObjectModule.bsl:4078C061F1BDDAE986FC43A2C3FAC8FA:4:Documents\СменноеЗадание\Ext\ObjectModule.bsl
 5abbcebb-76ec-44c6-a3ce-76e976fbf7f3:79608AE88DEBE8F869623D8F65B4015D:4:Documents\СменноеЗадание\Forms\ФормаВыбораПоКалендарю.xml
 3f2205c7-c587-4196-8789-47fcbae07528:F94F8EF617961F59A9C5D91DEDC39C29:4:Documents\СменноеЗадание\Forms\ФормаДокумента.xml
+ec2a1bcc-d872-4fca-9400-599e4019c510:63AB1557AA40CE130A90292B5FF3C813:4:Documents\СменноеЗадание\Templates\юум_НарядПример.xml
+569713c2-5094-4e49-a341-affddccc4c74:9B126D5375EAC681F450F8E681125592:4:Documents\СменноеЗадание\Templates\юум_ПФ_MXL_Наряд.xml
 5656032d-ea68-45e6-910c-76b48117d9c7:24A8CCF5B4CA02CA910856787A0AD215:4:Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента.xml
 21e0acac-0cc1-4db9-9eb4-45b6a71a9f4d:D7DD38B397D9BCE3DA62135E9EF43D49:4:ExchangePlans\юум_ОбменДО_ERP\Forms\ФормаУзла.xml
 d418684f-24e7-4b2d-9694-3036c3a0e39d:FD80B5D1D6BA773E89E4D032DA9DC470:4:InformationRegisters\СтруктураЗаказа\Forms\ФормаСписка.xml
@@ -478,6 +480,8 @@ Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумен�
 Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form.xml:3B3BAD87C1B0FCDF697379C35B27882C:6:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form.xml
 Documents\СменноеЗадание\Forms\ФормаВыбораПоКалендарю\Ext\Form.xml:1BFC0843EA76C11832413BAA1647F0A7:6:Documents\СменноеЗадание\Forms\ФормаВыбораПоКалендарю\Ext\Form.xml
 Documents\СменноеЗадание\Forms\ФормаДокумента\Ext\Form.xml:604102B299827AC3EADF6416FFAA6ECF:6:Documents\СменноеЗадание\Forms\ФормаДокумента\Ext\Form.xml
+Documents\СменноеЗадание\Templates\юум_НарядПример\Ext\Template.xml:5EB251C1389F40B4E249A94B9F342046:6:Documents\СменноеЗадание\Templates\юум_НарядПример\Ext\Template.xml
+Documents\СменноеЗадание\Templates\юум_ПФ_MXL_Наряд\Ext\Template.xml:ABD5F9425EF799D0591B7D717BDCBFE8:6:Documents\СменноеЗадание\Templates\юум_ПФ_MXL_Наряд\Ext\Template.xml
 Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента\Ext\Form.xml:7565E787E7C3FB118F64AE4C21E754FA:6:Documents\ЭтапПроизводства2_2\Forms\ФормаДокумента\Ext\Form.xml
 ExchangePlans\юум_ОбменДО_ERP\Forms\ФормаУзла\Ext\Form.xml:3BD056C46CE53CDBB718499B1CE062BD:6:ExchangePlans\юум_ОбменДО_ERP\Forms\ФормаУзла\Ext\Form.xml
 InformationRegisters\СтруктураЗаказа\Forms\ФормаСписка\Ext\Form.xml:4DCF23FC61212E84C1FF15C12A874CBD:6:InformationRegisters\СтруктураЗаказа\Forms\ФормаСписка\Ext\Form.xml
