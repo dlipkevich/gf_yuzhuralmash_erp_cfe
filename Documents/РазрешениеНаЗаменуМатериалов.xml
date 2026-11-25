@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="30862b27-d518-4b96-89ce-1f4a3a50a755">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.РазрешениеНаЗаменуМатериалов" category="Object">
+				<xr:TypeId>ce6d7529-c167-4874-b34a-0d044f5887d8</xr:TypeId>
+				<xr:ValueId>7a63f5e0-e77e-40bc-a43e-568aeb8a4a11</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.РазрешениеНаЗаменуМатериалов" category="Ref">
+				<xr:TypeId>e40c07c7-0809-49e6-80e6-9e4071b87c99</xr:TypeId>
+				<xr:ValueId>9874319a-4070-4e0e-b370-c4dc15385afd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.РазрешениеНаЗаменуМатериалов" category="Selection">
+				<xr:TypeId>bf61d495-14f9-4f7c-a3fd-3304d076118e</xr:TypeId>
+				<xr:ValueId>92b68e95-d917-450f-8b92-44fef397eac9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.РазрешениеНаЗаменуМатериалов" category="List">
+				<xr:TypeId>36900fbe-690b-45d8-a477-2c8496e6a5b6</xr:TypeId>
+				<xr:ValueId>d88b2014-a66f-4d91-909a-694b8192b701</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.РазрешениеНаЗаменуМатериалов" category="Manager">
+				<xr:TypeId>eafa44c3-178d-43a5-9854-c6a96440e0c9</xr:TypeId>
+				<xr:ValueId>cc162b17-cf82-4459-8c5b-c102ec75e619</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РазрешениеНаЗаменуМатериалов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>b43c7565-b5c5-46fc-980c-e4333950b18a</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

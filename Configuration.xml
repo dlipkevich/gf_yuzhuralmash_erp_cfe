@@ -80,6 +80,7 @@
 			<StyleItem>ТекстПредопределенногоЗначения</StyleItem>
 			<StyleItem>ЦветТекстаПредупреждение</StyleItem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
+			<StyleItem>юум_ПодчеркнутыйШрифтВПечатнуюФорму</StyleItem>
 			<CommonPicture>СрочноКЗаказу</CommonPicture>
 			<CommonPicture>КоричневыйШар</CommonPicture>
 			<CommonPicture>ТребуетсяОформитьВыработкуСотрудников</CommonPicture>
@@ -244,6 +245,8 @@
 			<Document>ПроизводственнаяОперация2_2</Document>
 			<Document>СменноеЗадание</Document>
 			<Document>ЗаказДавальца2_5</Document>
+			<Document>РазрешениеНаЗаменуМатериалов</Document>
+			<Document>АктКонтроляКачестваТоваров</Document>
 			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
 			<Enum>ТипыБазыРаспределенияРасходов</Enum>
 			<Enum>ТипыПроизводственныхПроцессов</Enum>

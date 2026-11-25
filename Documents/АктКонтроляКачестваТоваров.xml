@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Document uuid="5980c4b4-752e-4b18-91c7-ddb6e220412b">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.АктКонтроляКачестваТоваров" category="Object">
+				<xr:TypeId>59473ff8-c4a5-47f9-9d22-2132c0d6bc5e</xr:TypeId>
+				<xr:ValueId>8250b370-5909-4962-82b0-6d3963e59070</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.АктКонтроляКачестваТоваров" category="Ref">
+				<xr:TypeId>ec0089f4-301c-470b-81aa-4a0d17506b95</xr:TypeId>
+				<xr:ValueId>9da8302d-c9a6-4116-881b-a4a84bad4277</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.АктКонтроляКачестваТоваров" category="Selection">
+				<xr:TypeId>298e8ec7-b030-4fd2-9971-f4bfc70d7bfa</xr:TypeId>
+				<xr:ValueId>c2634342-7bf9-4024-9f04-c08dc70de4e7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.АктКонтроляКачестваТоваров" category="List">
+				<xr:TypeId>2a89bd6e-e2c7-4df6-b661-e259547c7300</xr:TypeId>
+				<xr:ValueId>d5305d93-6331-43ef-a196-c1e46e37f3ee</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.АктКонтроляКачестваТоваров" category="Manager">
+				<xr:TypeId>89b4017a-141c-4f87-aa7b-4fe2578efad4</xr:TypeId>
+				<xr:ValueId>8d11503c-a98d-4642-aa2f-9348be11a401</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>АктКонтроляКачестваТоваров</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>200e8c9e-a79b-4052-a652-d2d261d5f504</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>
