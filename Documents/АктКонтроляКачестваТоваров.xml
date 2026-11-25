@@ -22,6 +22,10 @@
 				<xr:TypeId>89b4017a-141c-4f87-aa7b-4fe2578efad4</xr:TypeId>
 				<xr:ValueId>8d11503c-a98d-4642-aa2f-9348be11a401</xr:ValueId>
 			</xr:GeneratedType>
+			<xr:PropertyState>
+				<xr:Property>ManagerModule</xr:Property>
+				<xr:State>Extended</xr:State>
+			</xr:PropertyState>
 		</InternalInfo>
 		<Properties>
 			<ObjectBelonging>Adopted</ObjectBelonging>
@@ -30,6 +34,8 @@
 			<ExtendedConfigurationObject>200e8c9e-a79b-4052-a652-d2d261d5f504</ExtendedConfigurationObject>
 			<RegisterRecords/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Template>юум_ПФ_MXL_АктВходногоКонтроля</Template>
+		</ChildObjects>
 	</Document>
 </MetaDataObject>

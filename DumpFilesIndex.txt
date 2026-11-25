@@ -333,6 +333,8 @@ f62ed4a2-dedb-5ca9-9003-b7146abfb7bf:8A1C773BFEED02F382C01AD2CFA76756:4:DataProc
 e2391936-4aab-4a83-959b-ef4606ad92a8:990D31F5CE7B6D141DBF9E37369E8804:4:DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма.xml
 b19a8621-e043-48e9-84e2-f0eab60a327e:0B579088AD872F7421FCA7961BC57ABA:4:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчет_ru.xml
 29687e5a-3caa-4f5e-9c44-0f15080a454f:CBE48F3432E51FD538BE82F47DB41D97:4:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчетВИностраннойВалюте_ru.xml
+Documents\АктКонтроляКачестваТоваров\Ext\ManagerModule.bsl:2F0B54486FDD5F995BB1ECAF884635EA:4:Documents\АктКонтроляКачестваТоваров\Ext\ManagerModule.bsl
+29d5b004-beb0-4eea-9a9b-48eb9079af9d:1DDE3AAF54EBD6D69B0AAFB34DA93180:4:Documents\АктКонтроляКачестваТоваров\Templates\юум_ПФ_MXL_АктВходногоКонтроля.xml
 2b8ac831-8022-4e9f-964c-be5e7a3d4a55:65719A8567C8BD291DE855F6E5A86CEE:4:Documents\ЗаказДавальца2_5\Forms\ФормаДокумента.xml
 Documents\ЗаказКлиента\Ext\ManagerModule.bsl:0BDC1C5FA765B5A85481291F778BB23F:4:Documents\ЗаказКлиента\Ext\ManagerModule.bsl
 Documents\ЗаказКлиента\Ext\ObjectModule.bsl:45B8B51BDAE3758086099C9947E709BF:4:Documents\ЗаказКлиента\Ext\ObjectModule.bsl
@@ -353,6 +355,8 @@ Documents\ПроизводственнаяОперация2_2\Ext\ObjectModule.b
 89b6089a-440a-4233-af5b-041ddcf2da8b:4EB3F3A124B23F937EAFD30E623E9191:4:Documents\ПроизводственнаяОперация2_2\Forms\ФормаДокумента.xml
 dca94ae5-8c1a-4845-b74b-fb0726ec60be:9D7C9F6DE23DF1EC9BAF93A6701091A0:4:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента.xml
 746022b2-a927-46ac-b782-8a1017d99cb4:1ECAE6D550215277DDAEFD63F840C678:4:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel.xml
+Documents\РазрешениеНаЗаменуМатериалов\Ext\ManagerModule.bsl:9F0CE9AC4DFEE46FC86E48CC4DB932C3:4:Documents\РазрешениеНаЗаменуМатериалов\Ext\ManagerModule.bsl
+baa53bbf-37f2-4ffb-8bc2-2c73b1c76b8e:EC971432984DEB96AB9A389CAC88C6BD:4:Documents\РазрешениеНаЗаменуМатериалов\Templates\юум_ПФ_MXL_КартаЗамены.xml
 Documents\СменноеЗадание\Ext\ManagerModule.bsl:7506B1567618DB969F91705DC7E126E5:4:Documents\СменноеЗадание\Ext\ManagerModule.bsl
 Documents\СменноеЗадание\Ext\ObjectModule.bsl:4078C061F1BDDAE986FC43A2C3FAC8FA:4:Documents\СменноеЗадание\Ext\ObjectModule.bsl
 5abbcebb-76ec-44c6-a3ce-76e976fbf7f3:79608AE88DEBE8F869623D8F65B4015D:4:Documents\СменноеЗадание\Forms\ФормаВыбораПоКалендарю.xml
@@ -469,6 +473,7 @@ DataProcessors\юум_МониторингЗаказа\Templates\Предста�
 DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма\Ext\Form.xml:845AB84D36F46774293370152CA1CE6A:6:DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма\Ext\Form.xml
 Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчет_ru\Ext\Template.xml:308C71F986F523826A0A030803C22A1B:6:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчет_ru\Ext\Template.xml
 Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчетВИностраннойВалюте_ru\Ext\Template.xml:C266410DD58B975B3E1D942023C8F9BB:6:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчетВИностраннойВалюте_ru\Ext\Template.xml
+Documents\АктКонтроляКачестваТоваров\Templates\юум_ПФ_MXL_АктВходногоКонтроля\Ext\Template.xml:FF2C3DA2BA81B6687A7E8D9C558987A7:6:Documents\АктКонтроляКачестваТоваров\Templates\юум_ПФ_MXL_АктВходногоКонтроля\Ext\Template.xml
 Documents\ЗаказДавальца2_5\Forms\ФормаДокумента\Ext\Form.xml:F79DDC3CD912CE2D7AEC0F6A4F542EFF:6:Documents\ЗаказДавальца2_5\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form.xml:45485412C86C698BE8E5743BBB7CABDF:6:Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ЗаказКлиента\Templates\юум_СводнаяСпецификация\Ext\Template.xml:779C5EB1421DF63E19C6F4FF95C32A06:6:Documents\ЗаказКлиента\Templates\юум_СводнаяСпецификация\Ext\Template.xml
@@ -481,6 +486,7 @@ Documents\ПриобретениеУслугПрочихАктивов\Forms\Ф�
 Documents\ПроизводственнаяОперация2_2\Forms\ФормаДокумента\Ext\Form.xml:BDF3CA7BC76B1973D64ECF3835C93656:6:Documents\ПроизводственнаяОперация2_2\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form.xml:1355A8C5B328D41E6A2DD5A49895630A:6:Documents\ПрочиеДоходыРасходы\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form.xml:3B3BAD87C1B0FCDF697379C35B27882C:6:Documents\ПрочиеДоходыРасходы\Forms\юум_ФормаЗагрузкаИзExcel\Ext\Form.xml
+Documents\РазрешениеНаЗаменуМатериалов\Templates\юум_ПФ_MXL_КартаЗамены\Ext\Template.xml:0D8D2FEFB86676919E2378AA12254BB9:6:Documents\РазрешениеНаЗаменуМатериалов\Templates\юум_ПФ_MXL_КартаЗамены\Ext\Template.xml
 Documents\СменноеЗадание\Forms\ФормаВыбораПоКалендарю\Ext\Form.xml:1BFC0843EA76C11832413BAA1647F0A7:6:Documents\СменноеЗадание\Forms\ФормаВыбораПоКалендарю\Ext\Form.xml
 Documents\СменноеЗадание\Forms\ФормаДокумента\Ext\Form.xml:604102B299827AC3EADF6416FFAA6ECF:6:Documents\СменноеЗадание\Forms\ФормаДокумента\Ext\Form.xml
 Documents\СменноеЗадание\Templates\юум_НарядПример\Ext\Template.xml:5EB251C1389F40B4E249A94B9F342046:6:Documents\СменноеЗадание\Templates\юум_НарядПример\Ext\Template.xml
