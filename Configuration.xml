@@ -165,6 +165,7 @@
 			<CommonModule>РезервыПоОплатеТрудаБазовый</CommonModule>
 			<CommonModule>юум_ПроизводственныеОтчеты</CommonModule>
 			<CommonModule>ФормированиеЭтаповПроизводства</CommonModule>
+			<CommonModule>юум_АктВзвешиванияДавала</CommonModule>
 			<ExchangePlan>юум_ОбменДО_ERP</ExchangePlan>
 			<ExchangePlan>юум_ИнтеграцияЗУП_ЕРП_УниверсальныйФормат</ExchangePlan>
 			<XDTOPackage>yum_EnterpriseData_1_20_2</XDTOPackage>
@@ -249,6 +250,7 @@
 			<Document>АктКонтроляКачестваТоваров</Document>
 			<Document>ВнутреннееПотребление</Document>
 			<Document>ДвижениеПродукцииИМатериалов</Document>
+			<Document>ОтгрузкаТоваровСХранения</Document>
 			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
 			<Enum>ТипыБазыРаспределенияРасходов</Enum>
 			<Enum>ТипыПроизводственныхПроцессов</Enum>
