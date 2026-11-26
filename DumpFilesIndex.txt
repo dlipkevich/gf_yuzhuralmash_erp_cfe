@@ -126,6 +126,8 @@ bb6532da-3d31-4768-87ae-6a81abc114d1:EFAC4554C88232E05CE7FD4FDB8E6BA4:2:DataProc
 ba90da34-2231-4d2b-9d68-bc603e7470f0:C499E203E62A8DAA7FE6A588FC4701AE:2:DefinedTypes\ПланыОбменаБСД.xml
 a30a35b6-730f-47ab-8953-27225ee6d3ed:04B5B094459D6E6A7C00E20E33F12A18:2:Documents\АвансовыйОтчет.xml
 5980c4b4-752e-4b18-91c7-ddb6e220412b:BFA27611258E32EBBD4D60964F28D41F:2:Documents\АктКонтроляКачестваТоваров.xml
+1ab8e440-9566-4136-9a46-c05b4b32be6b:4E7753839023ADCB4A34C5A7477A420E:2:Documents\ВнутреннееПотребление.xml
+df4c962a-98c1-4c42-a5ec-d6f926f9f13a:C45A6BD65D04EE706C28474E57768FB7:2:Documents\ДвижениеПродукцииИМатериалов.xml
 b07c2bf1-877c-4980-8c88-ac69be673ebf:0DC39D6EF8080117BDE2D159C937B310:2:Documents\ЗаказДавальца2_5.xml
 0d0d3445-cdea-490d-988b-e83d8354417f:AE6421A336E165F835C65C08A9976E7A:2:Documents\ЗаказКлиента.xml
 173226a4-7ca2-83f9-8091-f3641b7f1dff:E770016FEEAC2E5128BC9C48085A93A5:2:Documents\ЗаказНаПроизводство.xml
@@ -335,6 +337,9 @@ b19a8621-e043-48e9-84e2-f0eab60a327e:0B579088AD872F7421FCA7961BC57ABA:4:Document
 29687e5a-3caa-4f5e-9c44-0f15080a454f:CBE48F3432E51FD538BE82F47DB41D97:4:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчетВИностраннойВалюте_ru.xml
 Documents\АктКонтроляКачестваТоваров\Ext\ManagerModule.bsl:2F0B54486FDD5F995BB1ECAF884635EA:4:Documents\АктКонтроляКачестваТоваров\Ext\ManagerModule.bsl
 29d5b004-beb0-4eea-9a9b-48eb9079af9d:1DDE3AAF54EBD6D69B0AAFB34DA93180:4:Documents\АктКонтроляКачестваТоваров\Templates\юум_ПФ_MXL_АктВходногоКонтроля.xml
+Documents\ВнутреннееПотребление\Ext\ManagerModule.bsl:D4195C4E22D11C8BF42D919B06A10B70:4:Documents\ВнутреннееПотребление\Ext\ManagerModule.bsl
+36daf288-937b-4c76-bf0d-c83fdbd33816:F350F096370CC9F6A10111321A8FDA74:4:Documents\ВнутреннееПотребление\Templates\юум_ПФ_MXL_ОтпускОснасткиВПроизводство.xml
+Documents\ДвижениеПродукцииИМатериалов\Ext\ManagerModule.bsl:1DDD2355D10D283434FA024E77070D19:4:Documents\ДвижениеПродукцииИМатериалов\Ext\ManagerModule.bsl
 2b8ac831-8022-4e9f-964c-be5e7a3d4a55:65719A8567C8BD291DE855F6E5A86CEE:4:Documents\ЗаказДавальца2_5\Forms\ФормаДокумента.xml
 Documents\ЗаказКлиента\Ext\ManagerModule.bsl:0BDC1C5FA765B5A85481291F778BB23F:4:Documents\ЗаказКлиента\Ext\ManagerModule.bsl
 Documents\ЗаказКлиента\Ext\ObjectModule.bsl:45B8B51BDAE3758086099C9947E709BF:4:Documents\ЗаказКлиента\Ext\ObjectModule.bsl
@@ -474,6 +479,7 @@ DataProcessors\юум_СохранениеДереваЗаказа\Forms\Фор�
 Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчет_ru\Ext\Template.xml:308C71F986F523826A0A030803C22A1B:6:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчет_ru\Ext\Template.xml
 Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчетВИностраннойВалюте_ru\Ext\Template.xml:C266410DD58B975B3E1D942023C8F9BB:6:Documents\АвансовыйОтчет\Templates\ПФ_MXL_АвансовыйОтчетВИностраннойВалюте_ru\Ext\Template.xml
 Documents\АктКонтроляКачестваТоваров\Templates\юум_ПФ_MXL_АктВходногоКонтроля\Ext\Template.xml:FF2C3DA2BA81B6687A7E8D9C558987A7:6:Documents\АктКонтроляКачестваТоваров\Templates\юум_ПФ_MXL_АктВходногоКонтроля\Ext\Template.xml
+Documents\ВнутреннееПотребление\Templates\юум_ПФ_MXL_ОтпускОснасткиВПроизводство\Ext\Template.xml:CFF33C2002067D6B7D4F0CB1D219BED3:6:Documents\ВнутреннееПотребление\Templates\юум_ПФ_MXL_ОтпускОснасткиВПроизводство\Ext\Template.xml
 Documents\ЗаказДавальца2_5\Forms\ФормаДокумента\Ext\Form.xml:F79DDC3CD912CE2D7AEC0F6A4F542EFF:6:Documents\ЗаказДавальца2_5\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form.xml:45485412C86C698BE8E5743BBB7CABDF:6:Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ЗаказКлиента\Templates\юум_СводнаяСпецификация\Ext\Template.xml:779C5EB1421DF63E19C6F4FF95C32A06:6:Documents\ЗаказКлиента\Templates\юум_СводнаяСпецификация\Ext\Template.xml
