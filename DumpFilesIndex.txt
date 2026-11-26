@@ -137,6 +137,7 @@ b07c2bf1-877c-4980-8c88-ac69be673ebf:0DC39D6EF8080117BDE2D159C937B310:2:Document
 0d0d3445-cdea-490d-988b-e83d8354417f:AE6421A336E165F835C65C08A9976E7A:2:Documents\ЗаказКлиента.xml
 173226a4-7ca2-83f9-8091-f3641b7f1dff:E770016FEEAC2E5128BC9C48085A93A5:2:Documents\ЗаказНаПроизводство.xml
 0c62e66c-596a-40f1-8a28-ff611d3c0b9a:52CDB1AC90AFDEB2A767D9E9C3B28EBC:2:Documents\ЗаказНаПроизводство2_2.xml
+c269fc6d-88e8-4661-871c-b1260bf369f4:E4659CCDD49C9F58C9AFE017968EF010:2:Documents\ЗаказПоставщику.xml
 50ff4a2c-d0f2-440c-84f2-b260dacc8cb6:C3AD8FDA2D7D01C7FAA0C680B20FB3B6:2:Documents\ЗаявкаНаЗакупку.xml
 0d688d5d-3fa2-43d7-a797-9b2ab2f308c2:562AC074CBA9F9909B82B7EE6F6FEF52:2:Documents\ЗаявкаНаРасходованиеДенежныхСредств.xml
 59344a34-e4b4-8f14-8e4d-19e543bf0216:FB23803705C3F7DBE3CC681D8B735A2C:2:Documents\МаршрутныйЛистПроизводства.xml
@@ -174,6 +175,7 @@ fdc5d41c-bfb0-47f3-abb2-33993588f24f:38EBB8B38B9255388591318220042E13:2:Enums\Т
 08f51015-d06d-4f29-a9a2-5a21006eb081:D338A1252E7C639809BA68E52596BFBD:2:Enums\ТипыПроизводственныхПроцессов.xml
 e9902cd7-3b65-41f3-a8d1-0c0183f9e8cd:744C05C4C76BE86422DD4F7BAA9ECE45:2:Enums\ТипыСкладов.xml
 e7095701-4c69-4478-9ce2-b3c179ec70b1:379B08F5C187C1E2A46A583BF3632104:2:Enums\ХарактерПроизводственныхЗатрат.xml
+1d427e52-9108-4dd5-95ba-d5c44b279e9a:3D6FF6702421F799C28ABD90F96274ED:2:Enums\ХозяйственныеОперации.xml
 bb4b3d3b-8791-454c-b1e8-407e7918ec5f:A144FBA349825045FB2029E71680A248:2:Enums\юум_ТипДокументаОснования.xml
 ab61d138-4ed1-450e-8551-459a486c8e31:34FFB1C71BBC5432EFBE4732F524698A:2:EventSubscriptions\юум_ПроверитьЗапретНаИзменениеПередЗаписьюДокумента.xml
 325d65ec-0202-4555-9064-6574cbe47dd6:3B7F7BB38A0B0BD6021CDB6F9817D55A:2:EventSubscriptions\юум_ПроверитьЗапретНаИзменениеПередЗаписьюСправочника.xml
@@ -363,6 +365,7 @@ b2e5ad3a-d21c-41ec-a38a-f77c2d84ad67:0050F340D0692562F3CBECF22E0ECB83:4:Document
 Documents\ЗаказНаПроизводство2_2\Ext\ManagerModule.bsl:E1D3E004FC5D0755B14D4D633FFEA268:4:Documents\ЗаказНаПроизводство2_2\Ext\ManagerModule.bsl
 10633782-d75e-421f-8c94-1c07d01b35d0:729C5301334AE8FBE2DDE33297EA51DC:4:Documents\ЗаказНаПроизводство2_2\Templates\юум_ПФ_MXL_КарточкаГарантийногоЗаказа.xml
 f8044305-cacd-49d3-b4fa-1bad32380849:1FCE55A9BFBDA92779B3188FFE334C2E:4:Documents\ЗаказНаПроизводство2_2\Templates\юум_ПФ_MXL_КонтрольноСдаточнаяКарта.xml
+ae74466f-db6a-46ba-a258-e2650727a163:5CFCD11C58F9EDB6302397C3A8DFEA4E:4:Documents\ЗаказПоставщику\Forms\ФормаДокумента.xml
 Documents\ЗаявкаНаЗакупку\Ext\ObjectModule.bsl:E82E8D25B08DFB2D532FD53E5D724B6D:4:Documents\ЗаявкаНаЗакупку\Ext\ObjectModule.bsl
 ef374e7a-9d36-47a3-a4f9-827c55647aca:1DBF9D845862D1338273898C76AE3C03:4:Documents\ЗаявкаНаЗакупку\Forms\ФормаДокумента.xml
 Documents\ЗаявкаНаРасходованиеДенежныхСредств\Ext\ManagerModule.bsl:6CE7B2C48EAA1A1D45586A854C54222A:4:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Ext\ManagerModule.bsl
@@ -511,6 +514,7 @@ Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form.x
 Documents\ЗаказКлиента\Templates\юум_СводнаяСпецификация\Ext\Template.xml:779C5EB1421DF63E19C6F4FF95C32A06:6:Documents\ЗаказКлиента\Templates\юум_СводнаяСпецификация\Ext\Template.xml
 Documents\ЗаказНаПроизводство2_2\Templates\юум_ПФ_MXL_КарточкаГарантийногоЗаказа\Ext\Template.xml:42BF133793E1D26E0B1B47ADFF15DCB0:6:Documents\ЗаказНаПроизводство2_2\Templates\юум_ПФ_MXL_КарточкаГарантийногоЗаказа\Ext\Template.xml
 Documents\ЗаказНаПроизводство2_2\Templates\юум_ПФ_MXL_КонтрольноСдаточнаяКарта\Ext\Template.xml:A29CE238977B2359F98811DA4466281E:6:Documents\ЗаказНаПроизводство2_2\Templates\юум_ПФ_MXL_КонтрольноСдаточнаяКарта\Ext\Template.xml
+Documents\ЗаказПоставщику\Forms\ФормаДокумента\Ext\Form.xml:4D1CD24863446DE754A0CC89D4C2C271:6:Documents\ЗаказПоставщику\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ЗаявкаНаЗакупку\Forms\ФормаДокумента\Ext\Form.xml:128104CF830E4F2146CF56B5DEBD4E01:6:Documents\ЗаявкаНаЗакупку\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form.xml:5F3F19F3FA71108D72605BDCC4287E23:6:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form.xml
 Documents\ЗаявкаНаРасходованиеДенежныхСредств\Templates\юум_ПФ_MXL_ЗаявкаНаРасходованиеДС\Ext\Template.xml:C89CD9E87523F3BC82D31134176D9BBB:6:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Templates\юум_ПФ_MXL_ЗаявкаНаРасходованиеДС\Ext\Template.xml
@@ -581,6 +585,7 @@ DataProcessors\юум_МониторингЗаказа\Forms\ФормаМони�
 DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма\Ext\Form\Module.bsl:8EB7CA8A69556B9236F168BD96A0F2C7:7:DataProcessors\юум_СохранениеДереваЗаказа\Forms\Форма\Ext\Form\Module.bsl
 Documents\ЗаказДавальца2_5\Forms\ФормаДокумента\Ext\Form\Module.bsl:76C0CD56CED208CE625A2A7DB7C4E732:7:Documents\ЗаказДавальца2_5\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form\Module.bsl:3C99409F4B98175632CC045B6CD3937E:7:Documents\ЗаказКлиента\Forms\ФормаДокумента\Ext\Form\Module.bsl
+Documents\ЗаказПоставщику\Forms\ФормаДокумента\Ext\Form\Module.bsl:946A03EEDCCA6ADCF1F3D4A1BF2A1EC7:7:Documents\ЗаказПоставщику\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ЗаявкаНаЗакупку\Forms\ФормаДокумента\Ext\Form\Module.bsl:94A4CB570ADEEDCA893CEF28E8C3AC1B:7:Documents\ЗаявкаНаЗакупку\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form\Module.bsl:5667D50A7A04CAF7FF47FB0F15424210:7:Documents\ЗаявкаНаРасходованиеДенежныхСредств\Forms\ФормаДокумента\Ext\Form\Module.bsl
 Documents\ОтгрузкаТоваровСХранения\Forms\ФормаДокумента\Ext\Form\Module.bsl:557F81B9387BEE241A18AD164FCE899F:7:Documents\ОтгрузкаТоваровСХранения\Forms\ФормаДокумента\Ext\Form\Module.bsl

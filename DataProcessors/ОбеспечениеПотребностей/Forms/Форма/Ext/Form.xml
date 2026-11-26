@@ -4,6 +4,7 @@
 	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="OnOpen" callType="After">юум_ПриОткрытииПосле</Event>
 		<Event name="OnCreateAtServer" callType="After">юум_ПриСозданииНаСервереПосле</Event>
 	</Events>
 	<ChildItems>

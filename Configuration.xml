@@ -200,51 +200,51 @@
 			<CommandGroup>ПараметрыСинхронизацииДанных</CommandGroup>
 			<CommonForm>НастройкаСчетовУчетаОперации</CommonForm>
 			<CommonForm>ФормаОтчета</CommonForm>
-			<Catalog>ВидыРаботСотрудников</Catalog>
-			<Catalog>Бригады</Catalog>
-			<Catalog>БанковскиеСчетаОрганизаций</Catalog>
 			<Catalog>БанковскиеСчетаКонтрагентов</Catalog>
-			<Catalog>ДоговорыАренды</Catalog>
-			<Catalog>ВидыРабочихЦентров</Catalog>
+			<Catalog>Бригады</Catalog>
+			<Catalog>ВидыРаботСотрудников</Catalog>
+			<Catalog>БанковскиеСчетаОрганизаций</Catalog>
 			<Catalog>ДоговорыКонтрагентов</Catalog>
+			<Catalog>ДоговорыАренды</Catalog>
+			<Catalog>юум_ДеревоЗаказаСлужебный</Catalog>
+			<Catalog>ХарактеристикиНоменклатуры</Catalog>
 			<Catalog>Назначения</Catalog>
-			<Catalog>Номенклатура</Catalog>
 			<Catalog>ПартииПроизводства</Catalog>
+			<Catalog>РесурсныеСпецификации</Catalog>
+			<Catalog>ВидыРабочихЦентров</Catalog>
 			<Catalog>ДоговорыКредитовИДепозитов</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>Партнеры</Catalog>
 			<Catalog>НаправленияДеятельности</Catalog>
-			<Catalog>РесурсныеСпецификации</Catalog>
+			<Catalog>Номенклатура</Catalog>
 			<Catalog>Склады</Catalog>
 			<Catalog>СтруктураПредприятия</Catalog>
 			<Catalog>УпаковкиЕдиницыИзмерения</Catalog>
 			<Catalog>ВидыНоменклатуры</Catalog>
 			<Catalog>юум_КлассификаторЗаказов</Catalog>
 			<Catalog>ГруппыФинансовогоУчетаНоменклатуры</Catalog>
-			<Catalog>ЦеновыеГруппы</Catalog>
-			<Catalog>СтатьиКалькуляции</Catalog>
 			<Catalog>юум_ГруппыОтходов</Catalog>
 			<Catalog>СпособыОтраженияЗарплатыВБухУчете</Catalog>
 			<Catalog>юум_ШифрыПрофессий</Catalog>
 			<Catalog>СтатьиДвиженияДенежныхСредств</Catalog>
 			<Catalog>Пользователи</Catalog>
-			<Catalog>ПроизводственныеУчастки</Catalog>
+			<Catalog>ЦеновыеГруппы</Catalog>
 			<Catalog>Должности</Catalog>
-			<Catalog>ХарактеристикиНоменклатуры</Catalog>
+			<Catalog>СтатьиКалькуляции</Catalog>
 			<Catalog>ЭтапыПроизводства</Catalog>
-			<Catalog>юум_ДеревоЗаказаСлужебный</Catalog>
+			<Catalog>ПроизводственныеУчастки</Catalog>
 			<Catalog>ОтветственныеЛицаОрганизаций</Catalog>
 			<Catalog>ФизическиеЛица</Catalog>
+			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
 			<Document>ЗаказНаПроизводство</Document>
 			<Document>ПрочиеДоходыРасходы</Document>
-			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
 			<Document>ЗаказНаПроизводство2_2</Document>
-			<Document>АвансовыйОтчет</Document>
+			<Document>ЭтапПроизводства2_2</Document>
 			<Document>ЗаказКлиента</Document>
 			<Document>ПриобретениеУслугПрочихАктивов</Document>
 			<Document>ПриобретениеТоваровУслуг</Document>
 			<Document>МаршрутныйЛистПроизводства</Document>
-			<Document>ЭтапПроизводства2_2</Document>
+			<Document>АвансовыйОтчет</Document>
 			<Document>ЗаявкаНаЗакупку</Document>
 			<Document>ПроизводственнаяОперация2_2</Document>
 			<Document>СменноеЗадание</Document>
@@ -254,6 +254,7 @@
 			<Document>ВнутреннееПотребление</Document>
 			<Document>ДвижениеПродукцииИМатериалов</Document>
 			<Document>ОтгрузкаТоваровСХранения</Document>
+			<Document>ЗаказПоставщику</Document>
 			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
 			<Enum>ТипыБазыРаспределенияРасходов</Enum>
 			<Enum>ТипыПроизводственныхПроцессов</Enum>
@@ -265,15 +266,15 @@
 			<Enum>СпособыОтраженияМатериальнойПередачиМеждуЭтапамиПартии</Enum>
 			<Enum>ВариантыНазначенияСпецификации</Enum>
 			<Enum>ЕдиницыИзмеренияВремени</Enum>
+			<Enum>ВариантыПечатиМаршрутнойКартыНаПродукцию</Enum>
 			<Enum>ТипыНалогообложенияНДС</Enum>
-			<Enum>СпособыДоставки</Enum>
 			<Enum>ХарактерПроизводственныхЗатрат</Enum>
 			<Enum>ВариантыРаздельногоУчетаНДС</Enum>
 			<Enum>НазначениеПравилРаспределенияРасходов</Enum>
 			<Enum>ВидыДеятельностиРасходов</Enum>
 			<Enum>ВидыДеятельностиДляНалоговогоУчетаЗатрат</Enum>
 			<Enum>ВидыДвиженийДенежныхСредств</Enum>
-			<Enum>ВариантыПечатиМаршрутнойКартыНаПродукцию</Enum>
+			<Enum>ХозяйственныеОперации</Enum>
 			<Enum>ВариантыЗагрузкиРабочихЦентров</Enum>
 			<Enum>ВидыФормОтчетовОРасходахИЧисленностиРаботниковГосударственныхОрганов</Enum>
 			<Enum>юум_ТипДокументаОснования</Enum>
@@ -281,6 +282,7 @@
 			<Enum>ИсточникиИнформацииОЦенахДляПечати</Enum>
 			<Enum>ТипыСкладов</Enum>
 			<Enum>НазначенияВидовЦен</Enum>
+			<Enum>СпособыДоставки</Enum>
 			<Report>МониторингЗаказа</Report>
 			<Report>СебестоимостьТоваров</Report>
 			<Report>ВедомостьПоОС2_4</Report>
