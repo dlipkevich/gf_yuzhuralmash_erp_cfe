@@ -15,7 +15,9 @@
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
 			<Picture/>
-			<Content/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.юум_АРММатериальнаяУкомплектованностьЗаказа</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>Интеграция</Subsystem>

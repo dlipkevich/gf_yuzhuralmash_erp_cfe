@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<DataProcessor uuid="6576037e-3c5f-4dea-a96f-7f1bb2f35555">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.юум_АРММатериальнаяУкомплектованностьЗаказа" category="Object">
+				<xr:TypeId>51ad7f62-f5d8-4c15-8f00-bebc8187eb10</xr:TypeId>
+				<xr:ValueId>5af88a4e-5177-4e12-99f7-d611a785352f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.юум_АРММатериальнаяУкомплектованностьЗаказа" category="Manager">
+				<xr:TypeId>20452e00-81b5-4904-9a07-3ae897e52cfe</xr:TypeId>
+				<xr:ValueId>1aef0511-d4a6-4a4c-aee8-aee2faa53146</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>юум_АРММатериальнаяУкомплектованностьЗаказа</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>АРМ Материальная укомплектованность заказа</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>// #юум #ЧТЗ 04.02.01/03.01.01 АРМ «Материальная укомплектованность заказов» Галфинд  Садомцев 2026/10/22</Comment>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.юум_АРММатериальнаяУкомплектованностьЗаказа.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Form>ФормаНастроек</Form>
+			<Template>СКД</Template>
+			<Template>МакетНовыеДокументы</Template>
+			<Template>СКДНоменклатураПоТребованию</Template>
+			<Template>СКДПотребностьЗОЗ</Template>
+			<Template>МакетПотребностьЗОЗ</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

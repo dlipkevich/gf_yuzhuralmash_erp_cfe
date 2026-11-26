@@ -298,6 +298,7 @@
 			<DataProcessor>ЗагрузкаНоменклатуры</DataProcessor>
 			<DataProcessor>ФормированиеЭтаповПроизводства</DataProcessor>
 			<DataProcessor>ВыполнениеОпераций2_2</DataProcessor>
+			<DataProcessor>юум_АРММатериальнаяУкомплектованностьЗаказа</DataProcessor>
 			<InformationRegister>СтруктураЗаказа</InformationRegister>
 			<InformationRegister>СоответствияОбъектовИнформационныхБаз</InformationRegister>
 			<InformationRegister>юум_СоответствиеЕдиницИзмеренияВнешнейСистемы</InformationRegister>
