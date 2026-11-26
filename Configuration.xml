@@ -166,6 +166,7 @@
 			<CommonModule>юум_ПроизводственныеОтчеты</CommonModule>
 			<CommonModule>ФормированиеЭтаповПроизводства</CommonModule>
 			<CommonModule>юум_АктВзвешиванияДавала</CommonModule>
+			<CommonModule>МодификацияКонфигурацииПереопределяемый</CommonModule>
 			<ExchangePlan>юум_ОбменДО_ERP</ExchangePlan>
 			<ExchangePlan>юум_ИнтеграцияЗУП_ЕРП_УниверсальныйФормат</ExchangePlan>
 			<XDTOPackage>yum_EnterpriseData_1_20_2</XDTOPackage>
@@ -232,6 +233,8 @@
 			<Catalog>ХарактеристикиНоменклатуры</Catalog>
 			<Catalog>ЭтапыПроизводства</Catalog>
 			<Catalog>юум_ДеревоЗаказаСлужебный</Catalog>
+			<Catalog>ОтветственныеЛицаОрганизаций</Catalog>
+			<Catalog>ФизическиеЛица</Catalog>
 			<Document>ЗаказНаПроизводство</Document>
 			<Document>ПрочиеДоходыРасходы</Document>
 			<Document>ЗаявкаНаРасходованиеДенежныхСредств</Document>
