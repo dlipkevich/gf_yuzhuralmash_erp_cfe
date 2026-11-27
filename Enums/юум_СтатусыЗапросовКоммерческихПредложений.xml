@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="e54fcd6e-debd-4467-a5ff-c02c8a9f95cd">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.юум_СтатусыЗапросовКоммерческихПредложений" category="Ref">
+				<xr:TypeId>196e9a17-bb32-4ccf-854b-d2b2536b9d04</xr:TypeId>
+				<xr:ValueId>344999e8-6442-496f-b07d-29b3e2bee31b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.юум_СтатусыЗапросовКоммерческихПредложений" category="Manager">
+				<xr:TypeId>286950d1-6bd5-4b17-9908-03d1e44f8b75</xr:TypeId>
+				<xr:ValueId>2b3719dd-ce0f-4d4d-8b3d-733a5e5387c9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.юум_СтатусыЗапросовКоммерческихПредложений" category="List">
+				<xr:TypeId>4680b7c2-4273-452c-9ab9-73d41d51966b</xr:TypeId>
+				<xr:ValueId>8ca1c966-394b-44ab-aef9-7fa595fff217</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_СтатусыЗапросовКоммерческихПредложений</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>328cf036-2577-4cab-ba18-e74f6cfeaab2</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="a45e9ce8-6b1f-4981-82d4-20515381c576">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.юум_УчетРасчетовВедетсяВ" category="Ref">
+				<xr:TypeId>ec386e4e-0a7a-48cb-abbd-f350b8ab32ef</xr:TypeId>
+				<xr:ValueId>7e0ad447-d465-4e9c-8601-4dce5856b042</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.юум_УчетРасчетовВедетсяВ" category="Manager">
+				<xr:TypeId>8985f46a-7890-4543-8b71-0bae86737fec</xr:TypeId>
+				<xr:ValueId>bcc801d9-0623-486d-bcd0-7a6ca11d5f3b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.юум_УчетРасчетовВедетсяВ" category="List">
+				<xr:TypeId>bc1395d0-75a7-4369-8497-774b7ca5dc24</xr:TypeId>
+				<xr:ValueId>38de5846-5133-4d2c-ae6d-f750f4a061a5</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_УчетРасчетовВедетсяВ</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>e79da01f-1ffa-4d78-8c40-8c28ff48f2ef</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

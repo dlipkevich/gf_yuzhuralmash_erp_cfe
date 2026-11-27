@@ -81,6 +81,9 @@
 			<StyleItem>ЦветТекстаПредупреждение</StyleItem>
 			<StyleItem>ВажнаяНадписьШрифт</StyleItem>
 			<StyleItem>юум_ПодчеркнутыйШрифтВПечатнуюФорму</StyleItem>
+			<StyleItem>ЖирныйШрифтБЭД</StyleItem>
+			<StyleItem>НедоступныеДанныеЭДЦвет</StyleItem>
+			<StyleItem>ДосьеТекущийРазделЦвет</StyleItem>
 			<CommonPicture>СрочноКЗаказу</CommonPicture>
 			<CommonPicture>КоричневыйШар</CommonPicture>
 			<CommonPicture>ТребуетсяОформитьВыработкуСотрудников</CommonPicture>
@@ -113,6 +116,9 @@
 			<CommonPicture>юум_ЭтапПроизводства</CommonPicture>
 			<CommonPicture>РазбитьСтроку</CommonPicture>
 			<CommonPicture>СтатусыУказанияСерий</CommonPicture>
+			<CommonPicture>ТипКартинка</CommonPicture>
+			<CommonPicture>РежимыДобавленияТоваровКоммерческихПредложений</CommonPicture>
+			<CommonPicture>НекорректныйКонтрагент</CommonPicture>
 			<Role>юум_ЧтениеГлобальныеЗначения</Role>
 			<Role>юум_ПросмотрРазделаНастройки</Role>
 			<Role>юум_ДобавлениеИзменениеГлобальныеЗначения</Role>
@@ -174,6 +180,8 @@
 			<XDTOPackage>ExchangeMessage</XDTOPackage>
 			<EventSubscription>юум_ПроверитьЗапретНаИзменениеПередЗаписьюДокумента</EventSubscription>
 			<EventSubscription>юум_ПроверитьЗапретНаИзменениеПередЗаписьюСправочника</EventSubscription>
+			<EventSubscription>юум_ОбменERPDOПередЗаписью</EventSubscription>
+			<EventSubscription>юум_ОбменERPDOПередУдалением</EventSubscription>
 			<ScheduledJob>юум_ЗагрузкаАОН</ScheduledJob>
 			<ScheduledJob>юум_ЗагрузкаНоменклатуры</ScheduledJob>
 			<DefinedType>ПланыОбменаБСД</DefinedType>
@@ -255,6 +263,7 @@
 			<Document>ДвижениеПродукцииИМатериалов</Document>
 			<Document>ОтгрузкаТоваровСХранения</Document>
 			<Document>ЗаказПоставщику</Document>
+			<Document>ЗапросКоммерческихПредложенийПоставщиков</Document>
 			<Enum>СостоянияОбеспеченияЭтапаПроизводства</Enum>
 			<Enum>ТипыБазыРаспределенияРасходов</Enum>
 			<Enum>ТипыПроизводственныхПроцессов</Enum>
@@ -283,6 +292,9 @@
 			<Enum>ТипыСкладов</Enum>
 			<Enum>НазначенияВидовЦен</Enum>
 			<Enum>СпособыДоставки</Enum>
+			<Enum>ВидыЭлектронныхТорговыхПлощадок</Enum>
+			<Enum>юум_УчетРасчетовВедетсяВ</Enum>
+			<Enum>юум_СтатусыЗапросовКоммерческихПредложений</Enum>
 			<Report>МониторингЗаказа</Report>
 			<Report>СебестоимостьТоваров</Report>
 			<Report>ВедомостьПоОС2_4</Report>

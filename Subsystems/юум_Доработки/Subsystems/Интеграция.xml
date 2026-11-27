@@ -27,7 +27,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаНоменклатуры</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.юум_ШифрыПрофессий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоответствиеГруппыОтходовНоменклатуреОтходов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">1895ceb0-d51d-41fe-ad52-3de78fff1b71</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.юум_УчетРасчетовВедетсяВ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.юум_СтатусыЗапросовКоммерческихПредложений</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
