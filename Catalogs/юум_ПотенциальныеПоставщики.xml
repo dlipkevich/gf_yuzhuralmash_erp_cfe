@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Catalog uuid="8df97417-e34c-421a-8b3f-686c568c975b">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.юум_ПотенциальныеПоставщики" category="Object">
+				<xr:TypeId>041970b8-b94d-4366-bd7c-43ad4bc60f55</xr:TypeId>
+				<xr:ValueId>d5f1ea24-cf29-442f-b362-9562dff34b91</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.юум_ПотенциальныеПоставщики" category="Ref">
+				<xr:TypeId>f4a5d70b-049f-4b28-9c38-ded71dbca766</xr:TypeId>
+				<xr:ValueId>06f3c419-9670-4c64-9e4e-542b64720b61</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.юум_ПотенциальныеПоставщики" category="Selection">
+				<xr:TypeId>46cc6715-506e-4d71-aaf9-1f46906a6851</xr:TypeId>
+				<xr:ValueId>f686f211-ae63-49ac-bb13-d028ca6a0473</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.юум_ПотенциальныеПоставщики" category="List">
+				<xr:TypeId>e43543bd-d363-4b3b-8c7b-1b7f7aed76f0</xr:TypeId>
+				<xr:ValueId>d2b89b01-4791-47fa-b438-1c64fc8dd28c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.юум_ПотенциальныеПоставщики" category="Manager">
+				<xr:TypeId>d7044a34-a743-4641-94b6-d385a821e364</xr:TypeId>
+				<xr:ValueId>79825a70-f845-4ff9-a70d-2948893f3f89</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>юум_ПотенциальныеПоставщики</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>9b0a6e96-98c4-495e-9d0f-7a2188933561</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

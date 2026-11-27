@@ -34,6 +34,7 @@ dbe75b9f-6132-4f06-b103-d7b0277871c4:EE092A490BCB6E9DA952E8643D16890F:2:Catalogs
 4a33836f-a9c7-45b8-86dd-b2ad765b5308:D8EBA4CADFDE4398EE631378F6C24A9B:2:Catalogs\юум_ГруппыОтходов.xml
 ba8a0d8b-8bb5-46c1-95e0-8e1bd28c3421:3C8FE95E170CD444665CA01A7CBEEC0D:2:Catalogs\юум_ДеревоЗаказаСлужебный.xml
 d86077ef-27fa-492a-9e5a-dfb9a4c2ac52:DCDE4B2407ED553A651182E07B41D250:2:Catalogs\юум_КлассификаторЗаказов.xml
+8df97417-e34c-421a-8b3f-686c568c975b:69D501FE945E3B1B0DADFCCC05C7FE94:2:Catalogs\юум_ПотенциальныеПоставщики.xml
 18555b51-ee43-4854-821e-8a7f1be6ab31:26416D6764A52D00E880EF927BF36696:2:Catalogs\юум_ШифрыПрофессий.xml
 33f7fd78-76c4-413e-9201-a284bdff9821:7A24D1D903AEF0C7F719ECAECB4BC5C0:2:ChartsOfAccounts\Хозрасчетный.xml
 8daa5cb1-adbf-425f-86ab-8f0ab5c84572:D0BA54B7C1BC6903D848C23316FBE3D2:2:ChartsOfCharacteristicTypes\СтатьиАктивовПассивов.xml
@@ -221,6 +222,7 @@ c5be3e3a-f8c0-472d-a49c-e46d37dc0ac6:CF81407B1C456B7548BF3B29D2E7E027:2:Roles\О
 fa3e8a26-4b76-4f24-8764-0a85c3614ace:29042B9BD008AEDBB2555D6AD90CD0D4:2:Roles\ПросмотрОтчетовОЗагрузкеРабочихЦентров.xml
 d9cdfa3a-5507-444f-96f6-146495ac5efd:EB568D0AB9EFE2E6B0705F63943CC246:2:Roles\юум_ДобавлениеИзменениеГлобальныеЗначения.xml
 f948c6e9-a008-49f9-94e2-76824325a717:4D4A2FFBACFB5434C18E14B27F61D911:2:Roles\юум_ДобавлениеИзменениеКлассификатораЗаказов.xml
+aad998fa-69ee-4aac-96a0-2a22c45ff498:1DB60D6A12224072E812E3E9900A158B:2:Roles\юум_ДобавлениеИзменениеПотенциальныхПоставщиков.xml
 44c1ec86-7359-4493-9185-3913e70c2e2c:B0F946E9AC77032AD3198AA9DEB262D1:2:Roles\юум_ИзменениеГруппыОтходов.xml
 3a9975ca-3255-4106-ac26-82a0e4347017:5184E020FE6B07144E6C117BE24E5CB0:2:Roles\юум_ИспользоватьЗаданияКВыполнению.xml
 04448c01-9524-44f3-9454-230b86e11cc6:4170D0694C9FED58B6C804F985925E35:2:Roles\юум_Мастер.xml
@@ -244,6 +246,7 @@ fdd16464-3e3d-46b6-bae1-f8c12643cb1a:B492433CE981DF6B9D59C96EE9CD45B8:2:Roles\ю
 992ddf80-6482-4eb6-a150-f82d8b385597:40ABCB092FE7C56438169CE4E3A92015:2:Roles\юум_СозданиеСверхлимитныхЗаявок.xml
 a514e516-e65f-4d23-8942-abcf50645062:4A5A8F3F61A192E107860DC66B67498F:2:Roles\юум_ЧтениеГлобальныеЗначения.xml
 4f61fe7b-b58c-49cd-9f5f-c016d081b667:C1B0B8077C87ABC836D76598B5166B3C:2:Roles\юум_ЧтениеКлассификатораЗаказов.xml
+20649fbc-2236-42bc-a567-6d5cece5de45:4ACFD7FDFE09818E6B4B1CF7F31E2903:2:Roles\юум_ЧтениеПотенциальныхПоставщиков.xml
 870edf27-b221-44ac-87da-012e909d464f:46083CED06DB1F90C776DD7F367D94A6:2:Roles\юум_ЧтениеРСюум_СоответсвиеГФУРТипуДоговора.xml
 0b4be199-59ee-404c-b5a1-4122b46025e4:A7A7C7F212388FF86D01CB3F15C84C3B:2:ScheduledJobs\юум_ЗагрузкаАОН.xml
 eaeb681a-6543-4ea2-bcc4-374408f8ddd2:D3F10B937FE4D98645919D196D024207:2:ScheduledJobs\юум_ЗагрузкаНоменклатуры.xml
@@ -437,6 +440,7 @@ Roles\ПланированиеГрафикаПроизводства2_2\Ext\Righ
 Roles\ПросмотрОтчетовОЗагрузкеРабочихЦентров\Ext\Rights.xml:CE4378AB1BDB077D3B0D322A910EF296:4:Roles\ПросмотрОтчетовОЗагрузкеРабочихЦентров\Ext\Rights.xml
 Roles\юум_ДобавлениеИзменениеГлобальныеЗначения\Ext\Rights.xml:E241952D24A750F48CF856BDA51E5484:4:Roles\юум_ДобавлениеИзменениеГлобальныеЗначения\Ext\Rights.xml
 Roles\юум_ДобавлениеИзменениеКлассификатораЗаказов\Ext\Rights.xml:962CDD080C13C3B44CBE4D329CA246A2:4:Roles\юум_ДобавлениеИзменениеКлассификатораЗаказов\Ext\Rights.xml
+Roles\юум_ДобавлениеИзменениеПотенциальныхПоставщиков\Ext\Rights.xml:AEFF651B82E311084B55195E1F1C641D:4:Roles\юум_ДобавлениеИзменениеПотенциальныхПоставщиков\Ext\Rights.xml
 Roles\юум_ИзменениеГруппыОтходов\Ext\Rights.xml:1D2C7F9CA225A8E10B5B6CC5AEB5D073:4:Roles\юум_ИзменениеГруппыОтходов\Ext\Rights.xml
 Roles\юум_ИспользоватьЗаданияКВыполнению\Ext\Rights.xml:FAC8797776B52426CCF2DD524F295AE3:4:Roles\юум_ИспользоватьЗаданияКВыполнению\Ext\Rights.xml
 Roles\юум_Мастер\Ext\Rights.xml:09B3C017F6B4693FC97F679A6B96785F:4:Roles\юум_Мастер\Ext\Rights.xml
@@ -460,6 +464,7 @@ Roles\юум_РедактированиеРСюум_СоответствиеКо
 Roles\юум_СозданиеСверхлимитныхЗаявок\Ext\Rights.xml:149EADC769A0EF7CC93B3F58AEB0C6F0:4:Roles\юум_СозданиеСверхлимитныхЗаявок\Ext\Rights.xml
 Roles\юум_ЧтениеГлобальныеЗначения\Ext\Rights.xml:DEAC0F1E7FB257C601D96ECF308076EA:4:Roles\юум_ЧтениеГлобальныеЗначения\Ext\Rights.xml
 Roles\юум_ЧтениеКлассификатораЗаказов\Ext\Rights.xml:1C68C40266FB4F6F0C1BF9B4ACF80D97:4:Roles\юум_ЧтениеКлассификатораЗаказов\Ext\Rights.xml
+Roles\юум_ЧтениеПотенциальныхПоставщиков\Ext\Rights.xml:9F5E13A7E404FEB312D406FBD7D4B2C2:4:Roles\юум_ЧтениеПотенциальныхПоставщиков\Ext\Rights.xml
 Roles\юум_ЧтениеРСюум_СоответсвиеГФУРТипуДоговора\Ext\Rights.xml:75BCC23542B6658219B83644D66C0BAC:4:Roles\юум_ЧтениеРСюум_СоответсвиеГФУРТипуДоговора\Ext\Rights.xml
 3aa00a4f-2c62-492c-a38b-731637aca9e1:9DC5EE1945AF45AA838B0CA94CFB4477:4:Subsystems\Администрирование\Subsystems\НастройкаРазделов.xml
 843bbc1b-c33f-4e80-bf08-ac4441089fbc:3356B4283C5218941628126DFFB64034:4:Subsystems\Производство\Subsystems\ВнутрицеховоеУправление2_2.xml

@@ -29,6 +29,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.юум_СоответствиеГруппыОтходовНоменклатуреОтходов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.юум_УчетРасчетовВедетсяВ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.юум_СтатусыЗапросовКоммерческихПредложений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.юум_ПотенциальныеПоставщики</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
