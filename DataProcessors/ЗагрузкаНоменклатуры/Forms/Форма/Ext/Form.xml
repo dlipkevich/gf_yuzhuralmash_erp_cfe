@@ -39,6 +39,11 @@
 			<CommandName>Form.Command.ВыгрузитьСтатусы</CommandName>
 			<ExtendedTooltip name="ВыгрузитьСтатусыРасширеннаяПодсказка" id="10"/>
 		</Button>
+		<Button name="ПерезаполнитьРеквизиты" id="14">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПерезаполнитьРеквизиты</CommandName>
+			<ExtendedTooltip name="ПерезаполнитьРеквизитыРасширеннаяПодсказка" id="15"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -200,6 +205,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыгрузитьСтатусы</Action>
+		</Command>
+		<Command name="ПерезаполнитьРеквизиты" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезаполнить реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезаполнить реквизиты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПерезаполнитьРеквизиты</Action>
 		</Command>
 	</Commands>
 </Form>
