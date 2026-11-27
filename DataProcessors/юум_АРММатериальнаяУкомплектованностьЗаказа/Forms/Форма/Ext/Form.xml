@@ -2042,6 +2042,7 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:DocumentRef.ЗаявкаНаЗакупку</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПоставщику</v8:Type>
 					</Type>
 				</Column>
 				<Column name="КЗакупке" id="18">
@@ -2279,6 +2280,7 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:DocumentRef.ЗаявкаНаЗакупку</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПоставщику</v8:Type>
 					</Type>
 				</Column>
 				<Column name="НоменклатураЕдиницаИзмерения" id="11">
@@ -3032,6 +3034,7 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:DocumentRef.ЗаявкаНаЗакупку</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПоставщику</v8:Type>
 					</Type>
 				</Column>
 				<Column name="НоменклатураЕдиницаИзмерения" id="11">
@@ -3891,6 +3894,7 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:DocumentRef.ЗаявкаНаЗакупку</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПоставщику</v8:Type>
 					</Type>
 				</Column>
 				<Column name="ДатаПоставки" id="6">
@@ -4148,6 +4152,7 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:DocumentRef.ЗаявкаНаЗакупку</v8:Type>
+						<v8:Type>cfg:DocumentRef.ЗаказПоставщику</v8:Type>
 					</Type>
 				</Column>
 				<Column name="НоменклатураЕдиницаИзмерения" id="11">
@@ -4199,7 +4204,9 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
-			<Settings xsi:type="v8:TypeDescription"/>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:DocumentRef.ЗаказПоставщику</v8:Type>
+			</Settings>
 		</Attribute>
 		<Attribute name="ЗаказыПоставщикуКоличество" id="23">
 			<Title>
